@@ -1,0 +1,12 @@
+/*----- GOOGLE FONTS IMPORT -----*/
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@200;300;400;900&family=Parisienne&display=swap');
+
+/*----- ROOT VARIABLES -----*/
+:root {
+    /*----- Typography -----*/
+    --header-text: 'Parisienne', cursive;
+    --content-text: 'Overpass', sans-serif;
+    /*----- Colours -----*/
+    --white: #ffffff;
+    --black: #000000;
+}
