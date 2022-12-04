@@ -100,9 +100,22 @@ choice of imagery for the site - seaside taken from where I live and the alliter
 
 Wireframes for the project were created using [Balsamiq](https://balsamiq.com/)
 
+* Home
+* Register
+* Login
+* Profile
+* Bag
+* Checkout
+* Checkout Success
+* Products
+* Product Detail
+* Edit Product
+* Delete Product
+* 404 Error
+
 ### Database Schema
 
-what database used.
+I have used a relational database for this project, due to the relationships
 
 image of schema
 
@@ -147,14 +160,14 @@ HTML, CSS, JavaScript, Python
 
 ### Database Used
 
-sqlite3 for development
-ElephantSQL for deployment
+sqlite3 for development.
+[ElephantSQL](https://www.elephantsql.com/) for deployment.
 
 ### Frameworks Used
 
 [Django](https://www.djangoproject.com/) - Version 3.2.16 - A high-level Python web framework that encourages rapid development and clean, pragmatic design.
 
-[Bootstrap](https://getbootstrap.com/docs/4.6/getting-started/introduction/) - Version 4.6 - A framework for building responsive, mobile-first sites.
+[Bootstrap](https://getbootstrap.com/docs/4.6/getting-started/introduction/) - Version *** - A framework for building responsive, mobile-first sites.
 
 ### Libraries & Packages Used
 
