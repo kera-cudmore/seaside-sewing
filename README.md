@@ -6,7 +6,7 @@ This project was created as my fourth milestone project for my Level 5 Diploma i
 
 link to deployed site here
 
-Shields.io here
+![GitHub contributors](https://img.shields.io/github/contributors/kera-cudmore/seaside-sewing) ![GitHub last commit](https://img.shields.io/github/last-commit/kera-cudmore/seaside-sewing) ![GitHub language count](https://img.shields.io/github/languages/count/kera-cudmore/seaside-sewing) ![GitHub top language](https://img.shields.io/github/languages/top/kera-cudmore/seaside-sewing)
 
 ---
 
@@ -28,7 +28,7 @@ Shields.io here
   * [Accessibility](#accessibility)
 * [Technologies Used](#technologies-used)
   * [Languages Used](#languages-used)
-  * [Databases Used](#databases-used)
+  * [Database Used](#database-used)
   * [Frameworks Used](#frameworks-used)
   * [Libraries & Packages Used](#libraries--packages-used)
   * [Programs Used](#programs-used)
@@ -82,7 +82,7 @@ image of colour scheme here
 
 explain typography choice here
 
-typography image here 
+typography image here
 
 ### Imagery
 
@@ -154,11 +154,11 @@ ElephantSQL for deployment
 
 ### Programs Used
 
-[Am I Responsive]() - To create the responsive images of the site on a variety of device sizes.
+[Am I Responsive](https://ui.dev/amiresponsive) - To create the responsive images of the site on a variety of device sizes.
 
 [Balsamiq](https://balsamiq.com/) - Used to create wireframes.
 
-[Favicon.io]() - To create the favicon.
+[Favicon.io](https://favicon.io/) - To create the favicon.
 
 [Git](https://git-scm.com/) - For version control.
 
@@ -170,11 +170,11 @@ ElephantSQL for deployment
 
 [Shields.io](https://shields.io/) - To add badges to the projects documentation.
 
-[Tiny PNG]() - To compress images used in the README.
+[Tiny PNG](https://tinypng.com/) - To compress images used in the README.
 
 ### Stripe
 
-Stripe has been used in the project to implement a payment system.
+[Stripe](https://stripe.com/gb) has been used in the project to implement the payment system.
 
 ---
 
@@ -241,5 +241,5 @@ Please refer to the [TESTING.md](TESTING.md) file for all testing performed.
 I would like to acknowledge the following people who have helped me with completing this project:
 
 * My family for their patience and support whilst working on my final project.
-* My Code Institute mentor [Adegbenga Adeye]().
-* Nerd Alert for their constant support and encouragment while completing the project.
+* My Code Institute mentor [Adegbenga Adeye](https://github.com/deye9).
+* Nerd Alert for their constant support and encouragment while completing this project.
