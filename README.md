@@ -204,7 +204,7 @@ To clone the repository:
 
 1. Log in (or sign up) to GitHub.
 
-2. Go to the repository for the project.
+2. Go to the repository for this project, [seaside-sewing](https://github.com/kera-cudmore/seaside-sewing).
 
 3. Click the Code button, select whether you would like to clone with HTTPS, SSH or the GitHub CLI and copy the link given.
 
@@ -235,6 +235,11 @@ Please refer to the [TESTING.md](TESTING.md) file for all testing performed.
 ### Content
 
 ### Media
+
+* [Lighthouse Header Image](https://www.vecteezy.com/vector-art/8273454-lighthouse-in-on-the-island-in-the-middle-of-the-sea) - Designed by Graphics RF, sourced from Vecteezy
+* [Underwater Footer Image](https://www.vecteezy.com/vector-art/9102436-silhouette-of-coral-reef-with-fish-and-divers-on-blue-sea-background-underwater-vector-illustration) - Designed by duangdee123050146, sourced from Vecteezy
+
+* [Groves & Banks Ltd](https://www.grovesltd.co.uk/) - For allowing me permission to use any of the images of their products from their website.
 
 ### Acknowledgments
 
