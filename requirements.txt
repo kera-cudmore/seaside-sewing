@@ -1,5 +1,5 @@
 asgiref==3.5.2
-Django==3.2
+Django==3.2.16
 django-allauth==0.51.0
 oauthlib==3.2.2
 PyJWT==2.6.0
