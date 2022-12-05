@@ -2,9 +2,11 @@
 
 image
 
-This project was created as my fourth milestone project for my Level 5 Diploma in Web Application Development with the Code Insitute - a full stack e-commerce project that utilises Django, Stripe payments.
+Seaside Sewing is a full stack e-commerce website built using Django, Python, HTML, CSS and JavaScript. The website utilises Stripe as the payment processor.
 
-link to deployed site here
+This project was created as my fourth milestone project for my Level 5 Diploma in Web Application Development with the Code Insitute.
+
+link to deployed site: here
 
 ![GitHub contributors](https://img.shields.io/github/contributors/kera-cudmore/seaside-sewing) ![GitHub last commit](https://img.shields.io/github/last-commit/kera-cudmore/seaside-sewing) ![GitHub language count](https://img.shields.io/github/languages/count/kera-cudmore/seaside-sewing) ![GitHub top language](https://img.shields.io/github/languages/top/kera-cudmore/seaside-sewing)
 
@@ -55,6 +57,8 @@ responsive site image here
 
 ### Project Goals
 
+Seaside Sewing is a Business to Consumer (B2C) ecommerce site.
+
 site  audience people who have a love of sewing, especially quilting
 aimed to cater to beginners through to experts
 
@@ -80,7 +84,7 @@ image of colour scheme here
 
 ### Typography
 
-All fonts were sourced from [Google Fonts](https://fonts.google.com/). I used [Font Joy]() to enable me to view the font choices together to make sure that they worked well together.
+All fonts were sourced from [Google Fonts](https://fonts.google.com/). I used [Font Joy](https://fontjoy.com/) to enable me to view the font choices together to make sure that they worked well together.
 
 ![Fonts Chosen for the site](documentation/fonts.png)
 
