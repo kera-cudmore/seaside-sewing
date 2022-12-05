@@ -59,8 +59,7 @@ responsive site image here
 
 Seaside Sewing is a Business to Consumer (B2C) ecommerce site.
 
-site  audience people who have a love of sewing, especially quilting
-aimed to cater to beginners through to experts
+The sites audience is people who have a love of sewing and quilting and will cater to sewists from beginners through to experts, by selling a range of items over different price points.
 
 ### User Stories
 
@@ -106,7 +105,9 @@ aimed to cater to beginners through to experts
 
 ### Colour Scheme
 
-explain colour scheme choice here - seaside theme
+I have based the colour theme for the site around the main image used at the top of the site, a lighthouse on an island surrounded by water. The shades of blue fit nicely with a seaside theme, and the red gives a nice contrast to the blue.
+
+Text throughout the site will be either black or white, depending on the background colour.
 
 image of colour scheme here
 
@@ -126,7 +127,9 @@ I have chosen to use Overpass for all other text on the site. This font is sans-
 
 ### Imagery
 
-choice of imagery for the site - seaside taken from where I live and the alliteration of the project name
+Due to the name of the site, I have chosen to go with images of the seaside.
+
+The hero image for the site is of a lighthouse on an island surrounded by water. The footer is an image of sealife underwater on the ocean floor. I feel these images give the site a cohesive feel - as we start at the top of the site above the water, and then we travel down until we get to the bottom of the page to the footer, which is the ocean floor. I feel it gives the site a bit of a whimsical feel, which I wanted, as a lot of e-commerce sites can be very bland and all look the same.
 
 ### Wireframes
 
