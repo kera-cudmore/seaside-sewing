@@ -298,6 +298,7 @@ Please refer to the [TESTING.md](TESTING.md) file for all testing performed.
 * [Groves & Banks Ltd](https://www.grovesltd.co.uk/) - For allowing me permission to use any of the images of their products from their website.
 
 * [Noimage](https://www.canva.com/search/templates?q=lighthouse) - Created for free on Canva, utilising their design elements (Elegant minimalistic logo with lighthouse for seafood cafe) in the colour theme of my site.
+
 ### Acknowledgments
 
 I would like to acknowledge the following people who have helped me with completing this project:
