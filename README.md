@@ -67,10 +67,38 @@ aimed to cater to beginners through to experts
 | User Story ID | As a/an | I want to be able to ... | So that I can... |
 | :--- | :--- | :--- | :---|
 | **VIEWING & NAVIGATION** |
+| 1 | Shopper | Easily navigate the site | Find products/information that I am require |
+| 2 | Shopper | View a category of products/filter products | Find specific items I am interested in without having to scroll through all products |
+| 3 | Shopper | View more detail on products | to make an informed decision of if the item suits my requirements |
+| 4 | Shopper | View items on clearance/sale easily | Save money  |
+| 5 | Shopper | View my running total of purchases throughout my visit | Make sure I don't overspend & am able to track whether I meet any thresholds for site offers (e.g. free delivery) |
+| 6 | Shopper | View the items I currently have selected for purchase | to enable me to check I still wish to purchase the items, or amend quantites if required |
+| 7 | Shopper | View reviews for products | make informed decisions about purchasing products |
 | **REGISTRATION & USER ACCOUNTS** |
+| 8 | Shopper | Register for an account | Have an account with the site and view my profile |
+| 9 | Shopper | Receive an email to confirm my registration | Verify my account was created successfully |
+| 10 | Shopper | Log in and out | Keep my account information secure |
+| 11 | Shopper | View a profile page | Set a default delivery address and view previous purchases |
+| 12 | Shopper | Reset my password | Recover my account |
+| 13 | Shopper | Review products | Leave a rating/review on products |
 | **SORTING & SEARCHING** |
+| 14 | Shopper | Sort the list of available products | Easily identify the best rated, best priced and categorically sort products |
+| 15 | Shopper | Sort a specific category of products | Find the best-priced or best-rated product in a specific category, or sort the products in that category by name |
+| 16 | Shopper | Sort multiple categories of products simutaneously | Find the best-priced or best-rated products across broad categories, such as fabric or habedashery |
+| 17 | Shopper | Search for a product by name or description | Find a specific product I'd like to purchase |
+| 18 | Shopper | Easily see what I've searched for and the number of results | Quickly decide whether the product I want is available |
 | **PURCHASING & CHECKOUT** |
+| 19 | Shopper | Easily select the size and quantity of a product when purchasing it | Ensure I don't accidentally select the wrong product, quantity or size |
+| 20 | Shopper | View items in my bag to be purchased | Identify the total cost of my purchase and all items I will receive |
+| 21 | Shopper | Adjust the quantity of individual items in my bag | Easily make changes to my purchase before checkout |
+| 22 | Shopper | Easily eneter my payment information | Check out quickly and with no hassles |
+| 23 | Shopper | Feel my personal and payment information is safe and secure | Confidently provide the needed information to make a purchase |
+| 24 | Shopper | View an order confirmation after checkout | Verify that I haven't made any mistakes |
+| 25 | Shopper | Receive an email confirmation after checking out | Keep the confirmation of what I've purchased for my records |
 | **ADMIN & STORE MANAGEMENT** |
+| 26 | Store Owner | Add a product | Add new items to my store |
+| 27 | Store Owner | Edit/update a product | Change product prices, descriptions, images and other product criteria |
+| 28 | Store Owner | Delete a product | Remove items that are no longer for sale |
 
 ---
 
