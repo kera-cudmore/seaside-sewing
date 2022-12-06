@@ -15,15 +15,20 @@ link to deployed site: here
 ## Contents
 
 * [User Experience](#user-experience)
-  * [Project Goals](#project-goals)
-  * [User Stories](#user-stories)
-* [Design](#design)
-  * [Colour Scheme](#colour-scheme)
-  * [Typography](#typography)
-  * [Imagery](#imagery)
-  * [Wireframes](#wireframes)
-  * [Database Schema](#database-schema)
-  * [User Journey](#user-journey)
+  * [Strategy Plane](#strategy-plane)
+    * [Project Goals](#project-goals)
+  * [Scope Plane](#scope-plane)
+    * [Feature Planning](#feature-planning)
+  * [Structure Plane](#structure-plane)
+    * [User Stories](#user-stories)
+    * [Database Schema](#database-schema)
+    * [User Journey](#user-journey)
+  * [Skeleton Plane](#skeleton-plane)
+    * [Wireframes](#wireframes)
+  * [Surface Plane](#surface-plane)
+    * [Colour Scheme](#colour-scheme)
+    * [Typography](#typography)
+    * [Imagery](#imagery)
 * [Features](#features)
   * [General Features of The Site](#general-features-of-of-the-site)
   * [Future Implementations](#future-implementations)
@@ -55,13 +60,51 @@ responsive site image here
 
 ## User Experience
 
-### Project Goals
+### Strategy Plane
+
+#### **Project Goals**
 
 Seaside Sewing is a Business to Consumer (B2C) ecommerce site.
 
-The sites audience is people who have a love of sewing and quilting and will cater to sewists from beginners through to experts, by selling a range of items over different price points.
+The sites primary audience will be people who have a love of sewing and quilting. It will cater to a range of sewists from beginners through to experts, by selling a range of items over different price points. Seaside Sewing aims to allow customers to purchase all their requirements for their projects on one website.
 
-### User Stories
+### Scope Plane
+
+#### **Feature Planning**
+
+Below is a table of opportunities for the project, together with a score of their importance level and viability (rated low to high, 1-5). Products that score highly on importance and viability will be features that must be addressed first as part of the MVP. Features that are scored mid range are should have features, which will be added to the project once it has achieved MVP status. Low scored features, are could have features and if not attended to in this development version will be marked to be addressed in a future version.
+
+| Feature | Importance | Viability |  |
+| :--- | :---: | :---: | :---: |
+| User roles | 5 | 5 | MVP |
+| Sign up for an account | 4 | 5 | MVP |
+| Account Profile | 4 | 5 | MVP |
+| Password recovery | 5 | 5 | MVP |
+| Use social media to sign up/log in | 2 | 4 | |
+| Seach and filter through products | 5 | 5 | MVP |
+| Checkout system | 5 | 5 | MVP |
+| Guest Checkout | 3 | 4 | |
+| Payment Via Stripe | 5 | 5 | MVP |
+| Receive email confirmation for order | 5 | 5 | MVP |
+| Order History | 4 | 5 | |
+| Admin - add product | 5 | 5 | MVP |
+| Admin - edit/update product | 5 | 5 | MVP |
+| Admin - delete product | 5 | 5 | MVP |
+| Admin - Stock managment | 2 | 3 | |
+| Admin - Sales Reporting | 1 | 2 | |
+| Terms and Conditions | 3 | 5 | |
+| Privacy Policy | 3 | 5 | |
+| Delivery Terms | 3 | 5 | |
+| Social Media Links | 3 | 5 | |
+| Contact form | 3 | 3 | |
+| Newsletter | 2 | 3 | |
+| Wishlist | 3 | 3 | |
+| Product Reviews | 4 | 4 | |
+| Blog | 1 | 3 |  |
+
+### Structure Plane
+
+#### **User Stories**
 
 | User Story ID | As a/an | I want to be able to ... | So that I can... |
 | :--- | :--- | :--- | :---|
@@ -99,39 +142,19 @@ The sites audience is people who have a love of sewing and quilting and will cat
 | 27 | Store Owner | Edit/update a product | Change product prices, descriptions, images and other product criteria |
 | 28 | Store Owner | Delete a product | Remove items that are no longer for sale |
 
----
+#### **Database Schema**
 
-## Design
+I have used a relational database for this project, due to the data being used for the project I have opted to use a relational database as this will best suit my requirements.
 
-### Colour Scheme
+image of schema
 
-I have based the colour theme for the site around the main image used at the top of the site, a lighthouse on an island surrounded by water. The shades of blue fit nicely with a seaside theme, and the red gives a nice contrast to the blue.
+#### **User Journey**
 
-Text throughout the site will be either black or white, depending on the background colour.
+flow of site
 
-image of colour scheme here
+### Skeleton Plane
 
-### Typography
-
-All fonts were sourced from [Google Fonts](https://fonts.google.com/). I used [Font Joy](https://fontjoy.com/) to enable me to view the font choices together to make sure that they worked well together.
-
-![Fonts Chosen for the site](documentation/fonts.png)
-
-I have chosen to use Parisienne, a handwriting font, for the site name as I feel that it gives a look of an ocean wave, with its ebb and flow. I am limiting the use of this font to the sites name as due to the font being a cursive, it is not very accessible.
-
-![Parisienne Font](documentation/parisienne-font.png)
-
-I have chosen to use Overpass for all other text on the site. This font is sans-serif font, which is very accessible as a web font.
-
-![Overpass Font](documentation/overpass-font.png)
-
-### Imagery
-
-Due to the name of the site, I have chosen to go with images of the seaside.
-
-The hero image for the site is of a lighthouse on an island surrounded by water. The footer is an image of sealife underwater on the ocean floor. I feel these images give the site a cohesive feel - as we start at the top of the site above the water, and then we travel down until we get to the bottom of the page to the footer, which is the ocean floor. I feel it gives the site a bit of a whimsical feel, which I wanted, as a lot of e-commerce sites can be very bland and all look the same.
-
-### Wireframes
+#### **Wireframes**
 
 Wireframes for the project were created using [Balsamiq](https://balsamiq.com/)
 
@@ -148,15 +171,35 @@ Wireframes for the project were created using [Balsamiq](https://balsamiq.com/)
 * Delete Product
 * 404 Error
 
-### Database Schema
+### Surface Plane
 
-I have used a relational database for this project, due to the relationships
+#### **Colour Scheme**
 
-image of schema
+I have based the colour theme for the site around the main image used at the top of the site, a lighthouse on an island surrounded by water. The shades of blue fit nicely with a seaside theme, and the red gives a nice contrast to the blue.
 
-### User Journey
+Text throughout the site will be either black or white, depending on the background colour.
 
-flow of site
+image of colour scheme here
+
+#### **Typography**
+
+All fonts were sourced from [Google Fonts](https://fonts.google.com/). I used [Font Joy](https://fontjoy.com/) to enable me to view the font choices together to make sure that they worked well together.
+
+![Fonts Chosen for the site](documentation/fonts.png)
+
+I have chosen to use Parisienne, a handwriting font, for the site name as I feel that it gives a look of an ocean wave, with its ebb and flow. I am limiting the use of this font to the sites name as due to the font being a cursive, it is not very accessible.
+
+![Parisienne Font](documentation/parisienne-font.png)
+
+I have chosen to use Overpass for all other text on the site. This font is sans-serif font, which is very accessible as a web font.
+
+![Overpass Font](documentation/overpass-font.png)
+
+#### **Imagery**
+
+Due to the name of the site, I have chosen to go with images of the seaside.
+
+The hero image for the site is of a lighthouse on an island surrounded by water. The footer is an image of sealife underwater on the ocean floor. I feel these images give the site a cohesive feel - as we start at the top of the site above the water, and then we travel down until we get to the bottom of the page to the footer, which is the ocean floor. I feel it gives the site a bit of a whimsical feel, which I wanted, as a lot of e-commerce sites can be very bland and all look the same.
 
 ---
 
@@ -244,7 +287,7 @@ The project is deployed using Heroku. To deploy the project to Heroku:
 
 ### Local Development
 
-#### How to Fork
+#### **How to Fork**
 
 To fork the repository:
 
@@ -254,7 +297,7 @@ To fork the repository:
 
 3. Click on the fork button in the top right of the page.
 
-#### How to Clone
+#### **How to Clone**
 
 To clone the repository:
 
