@@ -29,6 +29,7 @@ link to deployed site: here
     * [Colour Scheme](#colour-scheme)
     * [Typography](#typography)
     * [Imagery](#imagery)
+    * [Base Mockup](#base-mockup)
 * [Features](#features)
   * [General Features of The Site](#general-features-of-of-the-site)
   * [Future Implementations](#future-implementations)
@@ -158,28 +159,47 @@ flow of site
 
 Wireframes for the project were created using [Balsamiq](https://balsamiq.com/)
 
-* Home
-* Register
-* Login
-* Profile
-* Bag
-* Checkout
+* Base Template - This template contains the header and footer which are used throughout the website. This template is used as a base and then other pages content will be injected into main section using django template language.
+
+  ![Base Template Wireframe](documentation/wireframes/base.png)
+
+* Home Page
+
+* Register Page
+
+* Login Page
+
+* Logout Page
+
+* Profile Page
+
+* Bag Page
+
+* Checkout Page
+
+* Payment Processing Overlay
+
 * Checkout Success
+
 * Products
+
 * Product Detail
+
 * Edit Product
+
 * Delete Product
+
 * 404 Error
 
 ### Surface Plane
 
 #### **Colour Scheme**
 
-I have based the colour theme for the site around the main image used at the top of the site, a lighthouse on an island surrounded by water. The shades of blue fit nicely with a seaside theme, and the red gives a nice contrast to the blue.
+I have based the colour theme for the site around the main image used at the top of the site, a lighthouse on an island surrounded by water. The shades of blue fit nicely with a seaside theme, the red gives and green nice contrast to the blue, and will be perfect to use as part of the toasts.
 
 Text throughout the site will be either black or white, depending on the background colour.
 
-image of colour scheme here
+![Colour Scheme for Seaside Sewing](documentation/colour-theme.png)
 
 #### **Typography**
 
@@ -200,6 +220,12 @@ I have chosen to use Overpass for all other text on the site. This font is sans-
 Due to the name of the site, I have chosen to go with images of the seaside.
 
 The hero image for the site is of a lighthouse on an island surrounded by water. The footer is an image of sealife underwater on the ocean floor. I feel these images give the site a cohesive feel - as we start at the top of the site above the water, and then we travel down until we get to the bottom of the page to the footer, which is the ocean floor. I feel it gives the site a bit of a whimsical feel, which I wanted, as a lot of e-commerce sites can be very bland and all look the same.
+
+#### **Base Mockup**
+
+I created the following mockup to get an idea of what the sites header and footer would look like with my chosen images, and whether the look I was going for would work. I am happy with the result.
+
+![Base Mockup](documentation/wireframes/base-mockup.png)
 
 ---
 
@@ -270,6 +296,8 @@ sqlite3 for development.
 [Shields.io](https://shields.io/) - To add badges to the projects documentation.
 
 [Tiny PNG](https://tinypng.com/) - To compress images used in the README.
+
+[Cloud Convert](https://cloudconvert.com/eps-to-svg) - To convert EPS files to SVG files for the vector images.
 
 ### Stripe
 
