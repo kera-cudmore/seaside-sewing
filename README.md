@@ -167,11 +167,19 @@ Wireframes for the project were created using [Balsamiq](https://balsamiq.com/)
 
 * Register Page
 
+  ![Register Page Wireframe](documentation/wireframes/register.png)
+
 * Login Page
+
+  ![Login Page Wireframe](documentation/wireframes/login.png)
 
 * Logout Page
 
+  ![Log out Page Wireframe](documentation/wireframes/logout.png)
+
 * Profile Page
+
+  ![Profile Page Wireframe](documentation/wireframes/profile.png)
 
 * Bag Page
 
