@@ -217,9 +217,13 @@ Wireframes for the project were created using [Balsamiq](https://balsamiq.com/)
 
   ![Product Detail Page Admin View Wireframe](documentation/wireframes/product-detail-admin-view.png)
 
-* Edit Product
+* Edit Product - The Edit product page is only available to admin users. It displays a form with the products details prepopulated ready for the admin to edit. The admin may also delete the current image or choose a new image to upload and display.
 
-* Delete Product
+  ![Edit Product Page Wireframe](documentation/wireframes/edit-product.png)
+
+* Delete Product - The Delete product page is only available to admin users. Its displays the product image, title, category and SKU along with a message asking the admin if they are sure they want to delete the product. It also warns them that this action cannot be undone. They are given a cancel button and a delete button.
+
+  ![Delete Product Page Wireframe](documentation/wireframes/delete-product.png)
 
 * 404 Error
 
