@@ -199,11 +199,23 @@ Wireframes for the project were created using [Balsamiq](https://balsamiq.com/)
 
   ![Products Page Wireframe](documentation/wireframes/products.png)
 
-* Products (Admin View) - The Admin view of the products page is identical to that for a user, except for the addition of an edit and delete button below each item. This will allow the admin to be able to edit or delete itemes easily from the products view page.
+* Products (Admin View) - The Admin view of the products page is identical to that for a user, except for the addition of an edit and delete button below each item. This will allow the admin to be able to edit or delete products easily from the products view page.
 
   ![Products Admin View Page Wireframe](documentation/wireframes/products-admin-view.png)
 
-* Product Detail
+* Product Detail - The product detail page features an image of the product, along with the title, price, category and rating for the product.
+
+  There is also a text description of the product which gives further information to the user to enable them to decide if the product meets their needs.
+  
+  Underneath the description is a quantity box for the user to select how many of the product they would like to purchase, along with an add to wishlist button.
+
+  The Add to bag button and back to products buttons are placed below.
+
+  ![Product Detail Page Wireframe](documentation/wireframes/product-detail.png)
+
+* Product Detail (Admin View) - The admin view of the product detail page is idential to the product detail page, except for the addition of the edit and delete buttons to allow the admin to edit and delete a product directly from their details page.
+
+  ![Product Detail Page Admin View Wireframe](documentation/wireframes/product-detail-admin-view.png)
 
 * Edit Product
 
