@@ -197,11 +197,11 @@ Wireframes for the project were created using [Balsamiq](https://balsamiq.com/)
 
 * Products - The products page will display an image for each item along with the title for item, price, category and rating underneath. Screen size will determine how many products are displayed in a row.
 
-  ![Products Page Wireframe]()
+  ![Products Page Wireframe](documentation/wireframes/products.png)
 
 * Products (Admin View) - The Admin view of the products page is identical to that for a user, except for the addition of an edit and delete button below each item. This will allow the admin to be able to edit or delete itemes easily from the products view page.
 
-  ![Products Admin View Page Wireframe]()
+  ![Products Admin View Page Wireframe](documentation/wireframes/products-admin-view.png)
 
 * Product Detail
 
@@ -304,6 +304,8 @@ sqlite3 for development.
 [Am I Responsive](https://ui.dev/amiresponsive) - To create the responsive images of the site on a variety of device sizes.
 
 [Balsamiq](https://balsamiq.com/) - Used to create wireframes.
+
+[DrawSQL.app](https://drawsql.app/) - Used to create the database schema.
 
 [Favicon.io](https://favicon.io/) - To create the favicon.
 
