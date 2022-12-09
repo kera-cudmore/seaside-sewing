@@ -165,21 +165,27 @@ Wireframes for the project were created using [Balsamiq](https://balsamiq.com/)
 
 * Home Page
 
-* Register Page
+* Register Page - The register page will allow users to register for an account with Seaside Sewing in one of two ways - registering for an account with a username/email or via a social account.
+
+  The username/email path will require users to choose a username, a password which will be entered twice to confirm the user hasn't made an error when entering the password and their email address, which again will be required to be entered twice to confirm there are no mistakes in the users input.
+
+  The social media account path will allow users to sign up for an account on Seaside Sewing by using a social media account.
 
   ![Register Page Wireframe](documentation/wireframes/register.png)
 
-* Login Page
+* Login Page - The login page will allow users to sign into their account with either their username, or using their linked social account.
 
   ![Login Page Wireframe](documentation/wireframes/login.png)
 
-* Logout Page
+* Logout Page - The logout page will ask the user to confirm they wish to logout. If the user clicks the logout button they will be logged out of their account and redirected to the home page.
 
   ![Log out Page Wireframe](documentation/wireframes/logout.png)
 
-* Profile Page
+* Profile Page - The profile page displays a users default delivery information, and if they have previously made any orders using their account, their past purchases will also be displayed. The user can click on the order No for their previous orders and they will be taken to a detailed view of that previous order.
 
   ![Profile Page Wireframe](documentation/wireframes/profile.png)
+
+* Bag Page (Empty Bag)
 
 * Bag Page
 
@@ -189,7 +195,13 @@ Wireframes for the project were created using [Balsamiq](https://balsamiq.com/)
 
 * Checkout Success
 
-* Products
+* Products - The products page will display an image for each item along with the title for item, price, category and rating underneath. Screen size will determine how many products are displayed in a row.
+
+  ![Products Page Wireframe]()
+
+* Products (Admin View) - The Admin view of the products page is identical to that for a user, except for the addition of an edit and delete button below each item. This will allow the admin to be able to edit or delete itemes easily from the products view page.
+
+  ![Products Admin View Page Wireframe]()
 
 * Product Detail
 
@@ -198,6 +210,8 @@ Wireframes for the project were created using [Balsamiq](https://balsamiq.com/)
 * Delete Product
 
 * 404 Error
+
+  ![404 Error Page Wireframe](documentation/wireframes/404.png)
 
 ### Surface Plane
 
