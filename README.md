@@ -165,6 +165,8 @@ Wireframes for the project were created using [Balsamiq](https://balsamiq.com/)
 
 * Home Page
 
+  ![Home Page Wireframe](documentation/wireframes/home.png)
+
 * Register Page - The register page will allow users to register for an account with Seaside Sewing in one of two ways - registering for an account with a username/email or via a social account.
 
   The username/email path will require users to choose a username, a password which will be entered twice to confirm the user hasn't made an error when entering the password and their email address, which again will be required to be entered twice to confirm there are no mistakes in the users input.
@@ -203,9 +205,9 @@ Wireframes for the project were created using [Balsamiq](https://balsamiq.com/)
 
 * Checkout Page - The checkout page requires the user to fill in their details, along with a delivery address. They are given the option via a checkbox to save the information they input to their profile. If the user has already filled in their information in their profile, the form will be prepopulated with this information.
 
-Underneath the users delivery information will be the payment input where the user will be required to enter their card information. If there are any errors with this input, an error message will be displayed under the input. Beneath this are the complete order buttons (which has a small message underneath it to let the user know the amount being charged to their card) and a button which redirects users back to their bag to amend their order.
+  Underneath the users delivery information will be the payment input where the user will be required to enter their card information. If there are any errors with this input, an error message will be displayed under the input. Beneath this are the complete order buttons (which has a small message underneath it to let the user know the amount being charged to their card) and a button which redirects users back to their bag to amend their order.
 
-The user will also be shown a summary of the products they are purchasing. This consists of an image of the product, the title of the product, a size if applicable, the quantity they are purchasing and the subtotal for that product. Underneath the summary are the subtotal, delivery costs and grand total.
+  The user will also be shown a summary of the products they are purchasing. This consists of an image of the product, the title of the product, a size if applicable, the quantity they are purchasing and the subtotal for that product. Underneath the summary are the subtotal, delivery costs and grand total.
 
   ![Checkout Page Wireframe](documentation/wireframes/checkout.png)
 
@@ -226,7 +228,7 @@ The user will also be shown a summary of the products they are purchasing. This 
 * Product Detail - The product detail page features an image of the product, along with the title, price, category and rating for the product.
 
   There is also a text description of the product which gives further information to the user to enable them to decide if the product meets their needs.
-  
+
   Underneath the description is a quantity box for the user to select how many of the product they would like to purchase, along with an add to wishlist button.
 
   The Add to bag button and back to products buttons are placed below.
