@@ -185,17 +185,33 @@ Wireframes for the project were created using [Balsamiq](https://balsamiq.com/)
 
   ![Profile Page Wireframe](documentation/wireframes/profile.png)
 
-* Bag Page (Empty Bag) -
+* Bag Page (Empty Bag) - The bag page will display the following message to usesrs if there are no products in their bag.
 
-* Bag Page -
+  ![Empty Bag Page Wireframe](documentation/wireframes/bag-empty.png)
 
-* Wishlist Page -
+* Bag Page - When a user has items in their bag, they will be shown an image of the item, the title
 
-* Wishlist Page (Empty Wishlist) -
+  ![Bag Page Wireframe](documentation/wireframes/bag.png)
 
-* Checkout Page -
+* Wishlist (empty wishlist) - The wishlist page will display a message to the user to let them know there are no products currently in their wishlist and will give instructions on how to add a product to their wishlist. There will also be a button that redirects the user to the products page.
 
-* Payment Processing Overlay -
+  ![Empty Wishlist Page Wireframe](documentation/wireframes/wishlist-empty.png)
+
+* Wishlist Page - The wishlist page is very similar in layout to the bag page. It displays an image of the item, the title,selected size and sku for the product along with the product price. There is also has a button to remove the product from their wishlist. The user can add an item from their wishlist to their bag by clicking on the product which will take them to the product details page where they can select sizes and quantity.
+
+  ![Wishlist Page Wireframe](documentation/wireframes/wishlist.png)
+
+* Checkout Page - The checkout page requires the user to fill in their details, along with a delivery address. They are given the option via a checkbox to save the information they input to their profile. If the user has already filled in their information in their profile, the form will be prepopulated with this information.
+
+Underneath the users delivery information will be the payment input where the user will be required to enter their card information. If there are any errors with this input, an error message will be displayed under the input. Beneath this are the complete order buttons (which has a small message underneath it to let the user know the amount being charged to their card) and a button which redirects users back to their bag to amend their order.
+
+The user will also be shown a summary of the products they are purchasing. This consists of an image of the product, the title of the product, a size if applicable, the quantity they are purchasing and the subtotal for that product. Underneath the summary are the subtotal, delivery costs and grand total.
+
+  ![Checkout Page Wireframe](documentation/wireframes/checkout.png)
+
+* Payment Processing Overlay - once the user has submitted correct payment details and clicks on the button to complete their order a payment processing overlay with an animated spinner will be displayed over the checkout page while payment is processed. Once this has processed, the user will be shown the checkout success page.
+
+  ![Payment Processing Overlay Wireframe](documentation/wireframes/payment-processing-overlay.png)
 
 * Checkout Success -
 
@@ -229,19 +245,19 @@ Wireframes for the project were created using [Balsamiq](https://balsamiq.com/)
 
   ![Delete Product Page Wireframe](documentation/wireframes/delete-product.png)
 
-* 404 Error
+* 404 Error - The 404 page lets the user know there has been a problem and displays a button to redirect them to the products.
 
   ![404 Error Page Wireframe](documentation/wireframes/404.png)
 
-* Privacy Policy
+* Privacy Policy - The privacy policy page contains the privacy policy for the site.
 
   ![Privacy Policy Page Wireframe](documentation/wireframes/privacy.png)
 
-* Terms & Conditions
+* Terms & Conditions - The terms & conditions page contains the terms and conditions for the site.
 
   ![Terms & Conditions Page Wireframe](documentation/wireframes/terms-conditions.png)
 
-* Delivery Information
+* Delivery Information - The delivery page contains further information for the user on delivery options.
 
   ![Delivery Information Page Wireframe](documentation/wireframes/delivery-info.png)
 
