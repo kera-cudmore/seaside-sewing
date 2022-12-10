@@ -145,9 +145,9 @@ Below is a table of opportunities for the project, together with a score of thei
 
 #### **Database Schema**
 
-I have used a relational database for this project, due to the data being used for the project I have opted to use a relational database as this will best suit my requirements.
+Due to the data being used for the project I have opted to use a relational database as this will best suit my requirements.
 
-image of schema
+![Database Schema](documentation/database-schema.png)
 
 #### **User Journey**
 
