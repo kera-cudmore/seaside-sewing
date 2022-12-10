@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html>
-  <head>
+    <head>
     <title>{% block head_title %}{% endblock %}</title>
     {% block extra_head %}
     {% endblock %}
-  </head>
-  <body>
+    </head>
+    <body>
     {% block body %}
 
     {% if messages %}
     <div>
-      <strong>Messages:</strong>
-      <ul>
+        <strong>Messages:</strong>
+        <ul>
         {% for message in messages %}
         <li>{{message}}</li>
         {% endfor %}
-      </ul>
+        </ul>
     </div>
     {% endif %}
 
     <div>
-      <strong>Menu:</strong>
-      <ul>
+        <strong>Menu:</strong>
+        <ul>
         {% if user.is_authenticated %}
         <li><a href="{% url 'account_email' %}">Change E-mail</a></li>
         <li><a href="{% url 'account_logout' %}">Sign Out</a></li>
@@ -29,12 +29,12 @@
         <li><a href="{% url 'account_login' %}">Sign In</a></li>
         <li><a href="{% url 'account_signup' %}">Sign Up</a></li>
         {% endif %}
-      </ul>
+        </ul>
     </div>
     {% block content %}
     {% endblock %}
     {% endblock %}
     {% block extra_body %}
     {% endblock %}
-  </body>
+    </body>
 </html>
