@@ -217,6 +217,8 @@ Wireframes for the project were created using [Balsamiq](https://balsamiq.com/)
 
 * Checkout Success -
 
+  ![Checkout Success Page Wireframe](documentation/wireframes/checkout-success.png)
+
 * Products - The products page will display an image for each item along with the title for item, price, category and rating underneath. Screen size will determine how many products are displayed in a row.
 
   ![Products Page Wireframe](documentation/wireframes/products.png)
@@ -262,6 +264,10 @@ Wireframes for the project were created using [Balsamiq](https://balsamiq.com/)
 * Delivery Information - The delivery page contains further information for the user on delivery options.
 
   ![Delivery Information Page Wireframe](documentation/wireframes/delivery-info.png)
+
+* add review
+* edit review
+* toasts
 
 ### Surface Plane
 
