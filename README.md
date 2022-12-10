@@ -185,15 +185,19 @@ Wireframes for the project were created using [Balsamiq](https://balsamiq.com/)
 
   ![Profile Page Wireframe](documentation/wireframes/profile.png)
 
-* Bag Page (Empty Bag)
+* Bag Page (Empty Bag) -
 
-* Bag Page
+* Bag Page -
 
-* Checkout Page
+* Wishlist Page -
 
-* Payment Processing Overlay
+* Wishlist Page (Empty Wishlist) -
 
-* Checkout Success
+* Checkout Page -
+
+* Payment Processing Overlay -
+
+* Checkout Success -
 
 * Products - The products page will display an image for each item along with the title for item, price, category and rating underneath. Screen size will determine how many products are displayed in a row.
 
@@ -228,6 +232,18 @@ Wireframes for the project were created using [Balsamiq](https://balsamiq.com/)
 * 404 Error
 
   ![404 Error Page Wireframe](documentation/wireframes/404.png)
+
+* Privacy Policy
+
+  ![Privacy Policy Page Wireframe](documentation/wireframes/privacy.png)
+
+* Terms & Conditions
+
+  ![Terms & Conditions Page Wireframe](documentation/wireframes/terms-conditions.png)
+
+* Delivery Information
+
+  ![Delivery Information Page Wireframe](documentation/wireframes/delivery-info.png)
 
 ### Surface Plane
 
