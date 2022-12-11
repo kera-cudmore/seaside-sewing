@@ -6,7 +6,18 @@
     /*----- Typography -----*/
     --header-text: 'Parisienne', cursive;
     --content-text: 'Overpass', sans-serif;
+    
     /*----- Colours -----*/
     --white: #ffffff;
     --black: #000000;
+    --grey: #E3E0Df;
+    --light-blue: #95DDED;
+    --medium-blue: #38A3DC;
+    --dark-blue: #2072B4;
+    --green: #819938;
+    --red: #A82114;
+}
+
+h1, h2 {
+    font-family: var(--header-text);
 }
