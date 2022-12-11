@@ -1,7 +1,30 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block extra_title %}- Home{% endblock %}
+
+<!-- Extra meta tags specific to the page to be put here -->
+{% block extra_meta %}
+{% endblock %}
+
 {% block content %}
-<p>Hello, can you see me?</p>
+<div class="container">
+    <div class="row">
+        <h2>Welcome to Seaside Sewing!</h2>
+
+        <h3>The first port of call for all your sewing needs.</h3>
+
+        <!-- add a bit more info about the shop here -->
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <!-- columns to hold the categories cards - make these 1 col on sm screen, 2 col on md screen and 3 col on lrg (maybe 4 for xl)-->
+            <!-- Each category will be a card with an image of the categories products and a small decription -->
+        </div>
+    </div>
+
+</div>
+
 
 {% endblock %}
