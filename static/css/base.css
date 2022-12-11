@@ -21,3 +21,25 @@
 h1, h2 {
     font-family: var(--header-text);
 }
+
+svg {
+    width: 100vw;
+    height: auto;
+    object-fit: contain;
+}
+
+
+/*----- MEDIA QUERIES -----*/
+
+/* Tablets */
+@media only screen and (min-width : 481px) {
+    svg {
+        width: 100vw;
+        height: auto;
+        object-fit: contain;
+    }
+}
+/* Laptop */
+@media only screen and (min-width : 769px) {
+    
+}

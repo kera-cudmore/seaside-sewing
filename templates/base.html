@@ -53,8 +53,8 @@
         <!-- site header here -->
         <header>
             <div class="container-fluid">
-                
                 <!-- site image - use an include file -->
+                {% include 'includes/header-image.html' %}
                 <!-- Site name / logo - use an include file -->
                 <!-- account bits - search bar, account icon, wishlist and bag icon-->
                 <!-- site navigation for categories - uses include mobile nav and main nav html pages -->
@@ -76,7 +76,7 @@
         {% endblock %}
 
         <!-- FOOTER HERE -->
-        
+
         {% block postloadjs %}
         {% endblock %}
     </body>
