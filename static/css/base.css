@@ -1,7 +1,9 @@
 /*----- GOOGLE FONTS IMPORT -----*/
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@200;300;400;900&family=Parisienne&display=swap');
 
+
 /*----- ROOT VARIABLES -----*/
+
 :root {
     /*----- Typography -----*/
     --header-text: 'Parisienne', cursive;
@@ -18,14 +20,58 @@
     --red: #A82114;
 }
 
+/* look into how to get the svg to be full width and scalable for devices */
+/* svg {
+    width: 100vw;
+    height: auto;
+    object-fit: contain;
+} */
+
+/*----- Headings & Text -----*/
+
 h1, h2 {
     font-family: var(--header-text);
 }
 
-svg {
-    width: 100vw;
-    height: auto;
-    object-fit: contain;
+h3, h4, h5, h6, p, a, input {
+    font-family: var(--content-text);
+}
+
+h1 {
+    color: var(--white);
+    text-align: center;
+    font-size: 3rem;
+}
+
+
+/*----- Header -----*/
+
+#site-name {
+    background-color: var(--medium-blue) !important;
+    padding-bottom: 2rem;
+}
+#account-nav {
+    background-color: var(--medium-blue) !important;
+    color: var(--white);
+}
+
+#delivery-banner {
+    background-color: var(--red);
+    color: var(--white);
+}
+.categories-nav {
+    background-color: var(--medium-blue) !important;
+    padding-bottom: 1rem;
+}
+
+/*----- Footer -----*/
+
+.footer-container {
+    background-color: var(--light-blue);
+}
+
+.content-container {
+    padding-top: 5rem;
 }
 
 
@@ -33,13 +79,20 @@ svg {
 
 /* Tablets */
 @media only screen and (min-width : 481px) {
+    h1 {
+        font-size: 5rem;
+    }
+    
     svg {
         width: 100vw;
         height: auto;
         object-fit: contain;
     }
 }
+
 /* Laptop */
 @media only screen and (min-width : 769px) {
-    
+    h1 {
+        font-size: 9rem;
+    }
 }
