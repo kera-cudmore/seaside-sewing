@@ -58,11 +58,11 @@
                 {% include 'includes/header-image.html' %}
 
                 <!-- Site name -->
-                <div class="row" id="site-name">
+                <div class="row site-name">
                     <h1>Seaside Sewing</h1>
                 </div>
                 <!-- account bits - search bar, account icon, wishlist and bag icon-->
-                <div class="row" id="account-nav">
+                <div class="row account-nav">
                 {% include 'includes/account-nav.html' %}
                 {% include 'includes/account-mobile-nav.html' %}
                 </div>
@@ -82,12 +82,12 @@
             
         </div>
         {% endif %}
-
-        {% block page_header %}
-        {% endblock %}
     
-        {% block content %}
-        {% endblock %}
+        <!-- Page Content - injected through templates - the classes ensure the container stays consistent for all pages- need to check for the allauth pages if they are formatter right (password reset etc) -->
+        <div class="container content-container">
+            {% block content %}
+            {% endblock %}
+        </div>
 
         <!-- FOOTER HERE -->
         <div class="container-fluid footer-container">
