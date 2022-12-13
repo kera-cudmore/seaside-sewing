@@ -292,9 +292,9 @@ All fonts were sourced from [Google Fonts](https://fonts.google.com/). I used [F
 
 ![Fonts Chosen for the site](documentation/fonts.png)
 
-I have chosen to use Parisienne, a handwriting font, for the site name as I feel that it gives a look of an ocean wave, with its ebb and flow. I am limiting the use of this font to the sites name as due to the font being a cursive, it is not very accessible.
+I have chosen to use Dancing Script, a handwriting font, for the site name as I feel that it gives a look of an ocean wave, with its ebb and flow. I am limiting the use of this font to the sites name as due to the font being a cursive, it is not very accessible.
 
-![Parisienne Font](documentation/parisienne-font.png)
+![dancing Script Font](documentation/dancingscript-font.png)
 
 I have chosen to use Overpass for all other text on the site. This font is sans-serif font, which is very accessible as a web font.
 
