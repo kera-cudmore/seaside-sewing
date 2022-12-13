@@ -48,32 +48,20 @@
 
     </head>
 
-    <body>
+    <body class="container=fluid">
     
         <!-- site header here -->
         <header>
-            <div class="container-fluid">
-
-                <!-- site image - use an include file -->
                 {% include 'includes/header-image.html' %}
-
-                <!-- Site name -->
                 <div class="row site-name">
                     <h1>Seaside Sewing</h1>
                 </div>
-                <!-- account bits - search bar, account icon, wishlist and bag icon-->
                 <div class="row account-nav">
                 {% include 'includes/account-nav.html' %}
                 {% include 'includes/account-mobile-nav.html' %}
                 </div>
-                <!-- site navigation for categories - uses include mobile nav and main nav html pages -->
                 {% include 'includes/categories-nav.html' %}
-                    
-
-                <!-- delivery/message banner -->
-                    {% include 'includes/delivery-banner.html' %}
-                
-            </div>
+                {% include 'includes/delivery-banner.html' %}
         </header>
         
         <!-- toasts -->
