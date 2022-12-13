@@ -102,6 +102,7 @@ Below is a table of opportunities for the project, together with a score of thei
 | Wishlist | 3 | 3 | |
 | Product Reviews | 4 | 4 | |
 | Blog | 1 | 3 |  |
+| Discount Vouchers | 1 | 1 | |
 
 ### Structure Plane
 
@@ -349,17 +350,22 @@ HTML, CSS, JavaScript, Python
 ### Database Used
 
 sqlite3 for development.
+
 [ElephantSQL](https://www.elephantsql.com/) for deployment.
 
 ### Frameworks Used
 
 [Django](https://www.djangoproject.com/) - Version 3.2.16 - A high-level Python web framework that encourages rapid development and clean, pragmatic design.
 
-[Bootstrap](https://getbootstrap.com/docs/4.6/getting-started/introduction/) - Version *** - A framework for building responsive, mobile-first sites.
+[Bootstrap](https://getbootstrap.com/docs/4.6/getting-started/introduction/) - Version 5.2.3 - A framework for building responsive, mobile-first sites.
 
 ### Libraries & Packages Used
 
 [Django Allauth](https://django-allauth.readthedocs.io/en/latest/) - Version 0.41.0 - Used for authentication, registration & account management.
+
+[jQuery](https://jquery.com/)
+
+[Font Awesome](https://fontawesome.com/) - Version 6.2.1 - Used for the iconography of the site, this was added using a CDN link.
 
 ### Programs Used
 
