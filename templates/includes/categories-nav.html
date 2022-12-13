@@ -1,86 +1,95 @@
-<div class="row categories-nav">
-    <nav class="navbar navbar-expand-lg navbar-dark w-100">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#categories-nav" aria-controls="categories-nav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="categories-nav">
-            <ul class="navbar-nav w-auto mx-auto">
-                <li class="nav-item d-block d-md-none">
-                    <a href="{% url 'home' %}" class="font-weight-bold nav-link mr-5" id="home-link">
-                        Home
-                    </a>
-                </li>
-                <!-- All products -->
-                <li class="nav-item dropdown">
-                    <a href="#" class="font-weight-bold nav-link mr-5" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<div class="row" id="categories-nav">
+    <nav class="navbar sticky-top navbar-expand-lg w-100">
+        <div class="container-fluid">
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+            aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         All Products
-                    </a>
-                    <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                        <a href="#" class="dropdown-item">By Price</a>
-                        <a href="#" class="dropdown-item">By Rating</a>
-                        <a href="#" class="dropdown-item">By Category</a>
-                        <a href="#" class="dropdown-item">All Products</a>
-                    </div>
-                </li>
-        
-                <!-- Fabrics -->
-                <li class="nav-item dropdown">
-                    <a href="#" class="font-weight-bold nav-link mr-5" id="fabrics-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">By Price</a></li>
+                            <li><a class="dropdown-item" href="#">By Rating</a></li>
+                            <li><a class="dropdown-item" href="#">By Category</a></li>
+                            <li><a class="dropdown-item" href="#">View All Products</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Fabrics
-                    </a>
-                    <div class="dropdown-menu border-0" aria-labelledby="fabrics-link">
-                        <a href="#" class="dropdown-item">Sub category</a>
-                        <a href="#" class="dropdown-item">All Fabrics</a>
-                    </div>
-                </li>
-        
-                <!-- Habedashery -->
-                <li class="nav-item dropdown">
-                    <a href="#" class="font-weight-bold nav-link mr-5" id="habedashery-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Habedashery
-                    </a>
-                    <div class="dropdown-menu border-0" aria-labelledby="habedashery-link">
-                        <a href="#" class="dropdown-item">Sub category</a>
-                        <a href="#" class="dropdown-item">All Habedashery</a>
-                    </div>
-                </li>
-        
-                <!-- Tools -->
-                <li class="nav-item dropdown">
-                    <a href="#" class="font-weight-bold nav-link mr-5" id="tools-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">By the Meter</a></li>
+                            <li><a class="dropdown-item" href="#">Pre-Cuts</a></li>
+                            <li><a class="dropdown-item" href="#">View All Fabrics</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Tools
-                    </a>
-                    <div class="dropdown-menu border-0" aria-labelledby="tools-link">
-                        <a href="#" class="dropdown-item">Sub category</a>
-                        <a href="#" class="dropdown-item">All Tools</a>
-                    </div>
-                </li>
-
-                <!-- Pattens -->
-                <li class="nav-item dropdown">
-                    <a href="#" class="font-weight-bold nav-link mr-5" id="patterns-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Scissors</a></li>
+                            <li><a class="dropdown-item" href="#">Rotary Cutters</a></li>
+                            <li><a class="dropdown-item" href="#">Cutting Mats</a></li>
+                            <li><a class="dropdown-item" href="#">Needles</a></li>
+                            <li><a class="dropdown-item" href="#">Fabric Markers</a></li>
+                            <li><a class="dropdown-item" href="#">Pins</a></li>
+                            <li><a class="dropdown-item" href="#">View All Tools</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Habedashery
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Threads</a></li>
+                            <li><a class="dropdown-item" href="#">Bias Binding</a></li>
+                            <li><a class="dropdown-item" href="#">Buttons</a></li>
+                            <li><a class="dropdown-item" href="#">Ribbons</a></li>
+                            <li><a class="dropdown-item" href="#">Zips</a></li>
+                            <li><a class="dropdown-item" href="#">View All Habedashery</a></li>
+                        </ul>
+                    </li>
+                
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Patterns
-                    </a>
-                    <div class="dropdown-menu border-0" aria-labelledby="patterns-link">
-                        <a href="#" class="dropdown-item">Sub category</a>
-                        <a href="#" class="dropdown-item">All Patterns</a>
-                    </div>
-                </li>
-        
-                <!-- Special Offers -->
-                <li class="nav-item dropdown">
-                    <a href="#" class="font-weight-bold nav-link" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Books</a></li>
+                            <li><a class="dropdown-item" href="#">Paper Patterns</a></li>
+                            <li><a class="dropdown-item" href="#">View All Patterns</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Special Offers
-                    </a>
-                    <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                        <a href="#" class="dropdown-item">New Arrivals</a>
-                        <a href="#" class="dropdown-item">Deals</a>
-                        <a href="#" class="dropdown-item">Clearance</a>
-                        <a href="#" class="dropdown-item">All Specials</a>
-                    </div>
-                </li>
-        
-            </ul>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">New In</a></li>
+                            <li><a class="dropdown-item" href="#">Deals</a></li>
+                            <li><a class="dropdown-item" href="#">Clearance</a></li>
+                            <li><a class="dropdown-item" href="#">View All Specials</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
         </div>
-    </nav>
+    </nav>        
 </div>
