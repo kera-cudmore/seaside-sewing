@@ -20,6 +20,7 @@
     --red: #A82114;
 }
 
+
 /* look into how to get the svg to be full width and scalable for devices */
 /* svg {
     width: 100vw;
@@ -31,6 +32,7 @@
 
 h1, h2 {
     font-family: var(--header-text);
+    padding-bottom: 2rem;
 }
 
 h3, h4, h5, h6, p, a, input {
@@ -46,22 +48,27 @@ h1 {
 
 /*----- Header -----*/
 
-#site-name {
+.site-name {
     background-color: var(--medium-blue) !important;
     padding-bottom: 2rem;
 }
-#account-nav {
+.account-nav {
     background-color: var(--medium-blue) !important;
     color: var(--white);
 }
 
-#delivery-banner {
+.delivery-banner {
     background-color: var(--red);
     color: var(--white);
 }
+
 .categories-nav {
     background-color: var(--medium-blue) !important;
     padding-bottom: 1rem;
+}
+
+.nav-link {
+    color: var(--white) !important;
 }
 
 /*----- Footer -----*/
@@ -71,7 +78,7 @@ h1 {
 }
 
 .content-container {
-    padding-top: 5rem;
+    padding:5rem 0;
 }
 
 
