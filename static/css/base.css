@@ -1,12 +1,12 @@
 /*----- GOOGLE FONTS IMPORT -----*/
-@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@200;300;400;900&family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Overpass:wght@200;300;400;900&display=swap');
 
 
 /*----- ROOT VARIABLES -----*/
 
 :root {
     /*----- Typography -----*/
-    --header-text: 'Parisienne', cursive;
+    --header-text: 'Dancing Script', cursive;
     --content-text: 'Overpass', sans-serif;
     
     /*----- Colours -----*/
@@ -45,6 +45,9 @@ h1 {
     font-size: 3rem;
 }
 
+h2 {
+    font-size: 3rem;
+}
 
 /*----- Header -----*/
 
@@ -86,8 +89,12 @@ h1 {
 
 /* Tablets */
 @media only screen and (min-width : 481px) {
-    h1 {
+    h1{
         font-size: 5rem;
+    }
+
+    h2 {
+        font-size: 4rem;
     }
     
     svg {
@@ -101,5 +108,9 @@ h1 {
 @media only screen and (min-width : 769px) {
     h1 {
         font-size: 9rem;
+    }
+
+    h2 {
+        font-size: 7rem;
     }
 }
