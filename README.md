@@ -265,9 +265,15 @@ Wireframes for the project were created using [Balsamiq](https://balsamiq.com/)
 
   ![Delivery Information Page Wireframe](documentation/wireframes/delivery-info.png)
 
-* add review
-* edit review
-* toasts
+* Add review - If a user wants to add a review for a product, they will be redirected to the add review page. This will display the name of the product along with an image they would like to review. They are then given an input field to create a title for their review and a text area for the actual review. Underneath this will be a rating for the product along with a cancel and submit review button.
+
+  ![Add Review Page Wireframe](documentation/wireframes/add-review.png)
+
+* Edit review - should I allow editing of reviews ?
+
+* Toasts - Toasts are used to display messages to the user depending on their actions on the site. They can let users know if an action has been successful, if there has been an error or for displaying a general message. This is also reflected in the colour at the top of the toast. Toasts will also be used to display to a user what they currently have in their bag when they add a new product. Toasts can be dismissed by clicking the X on the toast.
+
+  ![Toasts Wireframe](documentation/wireframes/toasts.png)
 
 ### Surface Plane
 
