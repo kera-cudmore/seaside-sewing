@@ -50,7 +50,7 @@ h2 {
 }
 
 h3 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
 }
 
 /*----- Header -----*/
@@ -107,6 +107,10 @@ h3 {
     h2 {
         font-size: 4rem;
     }
+
+    h3 {
+        font-size: 2.5rem;
+    }
     
     svg {
         width: 100vw;
@@ -123,5 +127,9 @@ h3 {
 
     h2 {
         font-size: 7rem;
+    }
+
+    h3 {
+        font-size: 3rem;
     }
 }
