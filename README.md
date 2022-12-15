@@ -150,6 +150,10 @@ Due to the data being used for the project I have opted to use a relational data
 
 ![Database Schema](documentation/database-schema.png)
 
+After my initial meeting with my mentor, it was advised that I adjust the database schema slightly to normalise it. This basically means not having data in two places - as the data can be called from the first table. I therefore adjusted my user table to include the users full name, phone number and address details and removed this from the user profile. I have done the same with the users information that was duplicated in the order table, as the information can be called from the user table when required. upon reflection, I didn't see the need for sizes for the products and so have removed this column from the products table.
+
+![Database Schema V2](documentation/database-schema-v2.png)
+
 #### **User Journey**
 
 flow of site
