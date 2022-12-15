@@ -33,6 +33,7 @@
 h1, h2 {
     font-family: var(--header-text);
     padding-bottom: 2rem;
+    text-align: center;
 }
 
 h3, h4, h5, h6, p, a, input {
@@ -41,7 +42,6 @@ h3, h4, h5, h6, p, a, input {
 
 h1 {
     color: var(--white);
-    text-align: center;
     font-size: 3rem;
 }
 
@@ -95,6 +95,34 @@ h3 {
     padding:5rem 0;
 }
 
+
+/*----- Buttons -----*/
+
+.btn-outline-blue {
+    background: var(--white);
+    color: var(--dark-blue) !important;
+    border: 1px solid var(--dark-blue);
+}
+
+.btn-outline-blue:hover,
+.btn-outline-blue:active,
+.btn-outline-blue:focus {
+    background-color: var(--dark-blue);
+    color: var(--white) !important;
+}
+
+.btn-outline-red {
+    background: var(--white);
+    color: var(--red) !important;
+    border: 1px solid var(--red);
+}
+
+.btn-outline-red:hover,
+.btn-outline-red:active,
+.btn-outline-red:focus {
+    background-color: var(--red);
+    color: var(--white) !important;
+}
 
 /*----- MEDIA QUERIES -----*/
 
