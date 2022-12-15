@@ -102,8 +102,10 @@ AUTHENTICATION_BACKENDS = [
 
 SITE_ID = 1
 
+# Allows us to see emails in terminal in development
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
+# Email settings for deployed account
 ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
