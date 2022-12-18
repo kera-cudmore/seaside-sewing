@@ -64,6 +64,11 @@ h3 {
     color: var(--white);
 }
 
+a.dropdown-toggle {
+    color: white;
+    text-decoration: none;
+}
+
 .delivery-banner {
     background-color: var(--red);
     color: var(--white);
