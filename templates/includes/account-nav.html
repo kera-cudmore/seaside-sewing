@@ -1,27 +1,61 @@
-<div class="row account-nav px-5 justify-content-end">
-    <div class="col-12 col-md-8 ">
+<nav class="row navbar account-nav px-5">
+
+    <div class="col-12 col-lg-9  my-auto py-1 py-lg-0">
         <!-- search bar -->
-        <div class="input-group mb-4">
-            <input type="text" class="form-control" placeholder="Search" aria-label="search" aria-describedby="search-button">
-            <button class="btn" type="button" id="search-button">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
-        </div>
+        <form class="d-flex" role="search" action="" method="GET">
+            <div class="input-group mb-3">
+                <input type="search" class="form-control" name="query" placeholder="Search" aria-label="Search" aria-describedby="search-button">
+                <button class="btn btn-outline-blue" type="submit" id="search-button">
+                    <span><i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+                </button>
+            </div>
+        </form>
     </div>
 
-    <div class=" col-1 d-inline text-center">
-        <i class="fa-regular fa-user"></i>
-        <p class="d-none d-md-block">Account</p>
-    </div>
+    <div class=" col-4 col-lg-2 my-auto d-flex">
+        <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-regular fa-user"></i>
+                    <p>Account</p>
+                </a>
+                <ul class="dropdown-menu">
+                    <!-- Display if user logged in is super user -->
+                    <li><a class="dropdown-item" href="#">Product Management</a></li>
+                    <!-- Display these if the user is loggin in-->
+                    <li><a class="dropdown-item" href="#">My Profile</a></li>
+                    <li><a class="dropdown-item" href="{% url 'account_logout' %}">Logout</a></li>
+                    <!-- Display these if user not logged in-->
+                    <li><a class="dropdown-item" href="{% url 'account_login' %}">Login</a></li>
+                    <li><a class="dropdown-item" href="{% url 'account_signup' %}">Register</a></li>
+                </ul>
+            </li>
+        </ul>
 
-    <div class="col-1 d-inline text-center">
-        <i class="fa-regular fa-heart"></i>
-        <p class="d-none d-md-block">Wishlist</p>
-    </div>
 
-    <div class="col-1 d-inline text-center">
-        <i class="fa-solid fa-basket-shopping"></i>
-        <p class="d-none d-md-block">Bag</p>
-    </div>
+    <div class="col-4 col-lg-2 my-auto d-flex">
+        <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+                <!-- view wishlist for href -->
+                <a class="nav-link dropdown-toggle text-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-regular fa-heart"></i>
+                <p>Wishlist</p>
+                </a>
+            </li>
+        </ul>
+        
 
-</div>
+    <div class="col-4 col-lg-2 my-auto d-flex">
+        <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+                <!-- view bag for href -->
+                <a class="nav-link dropdown-toggle text-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-solid fa-basket-shopping"></i>
+            <p>Bag</p>
+                </a>
+            </li>
+        </ul>
+
+
+</nav>
