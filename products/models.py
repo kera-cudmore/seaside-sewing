@@ -15,7 +15,7 @@ class Category(models.Model):
         null=True,
     )
 
-    def __Str__(self):
+    def __str__(self):
         return self.name
 
     def get_friendly_name(self):
