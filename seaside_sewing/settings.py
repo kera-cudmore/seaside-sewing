@@ -49,7 +49,7 @@ INSTALLED_APPS = [
     'bag',
     'checkout',
     'products',
-    
+    'profiles',
 ]
 
 
