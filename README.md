@@ -367,9 +367,11 @@ sqlite3 for development.
 
 [Django Allauth](https://django-allauth.readthedocs.io/en/latest/) - Version 0.41.0 - Used for authentication, registration & account management.
 
-[jQuery](https://jquery.com/)
+[jQuery](https://jquery.com/) - Version 3.6.2 - A JavaScript Framework
 
 [Font Awesome](https://fontawesome.com/) - Version 6.2.1 - Used for the iconography of the site, this was added using a CDN link.
+
+[django-countries](https://pypi.org/project/django-countries/7.2.1/) - Version 7.2.1 - This is the latest stable version that is compatible with GitPod.
 
 ### Programs Used
 
