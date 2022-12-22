@@ -101,6 +101,10 @@ a.dropdown-toggle {
 }
 
 
+hr {
+    border-top: 3px dashed;
+}
+
 /*----- Buttons -----*/
 
 .btn-outline-blue {
