@@ -38,23 +38,23 @@
             <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                 <div class="card h-100 border-0">
                     {% if product.image %}
-                        <a href="#">
+                        <a href="{% url 'product_detail' product.id %}">
                             <img src="{{ product.image.url }}" alt="{{ product.name }}" class="card-img-top img-fluid">
                         </a>
                     {% else %}
-                        <a href="#">
+                        <a href="{% url 'product_detail' product.id %}">
                             <img src="{{ MEDIA_URL }}noimage.webp" alt="{{ product.name }}" class="card-img-top img-fluid">
                         </a>
                     {% endif %}
                     <div class="card-body pb-0">
-                        <p class="mb-0">{{ product.name }}</p>
+                        <p class="mb-2">{{ product.name }}</p>
                     </div>
                     <div class="card-footer bg-white pt-0 border-0 text-left">
                         <div class="row">
                             <div class="col">
-                                <p class="lead mb-0 text-left font-weight-bold">${{ product.price }}</p>
+                                <p class="lead text-left mb-1">£{{ product.price }}</p>
                                 {% if product.category %}
-                                <p class="small mt-1 mb-0">
+                                <p class="small mt-1 mb-2">
                                     <a href="{% url 'products' %}?category={{ product.category.name }}" class="text-muted">
                                         <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
                                     </a>
