@@ -17,9 +17,9 @@
                         All Products
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">By Price</a></li>
-                            <li><a class="dropdown-item" href="#">By Rating</a></li>
-                            <li><a class="dropdown-item" href="#">By Category</a></li>
+                            <li><a class="dropdown-item" href="{% url 'products' %}?sort=price&direction=asc">By Price</a></li>
+                            <li><a class="dropdown-item" href="{% url 'products' %}?sort=rating&direction=desc">By Rating</a></li>
+                            <li><a class="dropdown-item" href="{% url 'products' %}?sort=category&direction=asc">By Category</a></li>
                             <li><a class="dropdown-item" href="{% url 'products' %}">View All Products</a></li>
                         </ul>
                     </li>
