@@ -21,14 +21,16 @@
                     <p>Account</p>
                 </a>
                 <ul class="dropdown-menu">
-                    {% if request.user.is_superuser %}
-                        <li><a class="dropdown-item" href="#">Product Management</a></li>
+                    {% if request.user.is_authenticated %}
+                        {% if request.user.is_superuser %}
+                            <li><a class="dropdown-item" href="#">Product Management</a></li>
+                        {% endif %}
+                        <li><a class="dropdown-item" href="#">My Profile</a></li>
+                        <li><a class="dropdown-item" href="{% url 'account_logout' %}">Logout</a></li>
+                    {% else %}
+                        <li><a class="dropdown-item" href="{% url 'account_login' %}">Login</a></li>
+                        <li><a class="dropdown-item" href="{% url 'account_signup' %}">Register</a></li>
                     {% endif %}
-                    <li><a class="dropdown-item" href="#">My Profile</a></li>
-                    <li><a class="dropdown-item" href="{% url 'account_logout' %}">Logout</a></li>
-                    <!-- Display these if user not logged in-->
-                    <li><a class="dropdown-item" href="{% url 'account_login' %}">Login</a></li>
-                    <li><a class="dropdown-item" href="{% url 'account_signup' %}">Register</a></li>
                 </ul>
             </li>
         </ul>
