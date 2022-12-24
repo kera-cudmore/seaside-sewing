@@ -16,7 +16,7 @@
     --light-blue: #95DDED;
     --medium-blue: #38A3DC;
     --dark-blue: #2072B4;
-    --green: #819938;
+    --green: #456f34;
     --red: #A82114;
 }
 
@@ -53,19 +53,20 @@ h3 {
     font-size: 1.5rem;
 }
 
+
 /*----- Header -----*/
 
 .site-name {
-    background-color: var(--medium-blue) !important;
+    background-color: var(--medium-blue);
     padding-bottom: 2rem;
 }
 .account-nav {
-    background-color: var(--medium-blue) !important;
+    background-color: var(--medium-blue);
     color: var(--white);
 }
 
 a.dropdown-toggle {
-    color: white;
+    color: var(--white);
     text-decoration: none;
 }
 
@@ -75,12 +76,12 @@ a.dropdown-toggle {
 }
 
 .categories-nav {
-    background-color: var(--medium-blue) !important;
+    background-color: var(--medium-blue);
     padding-bottom: 1rem;
 }
 
 .nav-link {
-    color: var(--white) !important;
+    color: var(--white);
 }
 
 /*----- Footer -----*/
@@ -109,7 +110,7 @@ hr {
 
 .btn-outline-blue {
     background: var(--white);
-    color: var(--dark-blue) !important;
+    color: var(--dark-blue);
     border: 1px solid var(--dark-blue);
 }
 
@@ -117,12 +118,12 @@ hr {
 .btn-outline-blue:active,
 .btn-outline-blue:focus {
     background-color: var(--dark-blue);
-    color: var(--white) !important;
+    color: var(--white);
 }
 
 .btn-outline-red {
     background: var(--white);
-    color: var(--red) !important;
+    color: var(--red);
     border: 1px solid var(--red);
 }
 
@@ -130,8 +131,22 @@ hr {
 .btn-outline-red:active,
 .btn-outline-red:focus {
     background-color: var(--red);
-    color: var(--white) !important;
+    color: var(--white);
 }
+
+.btn-outline-green {
+    background: var(--white);
+    color: var(--green);
+    border: 1px solid var(--green);
+}
+
+.btn-outline-green:hover,
+.btn-outline-green:active,
+.btn-outline-green:focus {
+    background-color: var(--green);
+    color: var(--white);
+}
+
 
 /*----- MEDIA QUERIES -----*/
 
