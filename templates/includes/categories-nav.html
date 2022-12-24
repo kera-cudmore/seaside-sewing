@@ -29,9 +29,9 @@
                         Fabrics
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">By the Meter</a></li>
-                            <li><a class="dropdown-item" href="#">Pre-Cuts</a></li>
-                            <li><a class="dropdown-item" href="#">View All Fabrics</a></li>
+                            <li><a class="dropdown-item" href="{% url 'products' %}?category=by_the_metre">By the Meter</a></li>
+                            <li><a class="dropdown-item" href="{% url 'products' %}?category=pre_cuts">Pre-Cuts</a></li>
+                            <li><a class="dropdown-item" href="{% url 'products' %}?category=by_the_metre,pre_cuts">View All Fabrics</a></li>
                         </ul>
                     </li>
                     
@@ -40,13 +40,13 @@
                         Tools
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Scissors</a></li>
-                            <li><a class="dropdown-item" href="#">Rotary Cutters</a></li>
-                            <li><a class="dropdown-item" href="#">Cutting Mats</a></li>
-                            <li><a class="dropdown-item" href="#">Needles</a></li>
-                            <li><a class="dropdown-item" href="#">Fabric Markers</a></li>
-                            <li><a class="dropdown-item" href="#">Pins</a></li>
-                            <li><a class="dropdown-item" href="#">View All Tools</a></li>
+                            <li><a class="dropdown-item" href="{% url 'products' %}?category=scissors">Scissors</a></li>
+                            <li><a class="dropdown-item" href="{% url 'products' %}?category=rotary_cutters">Rotary Cutters</a></li>
+                            <li><a class="dropdown-item" href="{% url 'products' %}?category=cutting_mats">Cutting Mats</a></li>
+                            <li><a class="dropdown-item" href="{% url 'products' %}?category=needles">Needles</a></li>
+                            <li><a class="dropdown-item" href="{% url 'products' %}?category=fabric_markers">Fabric Markers</a></li>
+                            <li><a class="dropdown-item" href="{% url 'products' %}?category=pins">Pins</a></li>
+                            <li><a class="dropdown-item" href="{% url 'products' %}?category=scissors,rotary_cutters,cutting_mats,needles.fabric_markers,pins">View All Tools</a></li>
                         </ul>
                     </li>
                     
@@ -55,12 +55,12 @@
                         Habedashery
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Threads</a></li>
-                            <li><a class="dropdown-item" href="#">Bias Binding</a></li>
-                            <li><a class="dropdown-item" href="#">Buttons</a></li>
-                            <li><a class="dropdown-item" href="#">Ribbons</a></li>
-                            <li><a class="dropdown-item" href="#">Zips</a></li>
-                            <li><a class="dropdown-item" href="#">View All Habedashery</a></li>
+                            <li><a class="dropdown-item" href="{% url 'products' %}?category=threads">Threads</a></li>
+                            <li><a class="dropdown-item" href="{% url 'products' %}?category=bias_binding">Bias Binding</a></li>
+                            <li><a class="dropdown-item" href="{% url 'products' %}?category=buttons">Buttons</a></li>
+                            <li><a class="dropdown-item" href="{% url 'products' %}?category=ribbons">Ribbons</a></li>
+                            <li><a class="dropdown-item" href="{% url 'products' %}?category=zips">Zips</a></li>
+                            <li><a class="dropdown-item" href="{% url 'products' %}?category=threads,bias_binding,buttons,ribbons,zips">View All Habedashery</a></li>
                         </ul>
                     </li>
                 
