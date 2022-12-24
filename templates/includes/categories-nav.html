@@ -69,9 +69,9 @@
                         Patterns
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Books</a></li>
-                            <li><a class="dropdown-item" href="#">Paper Patterns</a></li>
-                            <li><a class="dropdown-item" href="#">View All Patterns</a></li>
+                            <li><a class="dropdown-item" href="{% url 'products' %}?category=pattern_books">Books</a></li>
+                            <li><a class="dropdown-item" href="{% url 'products' %}?category=individual_patterns">Individual Patterns</a></li>
+                            <li><a class="dropdown-item" href="{% url 'products' %}?category=pattern_books,individual_patterns">View All Patterns</a></li>
                         </ul>
                     </li>
 
@@ -80,10 +80,10 @@
                         Special Offers
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">New In</a></li>
-                            <li><a class="dropdown-item" href="#">Deals</a></li>
-                            <li><a class="dropdown-item" href="#">Clearance</a></li>
-                            <li><a class="dropdown-item" href="#">View All Specials</a></li>
+                            <li><a class="dropdown-item" href="{% url 'products' %}?category=new_in">New In</a></li>
+                            <li><a class="dropdown-item" href="{% url 'products' %}?category=deals">Deals</a></li>
+                            <li><a class="dropdown-item" href="{% url 'products' %}?category=clearance">Clearance</a></li>
+                            <li><a class="dropdown-item" href="{% url 'products' %}?category=new_in,deals,clearance">View All Specials</a></li>
                         </ul>
                     </li>
                 </ul>
