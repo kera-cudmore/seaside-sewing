@@ -26,10 +26,16 @@
 {% block content %}
     <div class="row text-center px-2">
         <h2>Products</h2>
+        <div class="col pb-5">
+            {% for c in current_categories %}
+                <a href="{% url 'products' %}?category={{ c.name }}" class="btn btn-outline-blue mx-1">{{ c.friendly_name }}</a>
+            {% endfor %}
+        </div>
     </div>
 
     <!-- Row to hold the no of products and sorting dropdown -->
     <div class="row">
+        
     </div>
 
     <!-- Products Display Here-->
@@ -54,11 +60,11 @@
                             <div class="col">
                                 <p class="lead text-left mb-1">£{{ product.price }}</p>
                                 {% if product.category %}
-                                <p class="small mt-1 mb-2">
-                                    <a href="{% url 'products' %}?category={{ product.category.name }}" class="text-muted">
-                                        <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
-                                    </a>
-                                </p>
+                                    <p class="small mt-1 mb-2">
+                                        <a href="{% url 'products' %}?category={{ product.category.name }}" class="text-muted">
+                                            <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
+                                        </a>
+                                    </p>
                                 {% endif %}
                         
                                 <!-- ADD PRODUCT RATING HERE IF IT EXISTS-->
