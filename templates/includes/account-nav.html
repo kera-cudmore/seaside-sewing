@@ -2,9 +2,9 @@
 
     <div class="col-12 col-lg-9  my-auto py-1 py-lg-0">
         <!-- search bar -->
-        <form class="d-flex" role="search" action="" method="GET">
+        <form class="d-flex" role="search" action="{% url 'products' %}" method="GET">
             <div class="input-group mb-3">
-                <input type="search" class="form-control" name="query" placeholder="Search" aria-label="Search" aria-describedby="search-button">
+                <input type="search" class="form-control" name="q" placeholder="Search" aria-label="Search" aria-describedby="search-button">
                 <button class="btn btn-outline-blue" type="submit" id="search-button">
                     <span><i class="fa-solid fa-magnifying-glass"></i>
                     </span>
