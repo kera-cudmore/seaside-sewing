@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block extra_title %}{% endblock %}
+{% block extra_title %} - {{ product.name }}{% endblock %}
 
 <!-- Extra meta tags specific to the page to be put here -->
 {% block extra_meta %}
@@ -11,7 +11,7 @@
     <!-- Social media integration, for when people share your content -->
     <!-- Facebook, LinkedIn, Google -->
     <meta property="og:type" content="article" />
-    <meta property="og:title" content="Seaside Sewing - " /> <!-- Same as what's inside <title> tag -->
+    <meta property="og:title" content="Seaside Sewing" /> <!-- Same as what's inside <title> tag -->
     <!-- The title you want displayed when your page is linked to -->
     <meta property="og:description" content="DESCRIPTION OF PAGE CONTENT" /> <!-- Same as what's inside description meta tag -->
     <!-- The description you want displayed when your page is linked to (maximum 300 characters) -->
@@ -20,10 +20,57 @@
     <!-- Be careful when building non-static sites like your MS3 and MS4, this can be a little tricky -->
     <meta property="og:image:alt" content="ALT TEXT FOR IMAGE" /> <!-- Alt text for above image - an accessibility win -->
     <meta property="og:url" content="#" /> <!-- Your page's URL -->
-    <meta property="og:site_name" content="Seaside Sewing - " /> <!-- Same as what's inside <title> tag -->
+    <meta property="og:site_name" content="Seaside Sewing" /> <!-- Same as what's inside <title> tag -->
 {% endblock %}
 
 {% block content %}
 
+<!-- Product details-->
+<div class="row">
 
+    <div class="col-12 col md-6 col-lg-4 offset-lg-2">
+        <div class="image-container my-5">
+            {% if product.image %}
+                    <a href="{{ product.image.url }}" target="_blank">
+                        <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                    </a>
+                {% else %}
+                    <a href="{{ MEDIA_URL }}noimage.png">
+                        <img src="{{ MEDIA_URL }}noimage.webp" alt="{{ product.name }}">
+                    </a>
+                {% endif %}
+        </div>
+    </div>
+
+    <div class="col-12 col md-6 col-lg-4">
+        <div class="product-details-container">
+            <h4>{{ product.name }}</h4>
+            <p class="lead">£{{ product.price }}</p>
+            <!-- Product star rating to go here -->
+            <!-- admin edit/delete buttons -->
+            <p>{{ product.description}}</p>
+
+            <!-- Quantity Selector -->
+            <!-- add to wishlist button -->
+            <!-- Add to cart/back buttons -->
+            <a href="{% url 'products' %}" class="btn btn-outline-red">Back</a>
+            <input type="submit" class="btn btn-outline-blue" value="Add to Bag">
+        </div>
+    </div>
+</div>
+
+<!-- reviews section to go here (new row)-->
+<div class="row">
+    <div class="col">
+        <h4>Reviews</h4>
+    </div>
+</div>
+<!-- add review button (only to be displayed to logged in users)-->
+
+<!-- review title-->
+<!-- Reviewed by -->
+<!-- on date -->
+<!-- review-->
+<!-- star rating given-->
+<!-- each review will have a delete button - for admin only to delete reviews that dont meet requirements eg rude, spam-->
 {% endblock %}
