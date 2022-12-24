@@ -60,12 +60,14 @@
                                     </a>
                                 </p>
                                 {% endif %}
-                                
+                        
+                                <!-- ADD PRODUCT RATING HERE IF IT EXISTS-->
+
                                 {% if request.user.is_superuser %}
-                                    <small class="ml-3">
-                                        <a href="#">Edit</a>
-                                        <a href="#">Delete</a>
-                                    </small>
+                                    <div>
+                                        <a href="#" class="btn btn-outline-green">Edit</a>
+                                        <a href="#" class="btn btn-outline-red">Delete</a>
+                                    </div>
                                 {% endif %}
                             </div>
                         </div>
