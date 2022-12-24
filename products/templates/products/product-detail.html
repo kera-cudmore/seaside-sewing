@@ -46,9 +46,17 @@
         <div class="product-details-container">
             <h4>{{ product.name }}</h4>
             <p class="lead">£{{ product.price }}</p>
+            {% if product.category %}
+                <p class="small mt-1 mb-2">
+                    <a href="{% url 'products' %}?category={{ product.category.name }}" class="text-muted">
+                        <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
+                    </a>
+                </p>
+            {% endif %}
             <!-- Product star rating to go here -->
             <!-- admin edit/delete buttons -->
             <p>{{ product.description}}</p>
+            
 
             <!-- Quantity Selector -->
             <!-- add to wishlist button -->
