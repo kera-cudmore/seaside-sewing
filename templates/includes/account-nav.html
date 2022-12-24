@@ -13,7 +13,7 @@
         </form>
     </div>
 
-    <div class=" col-4 col-lg-2 my-auto d-flex">
+    <div class=" col-4 col-lg-2 d-flex">
         <ul class="navbar-nav">
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle text-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -21,9 +21,9 @@
                     <p>Account</p>
                 </a>
                 <ul class="dropdown-menu">
-                    <!-- Display if user logged in is super user -->
-                    <li><a class="dropdown-item" href="#">Product Management</a></li>
-                    <!-- Display these if the user is loggin in-->
+                    {% if request.user.is_superuser %}
+                        <li><a class="dropdown-item" href="#">Product Management</a></li>
+                    {% endif %}
                     <li><a class="dropdown-item" href="#">My Profile</a></li>
                     <li><a class="dropdown-item" href="{% url 'account_logout' %}">Logout</a></li>
                     <!-- Display these if user not logged in-->
@@ -34,7 +34,7 @@
         </ul>
 
 
-    <div class="col-4 col-lg-2 my-auto d-flex">
+    <div class="col-4 col-lg-2 d-flex">
         <ul class="navbar-nav">
             <li class="nav-item dropdown">
                 <!-- view wishlist for href -->
@@ -46,7 +46,7 @@
         </ul>
         
 
-    <div class="col-4 col-lg-2 my-auto d-flex">
+    <div class="col-4 col-lg-2 d-flex">
         <ul class="navbar-nav">
             <li class="nav-item dropdown">
                 <!-- view bag for href -->
