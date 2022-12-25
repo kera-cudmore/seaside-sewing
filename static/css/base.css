@@ -98,12 +98,11 @@ a.dropdown-toggle {
     padding-top: 3rem;
 }
 
-/*----- -----*/
+/*----- Main Page -----*/
 
 .content-container {
     padding:5rem 0;
 }
-
 
 hr {
     border-top: 3px dashed;
@@ -150,6 +149,19 @@ hr {
     color: var(--white);
 }
 
+/* Back to top btn */
+/* Size of btn is over min 42px for btns reccomended on mobile screens  */
+.back-to-top-btn {
+    position: fixed;
+    height: 45px;
+    width: 45px;
+    bottom: 25px;
+    right: 25px;
+}
+
+.back-to-top {
+    cursor: pointer;
+}
 
 /*----- MEDIA QUERIES -----*/
 
