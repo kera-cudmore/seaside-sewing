@@ -32,7 +32,6 @@
 
 h1, h3 {
     font-family: var(--header-text);
-    padding-bottom: 2rem;
     text-align: center;
 }
 
@@ -51,6 +50,7 @@ h2 {
 
 h3 {
     font-size: 3rem;
+    padding-bottom: 3rem;
 }
 
 h4 {
@@ -62,7 +62,6 @@ h4 {
 
 .site-name {
     background-color: var(--medium-blue);
-    padding-bottom: 2rem;
 }
 .account-nav {
     background-color: var(--medium-blue);
@@ -160,9 +159,9 @@ hr {
         font-size: 5rem;
     }
 
-    /* h2 {
+    h3 {
         font-size: 4rem;
-    } */
+    }
 
     h4 {
         font-size: 2rem;
