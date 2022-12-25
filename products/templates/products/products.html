@@ -25,7 +25,7 @@
 
 {% block content %}
     <div class="row text-center px-2">
-        <h2>Products</h2>
+        <h3>Products</h3>
         <div class="col pb-5">
             {% for c in current_categories %}
                 <a href="{% url 'products' %}?category={{ c.name }}" class="btn btn-outline-blue mx-1">{{ c.friendly_name }}</a>

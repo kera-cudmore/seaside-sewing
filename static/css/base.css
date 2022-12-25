@@ -30,13 +30,13 @@
 
 /*----- Headings & Text -----*/
 
-h1, h2 {
+h1, h3 {
     font-family: var(--header-text);
     padding-bottom: 2rem;
     text-align: center;
 }
 
-h3, h4, h5, h6, p, a, input {
+h2, h4, h5, h6, p, a, input {
     font-family: var(--content-text);
 }
 
@@ -46,10 +46,14 @@ h1 {
 }
 
 h2 {
-    font-size: 3rem;
+    font-size: 1.5rem;
 }
 
 h3 {
+    font-size: 3rem;
+}
+
+h4 {
     font-size: 1.5rem;
 }
 
@@ -156,12 +160,12 @@ hr {
         font-size: 5rem;
     }
 
-    h2 {
+    /* h2 {
         font-size: 4rem;
-    }
+    } */
 
-    h3 {
-        font-size: 2.5rem;
+    h4 {
+        font-size: 2rem;
     }
     
     svg {
@@ -177,11 +181,9 @@ hr {
         font-size: 9rem;
     }
 
-    h2 {
+    h3 {
         font-size: 7rem;
     }
 
-    h3 {
-        font-size: 3rem;
-    }
+    
 }
