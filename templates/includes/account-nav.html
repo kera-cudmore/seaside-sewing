@@ -13,10 +13,10 @@
         </form>
     </div>
 
-    <div class=" col-4 col-lg-2 d-flex">
+    <div class=" col-4 col-lg-2 d-flex px-4 text-center">
         <ul class="navbar-nav">
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     <i class="fa-regular fa-user"></i>
                     <p>Account</p>
                 </a>
@@ -36,11 +36,11 @@
         </ul>
 
 
-    <div class="col-4 col-lg-2 d-flex">
+    <div class="col-4 col-lg-2 d-flex px-4 text-center">
         <ul class="navbar-nav">
-            <li class="nav-item dropdown">
+            <li class="nav-item">
                 <!-- view wishlist for href -->
-                <a class="nav-link dropdown-toggle text-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link" href="#" role="button">
                     <i class="fa-regular fa-heart"></i>
                 <p>Wishlist</p>
                 </a>
@@ -48,13 +48,19 @@
         </ul>
         
 
-    <div class="col-4 col-lg-2 d-flex">
+    <div class="col-4 col-lg-2 d-flex px-4 text-center">
         <ul class="navbar-nav">
-            <li class="nav-item dropdown">
-                <!-- view bag for href -->
-                <a class="nav-link dropdown-toggle text-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'view_bag' %}" role="button">
                     <i class="fa-solid fa-basket-shopping"></i>
             <p>Bag</p>
+            <p>
+                {% if grand_total %}
+                    <strong>£{{ grand_total|floatformat:2 }}</strong>
+                {% else %}
+                    <strong>£0.00</strong>
+                {% endif %}
+            </p>
                 </a>
             </li>
         </ul>
