@@ -23,25 +23,57 @@
 
                     {% for item in bag_items %}
                         <tr>
-                            <!-- item image column -->
                             <td class="p-3 w-25">
-                                
+                                <img src="{{ item.product.image.url }}" alt="{{ item.product.name }}" class="img-fluid">
                             </td>
-                            <!-- item name, size & sku column -->
                             <td class="py-3">
-
+                                <p class="my-0">{{ item.product.name }}</p>
+                                <p class="my-0 text-muted">{{ item.product.sku }}</p>
                             </td>
-                            <!-- item price column -->
                             <td class="py-3">
                                 <p class="my-0">£{{ item.product.price }}</p>
                             </td>
                             <!-- item quantity Column -->
                             <td class="py-3 w-25">
+                                <form action="" method="POST" class="form update-form">
+                                    {% csrf_token %}
+                                    <div class="form-group">
+                                        <div class="input-group input-group-{{ item.item_id }}">
+                                            <!-- minus button -->
+                                            <div class="input-group-prepend">
+                                                <button class="decrement-qty btn btn-sm btn-outline-red rounded-0 decrement-qty_{{ item.item_id }}" 
+                                                data-item_id="{{ item.item_id }}">
+                                                    <i class="fa-solid fa-minus fa-sm"></i>
+                                                </button>
+                                            </div>
+                                            <!-- quantity value -->
+                                            <input class="form-control form-control-sm qty_input id_qty_{{ item.item_id }}" type="number" 
+                                                name="quantity" value="{{ item.quantity }}" min="1" max="99" data-item_id="{{ item.item_id }}"> 
+                                            <!-- plus button -->
+                                            <div class="input-group-append">
+                                                <button class="increment-qty btn btn-sm btn-outline-green rounded-0 increment-qty_{{ item.item_id }}" 
+                                                data-item_id="{{ item.item_id }}">
+                                                    <i class="fa-solid fa-plus fa-sm"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                                <a class="delete-link" id="remove_{{ item.item_id }}">
+                                    <small>Remove from Bag</small>
+                                </a>
+                                <a class="edit-link  float-end">
+                                    <small>Update Quantity</small>
+                                </a>
+                                
+
+
 
                             </td>
                             <!-- Subtotal column -->
                             <td class="py-3">
                                 <p class="my-0">£</p>
+                                
                             </td>
                         </tr>
                     {% endfor %}
@@ -72,4 +104,9 @@
         </div>
     </div>
 
+{% endblock %}
+
+{% block postloadjs %}
+    {{ super }}
+    {% include 'products/includes/quantity_input_script.html' %}
 {% endblock %}
