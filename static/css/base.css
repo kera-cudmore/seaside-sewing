@@ -57,6 +57,28 @@ h4 {
     font-size: 1.5rem;
 }
 
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.edit-link  {
+    color: var(--green);
+}
+
+.edit-link:hover  {
+    color: var(--green);
+    font-weight: 900;
+}
+
+.delete-link    {
+    color: var(--red);
+}
+
+.delete-link:hover    {
+    color: var(--red);
+    font-weight: 900;
+}
 
 /*----- Header -----*/
 
