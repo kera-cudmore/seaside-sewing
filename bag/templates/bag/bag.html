@@ -2,5 +2,26 @@
 {% load static %}
 
 {% block content %}
+    <div class="row text-center px-2">
+        <h3>Your Shopping Bag</h3>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            {% if bag_items %}
+                
+
+                <!-- Empty Bag -->
+            {% else %}
+                <p class="lead mb-5">Your bag is currently empty. why not have a look at our latest special offers?</p>
+                <a href="{% url 'products' %}" class="btn btn-outline-blue">
+                    <i class="fa-solid fa-chevron-left"></i> Back to Shop
+                </a>
+                <a href="{% url 'products' %}?category=new_in,deals,clearance" class="btn btn-outline-blue">
+                    <i class="fa-solid fa-certificate"></i> Special Offers
+                </a>
+            {% endif %}
+        </div>
+    </div>
 
 {% endblock %}
