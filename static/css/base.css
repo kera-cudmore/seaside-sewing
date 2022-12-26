@@ -171,8 +171,6 @@ hr {
     color: var(--white);
 }
 
-/* Back to top btn */
-/* Size of btn is over min 42px for btns reccomended on mobile screens  */
 .back-to-top-btn {
     position: fixed;
     height: 45px;
@@ -181,9 +179,15 @@ hr {
     right: 25px;
 }
 
-.back-to-top {
+
+/*-----  CURSOR -----*/
+
+.back-to-top,
+.update-item,
+.remove-item {
     cursor: pointer;
 }
+
 
 /*----- MEDIA QUERIES -----*/
 
@@ -217,6 +221,4 @@ hr {
     h3 {
         font-size: 7rem;
     }
-
-    
 }
