@@ -9,7 +9,55 @@
     <div class="row">
         <div class="col">
             {% if bag_items %}
-                
+            <div class="table-responsive rounded d-none d-md-block">
+                <table class="table table-sm table-borderless">
+                    <thead>
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col">Product Details</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Qty</th>
+                            <th scope="col">Subtotal</th>
+                        </tr>
+                    </thead>
+
+                    {% for item in bag_items %}
+                        <tr>
+                            <!-- item image column -->
+                            <td class="p-3 w-25">
+                                
+                            </td>
+                            <!-- item name, size & sku column -->
+                            <td class="py-3">
+
+                            </td>
+                            <!-- item price column -->
+                            <td class="py-3">
+                                <p class="my-0">£{{ item.product.price }}</p>
+                            </td>
+                            <!-- item quantity Column -->
+                            <td class="py-3 w-25">
+
+                            </td>
+                            <!-- Subtotal column -->
+                            <td class="py-3">
+                                <p class="my-0">£</p>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                    
+                    <tr>
+                        <td colspan="5" class="pt-5 text-right">
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5" class="text-right">
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
 
                 <!-- Empty Bag -->
             {% else %}
