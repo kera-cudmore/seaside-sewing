@@ -59,10 +59,10 @@
                                         </div>
                                     </div>
                                 </form>
-                                <a class="delete-link" id="remove_{{ item.item_id }}">
+                                <a class="delete-link remove-item" id="remove_{{ item.item_id }}">
                                     <small>Remove from Bag</small>
                                 </a>
-                                <a class="edit-link  float-end">
+                                <a class="edit-link update-item float-end">
                                     <small>Update Quantity</small>
                                 </a>
                                 
@@ -109,4 +109,26 @@
 {% block postloadjs %}
     {{ super }}
     {% include 'products/includes/quantity_input_script.html' %}
+
+    <script>
+        // Update quantity on click
+        $('.update-item').click(function(e) {
+            var form = $(this).prev('.update-form');
+            form.submit();
+        })
+    
+        // Remove item and reload on click
+        $('.remove-item').click(function(e) {
+            var csrfToken = "{{ csrf_token }}";
+            var itemId = $(this).attr('id').split('remove_')[1];
+            var url = `/bag/remove/${itemId}/`;
+            var data = {'csrfmiddlewaretoken': csrfToken};
+    
+            $.post(url, data)
+            .done(function() {
+                location.reload();
+            });
+        })
+    
+    </script>
 {% endblock %}
