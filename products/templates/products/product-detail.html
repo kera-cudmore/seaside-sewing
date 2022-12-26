@@ -24,61 +24,104 @@
 {% endblock %}
 
 {% block content %}
-
-<!-- Product details-->
-<div class="row">
-
-    <div class="col-12 col md-6 col-lg-4 offset-lg-2">
-        <div class="image-container my-5">
-            {% if product.image %}
-                    <a href="{{ product.image.url }}" target="_blank">
-                        <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
-                    </a>
-                {% else %}
-                    <a href="{{ MEDIA_URL }}noimage.png">
-                        <img src="{{ MEDIA_URL }}noimage.webp" alt="{{ product.name }}">
-                    </a>
-                {% endif %}
-        </div>
-    </div>
-
-    <div class="col-12 col md-6 col-lg-4">
-        <div class="product-details-container">
-            <h4>{{ product.name }}</h4>
-            <p class="lead">£{{ product.price }}</p>
-            {% if product.category %}
-                <p class="small mt-1 mb-2">
-                    <a href="{% url 'products' %}?category={{ product.category.name }}" class="text-muted">
-                        <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
-                    </a>
-                </p>
+    <div class="row">
+        <div class="col-6 col md-6 col-lg-4 offset-lg-2">
+            <div class="image-container my-5">
+                {% if product.image %}
+                        <a href="{{ product.image.url }}" target="_blank">
+                            <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                        </a>
+                    {% else %}
+                        <a href="{{ MEDIA_URL }}noimage.png">
+                            <img src="{{ MEDIA_URL }}noimage.webp" alt="{{ product.name }}">
+                        </a>
+                    {% endif %}
+                    <!-- admin edit/delete buttons -->
+                {% if request.user.is_superuser %}
+                <div class="pt-3">
+                    <a href="#" class="btn btn-outline-green btn-sm">Edit</a>
+                    <a href="#" class="btn btn-outline-red btn-sm">Delete</a>
+                </div>
             {% endif %}
-            <!-- Product star rating to go here -->
-            <!-- admin edit/delete buttons -->
-            <p>{{ product.description}}</p>
-            
+            </div>
+        </div>
 
-            <!-- Quantity Selector -->
-            <!-- add to wishlist button -->
-            <!-- Add to cart/back buttons -->
-            <a href="{% url 'products' %}" class="btn btn-outline-red">Back</a>
-            <input type="submit" class="btn btn-outline-blue" value="Add to Bag">
+        <div class="col-12 col md-6 col-lg-4 offset-lg-2">
+            <div class="product-details-container">
+                <h4>{{ product.name }}</h4>
+                <p class="lead">£{{ product.price }}</p>
+                
+                {% if product.category %}
+                    <p class="small mt-2 mb-2">
+                        <a href="{% url 'products' %}?category={{ product.category.name }}" class="text-muted">
+                            <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
+                        </a>
+                    </p>
+                {% endif %}
+
+                <!-- Product star rating to go here -->
+                <p>Rating will go here with star icons</p>
+
+                <p>{{ product.description}}</p>
+                
+                <form action="" method="POST" class="form">
+                    {% csrf_token %}
+                    <div class="form-row">
+                        <div class="col-12">
+                            <p class="mt-3"><strong>Quantity:</strong></p>
+                            <div class="form-group w-50">
+                                <div class="input-group input-group-{{ product.id }}">
+                                    <!-- minus button -->
+                                    <div class="input-group-prepend">
+                                        <button class="decrement-qty btn btn-outline-red rounded-0 decrement-qty_{{ product.id }}" data-item_id="{{ product.id }}">
+                                            <i class="fa-solid fa-minus"></i>
+                                        </button>
+                                    </div>
+                                    <!-- quantity value -->
+                                    <input class="form-control qty_input id_qty_{{ product.id }}" type="number" 
+                                        name="quantity" value="1" min="1" max="99" data-item_id="{{ product.id }}"> 
+                                    <!-- plus button -->
+                                    <div class="input-group-append">
+                                        <button class="increment-qty btn btn-outline-green rounded-0 increment-qty_{{ product.id }}" data-item_id="{{ product.id }}">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- add to wishlist button -->
+                            <p>Wishlist button to go to right of quantity</p>
+
+                        <!-- submit button for form and keep shopping button -->
+                        <div class="col{% if s %}-12 mt-2{% endif %}">
+                            <input type="submit" value="Add to Bag" class="btn btn-outline-blue mt-2">
+                            <a href="{% url 'products' %}" class="btn btn-outline-red mt-2">Back</a>
+                        </div>
+                    
+                        <!-- submits field called redirect_url - this allows us to redirect the user back to the previous page they were on -->
+                        <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                                
+                    </div>
+                </form>
+
+            </div>
         </div>
     </div>
-</div>
 
-<!-- reviews section to go here (new row)-->
-<div class="row">
-    <div class="col">
-        <h5>Reviews</h5>
+    <!-- reviews section to go here (new row)-->
+    <div class="row">
+        <div class="col">
+            <h5>Reviews</h5>
+        </div>
     </div>
-</div>
-<!-- add review button (only to be displayed to logged in users)-->
+    <!-- add review button (only to be displayed to logged in users)-->
 
-<!-- review title-->
-<!-- Reviewed by -->
-<!-- on date -->
-<!-- review-->
-<!-- star rating given-->
-<!-- each review will have a delete button - for admin only to delete reviews that dont meet requirements eg rude, spam-->
+    <!-- review title-->
+    <!-- Reviewed by -->
+    <!-- on date -->
+    <!-- review-->
+    <!-- star rating given-->
+    <!-- each review will have a delete button - for admin only to delete reviews that dont meet requirements eg rude, spam-->
+
 {% endblock %}
