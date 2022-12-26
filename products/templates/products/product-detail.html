@@ -64,7 +64,7 @@
 
                 <p>{{ product.description}}</p>
                 
-                <form action="" method="POST" class="form">
+                <form action="{% url 'add_to_bag' product.id %}" method="POST" class="form">
                     {% csrf_token %}
                     <div class="form-row">
                         <div class="col-12">
