@@ -1,4 +1,6 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, get_object_or_404, redirect
+from django.contrib import messages
+from products.models import Product
 
 
 def view_bag(request):
