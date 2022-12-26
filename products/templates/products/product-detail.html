@@ -36,13 +36,7 @@
                             <img src="{{ MEDIA_URL }}noimage.webp" alt="{{ product.name }}">
                         </a>
                     {% endif %}
-                    <!-- admin edit/delete buttons -->
-                {% if request.user.is_superuser %}
-                <div class="pt-3">
-                    <a href="#" class="btn btn-outline-green btn-sm">Edit</a>
-                    <a href="#" class="btn btn-outline-red btn-sm">Delete</a>
-                </div>
-            {% endif %}
+                    
             </div>
         </div>
 
@@ -50,6 +44,14 @@
             <div class="product-details-container">
                 <h4>{{ product.name }}</h4>
                 <p class="lead">£{{ product.price }}</p>
+            
+                <!-- admin edit/delete buttons -->
+                {% if request.user.is_superuser %}
+                    <div class="float-end">
+                        <a href="#" class="edit-link">Edit</a>
+                        <a href="#" class="delete-link">Delete</a>
+                    </div>
+                {% endif %}
                 
                 {% if product.category %}
                     <p class="small mt-2 mb-2">
@@ -58,7 +60,7 @@
                         </a>
                     </p>
                 {% endif %}
-
+                
                 <!-- Product star rating to go here -->
                 <p>Rating will go here with star icons</p>
 
