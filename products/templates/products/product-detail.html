@@ -125,3 +125,8 @@
     <!-- each review will have a delete button - for admin only to delete reviews that dont meet requirements eg rude, spam-->
 
 {% endblock %}
+
+{% block postloadjs %}
+    {{ super }}
+    {% include 'products/includes/quantity_input_script.html' %}
+{% endblock %}
