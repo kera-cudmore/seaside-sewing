@@ -64,7 +64,9 @@
         <!-- toasts -->
         {% if messages %}
         <div class="message-container">
-            
+            {% for message in messages %}
+                {% include 'includes/toasts/toast-success.html' %}
+            {% endfor %}
         </div>
         {% endif %}
     
@@ -81,6 +83,10 @@
         </div>
 
         {% block postloadjs %}
+        <!-- for messages toasts-->
+        <script>
+            $('.toast').toast('show');
+        </script>
         {% endblock %}
     </body>
 
