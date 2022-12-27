@@ -6,7 +6,7 @@ Seaside Sewing is a full stack e-commerce website built using Django, Python, HT
 
 This project was created as my fourth milestone project for my Level 5 Diploma in Web Application Development with the Code Insitute.
 
-link to deployed site: here
+[Visit Seaside Sewing Here](https://dashboard.heroku.com/apps/seaside-sewing)
 
 ![GitHub contributors](https://img.shields.io/github/contributors/kera-cudmore/seaside-sewing) ![GitHub last commit](https://img.shields.io/github/last-commit/kera-cudmore/seaside-sewing) ![GitHub language count](https://img.shields.io/github/languages/count/kera-cudmore/seaside-sewing) ![GitHub top language](https://img.shields.io/github/languages/top/kera-cudmore/seaside-sewing)
 
