@@ -5,8 +5,9 @@
 {% block head_title %}{% trans "Login Cancelled" %}{% endblock %}
 
 {% block content %}
-
-    <h3>{% trans "Login Cancelled" %}</h3>
+    <div class="row page-title">
+        <h3>{% trans "Login Cancelled" %}</h3>
+    </div>
 
     {% url 'account_login' as login_url %}
 

@@ -6,9 +6,10 @@
 {% block head_title %}{% trans "Sign In" %}{% endblock %}
 
 {% block content %}
-
-    <h3 class="text-center">{% trans "Sign In" %}</h3>
-
+    <div class="row page-title">
+        <h3 class="text-center">{% trans "Sign In" %}</h3>
+    </div>
+    
     {% get_providers as socialaccount_providers %}
 
     {% if socialaccount_providers %}

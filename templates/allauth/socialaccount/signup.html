@@ -5,7 +5,9 @@
 {% block head_title %}{% trans "Signup" %}{% endblock %}
 
 {% block content %}
-    <h3>{% trans "Sign Up" %}</h3>
+    <div class="row page-title">
+        <h3>{% trans "Sign Up" %}</h3>
+    </div>
 
 <p>{% blocktrans with provider_name=account.get_provider.name site_name=site.name %}You are about to use your {{provider_name}} account to login to
 {{site_name}}. As a final step, please complete the following form:{% endblocktrans %}</p>
