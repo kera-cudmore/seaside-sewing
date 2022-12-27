@@ -66,10 +66,20 @@
         {% if messages %}
         <div class="message-container">
             {% for message in messages %}
-                {% include 'includes/toasts/toast-success.html' %}
+                {% with message.level as level %}
+                    {% if level == 40 %}
+                        {% include 'includes/toasts/toast-error.html' %}
+                    {% elif level == 30 %}
+                        {% include 'includes/toasts/toast-warning.html' %}
+                    {% elif level == 25 %}
+                        {% include 'includes/toasts/toast-success.html' %}
+                    {% else %}
+                        {% include 'includes/toasts/toast-info.html' %}
+                    {% endif %}
+                {% endwith %}
             {% endfor %}
         </div>
-        {% endif %}
+    {% endif %}
     
         <!-- Page Content - injected through templates - the classes ensure the container stays consistent for all pages- need to check for the allauth pages if they are formatter right (password reset etc) -->
         <div class="container content-container">
