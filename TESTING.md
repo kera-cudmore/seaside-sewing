@@ -2,7 +2,7 @@
 
 image of the site
 
-deployed link
+[Visit Seaside Sewing Here](https://dashboard.heroku.com/apps/seaside-sewing)
 
 ---
 
@@ -31,15 +31,15 @@ I have gone through each page of the site using the Chrome Developer Tools to en
 
 ### HTML & CSS
 
-[W3C]() was used to validate the HTML on all pages of the site. It was also used to validate the CSS. As the site is created with Django and utilises Django templating language within the HTML, I have checked the HTML by inspecting the page source and then running this through the validator.
+[W3C](https://validator.w3.org/) was used to validate the HTML on all pages of the site. It was also used to validate the CSS. As the site is created with Django and utilises Django templating language within the HTML, I have checked the HTML by inspecting the page source and then running this through the validator.
 
 ### JavaScript
 
-[JS Hint]() was used to validate the JavaScript.
+[JS Hint](https://jshint.com/) was used to validate the JavaScript.
 
 ### Python
 
-[Code Institute Python Linter]() was used to validate the python. I have also installed [PyCodeStyle]() in my IDE to enable me to check my code meets PEP8 guidelines during development.
+[Code Institute Python Linter](https://pep8ci.herokuapp.com/) was used to validate the python. I have also installed [PyCodeStyle](https://pycodestyle.pycqa.org/en/latest/intro.html#configuration) in my IDE to enable me to check my code meets PEP8 guidelines during development.
 
 ### Lighthouse
 
