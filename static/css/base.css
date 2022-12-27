@@ -120,7 +120,10 @@ a {
 }
 
 .educational-purposes {
-    padding-top: 3rem;
+    padding: 3rem 3rem 0 3rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
 
