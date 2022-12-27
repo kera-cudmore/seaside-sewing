@@ -64,14 +64,9 @@
                                             </div>
                                         </div>
                                     </div>
-                                    
                                 </form>
-                                <a class="delete-link remove-item" id="remove_{{ item.item_id }}">
-                                    <small>Remove</small>
-                                </a>
-                                <a class="edit-link update-item float-end">
-                                    <small>Update</small>
-                                </a>
+                                <a class="delete-link remove-item" id="remove_{{ item.item_id }}"><small>Remove</small></a>
+                                <a class="edit-link update-item float-end"><small>Update</small></a>
                             </td>
 
                             <!-- Subtotal column -->
@@ -93,6 +88,7 @@
                             {% endif %}
                         </td>
                     </tr>
+
                     <tr>
                         <!-- Secure Checkout buttons and back to shop button -->
                         <td colspan="5" class="text-end">
@@ -120,7 +116,6 @@
             {% endif %}
         </div>
     </div>
-
 {% endblock %}
 
 {% block postloadjs %}
