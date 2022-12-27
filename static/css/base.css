@@ -107,7 +107,8 @@ a {
     padding-bottom: 1rem;
 }
 
-.nav-link {
+.nav-link,
+.navbar-toggler-icon {
     color: var(--white);
 }
 
