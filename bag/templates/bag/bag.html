@@ -53,8 +53,8 @@
                                                 </button>
                                             </div>
                                             <!-- quantity value -->
-                                            <input class="form-control form-control-sm qty_input id_qty_{{ item.item_id }}" type="number" 
-                                                name="quantity" value="{{ item.quantity }}" min="1" max="99" data-item_id="{{ item.item_id }}"> 
+                                            <input class="text-center form-control form-control-sm qty_input id_qty_{{ item.item_id }}" type="number" 
+                                                name="quantity" value="{{ item.quantity }}" min="1" max="99" data-item_id="{{ item.item_id }}" id="id_qty_{{ item.item_id }}"> 
                                             <!-- plus button -->
                                             <div class="input-group-append">
                                                 <button class="increment-qty btn btn-sm btn-outline-green rounded-0 increment-qty_{{ item.item_id }}" 
@@ -65,8 +65,8 @@
                                         </div>
                                     </div>
                                 </form>
-                                <a class="delete-link remove-item" id="remove_{{ item.item_id }}"><small>Remove</small></a>
-                                <a class="edit-link update-item float-right"><small>Update</small></a>
+                                <a class="update-item edit-link float-right"><small>Update</small></a>
+                                <a class="remove-item delete-link" id="remove_{{ item.item_id }}"><small>Remove</small></a>
                             </td>
 
                             <!-- Subtotal column -->
@@ -126,21 +126,23 @@
         // Update quantity on click
         $('.update-item').click(function(e) {
             var form = $(this).prev('.update-form');
+            console.log(form);
             form.submit();
-            console.log("updated product quantity");
         })
     
         // Remove item and reload on click
         $('.remove-item').click(function(e) {
             var csrfToken = "{{ csrf_token }}";
             var itemId = $(this).attr('id').split('remove_')[1];
+            var size = $(this).data('product_size');
             var url = `/bag/remove/${itemId}/`;
-            var data = {'csrfmiddlewaretoken': csrfToken};
+            var data = {'csrfmiddlewaretoken': csrfToken, 'product_size': size};
     
             $.post(url, data)
             .done(function() {
                 location.reload();
             });
         })
+    
     </script>
 {% endblock %}
