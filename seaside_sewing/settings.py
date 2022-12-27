@@ -92,6 +92,7 @@ TEMPLATES = [
 
 CRISPY_TEMPLATE_PACK = "bootstrap4"
 
+# required due to using gitpod
 MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 
 AUTHENTICATION_BACKENDS = [
