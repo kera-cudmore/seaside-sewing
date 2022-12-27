@@ -24,7 +24,11 @@
                     {% for item in bag_items %}
                         <tr>
                             <td class="p-3 w-25">
-                                <img src="{{ item.product.image.url }}" alt="{{ item.product.name }}" class="img-fluid">
+                                {% if item.product.image %}
+                                    <img src="{{ item.product.image.url }}" alt="{{ item.product.name }}" class="img-fluid">
+                                {% else %}
+                                    <img src="{{ MEDIA_URL }}noimage.webp" alt="{{ item.product.name }}" class="img-fluid">
+                                {% endif %}
                             </td>
                             <td class="py-3">
                                 <p class="my-0">{{ item.product.name }}</p>
@@ -33,16 +37,17 @@
                             <td class="py-3">
                                 <p class="my-0">£{{ item.product.price }}</p>
                             </td>
+
                             <!-- item quantity Column -->
                             <td class="py-3 w-25">
-                                <form action="" method="POST" class="form update-form">
+                                <form action="{% url 'adjust_bag' item.item_id %}" method="POST" class="form update-form">
                                     {% csrf_token %}
                                     <div class="form-group">
                                         <div class="input-group input-group-{{ item.item_id }}">
                                             <!-- minus button -->
                                             <div class="input-group-prepend">
                                                 <button class="decrement-qty btn btn-sm btn-outline-red rounded-0 decrement-qty_{{ item.item_id }}" 
-                                                data-item_id="{{ item.item_id }}">
+                                                data-item_id="{{ item.item_id }}" id="decrement-qty_{{ item.item_id }}">
                                                     <i class="fa-solid fa-minus fa-sm"></i>
                                                 </button>
                                             </div>
@@ -52,40 +57,51 @@
                                             <!-- plus button -->
                                             <div class="input-group-append">
                                                 <button class="increment-qty btn btn-sm btn-outline-green rounded-0 increment-qty_{{ item.item_id }}" 
-                                                data-item_id="{{ item.item_id }}">
+                                                data-item_id="{{ item.item_id }}" id="increment-qty_{{ item.item_id }}">
                                                     <i class="fa-solid fa-plus fa-sm"></i>
                                                 </button>
                                             </div>
                                         </div>
                                     </div>
+                                    <a class="delete-link remove-item" id="remove_{{ item.item_id }}">
+                                        <small>Remove</small>
+                                    </a>
+                                    <a class="edit-link update-item float-end">
+                                        <small>Update</small>
+                                    </a>
                                 </form>
-                                <a class="delete-link remove-item" id="remove_{{ item.item_id }}">
-                                    <small>Remove from Bag</small>
-                                </a>
-                                <a class="edit-link update-item float-end">
-                                    <small>Update Quantity</small>
-                                </a>
                                 
-
-
-
                             </td>
+
                             <!-- Subtotal column -->
                             <td class="py-3">
-                                <p class="my-0">£</p>
-                                
+                                <p class="my-0">£{{ item.product.price }}</p> 
                             </td>
                         </tr>
                     {% endfor %}
                     
                     <tr>
-                        <td colspan="5" class="pt-5 text-right">
-
+                        <td colspan="5" class="pt-5 text-end">
+                            <h6><strong>Bag Total: £{{ total|floatformat:2 }}</strong></h6>
+                            <h6>Delivery: £{{ delivery|floatformat:2 }}</h6>
+                            <h4 class="mt-4"><strong>Grand Total: £{{ grand_total|floatformat:2 }}</strong></h4>
+                            {% if free_delivery_delta > 0 %}
+                                <p class="mb-1 text-danger">
+                                    You could get free delivery by spending just <strong>£{{ free_delivery_delta }}</strong> more!
+                                </p>
+                            {% endif %}
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="5" class="text-right">
-
+                        <!-- Secure Checkout buttons and back to shop button -->
+                        <td colspan="5" class="text-end">
+                            <a href="" class="btn btn-outline-blue">
+                                <i class="fa-solid fa-shop-lock"></i> Secure checkout
+                            </a>
+                            <a href="{% url 'products' %}" class="btn btn-outline-red">
+                                <i class="fa-solid fa-chevron-left"></i> Back to Shop
+                            </a>
+                            
                         </td>
                     </tr>
                 </table>
@@ -115,6 +131,7 @@
         $('.update-item').click(function(e) {
             var form = $(this).prev('.update-form');
             form.submit();
+            console.log("updated product quantity");
         })
     
         // Remove item and reload on click
@@ -129,6 +146,5 @@
                 location.reload();
             });
         })
-    
     </script>
 {% endblock %}
