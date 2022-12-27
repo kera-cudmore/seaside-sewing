@@ -120,6 +120,25 @@ a.dropdown-toggle {
     padding-top: 3rem;
 }
 
+
+/*----- Toasts -----*/
+
+.message-container {
+    position: fixed;
+    top: 72px;
+    right: 15px;
+    z-index: 9999999;
+}
+
+/* .custom-toast {
+    overflow: visible;
+} */
+
+.toast-capper {
+    height: 2px;
+}
+
+
 /*----- Main Page -----*/
 
 .content-container {
