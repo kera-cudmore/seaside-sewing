@@ -13,12 +13,12 @@ urlpatterns = [
         name='add_to_bag'
     ),
     path(
-        'adjust/<int:item_id>/',
+        'adjust/<item_id>/',
         views.adjust_bag,
         name='adjust_bag'
     ),
     path(
-        'remove/<int:item_id>/',
+        'remove/<item_id>/',
         views.remove_from_bag,
         name='remove_from_bag'),
 ]
