@@ -66,7 +66,7 @@
                                     </div>
                                 </form>
                                 <a class="delete-link remove-item" id="remove_{{ item.item_id }}"><small>Remove</small></a>
-                                <a class="edit-link update-item float-end"><small>Update</small></a>
+                                <a class="edit-link update-item float-right"><small>Update</small></a>
                             </td>
 
                             <!-- Subtotal column -->
@@ -77,7 +77,7 @@
                     {% endfor %}
                     
                     <tr>
-                        <td colspan="5" class="pt-5 text-end">
+                        <td colspan="5" class="pt-5 text-right">
                             <h6><strong>Bag Total: £{{ total|floatformat:2 }}</strong></h6>
                             <h6>Delivery: £{{ delivery|floatformat:2 }}</h6>
                             <h4 class="mt-4"><strong>Grand Total: £{{ grand_total|floatformat:2 }}</strong></h4>
@@ -91,7 +91,7 @@
 
                     <tr>
                         <!-- Secure Checkout buttons and back to shop button -->
-                        <td colspan="5" class="text-end">
+                        <td colspan="5" class="text-right">
                             <a href="" class="btn btn-outline-blue">
                                 <i class="fa-solid fa-shop-lock"></i> Secure checkout
                             </a>
