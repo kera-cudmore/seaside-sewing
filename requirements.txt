@@ -1,5 +1,4 @@
 asgiref==3.5.2
-crispy-bootstrap5==0.7
 Django==3.2.16
 django-allauth==0.41.0
 django-countries==7.2.1
