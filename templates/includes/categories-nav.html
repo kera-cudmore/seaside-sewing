@@ -1,93 +1,102 @@
-<div class="row categories-nav px-5">
+<div class="row categories-nav">
     <div class="col d-flex justify-content-lg-center">
         <nav class="navbar navbar-expand-lg">
             
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#categories-nav" aria-controls="categories-nav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">    
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'home' %}">Home</a>
-                    </li>
-                
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        All Products
+            <div class="collapse navbar-collapse" id="categories-nav">
+                <ul class="navbar-nav w-auto mx-auto">
+                    <li class="nav-item d-block d-md-none">
+                        <a href="{% url 'home' %}" class="nav-link mr-5" id="home-link">
+                            Home
                         </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="{% url 'products' %}?sort=price&direction=asc">By Price</a></li>
-                            <li><a class="dropdown-item" href="{% url 'products' %}?sort=rating&direction=desc">By Rating</a></li>
-                            <li><a class="dropdown-item" href="{% url 'products' %}?sort=category&direction=asc">By Category</a></li>
-                            <li><a class="dropdown-item" href="{% url 'products' %}">View All Products</a></li>
-                        </ul>
                     </li>
-                    
+                    <!-- All products menu dropdown -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Fabrics
+                        <a href="#" class="nav-link mr-5" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            All Products
                         </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="{% url 'products' %}?category=by_the_metre">By the Meter</a></li>
-                            <li><a class="dropdown-item" href="{% url 'products' %}?category=pre_cuts">Pre-Cuts</a></li>
-                            <li><a class="dropdown-item" href="{% url 'products' %}?category=by_the_metre,pre_cuts">View All Fabrics</a></li>
-                        </ul>
-                    </li>
-                    
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Tools
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="{% url 'products' %}?category=scissors">Scissors</a></li>
-                            <li><a class="dropdown-item" href="{% url 'products' %}?category=rotary_cutters">Rotary Cutters</a></li>
-                            <li><a class="dropdown-item" href="{% url 'products' %}?category=cutting_mats">Cutting Mats</a></li>
-                            <li><a class="dropdown-item" href="{% url 'products' %}?category=needles">Needles</a></li>
-                            <li><a class="dropdown-item" href="{% url 'products' %}?category=fabric_markers">Fabric Markers</a></li>
-                            <li><a class="dropdown-item" href="{% url 'products' %}?category=pins">Pins</a></li>
-                            <li><a class="dropdown-item" href="{% url 'products' %}?category=scissors,rotary_cutters,cutting_mats,needles.fabric_markers,pins">View All Tools</a></li>
-                        </ul>
-                    </li>
-                    
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Habedashery
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="{% url 'products' %}?category=threads">Threads</a></li>
-                            <li><a class="dropdown-item" href="{% url 'products' %}?category=bias_binding">Bias Binding</a></li>
-                            <li><a class="dropdown-item" href="{% url 'products' %}?category=buttons">Buttons</a></li>
-                            <li><a class="dropdown-item" href="{% url 'products' %}?category=ribbons">Ribbons</a></li>
-                            <li><a class="dropdown-item" href="{% url 'products' %}?category=zips">Zips</a></li>
-                            <li><a class="dropdown-item" href="{% url 'products' %}?category=threads,bias_binding,buttons,ribbons,zips">View All Habedashery</a></li>
-                        </ul>
-                    </li>
-                
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Patterns
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="{% url 'products' %}?category=pattern_books">Books</a></li>
-                            <li><a class="dropdown-item" href="{% url 'products' %}?category=individual_patterns">Individual Patterns</a></li>
-                            <li><a class="dropdown-item" href="{% url 'products' %}?category=pattern_books,individual_patterns">View All Patterns</a></li>
-                        </ul>
+                        <div class="dropdown-menu border-1" aria-labelledby="all-products-link">
+                            <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
+                            <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item">By Rating</a>
+                            <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item">By Category</a>
+                            <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
+                        </div>
                     </li>
 
+                    <!-- fabrics Menu -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Special Offers
+                        <a href="#" class="nav-link mr-5" id="fabric-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Fabrics
                         </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="{% url 'products' %}?category=new_in">New In</a></li>
-                            <li><a class="dropdown-item" href="{% url 'products' %}?category=deals">Deals</a></li>
-                            <li><a class="dropdown-item" href="{% url 'products' %}?category=clearance">Clearance</a></li>
-                            <li><a class="dropdown-item" href="{% url 'products' %}?category=new_in,deals,clearance">View All Specials</a></li>
-                        </ul>
+                        <div class="dropdown-menu border-1" aria-labelledby="fabric-link">
+                            <a href="{% url 'products' %}?category=by_the_metre" class="dropdown-item">By the Metre</a>
+                            <a href="{% url 'products' %}?category=pre_cuts" class="dropdown-item">Pre-Cuts</a>
+                            <a href="{% url 'products' %}?category=by_the_metre,pre_cuts" class="dropdown-item">View All Fabrics</a>
+                        </div>
                     </li>
+
+                    <!-- tools Menu -->
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link mr-5" id="tools-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Tools
+                        </a>
+                        <div class="dropdown-menu border-1" aria-labelledby="tools-link">
+                            <a href="{% url 'products' %}?category=scissors" class="dropdown-item">Scissors</a>
+                            <a href="{% url 'products' %}?category=rotary_cutters" class="dropdown-item">Rotary Cutters</a>
+                            <a href="{% url 'products' %}?category=cutting_mats" class="dropdown-item">Cutting Mats</a>
+                            <a href="{% url 'products' %}?category=needles" class="dropdown-item">Needles</a>
+                            <a href="{% url 'products' %}?category=fabric_markers" class="dropdown-item">fabric Markers</a>
+                            <a href="{% url 'products' %}?category=pins" class="dropdown-item">Pins</a>
+                            <a href="{% url 'products' %}?category=scissors,rotary_cutters,cutting_mats,needles.fabric_markers,pins" class="dropdown-item">All Tools</a>
+                        </div>
+                    </li>
+
+
+                    <!-- hab Menu -->
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link mr-5" id="habedashery-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Habedashery
+                        </a>
+                        <div class="dropdown-menu border-1" aria-labelledby="habedashery-link">
+                            <a href="{% url 'products' %}?category=threads" class="dropdown-item">Threads</a>
+                            <a href="{% url 'products' %}?category=bias_binding" class="dropdown-item">Bias Binding</a>
+                            <a href="{% url 'products' %}?category=buttons" class="dropdown-item">Buttons</a>
+                            <a href="{% url 'products' %}?category=ribbons" class="dropdown-item">Ribbons</a>
+                            <a href="{% url 'products' %}?category=zips" class="dropdown-item">Zips</a>
+                            <a href="{% url 'products' %}?category=threads,bias_binding,buttons,ribbons,zips" class="dropdown-item">All Habedashery</a>
+                        </div>
+                    </li>
+
+                    <!-- patterns Menu -->
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link mr-5" id="patterns-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Patterns
+                        </a>
+                        <div class="dropdown-menu border-1" aria-labelledby="paterns-link">
+                            <a href="{% url 'products' %}?category=pattern_books" class="dropdown-item">Books</a>
+                            <a href="{% url 'products' %}?category=individual_patterns" class="dropdown-item">Individual Patterns</a>
+                            <a href="{% url 'products' %}?category=pattern_books,individual_patterns" class="dropdown-item">All Patterns</a>
+                        </div>
+                    </li>
+
+                    <!-- Special Offers Menu -->
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Special Offers
+                        </a>
+                        <div class="dropdown-menu border-1" aria-labelledby="specials-link">
+                            <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">New Arrivals</a>
+                            <a href="{% url 'products' %}?category=deals" class="dropdown-item">Deals</a>
+                            <a href="{% url 'products' %}?category=clearance" class="dropdown-item">Clearance</a>
+                            <a href="{% url 'products' %}?category=new_arrivals,deals,clearance" class="dropdown-item">All Specials</a>
+                        </div>
+                    </li>
+
                 </ul>
             </div>
-        </nav>   
-    </div>     
+        </nav>
+    </div>
 </div>

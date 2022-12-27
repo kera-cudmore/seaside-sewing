@@ -1,69 +1,74 @@
-<nav class="row navbar account-nav px-5">
+<nav class="row navbar account-nav">
+    <div class="col-12 my-auto d-lg-flex py-1 py-lg-0">
 
-    <div class="col-12 col-lg-9  my-auto py-1 py-lg-0">
-        <!-- search bar -->
-        <form class="d-flex" role="search" action="{% url 'products' %}" method="GET">
-            <div class="input-group mb-3">
-                <input type="search" class="form-control" name="q" placeholder="Search" aria-label="Search" aria-describedby="search-button">
-                <button class="btn btn-outline-blue" type="submit" id="search-button">
-                    <span><i class="fa-solid fa-magnifying-glass"></i>
-                    </span>
-                </button>
-            </div>
-        </form>
-    </div>
+        <!-- Search bar -->
+        <div class="col-md-12 col-lg-6 offset-lg-3 my-auto py-1 py-lg-0">
+            <form method="GET" action="{% url 'products' %}">
+                <div class="input-group w-100">
+                    <input class="form-control border rounded-1" type="text" name="q" placeholder="Search our site">
+                    <div class="input-group-append">
+                        <button class="form-control btn btn-outline-blue border rounded-1" type="submit">
+                            <span><i class="fa-solid fa-magnifying-glass"></i>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
 
-    <div class=" col-4 col-lg-2 d-flex px-4 text-center">
-        <ul class="navbar-nav">
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="fa-regular fa-user"></i>
-                    <p>Account</p>
-                </a>
-                <ul class="dropdown-menu">
-                    {% if request.user.is_authenticated %}
-                        {% if request.user.is_superuser %}
-                            <li><a class="dropdown-item" href="#">Product Management</a></li>
+        <div class="col-md-12 col-lg-3 my-auto py-1 py-lg-0">
+            <ul class="list-inline list-unstyled text-center text-lg-right my-0">
+
+                <!-- Account -->
+                <li class="list-inline-item dropdown">
+                    <a href="#" class="nav-link" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="text-center">
+                            <div><i class="fas fa-user fa-lg"></i></div>
+                            <p class="my-0">My Account</p>
+                        </div>
+                    </a>
+                    <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                        {% if request.user.is_authenticated %}
+                            {% if request.user.is_superuser %}
+                                <a href="#" class="dropdown-item">Product Management</a>
+                            {% endif %}
+                                <a href="#" class="dropdown-item">My Profile</a>
+                                <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                            {% else %}
+                                <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+                                <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
                         {% endif %}
-                        <li><a class="dropdown-item" href="#">My Profile</a></li>
-                        <li><a class="dropdown-item" href="{% url 'account_logout' %}">Logout</a></li>
-                    {% else %}
-                        <li><a class="dropdown-item" href="{% url 'account_login' %}">Login</a></li>
-                        <li><a class="dropdown-item" href="{% url 'account_signup' %}">Register</a></li>
-                    {% endif %}
-                </ul>
-            </li>
-        </ul>
+                    </div>
+                </li>
 
+                <!-- Wishlist -->
+                <li class="list-inline-item">
+                    <a href="#" class="nav-link">
+                        <div class="text-center">
+                            <div><i class="fa-regular fa-heart"></i></div>
+                            <p class="my-0">
+                                Wishlist
+                            </p>
+                        </div>
+                    </a>
+                </li>
 
-    <div class="col-4 col-lg-2 d-flex px-4 text-center">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <!-- view wishlist for href -->
-                <a class="nav-link" href="#" role="button">
-                    <i class="fa-regular fa-heart"></i>
-                <p>Wishlist</p>
-                </a>
-            </li>
-        </ul>
-        
-
-    <div class="col-4 col-lg-2 d-flex px-4 text-center">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="{% url 'view_bag' %}" role="button">
-                    <i class="fa-solid fa-basket-shopping"></i>
-            <p>Bag</p>
-            <p>
-                {% if grand_total %}
-                    <strong>£{{ grand_total|floatformat:2 }}</strong>
-                {% else %}
-                    <strong>£0.00</strong>
-                {% endif %}
-            </p>
-                </a>
-            </li>
-        </ul>
-
-
-</nav>
+                <!-- Bag -->
+                <li class="list-inline-item">
+                    <a href="{% url 'view_bag' %}" class="nav-link">
+                        <div class="text-center">
+                            <div><i class="fa-solid fa-basket-shopping"></i></div>
+                            <p class="my-0">
+                                {% if grand_total %}
+                                    £{{ grand_total|floatformat:2 }}
+                                {% else %}
+                                    £0.00
+                                {% endif %}
+                            </p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>    
