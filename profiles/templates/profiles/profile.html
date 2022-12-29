@@ -1,6 +1,27 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block extra_title %} - Profile{% endblock %}
+
+{% block extra_meta %}
+    <meta name="description" content="DESCRIPTION">
+    <meta name="keywords" content="KEYWORDS">
+
+    <!-- Social media integration, for when people share your content -->
+    <!-- Facebook, LinkedIn, Google -->
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Seaside Sewing - Profile" />
+    <!-- The title you want displayed when your page is linked to -->
+    <meta property="og:description" content="DESCRIPTION OF PAGE CONTENT" /> <!-- Same as what's inside description meta tag -->
+    <!-- The description you want displayed when your page is linked to (maximum 300 characters) -->
+    <meta name="image" property="og:image" content="URL TO IMAGE" />
+    <!-- URL of image to be displayed when your site is linked to -->
+    <!-- Be careful when building non-static sites like your MS3 and MS4, this can be a little tricky -->
+    <meta property="og:image:alt" content="ALT TEXT FOR IMAGE" /> <!-- Alt text for above image - an accessibility win -->
+    <meta property="og:url" content="#" /> <!-- Your page's URL -->
+    <meta property="og:site_name" content="Seaside Sewing - Profile" />
+{% endblock %}
+
 {% block content %}
 
 {% endblock %}
