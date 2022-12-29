@@ -52,12 +52,12 @@
                     <div class="col-7 offset-2">
                         <p class="my-0">Order Total:</p>
                         <p class="my-0">Delivery:</p>
-                        <p class="my-0">Grand Total:</p>
+                        <p class="my-0"><strong>Grand Total:</strong></p>
                     </div>
                     <div class="col-3">
-                        <p class="my-0">${{ total | floatformat:2 }}</p>
-                        <p class="my-0">${{ delivery | floatformat:2 }}</p>
-                        <p class="my-0"><strong>${{ grand_total | floatformat:2 }}</strong></p>
+                        <p class="my-0">£{{ total | floatformat:2 }}</p>
+                        <p class="my-0">£{{ delivery | floatformat:2 }}</p>
+                        <p class="my-0"><strong>£{{ grand_total | floatformat:2 }}</strong></p>
                     </div>
                 </div>
             </div>
@@ -110,20 +110,17 @@
                     <!-- SUBMIT & BACK BUTTONS -->
                     <div class="submit-button text-right mt-5 mb-2">
                         <a href="{% url 'view_bag' %}" class="btn btn-outline-red">
-                            <span class="icon">
-                                <i class="fa-solid fa-chevron-left"></i>
-                            </span>
-                            <span class="font-weight-bold">Adjust Bag</span>
+                            <i class="fa-solid fa-chevron-left"></i>
+                            Adjust Bag
                         </a>
 
                         <button class="btn btn-outline-blue" id="submit-button">
-                            <span class="font-weight-bold">Complete Order</span>
-                                <i class="fa-solid fa-cash-register"></i>
+                            <i class="fa-solid fa-cash-register"></i>
+                            Complete Order   
                         </button>
 
-                        <p class="small delete-link my-0">
-                            <i class="fa-solid fa-triangle-exclamation"></i>
-                            <span>Your card will be charged <strong>£{{ grand_total|floatformat:2 }}</strong></span>
+                        <p class="small mt-2">
+                            Your card will be charged £{{ grand_total|floatformat:2 }}
                         </p>
                     </div>
 
