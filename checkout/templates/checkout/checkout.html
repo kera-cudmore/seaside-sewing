@@ -27,7 +27,7 @@
                 
                 {% for item in bag_items %}
                 <div class="row">
-                    <div class="col-2 mb-1">
+                    <div class="col-2 my-2">
                         <a href="{% url 'product_detail' item.product.id %}">
                             {% if item.product.image %}
                                 <img src="{{ item.product.image.url }}" alt="{{ product.name }}" class="w-100">
@@ -37,15 +37,15 @@
                         </a>
                     </div>
                     <div class="col-7">
-                        <p class="my-0"><strong>{{ item.product.name }}</strong></p>
-                        <p class="my-0 small text-muted">Qty: {{ item.quantity }}</p>
+                        <p class="my-2"><strong>{{ item.product.name }}</strong></p>
+                        <p class="my-2 small text-muted">Qty: {{ item.quantity }}</p>
                     </div>
                     <div class="col-3 text-right">
-                        <p class="my-0 small text-muted">${{ item.product.price | calc_subtotal:item.quantity }}</p>
+                        <p class="my-2 small text-muted">${{ item.product.price | calc_subtotal:item.quantity }}</p>
                     </div>
                 </div>
                 {% endfor %}
-                <hr class="my-0">
+                <hr class="my-3">
                 
                 <!-- Summary Row -->
                 <div class="row text-right">
