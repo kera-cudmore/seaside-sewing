@@ -1,7 +1,6 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.conf import settings
-from django.core.validators import RegexValidator
 
 from .forms import OrderForm
 from .models import Order, OrderLineItem
@@ -37,29 +36,29 @@ def checkout(request):
             for item_id, quantity in bag.items():
                 try:
                     product = Product.objects.get(id=item_id)
-                    order_line_item = OrderLineItem(
-                        order=order,
-                        product=product,
-                        quantity=quantity,
-                    )
-                    order_line_item.save()
+                    if isinstance(quantity, int):
+                        order_line_item = OrderLineItem(
+                            order=order,
+                            product=product,
+                            quantity=quantity,
+                        )
+                        order_line_item.save()
                 except Product.DoesNotExist:
-                    messages.error(request, (
-                        "One of the products in your bag wasn't "
-                        "found in our database. "
-                        "Please contact us for further assistance!")
-                    )
+                    messages.error(request, "One of the products in your \
+                        bag wasn'tfound in our database. Please contact us\
+                        for further assistance!")
                     order.delete()
                     return redirect(reverse('view_bag'))
 
             # Save the info to the user's profile
             request.session['save_info'] = 'save-info' in request.POST
-            return redirect(reverse('checkout_success',
-                                    args=[order.order_number]))
+            return redirect(
+                reverse('checkout_success', args=[order.order_number]))
         else:
             messages.error(request, ('There was an error with your form. \
                 Please double check your information.'))
-
+            return redirect(reverse('checkout'))
+            print("form errors", order_form.errors)
     else:
         bag = request.session.get('bag', {})
         if not bag:
@@ -77,18 +76,18 @@ def checkout(request):
 
         order_form = OrderForm()
 
-        if not stripe_public_key:
-            messages.warning(request, 'The Stripe public key is missing. \
-                Please check it is set in the environment.')
+    if not stripe_public_key:
+        messages.warning(request, 'The Stripe public key is missing. \
+            Please check it is set in the environment.')
 
-        template = 'checkout/checkout.html'
-        context = {
-            'order_form': order_form,
-            'stripe_public_key': stripe_public_key,
-            'client_secret': intent.client_secret,
-        }
+    template = 'checkout/checkout.html'
+    context = {
+        'order_form': order_form,
+        'stripe_public_key': stripe_public_key,
+        'client_secret': intent.client_secret,
+    }
 
-        return render(request, template, context)
+    return render(request, template, context)
 
 
 def checkout_success(request, order_number):
