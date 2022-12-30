@@ -8,8 +8,8 @@ urlpatterns = [
         name='checkout'
     ),
     path(
-        'checkout-success/<order_number>',
+        'checkout_success/<order_number>',
         views.checkout_success,
-        name='checkout-success'
+        name='checkout_success'
     ),
 ]
