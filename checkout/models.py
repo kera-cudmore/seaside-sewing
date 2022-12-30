@@ -5,8 +5,6 @@ from django.db.models import Sum
 from django.conf import settings
 
 from django_countries.fields import CountryField
-from django.core.validators import RegexValidator
-
 from products.models import Product
 
 
@@ -28,15 +26,9 @@ class Order(models.Model):
         null=False,
         blank=False
     )
-    phoneNumberRegex = RegexValidator(
-        regex=r"^\+?1?\d{8,15}$",
-        message='Please enter a valid phone number',
-    )
     phone_number = models.CharField(
-        validators=[phoneNumberRegex],
-        max_length=16,
-        unique=True,
-        blank=True,
+        max_length=20,
+        blank=False,
         null=False,
     )
     country = CountryField(
