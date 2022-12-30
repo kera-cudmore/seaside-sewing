@@ -100,4 +100,4 @@ Additional testing was carried out by friends and family on a variety of devices
 
 | No | Bug | Evidence |
 |:--- | :--- | :---: |
-| 1 | | |
+| 1 | success toasts not displaying now I've added in the show bag logic | |
