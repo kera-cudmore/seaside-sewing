@@ -61,6 +61,15 @@
                     </p>
                 {% endif %}
                 
+                {% if product.colour %}
+                <p class="small mt-2 mb-2">
+                    <!-- See if I can get the color to be a link to all products that are pink -->
+                    <!-- <a href="{% url 'products' %}?products={{ product.colour }}" class="text-muted"> -->
+                        <i class="fa-solid fa-droplet"></i> {{ product.colour }}
+                    <!-- </a> -->
+                </p>
+            {% endif %}
+
                 <!-- Product star rating to go here -->
                 <p>Rating will go here with star icons</p>
 
