@@ -40,7 +40,7 @@
 
     <!-- Order Summary -->
     <div class="row">
-        <div class="col-12 col-lg-7">
+        <div class="col-12 col-lg-7 mx-auto">
             <div class="order-confirmation-wrapper p-2">
                 <div class="row py-4">
                     <div class="col">
@@ -168,7 +168,7 @@
                         <p class="mb-0 font-weight-bold">Order Total</p>
                     </div>
                     <div class="col-12 col-md-8 text-md-right">
-                        <p class="mb-0">{{ order.order_total }}</p>
+                        <p class="mb-0">£{{ order.order_total }}</p>
                     </div>
                 </div>
                 <div class="row">
@@ -176,7 +176,7 @@
                         <p class="mb-0 font-weight-bold">Delivery</p>
                     </div>
                     <div class="col-12 col-md-8 text-md-right">
-                        <p class="mb-0">{{ order.delivery_cost }}</p>
+                        <p class="mb-0">£{{ order.delivery_cost }}</p>
                     </div>
                 </div>
                 <div class="row">
@@ -184,7 +184,7 @@
                         <p class="mb-0 font-weight-bold">Grand Total</p>
                     </div>
                     <div class="col-12 col-md-8 text-md-right">
-                        <p class="mb-0">{{ order.grand_total }}</p>
+                        <p class="mb-0">£{{ order.grand_total }}</p>
                     </div>
                 </div>
             </div>
@@ -192,7 +192,7 @@
     </div>
 
     <div class="row pt-4">
-        <div class="col-12 col-lg-7">
+        <div class="col-12 col-lg-7 mx-auto">
                 <a href="#" class="btn btn-outline-red my-2">
                     <span class="mr-2">
                         <i class="fa-solid fa-chevron-left"></i>
