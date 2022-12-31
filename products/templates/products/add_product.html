@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_title %} - Product Management - Add{% endblock %}
+
+<!-- Extra meta tags specific to the page to be put here -->
+{% block extra_meta %}
+    <meta name="description" content="DESCRIPTION">
+    <meta name="keywords" content="KEYWORDS">
+
+    <!-- Social media integration, for when people share your content -->
+    <!-- Facebook, LinkedIn, Google -->
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Seaside Sewing - Product Management - Add" />
+    <!-- The title you want displayed when your page is linked to -->
+    <meta property="og:description" content="DESCRIPTION OF PAGE CONTENT" /> <!-- Same as what's inside description meta tag -->
+    <!-- The description you want displayed when your page is linked to (maximum 300 characters) -->
+    <meta name="image" property="og:image" content="URL TO IMAGE" />
+    <!-- URL of image to be displayed when your site is linked to -->
+    <!-- Be careful when building non-static sites like your MS3 and MS4, this can be a little tricky -->
+    <meta property="og:image:alt" content="ALT TEXT FOR IMAGE" /> <!-- Alt text for above image - an accessibility win -->
+    <meta property="og:url" content="#" /> <!-- Your page's URL -->
+    <meta property="og:site_name" content="Seaside Sewing - Product Management - Add" />
+{% endblock %}
+
+{% block content %}
+
+<div class="row page-title">
+    <h3>Product Management</h3>
+    <h4>Add a Product</h4>
+</div>
+
+<div class="row">
+    <div class="col-12 col-md-6">
+        <form method="POST" action="{% url 'add_product' %}" class="form mb-2" enctype="multipart/form-data">
+            {% csrf_token %}
+            {% for field in form %}
+                {% if field.name != 'image' %}
+                    {{ field | as_crispy_field }}
+                {% else %}
+                    {{ field }}
+                {% endif %}
+            {% endfor %}
+            <div class="text-right">
+                <a class="btn btn-outline-red my-2" href="{% url 'products' %}">
+                    <span class="mr-2"><i class="fa-solid fa-xmark"></i></span>    
+                    <span>Cancel</span>
+                </a>
+                <button class="btn btn-outline-blue my-2" type="submit">
+                    <span class="mr-2"><i class="fa-solid fa-plus"></i></span>
+                    <span>Add Product</span>
+                </button>
+            </div>
+        </form>
+    </div>            
+</div>
+</div>
+
+{% endblock %}
