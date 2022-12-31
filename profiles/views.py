@@ -37,7 +37,7 @@ def order_history(request, order_number):
 
     messages.info(request, (
         f'This is a past confirmation for order number {order_number}. \
-        A confirmation email was sent on the order date, {order.date}.'
+        A confirmation email was sent on the order date shown below.'
     ))
 
     template = 'checkout/checkout_success.html'
