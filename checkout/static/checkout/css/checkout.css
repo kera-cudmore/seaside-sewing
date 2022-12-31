@@ -49,7 +49,7 @@ selection option[value=""] {
     color: #aab7c4 !important;
 }
 
-/* LOADING OVERLAY SPINNER FOR PAYMENTS */
+/* PAYMENT PROCESSING OVERLAY & SPINNER */
 #loading-overlay {
     display: none;
     position: fixed;
@@ -57,7 +57,7 @@ selection option[value=""] {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(23, 162, 184, .85);
+    background: #95dded85;
     z-index: 9999;
 }
 
@@ -67,4 +67,9 @@ selection option[value=""] {
     justify-content: center;
     margin: 0;
     height: 100%;
+}
+
+.fa-pulse {
+    font-size: 10rem;
+    color: var(--dark-blue);
 }
