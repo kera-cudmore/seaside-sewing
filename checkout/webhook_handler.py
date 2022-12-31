@@ -54,11 +54,36 @@ class StripeWH_Handler:
                     content=f'WebHook received: {event["type"]} | SUCCESS: Verified order already in database',
                     status=200
                 )
-    except Order.DoesNotExist:
-    
-    
-    
-            return HttpResponse(
+        except Order.DoesNotExist:
+            try:
+                for item_id, quantity in json.loads(bag).items():
+                    order = Order.objects.create(
+                        full_name=shipping_details.name,
+                        email=billing_details.email,
+                        phone_numbert=shipping_details.phone,
+                        country=shipping_details.address.country,
+                        postcode=shipping_details.address.postal_code,
+                        town_or_city=shipping_details.address.city,
+                        street_address1=shipping_details.address.line1,
+                        street_address2=shipping_details.address.line2,
+                        county=shipping_details.address.state,
+                    )
+                    product = Product.objects.get(id=item_id)
+                    if isinstance(quantity, int):
+                        order_line_item = OrderLineItem(
+                            order=order,
+                            product=product,
+                            quantity=quantity,
+                        )
+                        order_line_item.save()
+            except Exeception as e:
+                if order:
+                    order.delete()
+                return HttpResponse(
+                    content=f'WebHook received: {event["type"]} | ERROR: {e}',
+                    status=500
+                )
+        return HttpResponse(
             content=f'WebHook received: {event["type"]}',
             status=200
         )
