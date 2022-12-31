@@ -5,39 +5,32 @@
 
 {% block head_title %}{% trans "Sign In" %}{% endblock %}
 
-{% block content %}
+{% block inner-content %}
     <div class="row page-title">
-        <h3 class="text-center">{% trans "Sign In" %}</h3>
+        <h3>{% trans "Sign In" %}</h3>
     </div>
     
     {% get_providers as socialaccount_providers %}
-
     {% if socialaccount_providers %}
-        <p>
-            {% blocktrans with site.name as site_name %}
+        <p>{% blocktrans with site.name as site_name %}
                 Please sign in with one
                 of your existing third party accounts. Or, <a href="{{ signup_url }}">sign up</a>
                 for a {{ site_name }} account and sign in below:
             {% endblocktrans %}
         </p>
-
         <div class="socialaccount_ballot">
-
             <ul class="socialaccount_providers">
                 {% include "socialaccount/snippets/provider_list.html" with process="login" %}
             </ul>
-
             <div class="login-or">{% trans 'or' %}</div>
-
         </div>
-
         {% include "socialaccount/snippets/login_extra.html" %}
 
     {% else %}
         <div class="px-3">
             <p>{% blocktrans %}Don't have an account yet? Sail on over to the 
-            <a href="{{ signup_url }}">sign up</a> page.{% endblocktrans %}</p>
-        {% endif %}
+            <a href="{{ signup_url }}" class="text-muted">sign up</a> page.{% endblocktrans %}</p>
+    {% endif %}
 
         <form class="login" method="POST" action="{% url 'account_login' %}">
             {% csrf_token %}
@@ -46,11 +39,20 @@
                 <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
             {% endif %}
 
-            <a class="btn btn-outline-blue" href="{% url 'home' %}">Home</a>
-            <button class="btn btn-outline-blue primaryAction" type="submit">{% trans "Sign In" %}</button>
+            <a class="btn btn-outline-blue my-2" href="{% url 'home' %}">
+                <span class="mr-2"><i class="fa-solid fa-house"></i></span>   
+                <span>Home</span>    
+            </a>
+            <button class="btn btn-outline-blue primaryAction my-2" type="submit">
+                <span class="mr-2"><i class="fa-solid fa-right-to-bracket"></i></span>
+                <span>{% trans "Sign In" %}</span>
+            </button>
 
-            <p class="mt-2">
-                <a class="button btn btn-outline-red secondaryAction" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
+            <p>
+                <a class="button btn btn-outline-red secondaryAction my-2" href="{% url 'account_reset_password' %}">
+                    <span class="mr-2"><i class="fa-solid fa-lock"></i></span>
+                <span>{% trans "Forgot Password?" %}</span>
+                </a>
             </p>
         </form>
     </div>
