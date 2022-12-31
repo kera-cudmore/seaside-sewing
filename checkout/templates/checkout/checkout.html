@@ -28,12 +28,11 @@
     {% endblock %}
 
     {% block content %}
-
         <div class="row page-title">
             <h3>Checkout</h3>
         </div>
 
-        <!-- Order Summary - shows on right on lg screens -->
+        <!-- ORDER SUMMARY - shows on right on lg screens -->
         <div class="row">
             <div class="col-12 col-lg-6 order-lg-last mb-5">
                 <p class="text-muted">Order Summary ({{ product_count }})</p>
@@ -68,7 +67,6 @@
                 {% endfor %}
                 <hr class="my-3">
                 
-                <!-- Summary Row -->
                 <div class="row text-right">
                     <div class="col-7 offset-2">
                         <p class="my-0">Order Total:</p>
@@ -83,7 +81,7 @@
                 </div>
             </div>
 
-            <!-- Form -->
+            <!-- CHECKOUT FORM -->
             <div class="col-12 col-lg-6">
                 <p class="text-muted">Please fill out the form below to complete your order</p>
                 <form action="{% url 'checkout' %}" method="POST" id="payment-form">
@@ -119,36 +117,38 @@
                     
                     <fieldset class="px-3">
                     <legend class="fieldset-label px-2 w-auto">Payment Information</legend>
-                        <!-- A Stripe card element will go here -->
+                        <!-- A Stripe card element holder -->
                         <div class="mb-3" id="card-element"></div>
 
-                        <!-- Used to display form errors -->
+                        <!-- FORM & CARD ERRORS CONTAINER -->
                         <div class="mb-3 text-danger" id="card-errors" role="alert"></div>
-                        <!-- Pass the client secret to the view so we can get the payment intent id -->
+                        <!-- Client secret passed to the view so we can get payment intent id -->
                         <input type="hidden" value="{{ client_secret }}" name="client_secret">
                     </fieldset>
 
                     <!-- SUBMIT & BACK BUTTONS -->
                     <div class="submit-button text-right mt-5 mb-2">
-                        <a href="{% url 'view_bag' %}" class="btn btn-outline-red">
-                            <i class="fa-solid fa-chevron-left"></i>
-                            Adjust Bag
+                        <a href="{% url 'view_bag' %}" class="btn btn-outline-red my-2">
+                            <span class="mr-2"><i class="fa-solid fa-chevron-left"></i></span>
+                            <span>Adjust Bag</span>
                         </a>
-
-                        <button class="btn btn-outline-blue" id="submit-button">
-                            <i class="fa-solid fa-cash-register"></i>
-                            Complete Order   
+                        <button class="btn btn-outline-blue my-2" id="submit-button">
+                            <span class="mr-2"><i class="fa-solid fa-cash-register"></i></span>
+                            <span>Complete Order
+                                <span class="mr-2">Complete Order</span>
                         </button>
-
-                        <p class="small mt-2">
-                            Your card will be charged £{{ grand_total|floatformat:2 }}
-                        </p>
+                        <p class="mt-2">Your card will be charged £{{ grand_total|floatformat:2 }}</p>
                     </div>
-
                 </form>
             </div>
         </div>
 
+        <!-- PAYMENT PROCESSING OVERLAY -->
+        <div id="loading-overlay">
+            <p class="loading-spinner">
+                <i class="fa-solid fa-spinner fa-2xl"></i>
+            </p>
+        </div>
     {% endblock %}
 
     {% block postloadjs %}
