@@ -4,7 +4,7 @@
 
 {% block head_title %}{% trans "Signup" %}{% endblock %}
 
-{% block content %}
+{% block inner-content %}
     <div class="row page-title">
         <h3>{% trans "Sign Up" %}</h3>
     </div>
@@ -17,8 +17,14 @@
     {% if redirect_field_value %}
         <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
     {% endif %}
-    <a class="btn btn-outline-blue" href="{% url 'home' %}">Home</a>
-    <button class="btn btn-outline-blue" type="submit">{% trans "Sign Up" %} &raquo;</button>
+    <a class="btn btn-outline-blue" href="{% url 'home' %}">
+        <span class="mr-2"><i class="fa-solid fa-house"></i></span>   
+        <span>Home</span>
+    </a>
+    <button class="btn btn-outline-blue" type="submit">
+        <span class="mr-2"><i class="fa-solid fa-user-plus"></i></span>
+        <span>{% trans "Sign Up" %}</span>
+        </button>
 </form>
 
 {% endblock %}
