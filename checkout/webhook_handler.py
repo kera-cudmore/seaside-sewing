@@ -80,7 +80,6 @@ class StripeWH_Handler:
                             street_address1=shipping_details.address.line1,
                             street_address2=shipping_details.address.line2,
                             county=shipping_details.address.state,
-                            # grand_total=grand_total,
                             original_bag=bag,
                             stripe_pid=pid,
                 )
