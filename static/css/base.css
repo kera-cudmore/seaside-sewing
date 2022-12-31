@@ -273,11 +273,6 @@ input[name='q']::placeholder {
 /*----- ALLAUTH FORMS -----*/
 
 /* Allauth form formatting */
-.allauth-form-inner-content p {
-    margin-top: 1.5rem; /* mt-4 */
-    color: #6c757d; /* text-secondary */
-}
-
 .allauth-form-inner-content input {
     border-color: var(--black);
     border-radius: 0;
@@ -291,7 +286,7 @@ input[name='q']::placeholder {
     color: #aab7c4;
 }
 
-.allauth-form-inner-content button,
+
 .allauth-form-inner-content input[type='submit'] {
     /* btn */
     display: inline-block;
@@ -321,9 +316,6 @@ input[name='q']::placeholder {
     border-color: var(--dark-blue);
 }
 
-.allauth-form-inner-content a {
-    color: #6c757d; /* text-muted */
-}
 
 /*----- MEDIA QUERIES -----*/
 
