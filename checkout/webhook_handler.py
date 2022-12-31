@@ -26,6 +26,7 @@ class StripeWH_Handler:
         bag = intent.metadata.bag
         save_info = intent.metadata.save_info
 
+        # gets the charge object
         stripe_charge = stripe.Charge.retrieve(intent.latest_charge)
         billing_details = stripe_charge.billing_details
         shipping_details = intent.shipping
@@ -37,37 +38,53 @@ class StripeWH_Handler:
                 shipping_details.address[field] = None
 
         order_exists = False
-        order = Order.objects.get(
-            full_name__iexact=shipping_details.name,
-            email__iexact=billing_details.email,
-            phone_number__iexact=shipping_details.phone,
-            country__iexact=shipping_details.address.country,
-            postcode__iexact=shipping_details.address.postal_code,
-            town_or_city__iexact=shipping_details.address.city,
-            street_address1__iexact=shipping_details.address.line1,
-            street_address2__iexact=shipping_details.address.line2,
-            county__iexact=shipping_details.address.state,
-            grand_total=grand_total,
-        )
-        order_exists = True
-        return HttpResponse(
-                    content=f'WebHook received: {event["type"]} | SUCCESS: Verified order already in database',
-                    status=200
-                )
-        except Order.DoesNotExist:
+        attempt = 1
+        while attempt <= 5:
             try:
+                order = Order.objects.get(
+                    full_name__iexact=shipping_details.name,
+                    email__iexact=billing_details.email,
+                    phone_number__iexact=shipping_details.phone,
+                    country__iexact=shipping_details.address.country,
+                    postcode__iexact=shipping_details.address.postal_code,
+                    town_or_city__iexact=shipping_details.address.city,
+                    street_address1__iexact=shipping_details.address.line1,
+                    street_address2__iexact=shipping_details.address.line2,
+                    county__iexact=shipping_details.address.state,
+                    grand_total=grand_total,
+                    original_bag=bag,
+                    stripe_pid=pid,
+                )
+                order_exists = True
+                break
+            except Order.DoesNotExist:
+                attempt += 1
+                time.sleep(1)
+        if order_exists:
+            self._send_confirmation_email(order)
+            return HttpResponse(
+                content=f'WebHook received: {event["type"]} | SUCCESS: Verified order already in database',
+                status=200
+            )
+        else:
+            order = None
+            try:
+                order = Order.objects.create(
+                            full_name=shipping_details.name,
+                            user_profile=profile,
+                            email=billing_details.email,
+                            phone_number=shipping_details.phone,
+                            country=shipping_details.address.country,
+                            postcode=shipping_details.address.postal_code,
+                            town_or_city=shipping_details.address.city,
+                            street_address1=shipping_details.address.line1,
+                            street_address2=shipping_details.address.line2,
+                            county=shipping_details.address.state,
+                            # grand_total=grand_total,
+                            original_bag=bag,
+                            stripe_pid=pid,
+                )
                 for item_id, quantity in json.loads(bag).items():
-                    order = Order.objects.create(
-                        full_name=shipping_details.name,
-                        email=billing_details.email,
-                        phone_numbert=shipping_details.phone,
-                        country=shipping_details.address.country,
-                        postcode=shipping_details.address.postal_code,
-                        town_or_city=shipping_details.address.city,
-                        street_address1=shipping_details.address.line1,
-                        street_address2=shipping_details.address.line2,
-                        county=shipping_details.address.state,
-                    )
                     product = Product.objects.get(id=item_id)
                     if isinstance(quantity, int):
                         order_line_item = OrderLineItem(
@@ -83,8 +100,9 @@ class StripeWH_Handler:
                     content=f'WebHook received: {event["type"]} | ERROR: {e}',
                     status=500
                 )
+        self._send_confirmation_email(order)
         return HttpResponse(
-            content=f'WebHook received: {event["type"]}',
+            content=f'WebHook received: {event["type"]} | SUCCESS: Created order in webhook',
             status=200
         )
 
