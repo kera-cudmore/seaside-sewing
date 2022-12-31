@@ -151,7 +151,7 @@ a {
     height: 0;
     border-left: 4px solid transparent;
     border-right: 4px solid transparent;
-    border-bottom: 10px solid black;
+    border-bottom: 10px solid var(--black);
     position: absolute;
     top: -10px;
     right: 36px;
@@ -256,6 +256,9 @@ hr {
     right: 25px;
 }
 
+input[name='q']::placeholder {
+    color: #aab7c4;
+}
 
 
 /*-----  CURSOR -----*/
@@ -276,7 +279,7 @@ hr {
 }
 
 .allauth-form-inner-content input {
-    border-color: #000;
+    border-color: var(--black);
     border-radius: 0;
 }
 
@@ -313,7 +316,7 @@ hr {
 
 .allauth-form-inner-content button:hover,
 .allauth-form-inner-content input [type='submit']:hover {
-    color: #fff;
+    color: var(--white);
     background-color: var(--dark-blue);
     border-color: var(--dark-blue);
 }
