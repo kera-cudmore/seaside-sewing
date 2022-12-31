@@ -5,29 +5,33 @@
 
 {% block head_title %}{% trans "Confirm E-mail Address" %}{% endblock %}
 
+{% block inner-content %}
+    <div class="row page-title">
+        <h3>{% trans "Confirm E-mail Address" %}</h3>
+    </div>
+        
+    {% if confirmation %}
+        {% user_display confirmation.email_address.user as user_display %}
+        <p>{% blocktrans with confirmation.email_address.email as email %}Please confirm that 
+            <a href="mailto:{{ email }}">{{ email }}
+            </a> 
+            is an e-mail address for user {{ user_display }}.{% endblocktrans %}
+        </p>
+        <form method="post" action="{% url 'account_confirm_email' confirmation.key %}">
+        {% csrf_token %}
+            <button type="submit" class="btn btn-outline-blue my-2">
+                <span class="mr-2"><i class="fa-solid fa-check"></i></span>
+                <span>{% trans 'Confirm' %}</span>
+            </button>
+        </form>
 
-{% block content %}
-<div class="row page-title">
-<h3>{% trans "Confirm E-mail Address" %}</h3>
-</div>
+    {% else %}
 
-{% if confirmation %}
+        {% url 'account_email' as email_url %}
+        <p>{% blocktrans %}This e-mail confirmation link expired or is invalid. Please 
+            <a href="{{ email_url }}">issue a new e-mail confirmation request</a>.{% endblocktrans %}
+        </p>
 
-{% user_display confirmation.email_address.user as user_display %}
-
-<p>{% blocktrans with confirmation.email_address.email as email %}Please confirm that <a href="mailto:{{ email }}">{{ email }}</a> is an e-mail address for user {{ user_display }}.{% endblocktrans %}</p>
-
-<form method="post" action="{% url 'account_confirm_email' confirmation.key %}">
-{% csrf_token %}
-    <button type="submit">{% trans 'Confirm' %}</button>
-</form>
-
-{% else %}
-
-{% url 'account_email' as email_url %}
-
-<p>{% blocktrans %}This e-mail confirmation link expired or is invalid. Please <a href="{{ email_url }}">issue a new e-mail confirmation request</a>.{% endblocktrans %}</p>
-
-{% endif %}
+    {% endif %}
 
 {% endblock %}
