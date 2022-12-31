@@ -4,7 +4,6 @@ from django.db.models.signals import post_save
 from django.dispatch import receiver
 
 from django_countries.fields import CountryField
-from django.core.validators import RegexValidator
 
 
 # need to install countryfield
@@ -13,46 +12,49 @@ from django.core.validators import RegexValidator
 class UserProfile(models.Model):
     """
     Extends the existing django User model
+    Allows a user to save their default delivery address
+    & view their order history
     """
     user = models.OneToOneField(User, on_delete=models.CASCADE)
 
-    full_name = models.CharField(
+    default_full_name = models.CharField(
         max_length=100,
-        blank=False,
-    )
-    street_address1 = models.CharField(
-        max_length=80,
-        blank=False,
-    )
-    street_address2 = models.CharField(
-        max_length=80,
+        null=True,
         blank=True,
     )
-    town_or_city = models.CharField(
+    default_street_address1 = models.CharField(
+        max_length=80,
+        null=True,
+        blank=True,
+    )
+    default_street_address2 = models.CharField(
+        max_length=80,
+        null=True,
+        blank=True,
+    )
+    default_town_or_city = models.CharField(
         max_length=50,
-        blank=False,
-    )
-    county = models.CharField(
-        max_length=80,
+        null=True,
         blank=True,
     )
-    postcode = models.CharField(
-        max_length=20,
-        blank=False,
+    default_county = models.CharField(
+        max_length=80,
+        null=True,
+        blank=True,
     )
-    country = CountryField(
+    default_postcode = models.CharField(
+        max_length=20,
+        null=True,
+        blank=True,
+    )
+    default_country = CountryField(
         blank_label='Country',
         null=True,
-        blank=False,
+        blank=True,
     )
-    phoneNumberRegex = RegexValidator(
-        regex=r"^\+?1?\d{8,15}$",
-        message='Please enter a valid phone number',
-    )
-    phone_number = models.CharField(
-        validators=[phoneNumberRegex],
-        max_length=16,
-        unique=True,
+    default_phone_number = models.CharField(
+        max_length=20,
+        null=True,
         blank=True,
     )
 
