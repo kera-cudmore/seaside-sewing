@@ -28,10 +28,26 @@ def add_to_bag(request, item_id):
     redirect_url = request.POST.get('redirect_url')
     bag = request.session.get('bag', {})
 
+    # If product already in bag - update quantity & check stock level
     if item_id in list(bag.keys()):
-        bag[item_id] += quantity
-        messages.success(
-            request, f'Updated {product.name} quantity to {bag[item_id]}')
+        updated_quantity = bag[item_id] + quantity
+        check_quantity = product.stock - updated_quantity
+
+        # if there is enough stock, add to bag and show message
+        if check_quantity >= 0:
+            bag[item_id] = updated_quantity
+            messages.success(request, f'Added an additional {quantity} of \
+                {product.name} to your bag. The total quantity of \
+                {product.name} in your bag is {updated_quantity}.')
+
+        # if not enough stock return error toast
+        else:
+            messages.error(request, f'Sorry, we do not currently have \
+                stock levels for {product.name} to fulfill your \
+                current needs. Please adjust your quantity for \
+                {product.name}.')
+
+    # add product to bag
     else:
         bag[item_id] = quantity
         messages.success(request, f'Added {product.name} to your bag')
