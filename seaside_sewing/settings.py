@@ -30,7 +30,7 @@ SECRET_KEY = 'django-insecure-057*x#5p3c$-a&0&%%2lz%532ttnslkgfgw00-75c@d!*rvl+k
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://seaside-sewing.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['seaside-sewing.herokuapp.com', 'localhost']
 
 
 # Application definition
