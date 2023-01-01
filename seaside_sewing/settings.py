@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'crispy_forms',
+    'storages',
 
     'home',
     'bag',
@@ -205,3 +206,4 @@ STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
 # Sending emails
 
 DEFAULT_FROM_EMAIL = 'seaside.sewing.eshop@gmail.com'
+ACCOUNT_EMAIL_VERIFICATION = 'none'
