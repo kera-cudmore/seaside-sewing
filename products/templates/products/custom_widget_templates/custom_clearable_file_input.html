@@ -2,7 +2,7 @@
     <p>{{ widget.initial_text }}:</p>
     <a href="{{ widget.value.url }}">
         <!-- Image Preview -->
-        <img width="96" height="96" src="{{ widget.value.url }}" class="rounded shadow-sm">
+        <img width="200" height="200" src="{{ widget.value.url }}" class="rounded shadow-sm">
     </a>
     {% if not widget.required %}
         <!-- Checkbox -->
@@ -16,8 +16,9 @@
 {% endif %}
 
 <!-- File input styled as button. Displays file name once selected -->
-<span class="btn btn-outline-blue btn-file">
-    Select Product Image 
+<span class="btn btn-outline-blue btn-file my-2">
+    <span class="mr-2"><i class="fa-regular fa-image"></i></span>
+    <span>Select Product Image</span> 
     <input id="new-image" type="{{ widget.type }}" name="{{ widget.name }}"{% include "django/forms/widgets/attrs.html" %}>
 </span>
 <p id="filename"></p>
