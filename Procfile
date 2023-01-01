@@ -1,0 +1,1 @@
+web: gunicorn seaside_sewing.wsgi:application
