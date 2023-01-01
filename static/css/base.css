@@ -78,11 +78,13 @@ a {
 
 .delete-link    {
     color: var(--red);
+    border-width: 0;
 }
 
 .delete-link:hover    {
     color: var(--red);
     font-weight: 900;
+    text-decoration: underline;
 }
 
 /*----- Header -----*/
