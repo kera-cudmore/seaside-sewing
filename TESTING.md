@@ -102,3 +102,4 @@ Additional testing was carried out by friends and family on a variety of devices
 |:--- | :--- | :---: |
 | 1 | success toasts not displaying now I've added in the show bag logic | |
 | 2 | if line items are deleted and there is nothing left in the order - delivery fee still there - possibly update the code with logic that says if total = 0 then delivery = 0 (elif self.order_total == 0: \self.delivery_cost == 0)||
+| 3 | checkout quantities not updating correctly | |
