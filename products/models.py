@@ -52,7 +52,7 @@ class Product(models.Model):
         null=True,
         blank=True,
     )
-    quantity = models.PositiveSmallIntegerField(
+    stock = models.PositiveSmallIntegerField(
     )
     colour = models.CharField(
         max_length=50,
