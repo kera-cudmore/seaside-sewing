@@ -4,6 +4,7 @@ Django==3.2.16
 django-allauth==0.41.0
 django-countries==7.2.1
 django-crispy-forms==1.14.0
+gunicorn==20.1.0
 oauthlib==3.2.2
 Pillow==9.3.0
 psycopg2==2.9.5
