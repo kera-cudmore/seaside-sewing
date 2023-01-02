@@ -14,8 +14,9 @@
     --black: #000000;
     --grey: #aab7c4;
     --light-blue: #95DDED;
-    --medium-blue: #38A3DC;
-    --dark-blue: #2072B4;
+    /* --medium-blue: #38A3DC; */
+    /* --dark-blue: #2072B4; */
+    --dark-blue: #175587;
     --green: #456f34;
     --red: #A82114;
 }
@@ -89,12 +90,12 @@ a {
 /*----- Header -----*/
 
 .site-name {
-    background-color: var(--medium-blue);
+    background-color: var(--dark-blue);
     display: flex;
     justify-content: center;
 }
 .account-nav {
-    background-color: var(--medium-blue);
+    background-color: var(--dark-blue);
     color: var(--white);
 }
 
@@ -104,7 +105,7 @@ a {
 }
 
 .categories-nav {
-    background-color: var(--medium-blue);
+    background-color: var(--dark-blue);
     padding-bottom: 1rem;
 }
 
@@ -112,7 +113,6 @@ a {
 .navbar-toggler-icon {
     color: var(--white);
 }
-
 
 /*----- Footer -----*/
 
