@@ -100,12 +100,14 @@
                         Stock: {{ product.stock }}
                 </p>
 
-                <!-- Product star rating to go here -->
-                <p class="small mt-2 mb-5 text-muted">
-                        <i class="fa-solid fa-star mr-3"></i>Rating: 4
-                </p>
+                {% if product.rating %}
+                    <!-- Product star rating to go here -->
+                    <p class="small mt-2 mb-2 text-muted">
+                            <i class="fa-solid fa-star mr-3"></i>Rating: 4
+                    </p>
+                {% endif %}
 
-                <p>{{ product.description}}</p>
+                <p class="pt-3">{{ product.description}}</p>
                 
                 <form action="{% url 'add_to_bag' product.id %}" method="POST" class="form">
                     {% csrf_token %}
