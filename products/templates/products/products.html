@@ -21,9 +21,9 @@
     <div class="row page-title">
         <h3>Products</h3>
     </div>
-        <div class="col pb-5">
+        <div class="col-12 pb-5 text-center">
             {% for c in current_categories %}
-                <a href="{% url 'products' %}?category={{ c.name }}" class="btn btn-outline-blue mx-1">{{ c.friendly_name }}</a>
+                <a href="{% url 'products' %}?category={{ c.name }}" class="text-muted mx-1">- {{ c.friendly_name }} -</a>
             {% endfor %}
         </div>
 
