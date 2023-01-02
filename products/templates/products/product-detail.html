@@ -81,24 +81,29 @@
                 {% if product.category %}
                     <p class="small mt-2 mb-2">
                         <a href="{% url 'products' %}?category={{ product.category.name }}" class="text-muted">
-                            <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
+                            <i class="fas fa-tag mr-4"></i>{{ product.category.friendly_name }}
                         </a>
                     </p>
                 {% endif %}
                 
                 {% if product.colour %}
-                    <p class="small mt-2 mb-2">
+                    <p class="small mt-2 mb-2 text-muted">
                         <!-- See if I can get the color to be a link to all products that are pink -->
                         <!-- <a href="{% url 'products' %}?products={{ product.colour }}" class="text-muted"> -->
-                            <i class="fa-solid fa-droplet"></i> {{ product.colour }}
+                            <i class="fa-solid fa-droplet mr-4"></i>{{ product.colour }}
                         <!-- </a> -->
                     </p>
                 {% endif %}
 
-                <p class="small mt-2 mb-2">Stock Level: {{ product.stock }}</p>
+                <p class="small mt-2 mb-2 text-muted">
+                    <i class="fa-solid fa-boxes-stacked mr-3"></i>
+                        Stock: {{ product.stock }}
+                </p>
 
                 <!-- Product star rating to go here -->
-                <p>Rating will go here with star icons</p>
+                <p class="small mt-2 mb-5 text-muted">
+                        <i class="fa-solid fa-star mr-3"></i>Rating: 4
+                </p>
 
                 <p>{{ product.description}}</p>
                 
