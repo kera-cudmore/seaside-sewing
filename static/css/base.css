@@ -12,7 +12,7 @@
     /*----- Colours -----*/
     --white: #ffffff;
     --black: #000000;
-    --grey: #E3E0Df;
+    --grey: #aab7c4;
     --light-blue: #95DDED;
     --medium-blue: #38A3DC;
     --dark-blue: #2072B4;
@@ -20,13 +20,11 @@
     --red: #A82114;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    }
 
-/* look into how to get the svg to be full width and scalable for devices */
-/* svg {
-    width: 100vw;
-    height: auto;
-    object-fit: contain;
-} */
 
 /*----- Headings & Text -----*/
 
@@ -45,7 +43,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 h3 {
@@ -202,7 +200,7 @@ a {
 /*----- Main Page -----*/
 
 .content-container {
-    padding:5rem 0;
+    padding:5rem 3rem;
 }
 
 hr {
@@ -259,7 +257,7 @@ hr {
 }
 
 input[name='q']::placeholder {
-    color: #aab7c4;
+    color: var(--grey);
 }
 
 .btn-file {
@@ -310,7 +308,7 @@ input[name='q']::placeholder {
 }
 
 .allauth-form-inner-content input::placeholder {
-    color: #aab7c4;
+    color: var(--grey);
 }
 
 
@@ -351,6 +349,9 @@ input[name='q']::placeholder {
     h1{
         font-size: 5rem;
     }
+    h2 {
+        font-size: 1.5rem;
+    }
 
     h3 {
         font-size: 4rem;
@@ -358,12 +359,6 @@ input[name='q']::placeholder {
 
     h4 {
         font-size: 2rem;
-    }
-    
-    svg {
-        width: 100vw;
-        height: auto;
-        object-fit: contain;
     }
 }
 
