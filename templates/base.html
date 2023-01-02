@@ -53,7 +53,7 @@
     
         <!-- SITE NAME & NAV -->
         <header class="container-fluid">
-            {% include 'includes/header-image.html' %}
+            <!-- Header SVG -->
             <div class="row site-name">
                 <h1>Seaside Sewing</h1>
             </div>
@@ -82,15 +82,15 @@
         {% endif %}
     
         <!-- PAGE CONTENT -->
-        <div class="container content-container">
+        <div class="content-container">
             {% block content %}
             {% endblock %}
         </div>
 
         <!-- FOOTER -->
-        <div class="container-fluid footer-container">
+        <div class="footer-container">
             {% include 'includes/footer-content.html' %}
-            {% include 'includes/footer-image.html' %}
+            <!-- FOOTER SVG-->
         </div>
 
         {% block postloadjs %}
