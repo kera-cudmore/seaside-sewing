@@ -208,6 +208,11 @@ hr {
     border-top: 3px dashed var(--grey);
 }
 
+.cat-card-title {
+    font-size: 1.55rem;
+    color: var(--dark-blue);
+    font-weight: 700;
+}
 /*----- Buttons -----*/
 
 .btn-outline-blue {
