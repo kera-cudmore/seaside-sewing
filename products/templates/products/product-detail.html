@@ -3,24 +3,18 @@
 
 {% block extra_title %} - {{ product.name }}{% endblock %}
 
-<!-- Extra meta tags specific to the page to be put here -->
 {% block extra_meta %}
-    <meta name="description" content="DESCRIPTION">
-    <meta name="keywords" content="KEYWORDS">
+    <meta name="description" content="Seaside Sewing - {{ product.name }}. Product information for {{ product.name }}. Seaside Sewing, an online ecommerce store selling all you need for your next sewing project from quilting and patchwork, to sewing your own clothes!">
+    <meta name="keywords" content="{{ product.name }},Product details, Seaside Sewing, sewing, ecommerce, online shop, shop, sewing products, needles, thread, fabric, material, sew, hobby, patchwork, quilting">
 
-    <!-- Social media integration, for when people share your content -->
-    <!-- Facebook, LinkedIn, Google -->
+    <!-- Social Media - Facebook, LinkedIn, Google -->
     <meta property="og:type" content="article" />
-    <meta property="og:title" content="Seaside Sewing" /> <!-- Same as what's inside <title> tag -->
-    <!-- The title you want displayed when your page is linked to -->
-    <meta property="og:description" content="DESCRIPTION OF PAGE CONTENT" /> <!-- Same as what's inside description meta tag -->
-    <!-- The description you want displayed when your page is linked to (maximum 300 characters) -->
-    <meta name="image" property="og:image" content="URL TO IMAGE" />
-    <!-- URL of image to be displayed when your site is linked to -->
-    <!-- Be careful when building non-static sites like your MS3 and MS4, this can be a little tricky -->
-    <meta property="og:image:alt" content="ALT TEXT FOR IMAGE" /> <!-- Alt text for above image - an accessibility win -->
-    <meta property="og:url" content="#" /> <!-- Your page's URL -->
-    <meta property="og:site_name" content="Seaside Sewing" /> <!-- Same as what's inside <title> tag -->
+    <meta property="og:title" content="Seaside Sewing - {{ product.name }}" />
+    <meta property="og:description" content="Seaside Sewing - {{ product.name }}. Product information for {{ product.name }}. Seaside Sewing, an online ecommerce store selling all you need for your next sewing project from quilting and patchwork, to sewing your own clothes!" />
+    <meta name="image" property="og:image" content="URL TO IMAGE" /><!-- URL of image to be displayed when your site is linked to -->
+    <meta property="og:image:alt" content="Seaside Sewing ecommerce store shown on a variety of devices, from mobile to desktop" />
+    <meta property="og:url" content="https://seaside-sewing.herokuapp.com/products/{{ product.id }}/" />
+    <meta property="og:site_name" content="Seaside Sewing - {{ product.name }}" />
 {% endblock %}
 
 {% block content %}
@@ -140,7 +134,8 @@
                             <input type="submit" value="Add to Bag" class="btn btn-outline-blue mt-2">
                             <a href="{% url 'products' %}" class="btn btn-outline-red mt-2">Back</a>
                         </div>
-                        <!-- submits field called redirect_url - this allows us to redirect the user back to the previous page they were on -->
+                        <!-- submits field called redirect_url - 
+                            this allows us to redirect the user back to the previous page they were on -->
                         <input type="hidden" name="redirect_url" value="{{ request.path }}">
                                 
                     </div>
@@ -148,7 +143,6 @@
             </div>
         </div>
     </div>
-
 {% endblock %}
 
 {% block postloadjs %}
