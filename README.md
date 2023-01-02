@@ -290,6 +290,14 @@ Text throughout the site will be either black or white, depending on the backgro
 
 ![Colour Scheme for Seaside Sewing](documentation/colour-theme.png)
 
+UPDATE
+
+Once I began working on the site, I realised that there wasn't enough of a contrast for the green text on a white background when runnning the site through the WAVE chrome extension. I have therefore used a slightly darker green to allow for a better contrast. There was a similar issue with the dark blue chosen for the site, the contrast was not passing for the sites header with white text, and so I have chosen a darker blue which does pass contrast tests with white text. I have also updated the grey colour used, as this was a colour used for other elements in bootstrap, so by changing to this allows a better cohesion in the site.
+
+As I did not appear to be using the medium blue anywhere in the site, I have removed this.
+
+![Updated Colour Scheme](documentation/updated-colour-theme.png)
+
 #### **Typography**
 
 All fonts were sourced from [Google Fonts](https://fonts.google.com/). I used [Font Joy](https://fontjoy.com/) to enable me to view the font choices together to make sure that they worked well together.
