@@ -3,24 +3,19 @@
 
 {% block extra_title %} - Home{% endblock %}
 
-<!-- Extra meta tags specific to the page to be put here -->
 {% block extra_meta %}
-    <meta name="description" content="DESCRIPTION">
-    <meta name="keywords" content="KEYWORDS">
+    <meta name="description" content="Seaside Sewing - an online ecommerce store selling all you need for your next sewing project from quilting and patchwork, to sewing your own clothes!">
+    <meta name="keywords" content="Seaside Sewing, sewing, ecommerce, online shop, shop, sewing products, needles, thread, fabric, material, sew, hobby, patchwork, quilting">
 
-    <!-- Social media integration, for when people share your content -->
-    <!-- Facebook, LinkedIn, Google -->
+    <!-- Social Media - Facebook, LinkedIn, Google -->
     <meta property="og:type" content="article" />
-    <meta property="og:title" content="TITLE OF YOUR POST OR PAGE" /> <!-- Same as what's inside <title> tag -->
-    <!-- The title you want displayed when your page is linked to -->
-    <meta property="og:description" content="DESCRIPTION OF PAGE CONTENT" /> <!-- Same as what's inside description meta tag -->
-    <!-- The description you want displayed when your page is linked to (maximum 300 characters) -->
-    <meta name="image" property="og:image" content="URL TO IMAGE" />
-    <!-- URL of image to be displayed when your site is linked to -->
+    <meta property="og:title" content="Seaside Sewing - Home" />
+    <meta property="og:description" content="Seaside Sewing - an online ecommerce store selling all you need for your next sewing project from quilting and patchwork, to sewing your own clothes!" />
+    <meta name="image" property="og:image" content="URL TO IMAGE" /><!-- URL of image to be displayed when your site is linked to -->
     <!-- Be careful when building non-static sites like your MS3 and MS4, this can be a little tricky -->
-    <meta property="og:image:alt" content="ALT TEXT FOR IMAGE" /> <!-- Alt text for above image - an accessibility win -->
-    <meta property="og:url" content="#" /> <!-- Your page's URL -->
-    <meta property="og:site_name" content="Seaside Sewing - Home" /> <!-- Same as what's inside <title> tag -->
+    <meta property="og:image:alt" content="Seaside Sewing ecommerce store shown on a variety of devices, from mobile to desktop" />
+    <meta property="og:url" content="https://seaside-sewing.herokuapp.com/" />
+    <meta property="og:site_name" content="Seaside Sewing - Home" />
 {% endblock %}
 
 {% block content %}
@@ -45,16 +40,14 @@
         
         {% for c in categories %}
             <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
-
-            
-            <div class="card border">
-                <a href="{% url 'products' %}?category={{ c.name }}">
-                <h5 class="card-title cat-card-title text-center mt-5">{{ c.friendly_name }}</h5>
-                <div class="card-body">
-                    <img src="{{ MEDIA_URL }}catcard.webp" alt="" class="card-img-bottom img-fluid d-none d-sm-none d-md-block">
+                <div class="card border">
+                    <a href="{% url 'products' %}?category={{ c.name }}">
+                        <h5 class="card-title cat-card-title text-center mt-5">{{ c.friendly_name }}</h5>
+                        <div class="card-body">
+                            <img src="{{ MEDIA_URL }}catcard.webp" alt="" class="card-img-bottom img-fluid d-none d-sm-none d-md-block">
+                        </div>
+                    </a>
                 </div>
-            </div>
-        </a>
             </div>
 
             <!-- set the columns depending on no of items -->
@@ -79,11 +72,6 @@
                 </div>
             {% endif %}
         {% endfor %}
-            <!-- columns to hold the categories cards - make these 1 col on sm screen, 2 col on md screen and 3 col on lrg (maybe 4 for xl)-->
-            <!-- Each category will be a card with an image of the categories products and a small decription -->
-            <!-- Click the image to be taken to the category-->
-        </div>
     </div>
-
 
 {% endblock %}
