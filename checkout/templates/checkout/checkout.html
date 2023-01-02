@@ -61,7 +61,7 @@
                         <p class="my-2 small text-muted">Qty: {{ item.quantity }}</p>
                     </div>
                     <div class="col-3 text-right">
-                        <p class="my-2 small text-muted">${{ item.product.price | calc_subtotal:item.quantity }}</p>
+                        <p class="my-2 small text-muted">£{{ item.product.price | calc_subtotal:item.quantity }}</p>
                     </div>
                 </div>
                 {% endfor %}
