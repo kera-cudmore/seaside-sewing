@@ -2,7 +2,7 @@
     <div class="col-12 my-auto d-lg-flex py-1 py-lg-0">
 
         <!-- Search bar -->
-        <div class="col-md-12 col-lg-6 offset-lg-3 my-auto py-1 py-lg-0">
+        <div class="col-12 col-lg-6 offset-lg-3 my-auto py-1 py-lg-0">
             <form method="GET" action="{% url 'products' %}">
                 <div class="input-group w-100">
                     <input class="form-control border rounded-1" type="text" name="q" placeholder="Search our site">
@@ -16,13 +16,13 @@
             </form>
         </div>
 
-        <div class="col-md-12 col-lg-3 my-auto py-1 py-lg-0">
-            <ul class="list-inline list-unstyled text-center text-lg-right my-0">
+        <div class="col-12 col-lg-3 my-auto py-1 py-lg-0">
+            <ul class="list-inline list-unstyled text-center right my-0">
 
                 <!-- Account -->
                 <li class="list-inline-item dropdown">
                     <a href="#" class="nav-link" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <div class="text-center">
+                        <div>
                             <div><i class="fas fa-user fa-xl"></i></div>
                             <p class="my-0">My Account</p>
                         </div>
@@ -41,22 +41,10 @@
                     </div>
                 </li>
 
-                <!-- Wishlist -->
-                <li class="list-inline-item">
-                    <a href="#" class="nav-link">
-                        <div class="text-center">
-                            <div><i class="fa-regular fa-heart fa-xl"></i></div>
-                            <p class="my-0">
-                                Wishlist
-                            </p>
-                        </div>
-                    </a>
-                </li>
-
                 <!-- Bag -->
                 <li class="list-inline-item">
                     <a href="{% url 'view_bag' %}" class="nav-link">
-                        <div class="text-center">
+                        <div>
                             <div><i class="fa-solid fa-basket-shopping fa-xl"></i></div>
                             <p class="my-0">
                                 {% if total %}
