@@ -24,14 +24,13 @@
 {% endblock %}
 
 {% block content %}
-
 <div class="row page-title">
     <h3>Product Management</h3>
-    <h4>Edit Product</h4>
 </div>
 
 <div class="row">
-    <div class="col-12 col-md-6">
+    <div class="col-12 col-md-6 offset-md-3">
+        <h4 class="text-center">Edit Product</h4>
         <form method="POST" action="{% url 'edit_product' product.id %}" class="form mb-2" enctype="multipart/form-data">
             {% csrf_token %}
             {% for field in form %}
@@ -46,7 +45,7 @@
                     <span class="mr-2"><i class="fa-solid fa-xmark"></i></span>    
                     <span>Cancel</span>
                 </a>
-                <button class="btn btn-outline-blue my-2" type="submit">
+                <button class="btn btn-outline-blue ml-2" type="submit">
                     <span class="mr-2"><i class="fa-regular fa-pen-to-square"></i></span>
                     <span>Update Product</span>
                 </button>
@@ -54,13 +53,11 @@
         </form>
     </div>            
 </div>
-</div>
-
 {% endblock %}
 
 {% block postloadjs %}
     {{ block.super}}
-    <script>
+    <script type="text/javascript">
         $('#new-image').change(function() {
             var file = $('#new-image')[0].files[0];
             $('#filename').text(`Image will be set to: ${file.name}`);
