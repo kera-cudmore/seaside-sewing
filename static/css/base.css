@@ -47,12 +47,13 @@ h2 {
 }
 
 h3 {
-    font-size: 3rem;
+    font-size: 2.25rem;
     padding-bottom: 3rem;
 }
 
 h4 {
     font-size: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 a {
