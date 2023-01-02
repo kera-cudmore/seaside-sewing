@@ -6,7 +6,7 @@
     padding: 10px 12px;
     border: 1px solid transparent;
     border-radius: 0px;
-    background-color: white;
+    background-color: var(--white);
     box-shadow: 0 1px 3px 0 #e6ebf1;
     -webkit-transition: box-shadow 150ms ease;
     transition: box-shadow 150ms ease;
@@ -23,7 +23,7 @@
 }
 
 .stripe-style-input::placeholder {
-    color: #aab7c4;
+    color: var(--grey);
 }
 
 .fieldset-label {
@@ -33,20 +33,20 @@
 
 #payment-form .form-control,
 #card-element {
-    color: #000;
-    border: 1px solid #000;
+    color: var(--black);
+    border: 1px solid var(--black);
 }
 
 /* Select dropdowns - show grey if invalid or when default option
 show as black when option selected */
 select,
 select option {
-    color: #000;
+    color: var(--black);
 }
 
 select:invalid,
 selection option[value=""] {
-    color: #aab7c4 !important;
+    color: var(--grey) !important;
 }
 
 /* PAYMENT PROCESSING OVERLAY & SPINNER */
