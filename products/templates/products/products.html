@@ -3,24 +3,18 @@
 
 {% block extra_title %} - Products{% endblock %}
 
-<!-- Extra meta tags specific to the page to be put here -->
 {% block extra_meta %}
-    <meta name="description" content="DESCRIPTION">
+    <meta name="description" content="Seaside Sewing - Products. Peruse the products available on Seaside Sewing, an online ecommerce store selling all you need for your next sewing project from quilting and patchwork, to sewing your own clothes!">
     <meta name="keywords" content="KEYWORDS">
 
-    <!-- Social media integration, for when people share your content -->
-    <!-- Facebook, LinkedIn, Google -->
+    <!-- Social Media - Facebook, LinkedIn, Google -->
     <meta property="og:type" content="article" />
-    <meta property="og:title" content="Seaside Sewing - Products" /> <!-- Same as what's inside <title> tag -->
-    <!-- The title you want displayed when your page is linked to -->
-    <meta property="og:description" content="DESCRIPTION OF PAGE CONTENT" /> <!-- Same as what's inside description meta tag -->
-    <!-- The description you want displayed when your page is linked to (maximum 300 characters) -->
-    <meta name="image" property="og:image" content="URL TO IMAGE" />
-    <!-- URL of image to be displayed when your site is linked to -->
-    <!-- Be careful when building non-static sites like your MS3 and MS4, this can be a little tricky -->
-    <meta property="og:image:alt" content="ALT TEXT FOR IMAGE" /> <!-- Alt text for above image - an accessibility win -->
-    <meta property="og:url" content="#" /> <!-- Your page's URL -->
-    <meta property="og:site_name" content="Seaside Sewing - Products" /> <!-- Same as what's inside <title> tag -->
+    <meta property="og:title" content="Seaside Sewing - Products" />
+    <meta property="og:description" content="Seaside Sewing - Products. Peruse the products available on Seaside Sewing, an online ecommerce store selling all you need for your next sewing project from quilting and patchwork, to sewing your own clothes!" />
+    <meta name="image" property="og:image" content="URL TO IMAGE" /><!-- URL of image to be displayed when your site is linked to -->
+    <meta property="og:image:alt" content="Seaside Sewing ecommerce store shown on a variety of devices, from mobile to desktop" />
+    <meta property="og:url" content="https://seaside-sewing.herokuapp.com/products/" />
+    <meta property="og:site_name" content="Seaside Sewing - Products" />
 {% endblock %}
 
 {% block content %}
@@ -90,15 +84,19 @@
                                         </a>
                                     </p>
                                 {% endif %}
-                        
-                                <!-- ADD PRODUCT RATING HERE IF IT EXISTS-->
+                                {% if product.rating %}
+                                <p class="small mt-1 mb-2 text-muted">
+                                        <i class="fa-solid fa-star mr-1"></i>{{ product.rating }}
+                                </p>
+                                {% endif %}
 
                                 <!-- Admin edit and delete buttons -->
                                 {% if request.user.is_superuser %}
                                     <div class="float-right">
                                         <a href="{% url 'edit_product' product.id %}" class="edit-link">Edit</a>
-                                        <button data-toggle="modal" data-target="#deleteModal-{{ product.id }}" class="delete-link ml-3">Delete</button>
-                                    
+                                        <button data-toggle="modal" data-target="#deleteModal-{{ product.id }}" 
+                                            class="delete-link ml-3">Delete</button>
+
                                         <!-- Delete Product Modal-->
                                         <div class="modal" tabindex="-1" role="dialog" id="deleteModal-{{ product.id }}">
                                             <div class="modal-dialog" role="document">
@@ -162,14 +160,13 @@
             <i class="fa-solid fa-chevron-up fa-lg"></i>
         </a>
     </div>
-
 {% endblock %}
 
 {% block postloadjs %}
     {{ block.super }}
 
     <!-- Back to top button -->
-    <script>
+    <script type="text/javascript">
         $('.back-to-top').click(function(e) {
             window.scrollTo(0,0)
         })
