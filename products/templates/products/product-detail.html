@@ -40,14 +40,14 @@
             </div>
         </div>
 
-        <div class="col-12 col md-6 col-lg-4">
+        <div class="col-12 col md-6 col-lg-4 offset-lg-2">
             <div class="product-details-container">
                 <h4>{{ product.name }}</h4>
                 <p class="lead">£{{ product.price }}</p>
             
                 <!-- admin edit/delete buttons -->
                 {% if request.user.is_superuser %}
-                    <div class="float-right">
+                    <div class="float-right mr-5">
                         <a href="{% url 'edit_product' product.id %}" class="edit-link">Edit</a>
                         <button data-toggle="modal" data-target="#deleteModal-{{ product.id }}" class="delete-link ml-3">Delete</button>
 
@@ -129,8 +129,8 @@
                         </div>
 
                         <!-- submit button for form and keep shopping button -->
-                        <div class="float-right">
-                            <input type="submit" value="Add to Bag" class="btn btn-outline-blue mt-2 mr-2">
+                        <div>
+                            <input type="submit" value="Add to Bag" class="btn btn-outline-blue mt-2">
                             <a href="{% url 'products' %}" class="btn btn-outline-red mt-2">Back</a>
                         </div>
                         <!-- submits field called redirect_url - this allows us to redirect the user back to the previous page they were on -->
