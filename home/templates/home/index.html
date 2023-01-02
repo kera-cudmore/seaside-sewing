@@ -23,11 +23,9 @@
     </div>
 
     <div class="row text-center">
-        <div class="col mb-5">
+        <div class="col-10 offset-1 mb-5">
             <h4>The first port of call for all your sewing needs.</h4>
-
             <p>We carry a comprehensive stock of sewing products suitable for those just dipping their toes in to the more experienced sewer.</p>
-
             <p>Don't have what your looking for? Feel free to contact us</p>
         </div>
     </div>
@@ -36,7 +34,6 @@
         <div class="col-12 mb-5">
             <h4>Browse our Products</h4>
         </div>
-        
         {% for c in categories %}
             <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
                 <div class="card border">
@@ -72,5 +69,4 @@
             {% endif %}
         {% endfor %}
     </div>
-
 {% endblock %}
