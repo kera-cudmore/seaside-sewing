@@ -25,7 +25,7 @@
 
 {% block content %}
     <div class="row">
-        <div class="col-6 col md-6 col-lg-4 offset-lg-2">
+        <div class="col-12 col md-6 col-lg-4 offset-lg-2">
             <div class="image-container my-5">
                 {% if product.image %}
                         <a href="{{ product.image.url }}" target="_blank">
@@ -33,14 +33,14 @@
                         </a>
                     {% else %}
                         <a href="{{ MEDIA_URL }}noimage.png">
-                            <img src="{{ MEDIA_URL }}noimage.webp" alt="{{ product.name }}">
+                            <img class="img-fluid" src="{{ MEDIA_URL }}noimage.webp" alt="{{ product.name }}">
                         </a>
                     {% endif %}
                     
             </div>
         </div>
 
-        <div class="col-12 col md-6 col-lg-4 offset-lg-2">
+        <div class="col-12 col md-6 col-lg-4">
             <div class="product-details-container">
                 <h4>{{ product.name }}</h4>
                 <p class="lead">£{{ product.price }}</p>
@@ -128,39 +128,19 @@
                             </div>
                         </div>
 
-                        <!-- add to wishlist button -->
-                            <p>Wishlist button to go to right of quantity</p>
-
                         <!-- submit button for form and keep shopping button -->
-                        <div class="col{% if s %}-12 mt-2{% endif %}">
-                            <input type="submit" value="Add to Bag" class="btn btn-outline-blue mt-2">
+                        <div class="float-right">
+                            <input type="submit" value="Add to Bag" class="btn btn-outline-blue mt-2 mr-2">
                             <a href="{% url 'products' %}" class="btn btn-outline-red mt-2">Back</a>
                         </div>
-                    
                         <!-- submits field called redirect_url - this allows us to redirect the user back to the previous page they were on -->
                         <input type="hidden" name="redirect_url" value="{{ request.path }}">
                                 
                     </div>
                 </form>
-
             </div>
         </div>
     </div>
-
-    <!-- reviews section to go here (new row)-->
-    <div class="row">
-        <div class="col">
-            <h5>Reviews</h5>
-        </div>
-    </div>
-    <!-- add review button (only to be displayed to logged in users)-->
-
-    <!-- review title-->
-    <!-- Reviewed by -->
-    <!-- on date -->
-    <!-- review-->
-    <!-- star rating given-->
-    <!-- each review will have a delete button - for admin only to delete reviews that dont meet requirements eg rude, spam-->
 
 {% endblock %}
 
