@@ -1,11 +1,17 @@
 from django.shortcuts import render
+from products.models import Category
 
 
 def index(request):
     """
     View that returns the home page
     """
-    return render(request, "home/index.html")
+    categories = Category.objects.all()
+
+    context = {
+        'categories': categories
+    }
+    return render(request, "home/index.html", context)
 
 
 def privacy(request):
