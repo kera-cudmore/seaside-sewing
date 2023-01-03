@@ -41,7 +41,7 @@
             
                 <!-- admin edit/delete buttons -->
                 {% if request.user.is_superuser %}
-                    <div class="float-right mr-5">
+                    <div>
                         <a href="{% url 'edit_product' product.id %}" class="edit-link">Edit</a>
                         <button data-toggle="modal" data-target="#deleteModal-{{ product.id }}" class="delete-link ml-3">Delete</button>
 
@@ -72,37 +72,39 @@
                     </div>
                 {% endif %}
 
-                {% if product.category %}
-                    <p class="small mt-2 mb-2">
-                        <a href="{% url 'products' %}?category={{ product.category.name }}" class="text-muted">
-                            <i class="fas fa-tag mr-4"></i>{{ product.category.friendly_name }}
-                        </a>
-                    </p>
-                {% endif %}
-                
-                {% if product.colour %}
-                    <p class="small mt-2 mb-2 text-muted">
-                        <!-- See if I can get the color to be a link to all products that are pink -->
-                        <!-- <a href="{% url 'products' %}?products={{ product.colour }}" class="text-muted"> -->
-                            <i class="fa-solid fa-droplet mr-4"></i>{{ product.colour }}
-                        <!-- </a> -->
-                    </p>
-                {% endif %}
-
-                <p class="small mt-2 mb-2 text-muted">
-                    <i class="fa-solid fa-boxes-stacked mr-3"></i>
-                        Stock: {{ product.stock }}
-                </p>
-
-                {% if product.rating %}
-                    <!-- Product star rating to go here -->
-                    <p class="small mt-2 mb-2 text-muted">
-                            <i class="fa-solid fa-star mr-3"></i>Rating: 4
-                    </p>
-                {% endif %}
-
                 <p class="pt-3">{{ product.description}}</p>
                 
+                <div class="my-2">
+                    {% if product.category %}
+                    <span class="small">
+                        <a href="{% url 'products' %}?category={{ product.category.name }}" class="text-muted">
+                            <i class="fas fa-tag mr-2"></i>{{ product.category.friendly_name }}
+                        </a>
+                    </span>
+                    {% endif %}
+                    
+                    {% if product.colour %}
+                        <span class="small text-muted ml-3">
+                            <!-- See if I can get the color to be a link to all products that are pink -->
+                            <!-- <a href="{% url 'products' %}?products={{ product.colour }}" class="text-muted"> -->
+                                <i class="fa-solid fa-droplet mr-2"></i>{{ product.colour }}
+                            <!-- </a> -->
+                            </span>
+                    {% endif %}
+
+                    <span class="small text-muted ml-3">
+                        <i class="fa-solid fa-boxes-stacked mr-2"></i>
+                            In Stock: {{ product.stock }}
+                    </span>
+
+                    <!-- Product star rating to go here -->
+                    {% if product.rating %}
+                        <span class="small text-muted ml-3">
+                                <i class="fa-solid fa-star mr-2"></i>Rating: 4
+                        </span>
+                    {% endif %}
+                </div>
+
                 <form action="{% url 'add_to_bag' product.id %}" method="POST" class="form">
                     {% csrf_token %}
                     <div class="form-row">
