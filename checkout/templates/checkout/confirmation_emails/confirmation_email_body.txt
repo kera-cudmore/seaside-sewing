@@ -13,16 +13,7 @@ Your order will be delivered to:
 
 {{ order.full_name }}
 {{ order.street_address1}}
-{% if {{order.street_address2}} %}
-    {{ order.street_address2 }}
-{% endif %}
 {{ order.town_or_city }}
-{% if {{order.county}} %}
-    {{ order.county }}
-{% endif %}
-{% if {{order.postcode}} %}
-    {{ order.postcode }}
-{% endif %}
 {{ order.country }}
 
 {{ order.phone_number }}.
