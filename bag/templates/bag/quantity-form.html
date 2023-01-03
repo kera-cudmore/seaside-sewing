@@ -1,0 +1,26 @@
+<form action="{% url 'adjust_bag' item.item_id %}" method="POST" class="form update-form">
+    {% csrf_token %}
+    <div class="form-group">
+        <div class="input-group input-group-{{ item.item_id }}">
+            <!-- minus button -->
+            <div class="input-group-prepend">
+                <button class="decrement-qty btn btn-sm btn-outline-red rounded-0 decrement-qty_{{ item.item_id }}" 
+                data-item_id="{{ item.item_id }}" id="decrement-qty_{{ item.item_id }}">
+                    <i class="fa-solid fa-minus fa-sm"></i>
+                </button>
+            </div>
+            <!-- quantity value -->
+            <input class="text-center form-control form-control-sm qty_input id_qty_{{ item.item_id }}" type="number" 
+                name="quantity" value="{{ item.quantity }}" min="1" max="99" data-item_id="{{ item.item_id }}" id="id_qty_{{ item.item_id }}"> 
+            <!-- plus button -->
+            <div class="input-group-append">
+                <button class="increment-qty btn btn-sm btn-outline-green rounded-0 increment-qty_{{ item.item_id }}" 
+                data-item_id="{{ item.item_id }}" id="increment-qty_{{ item.item_id }}">
+                    <i class="fa-solid fa-plus fa-sm"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</form>
+<a class="update-item edit-link float-right"><small>Update</small></a>
+<a class="remove-item delete-link" id="remove_{{ item.item_id }}"><small>Remove</small></a>
