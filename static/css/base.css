@@ -88,6 +88,9 @@ a {
     transform: translateY(-10px);
 }
 
+.text-danger {
+    color: var(--red) !important;
+}
 /*----- Header -----*/
 
 .site-name {
