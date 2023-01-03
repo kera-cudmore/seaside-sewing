@@ -263,6 +263,32 @@ hr {
     color: var(--white);
 }
 
+.btn-red {
+    background: var(--red);
+    color: var(--white);
+    border: 1px solid var(--white);
+}
+
+.btn-red:hover,
+.btn-red:focus {
+    background-color: var(--white);
+    color: var(--red);
+    box-shadow: 0 0 0 0.2rem #a820147c;
+
+}
+
+.btn-green {
+    background: var(--green);
+    color: var(--white);
+    border: 1px solid var(--white);
+}
+
+.btn-green:hover {
+    background-color: var(--white);
+    color: var(--green);
+    box-shadow: 0 0 0 0.2rem #456f347a;
+}
+
 .back-to-top-btn {
     position: fixed;
     height: 45px;
