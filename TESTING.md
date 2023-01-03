@@ -93,8 +93,9 @@ Additional testing was carried out by friends and family on a variety of devices
 | 2 | Update link in bag not updating quantities | I spent a lot of time looking into this issue, only to come back the next day and realise that I had placed the update link after the delete link. This meant that the previous element was then the delete link and not the form as it should have been. I have moved the update link above the delete link and it now works correctly. | |
 | 3 | Delete link in bag and update quantity to 0 were throwing a keyerror and internal server error 500 | I had added int: into the item_id part of the path in the bag urls file. This was preventing the functions working correctly | |
 | 4 | instance in the checkout view | had to add line 40 (also needed to add a return for if the instance failed (missing from the BA tutorial) | |
-| 5 | Error re float| either needed to cast to decimal or import decimal into settings and define the delivery fee as a decimal | img |
-| 6 | Delivery Fee not displaying correctly in the admin| it was adding the total to the delivery fee - so just needed to remove the total and only reference the delivery fee | img |
+| 5 | float error | I either needed to cast to decimal or import decimal into settings and define the delivery fee as a decimal to prevent an error with the delivery fee. I decided to import decimal into the settings folder. |  |
+| 6 | Delivery Fee not displaying correctly in the admin | it was adding the total to the delivery fee - so just needed to remove the total and only reference the delivery fee |  |
+| 7 | Webhooks returning 400 & 500 errors | There were 2 spelling errors and a wrong class name causing the issues, once these were corrected, the webhooks work as expected | |
 
 ### Known Bugs
 
