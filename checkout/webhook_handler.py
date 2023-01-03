@@ -7,6 +7,7 @@ from .models import Order, OrderLineItem
 from products.models import Product
 from profiles.models import UserProfile
 
+import stripe
 import json
 import time
 
@@ -39,7 +40,7 @@ class StripeWH_Handler:
         Handles a generic/unknown/unexpected Web Hook event
         """
         return HttpResponse(
-            context=f'Unhandled Webhook received: {event["type"]}',
+            content=f'Unhandled Webhook received: {event["type"]}',
             status=200
         )
 
