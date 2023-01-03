@@ -69,12 +69,13 @@ a {
 
 .edit-link  {
     color: var(--green);
+    display: inline-block;
 }
 
 .edit-link:hover  {
     color: var(--green);
-    font-weight: 900;
-}
+    text-decoration: underline;
+    transform: translateY(-10px);}
 
 .delete-link    {
     color: var(--red);
@@ -83,8 +84,8 @@ a {
 
 .delete-link:hover    {
     color: var(--red);
-    font-weight: 900;
     text-decoration: underline;
+    transform: translateY(-10px);
 }
 
 /*----- Header -----*/
@@ -112,6 +113,11 @@ a {
 .nav-link,
 .navbar-toggler-icon {
     color: var(--white);
+}
+
+.nav-link:hover {
+    color: var(--white);
+    transform: translateY(-10px);
 }
 
 /*----- Footer -----*/
