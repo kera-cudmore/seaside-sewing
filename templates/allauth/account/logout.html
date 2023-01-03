@@ -9,7 +9,7 @@
         <h3 class="text-center">{% trans "Sign Out" %}</h3>
     </div>
 
-    <p>{% trans 'Are you sure you want to sign out?' %}</p>
+    <p class="text-center">{% trans 'Are you sure you want to sign out?' %}</p>
 
     <form method="post" action="{% url 'account_logout' %}">
         {% csrf_token %}
