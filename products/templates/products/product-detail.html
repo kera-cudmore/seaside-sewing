@@ -43,8 +43,10 @@
                 {% if request.user.is_superuser %}
                     <div>
                         <a href="{% url 'edit_product' product.id %}" class="edit-link">Edit</a>
-                        <button data-toggle="modal" data-target="#deleteModal-{{ product.id }}" class="delete-link ml-3">Delete</button>
-
+                        <button data-toggle="modal" data-target="#deleteModal-{{ product.id }}" class="delete-link ml-3">
+                            Delete
+                        </button>
+                    </div>
                         <!-- Delete Product Modal-->
                         <div class="modal" tabindex="-1" role="dialog" id="deleteModal-{{ product.id }}">
                             <div class="modal-dialog" role="document">
@@ -69,7 +71,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    
                 {% endif %}
 
                 <p class="pt-3">{{ product.description}}</p>
