@@ -333,6 +333,11 @@ I created the following mockup to get an idea of what the sites header and foote
 Each page of the site shares the following:
 
 * Favicon
+
+  I used [Favicon.io](https://favicon.io/) to create the favicon for the site. As the images I tried to use to create the favicon came out very pixalated, I have used the initials of the site to create the favicon using the same font and colours from the site.
+
+  ![Seaside Sewing Favicon](documentation/favicon.png)
+
 * Navbar
 * Footer
 
@@ -342,6 +347,13 @@ site pages images
 
 In future implementations I would like to:
 
+* Allow coupons to be accepted in the checkout.
+* Send newsletters to users.
+* Implement Social login.
+* Create a fully functioning stock management system.
+* Add user reviews
+* Wishlist functionality
+
 ### Accessibility
 
 I have been mindful during coding to ensure that the website is as accessible friendly as possible. This has been have achieved by:
@@ -349,7 +361,7 @@ I have been mindful during coding to ensure that the website is as accessible fr
 * Using semantic HTML.
 * Using descriptive alt attributes on images on the site.
 * Providing information for screen readers where there are icons used and no text.
-* Ensuring that there is a sufficient colour contrast throughout the site.
+* Ensuring that there is a sufficient colour contrast throughout the site. (see update in the colour theme section.)
 
 ---
 
@@ -417,7 +429,26 @@ sqlite3 for development.
 
 The project is deployed using Heroku. To deploy the project to Heroku:
 
-1.
+1. Create an app on [Heroku](https://dashboard.heroku.com/) for the project, from the app dashboard.
+Config Vars Needed on Heroku:
+
+| |  Key | Value |
+| :---: | :---: | :---: |
+| | DATABASE_URL | * |
+| | SECRET_KEY | Use a [random key generator](https://miniwebtool.com/django-secret-key-generator/) to create a secret key |
+| **Stripe Set Up** |
+| | STRIPE_PUBLIC_KEY | * |
+| | STRIPE_SECRET_KEY | * |
+| | STRIPE_WH_SECRET | * |
+| **AWS Set Up**|
+| | USE_AWS | True |
+| | AWS_ACCESS_KEY_ID | * |
+| | AWS_SECRET_ACCESS_KEY | * |
+| **Sending Emails Set Up** |
+| | EMAIL_HOST_PASS | * |
+| | EMAIL_HOST_USER | The email address you want to send site emails from |
+
+*NOTE:* Keys with an * are unique keys to your set up.
 
 ### Local Development
 
