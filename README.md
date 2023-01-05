@@ -132,7 +132,7 @@ Below is a table of opportunities for the project, together with a score of thei
 | 17 | Shopper | Search for a product by name or description | Find a specific product I'd like to purchase |
 | 18 | Shopper | Easily see what I've searched for and the number of results | Quickly decide whether the product I want is available |
 | **PURCHASING & CHECKOUT** |
-| 19 | Shopper | Easily select the size and quantity of a product when purchasing it | Ensure I don't accidentally select the wrong product, quantity or size |
+| 19 | Shopper | Easily select the quantity of a product when purchasing it | Ensure I don't accidentally select the wrong product quantity |
 | 20 | Shopper | View items in my bag to be purchased | Identify the total cost of my purchase and all items I will receive |
 | 21 | Shopper | Adjust the quantity of individual items in my bag | Easily make changes to my purchase before checkout |
 | 22 | Shopper | Easily eneter my payment information | Check out quickly and with no hassles |
