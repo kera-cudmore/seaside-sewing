@@ -563,8 +563,99 @@ We have been using the sqlite3 database in development, however this is only ava
 
 #### Set up AWS hosting for static and media files
 
-1. Sign up or login to your [aws amazon account](https://aws.amazon.com) and navigate to S3 to create a new bucket.
-2. 
+! NOTE: These instructions are for setting up AWS hosting as of 5/1/23 - these may change slightly in future versions of AWS.
+
+1. Sign up or login to your [aws amazon account](https://aws.amazon.com) on the top right by using the manage my account button and then navigate to S3 to create a new bucket.
+2. The bucket will be used to store our files, so it is a good idea to name this bucket the same as your project. Select the region closest to you. In the object ownership section we need to select ACLs enabled and then select bucket owner preferred. In the block public access section uncheck the block public access box. You will then need to tick the acknowledge button to make the bucket public. Click create bucket.
+3. Click the bucket you've just created and then select the properties tab at the top of the page. Find the static web hosting section and choose enable static web hosting, host a static website and enter index.html and error.html for the index and error documents (these won't actually be used.)
+4. Open the permissions tab and copy the ARN (amazon resource name). Navigate to the bucket policy section click edit and select policy generator. The policy type will be S3 bucket policy, we want to allow all principles by adding `*` to the input and the actions will be get object. Paste the ARN we copied from the last page into the ARN input and then click add statement. Click generate policy and copy the policy that displays in a new pop up. Paste this policy into the bucket policy editor and make the following changes: Add a `/*` at the end of the resource value. Click save.
+5. Next we need to edit the the cross-origin resource sharing (CORS). Paste in the following text:
+
+    ```json
+    [
+        {
+            "AllowedHeaders": [
+                "Authorization"
+            ],
+            "AllowedMethods": [
+                "GET"
+            ],
+            "AllowedOrigins": [
+                "*"
+            ],
+            "ExposeHeaders": []
+        }
+    ]
+    ```
+
+6. Now we need to edit the access control list (ACL) section. Click edit and enable list for everyone(public access) and accept the warning box.
+
+#### Creating AWS groups, policies and users
+
+1. Click the services icon on the top right of the page and navigate to IAM - manage access to AWS services. On the left hand navigation menu click user groups and then click the create group button in the top right. This will create the group that our user will be placed in.
+2. Choose a name for your group - for example manage-seaside-sewing, and click the create policy button on the right. This will open a new page.
+3. Click on the JSON tab and then click the link for import managed policy on the top right of the page.
+4. Search for S3 and select the one called AmazonS3FullAccess, then click import.
+5. We need to make a change to the resources, we need to make resources an array and then change the value for resources. Instead of a `*` which allows all access, we want to paste in our ARN. followed by a comma, and then paste the ARN in again on the next line with `/*` at the end. This allows all actions on our bucket, and all the resources in it.
+6. Click the next: tags button and then the next:review .
+7. Give the policy a name and description (e.g. seaside-sewing-policy | Access to S3 bucket for seaside sewing static files.) Click the create policy button.
+8. Now we need to atach the policy we just created. On the left hand navigation menu click user groups, select the group and go to the permissions tab. Click the add permissions button on the right and choose attach policies from the dropdown.
+9. Select the policy you just created and then click add permissions at the bottom.
+10. Now we'll create a user for the group by clicking on the user link in the left hand navigation menu, clicking the add users button on the top right and giving our user a username (e.g. seaside-sewing-staticfiles-user). Select programamtic access and then click the next: permissions button.
+11. Add the user to the group you just created and then click next:tags button, next:review button and then create user button.
+12. You will now need to download the CSV file as this contains the user access key and secret access key that we need to insert into the Heroku config vars. Make sure you download the CSV now as you won't be able to access it again.
+
+#### Connecting Django to our S3 bucket
+
+1. Install boto3 and django storages and freeze them to the requirements.txt file.
+
+    ```bash
+    pip3 install boto3
+    pip3 install django-storages
+    pip3 freeze > requirements.txt
+    ```
+
+2. Add `storages` to the installed apps in settings.py
+3. Add the following code in settings.py to use our bucket if we are using the deployed site:
+
+    ```python
+    if 'USE_AWS' in os.environ:
+        AWS_S3_OBJECT_PARAMETERS = {
+            'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
+            'CacheControl': 'max-age=9460800',
+        }
+        
+        AWS_STORAGE_BUCKET_NAME = 'enter your bucket name here'
+        AWS_S3_REGION_NAME = 'enter the region you selected here'
+        AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+        AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+        AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
+    ```
+
+4. In heroku we can now add these keys to our config vars:
+
+    | KEY | VALUE |
+    | :--- | :--- |
+    | AWS_ACCESS_KEY_ID | The access key value from the amazon csv file downloaded in the last section |
+    | AWS_SECRET_ACCESS_KEY | The secret access key from the amazon csv file downloaded in the last section |
+    | USE_AWS | True |
+
+5. Remove the DISABLE_COLLECTSTATIC variable.
+6. Create a file called custom_storages.py in the root and import settings and S3Botot3Storage. Create a custom class for static files and one for media files. These will tell the app the location to store static and media files.
+7. Add the following to settings.py to let the app know where to store static and media files, and to override the static and media URLs in production.
+
+    ```python
+    STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+    STATICFILES_LOCATION = 'static'
+    DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
+    MEDIAFILES_LOCATION = 'media'
+    
+    STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
+    MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
+    ```
+
+8. Save, add, commit and push these changes to make a deployment to heroku. In the build log you should be able to see that the static files were collected, and if we check our S3 bucket we can see the static folder which has all the static files in it.
+9. Navigate to S3 and open your bucket. We now want to create a new file to hold all the media files for our site. We can do this by clicking the create folder button on the top right and naming the folder media.
 
 ### Local Development
 
