@@ -1,4 +1,4 @@
-<div class="toast custom-toast rounded-0 border-top-0" data-autohide="false">
+<div class="toast custom-toast border-top-0" data-autohide="false">
     <div class="arrow-up arrow-success"></div>
     <div class="w-100 toast-capper bg-success"></div>
     
@@ -8,7 +8,6 @@
             <span aria-hidden="true">&times;</span>
         </button>
     </div>
-
     <div class="toast-body">
         <div class="row">
             <div class="col">
@@ -16,8 +15,7 @@
                 <hr class="my-3">
             </div>
         </div>
-        
-        <!-- If items in bag, display no of items, item image, name, size & quantity -->
+        <!-- If items in bag, display no of items, item image, name & quantity -->
         {% if grand_total and not on_profile_page %}
             <p class="py-1">Your Bag ({{ product_count }})</p>
             <div class="bag-notification-wrapper">
@@ -50,7 +48,6 @@
                     {% endif %}
                     <a href="{% url 'view_bag' %}" class="btn btn-outline-blue btn-block">
                         <i class="fa-solid fa-shop-lock"></i><span> Go To Secure Checkout</span>
-                        
                     </a>
                 </div>
             </div>
