@@ -80,6 +80,7 @@ a {
 .delete-link    {
     color: var(--red);
     border-width: 0;
+    background-color: var(--white);
 }
 
 .delete-link:hover    {
