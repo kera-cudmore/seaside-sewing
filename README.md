@@ -734,6 +734,8 @@ Please refer to the [TESTING.md](TESTING.md) file for all testing performed.
 
 This project was created using methods taught in the Code Institutes walkthrough project for Boutique Ado.
 
+The code to create the image zoom on the products page was taken from [Thdoan Magnify JS](https://thdoan.github.io/magnify/)
+
 ### Content
 
 Content for the site was written by Kera Cudmore, save for product descriptions, which were adapted from the product descriptions on the Groves website.
