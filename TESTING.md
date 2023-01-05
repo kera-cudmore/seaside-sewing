@@ -136,6 +136,7 @@ Additional testing was carried out by friends and family on a variety of devices
 | 5 | Float error in checkout | I was getting the following error when checking out. This error was due to my delivery fee in the settings.py file being declared as a float, and the order total being a decimal. I could either cast the order total to a float or import decimal into settings and define the delivery fee as a decimal to prevent an error with the delivery fee. I decided to import decimal into the settings folder. | [Float Error](documentation/bugs/float-error.png) |
 | 6 | Delivery Fee not displaying correctly in the admin | it was adding the total to the delivery fee - so just needed to remove the total and only reference the delivery fee |  |
 | 7 | Webhooks returning 400 & 500 errors | There were 2 spelling errors and a wrong class name causing the issues, once these were corrected, the webhooks work as expected | [Webhook error](documentation/bugs/wh-error.png) |
+| 8 | Success toasts were not displaying when adding items, but did display when logging in | I checked that the syntax was correct for the bootstrap version being used and knew that the toast was there as it was showing in the page code. Ed from tutoring saved the day when he spotted that I had omitted the `block.` from the front of my supertag in the bag.html. This meant that I was overwriting the toasts script with the scripts in the base.html file rather than adding to it. |
 
 ### Known Bugs
 
