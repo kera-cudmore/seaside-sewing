@@ -16,7 +16,7 @@
             </div>
         </div>
         <!-- If items in bag, display no of items, item image, name & quantity -->
-        {% if grand_total and not on_profile_page %}
+        {% if total and not on_profile_page %}
             <p class="py-1">Your Bag ({{ product_count }})</p>
             <div class="bag-notification-wrapper">
                 {% for item in bag_items %}
