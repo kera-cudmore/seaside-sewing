@@ -8,7 +8,7 @@ urlpatterns = [
         name='view_bag'
     ),
     path(
-        'add/<int:item_id>/',
+        'add/<item_id>/',
         views.add_to_bag,
         name='add_to_bag'
     ),
