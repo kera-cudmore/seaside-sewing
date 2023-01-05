@@ -131,7 +131,7 @@
 {% endblock %}
 
 {% block postloadjs %}
-    {{ super }}
+    {{ block.super }}
     {% include 'products/includes/quantity_input_script.html' %}
 
     <!-- Back to top button -->
