@@ -427,7 +427,7 @@ sqlite3 for development.
 
 ### Deployment
 
-The project is deployed using Heroku. To deploy the project using Heroku:
+The project is deployed using Heroku. To deploy the project:
 
 #### Create the Live Database
 
@@ -463,7 +463,7 @@ We have been using the sqlite3 database in development, however this is only ava
 
 4. Find the section for DATABASES and comment out the code. Add the following code below the commented out database block, and use the URL copied from elephantSQL for the value:
 
-    (NOTE! don't delete the original section, as this is a temporary step whilst we connect the external database. Make sure you don't push this value to github - this value should not be saved to github, it will be added to the heroku config vars in a later step, this is temporary to allow us to migrate our models to the external database)
+    (NOTE! don't delete the original section, as this is a temporary step whilst we connect the external database. Make sure you don't push this value to github - this value should not be saved to github, it will be added to the Heroku config vars in a later step, this is temporary to allow us to migrate our models to the external database)
 
     ```python
     DATABASES = {
@@ -490,7 +490,7 @@ We have been using the sqlite3 database in development, however this is only ava
     ```
 
 8. You should now be able to go to the browser tab on the left of the page in elephantsql, click the table queries button and see the user you've just created by selecting the auth_user table.
-9. We can now add an if/else statement for the databases in settings.py, so we use the development database while in development (the code we commented out) - and the external database on the live site (note the change where the db URL was is now a variable we will use in heroku):
+9. We can now add an if/else statement for the databases in settings.py, so we use the development database while in development (the code we commented out) - and the external database on the live site (note the change where the db URL was is now a variable we will use in Heroku):
 
     ```python
     if 'DATABASE_URL' in os.environ:
@@ -522,10 +522,10 @@ We have been using the sqlite3 database in development, however this is only ava
 12. Log into the Heroku CLI in the terminal and then run the following command to disable collectstatic. This command tells Heroku not to collect static files when we deploy:
 
     ```bash
-    heroku config:set DISABLE_COLLECTSTATIC=1 --app {heroku app name here}
+    heroku config:set DISABLE_COLLECTSTATIC=1 --app heroku-app-name-here
     ```
 
-13. We will also need to add the heroku app and localhost (which will allow gitpod to still work) to ALLOWED_HOSTS = [] in settings.py:
+13. We will also need to add the Heroku app and localhost (which will allow gitpod to still work) to ALLOWED_HOSTS = [] in settings.py:
 
     ```python
     ALLOWED_HOSTS = ['{heroku deployed site URL here}', 'localhost' ]
@@ -664,6 +664,13 @@ We have been using the sqlite3 database in development, however this is only ava
 3. Now we need to add the webhook endpoint for the deployed site. Navigate to the webhooks link in the left hand menu and click add endpoint button.
 4. Add the URL for our deployed sites webhook, give it a description and then click the add events button and select all events. Click Create endpoint.
 5. Now we can add the webhook signing secret to our Heroku config variables as STRIPE_WH_SECRET.
+6. In settings.py:
+
+    ```python
+    STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
+    STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
+    STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
+    ```
 
 ### Local Development
 
