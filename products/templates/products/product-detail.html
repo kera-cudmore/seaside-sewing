@@ -158,7 +158,7 @@
 {% endblock %}
 
 {% block postloadjs %}
-    {{ super }}
+    {{ block.super }}
     {% include 'products/includes/quantity_input_script.html' %}
 
     <!-- For image magnify - src: https://thdoan.github.io/magnify/ -->
