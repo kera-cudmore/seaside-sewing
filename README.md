@@ -657,6 +657,14 @@ We have been using the sqlite3 database in development, however this is only ava
 8. Save, add, commit and push these changes to make a deployment to heroku. In the build log you should be able to see that the static files were collected, and if we check our S3 bucket we can see the static folder which has all the static files in it.
 9. Navigate to S3 and open your bucket. We now want to create a new file to hold all the media files for our site. We can do this by clicking the create folder button on the top right and naming the folder media.
 
+#### Setting up Stripe
+
+1. We now need to add our Stripe keys to our config vars in Heroku to keep these out of our code and keep them private. Log into Stripe, click developers and then API keys.
+2. Create 2 new variables in Heroku's config vars - for the publishable key (STRIPE_PUBLIC_KEY) and the secret key (STRIPE_SECRET_KEY) and paste the values in from the Stripe page.
+3. Now we need to add the webhook endpoint for the deployed site. Navigate to the webhooks link in the left hand menu and click add endpoint button.
+4. Add the URL for our deployed sites webhook, give it a description and then click the add events button and select all events. Click Create endpoint.
+5. Now we can add the webhook signing secret to our Heroku config variables as STRIPE_WH_SECRET.
+
 ### Local Development
 
 #### **How to Fork**
