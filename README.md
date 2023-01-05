@@ -381,17 +381,31 @@ sqlite3 for development.
 
 [Django](https://www.djangoproject.com/) - Version 3.2.16 - A high-level Python web framework that encourages rapid development and clean, pragmatic design.
 
-[Bootstrap](https://getbootstrap.com/docs/4.6/getting-started/introduction/) - Version 5.2.3 - A framework for building responsive, mobile-first sites.
+[Bootstrap](https://getbootstrap.com/docs/4.6/getting-started/introduction/) - Version 4.6.2 - A framework for building responsive, mobile-first sites.
 
 ### Libraries & Packages Used
-
-[Django Allauth](https://django-allauth.readthedocs.io/en/latest/) - Version 0.41.0 - Used for authentication, registration & account management.
 
 [jQuery](https://jquery.com/) - Version 3.6.2 - A JavaScript Framework
 
 [Font Awesome](https://fontawesome.com/) - Version 6.2.1 - Used for the iconography of the site, this was added using a CDN link.
 
+[Django Allauth](https://django-allauth.readthedocs.io/en/latest/) - Version 0.41.0 - Used for authentication, registration & account management.
+
 [django-countries](https://pypi.org/project/django-countries/7.2.1/) - Version 7.2.1 - This is the latest stable version that is compatible with GitPod.
+
+[django_crispy_forms](https://pypi.org/project/django-crispy-forms/) - provides a tag and filter that lets you quickly render forms
+
+[gunicorn](https://pypi.org/project/gunicorn/) - a Python WSGI HTTP Server
+
+[pillow](https://pypi.org/project/Pillow/) - Python imaging library
+
+[dj_databsae_url](https://pypi.org/project/dj-database-url/) - allows us to utilise the DATABASE_URL variable
+
+[psycopg2](https://pypi.org/project/psycopg2/) - a postgres database adapter which allow us to connect with a postgres database
+
+[django-storages](https://pypi.org/project/django-storages/) - a storage backend library
+
+[boto3](https://pypi.org/project/boto3/) - Allows connection to AWS S3 bucket
 
 ### Programs Used
 
