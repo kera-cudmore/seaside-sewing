@@ -222,6 +222,8 @@ hr {
     color: var(--dark-blue);
     font-weight: 700;
 }
+
+
 /*----- Buttons -----*/
 
 .btn-outline-blue {
@@ -335,6 +337,13 @@ input[name='q']::placeholder {
     cursor: pointer;
 }
 
+/*----- MAGNIFYING LENS -----*/
+
+/* source: https://thdoan.github.io/magnify/ */
+.magnify > .magnify-lens {
+    width: 300px;
+    height: 300px;
+}
 
 /*----- ALLAUTH FORMS -----*/
 
