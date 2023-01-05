@@ -2,7 +2,7 @@
 
 image of the site
 
-[Visit Seaside Sewing Here](https://dashboard.heroku.com/apps/seaside-sewing)
+[Visit Seaside Sewing Here](https://seaside-sewing.herokuapp.com/)
 
 ---
 
