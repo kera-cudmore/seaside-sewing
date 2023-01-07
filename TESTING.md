@@ -9,7 +9,8 @@ image of the site
 ## Contents
 
 * [Validation Testing](#validation-testing)
-  * [HTML & CSS](#html--css)
+  * [HTML](#html)
+  * [CSS](#css)
   * [JavaScript](#javascript)
   * [Python](#python)
   * [Lighthouse](#lighthouse)
@@ -30,9 +31,21 @@ I have gone through each page of the site using the Chrome Developer Tools to en
 
 ## Validation Testing
 
-### HTML & CSS
+### HTML
 
 [W3C](https://validator.w3.org/) was used to validate the HTML on all pages of the site. It was also used to validate the CSS. As the site is created with Django and utilises Django templating language within the HTML, I have checked the HTML by inspecting the page source and then running this through the validator.
+
+### CSS
+
+[W3C](https://validator.w3.org/) was used to validate the CSS.
+
+* [static/base.css](documentation/testing/validation/css/base-validation.png)
+* checkout app
+  * [checkout.css](documentation/testing/validation/css/checkout-checkout-validation.png)
+* profiles app
+  * [profile.css](documentation/testing/validation/css/profiles-profile-validation.png)
+* static/admin/css
+  * [base.css](documentation/testing/validation/css/admin-base-validation.png)
 
 ### JavaScript
 
