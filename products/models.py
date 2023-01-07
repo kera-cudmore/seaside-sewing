@@ -53,7 +53,16 @@ class Product(models.Model):
         blank=True,
     )
     stock = models.PositiveSmallIntegerField(
+        null=False,
+        blank=False,
+        default=0
     )
+
+    rating = models.PositiveSmallIntegerField(
+        null=True,
+        blank=True,
+    )
+
     colour = models.CharField(
         max_length=50,
         blank=True,
