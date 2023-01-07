@@ -30,6 +30,7 @@
 
 {% block content %}
     <div class="row">
+        <!-- Product image -->
         <div class="col-12 col md-6 col-lg-4 offset-lg-2">
             <div class="image-container my-5">
                 {% if product.image %}
@@ -44,11 +45,11 @@
             </div>
         </div>
 
+        <!-- Product Details-->
         <div class="col-12 col md-6 col-lg-4 offset-lg-2">
             <div class="product-details-container">
                 <h4>{{ product.name }}</h4>
                 <p class="lead">£{{ product.price }}</p>
-            
                 <!-- admin edit/delete buttons -->
                 {% if request.user.is_superuser %}
                     <div>
@@ -81,34 +82,29 @@
                                 </div>
                             </div>
                         </div>
-                    
                 {% endif %}
-
+                <!-- Product Description -->
                 <p class="pt-3">{{ product.description}}</p>
-                
                 <div class="my-2">
+                    <!-- Product Category -->
                     {% if product.category %}
                     <span class="small">
                         <a href="{% url 'products' %}?category={{ product.category.name }}" class="text-muted">
                             <i class="fas fa-tag mr-2"></i>{{ product.category.friendly_name }}
                         </a>
                     </span>
-                    {% endif %}
-                    
+                    {% endif %}    
+                    <!-- Product Colour -->          
                     {% if product.colour %}
                         <span class="small text-muted ml-3">
-                            <!-- See if I can get the color to be a link to all products that are pink -->
-                            <!-- <a href="{% url 'products' %}?products={{ product.colour }}" class="text-muted"> -->
                                 <i class="fa-solid fa-droplet mr-2"></i>{{ product.colour }}
-                            <!-- </a> -->
                             </span>
                     {% endif %}
-
+                    <!-- Product Stock -->
                     <span class="small text-muted ml-3">
                         <i class="fa-solid fa-boxes-stacked mr-2"></i>Stock: <span data-stock="{{ product.stock }}">{{ product.stock }}</span>
                     </span>
-
-                    <!-- Product star rating to go here -->
+                    <!-- Product Rating -->
                     {% if product.rating %}
                         <span class="small text-muted ml-3">
                             <i class="fa-solid fa-star mr-2"></i>Rating: {{ product.rating }}
@@ -141,7 +137,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <!-- submit button for form and keep shopping button -->
                         <div>
                             <input type="submit" value="Add to Bag" class="btn btn-outline-blue mt-2">
@@ -160,8 +155,6 @@
 
 {% block postloadjs %}
     {{ block.super }}
-
-
     {% include 'products/includes/quantity_input_script.html' %}
 
     <!-- For image magnify - src: https://thdoan.github.io/magnify/ -->
