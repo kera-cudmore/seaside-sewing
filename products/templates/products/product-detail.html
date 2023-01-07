@@ -105,7 +105,7 @@
                     {% endif %}
 
                     <span class="small text-muted ml-3">
-                        <i class="fa-solid fa-boxes-stacked mr-2"></i>In Stock: {{ product.stock }}
+                        <i class="fa-solid fa-boxes-stacked mr-2"></i>Stock: <span data-stock="{{ product.stock }}">{{ product.stock }}</span>
                     </span>
 
                     <!-- Product star rating to go here -->
@@ -134,7 +134,7 @@
                                         name="quantity" value="1" min="1" max="{{ product.stock }}" data-item_id="{{ product.id }}"> 
                                     <!-- plus button -->
                                     <div class="input-group-append">
-                                        <button class="increment-qty btn btn-green rounded-0 increment-qty_{{ product.id }}" data-item_id="{{ product.id }}">
+                                        <button class="increment-qty btn btn-green rounded-0 increment-qty_{{ product.id }}" data-item_id="{{ product.id }}" data-stock="{{ product.stock }}">
                                             <i class="fa-solid fa-plus"></i>
                                         </button>
                                     </div>
@@ -160,6 +160,8 @@
 
 {% block postloadjs %}
     {{ block.super }}
+
+
     {% include 'products/includes/quantity_input_script.html' %}
 
     <!-- For image magnify - src: https://thdoan.github.io/magnify/ -->

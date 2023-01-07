@@ -1,16 +1,20 @@
 <script type="text/javascript">
 
     /* 
-    * Disable +/- buttons outside 1-99 range.
-    * If no size is passed to the function, the parameter will have a value of undefined by default,
-    * which prevents any errors 
+    * Disable +/- buttons 
+    * minus button disabled at 1
+    * plus button disabled when it reaches the stock value
     */
+
+
     function handleEnableDisable(itemId) {
-        
+
+        let stock = $(`.increment-qty_${itemId}`).data('stock')
+        console.log(stock);
         var currentValue = parseInt($(`.id_qty_${itemId}`).val());
         var minusDisabled = currentValue < 2;
-        var plusDisabled = currentValue > 98;
-        
+        var plusDisabled = currentValue >= stock;
+        console.log(stock, 'stock')
             $(`.decrement-qty_${itemId}`).prop('disabled', minusDisabled);
             $(`.increment-qty_${itemId}`).prop('disabled', plusDisabled);
     }
