@@ -117,7 +117,7 @@ Below is a table of opportunities for the project, together with a score of thei
 | 4 | Shopper | View items on clearance/sale easily | Save money  |
 | 5 | Shopper | View my running total of purchases throughout my visit | Make sure I don't overspend & am able to track whether I meet any thresholds for site offers (e.g. free delivery) |
 | 6 | Shopper | View the items I currently have selected for purchase | to enable me to check I still wish to purchase the items, or amend quantites if required |
-| 7 | Shopper | View reviews for products | make informed decisions about purchasing products |
+| 7 | Shopper | View ratings for products | make informed decisions about purchasing products |
 | **REGISTRATION & USER ACCOUNTS** |
 | 8 | Shopper | Register for an account | Have an account with the site and view my profile |
 | 9 | Shopper | Receive an email to confirm my registration | Verify my account was created successfully |
