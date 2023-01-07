@@ -5,7 +5,7 @@
     https://stripe.com/docs/stripe-js 
 */
 
-// We are slicing the first and last characters to remove the " " around the key
+// slice first & last characters to remove the " " around the key
 var stripePublicKey = $('#id_stripe_public_key').text().slice(1, -1);
 var clientSecret = $('#id_client_secret').text().slice(1, -1);
 var stripe = Stripe(stripePublicKey);
@@ -120,5 +120,5 @@ form.addEventListener('submit', function(ev) {
     }).fail(function () {
         // Just reload the page, the error will be in django messages/toast
         location.reload();
-    })
+    });
 });
