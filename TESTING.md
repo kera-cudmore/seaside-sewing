@@ -38,6 +38,11 @@ I have gone through each page of the site using the Chrome Developer Tools to en
 
 [JS Hint](https://jshint.com/) was used to validate the JavaScript.
 
+* checkout app
+  * [stripe-elements.js](documentation/testing/validation/js/checkout-stripe-elements-validation.png)
+* profiles app
+  * [countryfield.js](documentation/testing/validation/js/profiles-countryfield-validation.png)
+
 ### Python
 
 [Code Institute Python Linter](https://pep8ci.herokuapp.com/) was used to validate the python. I have also installed [PyCodeStyle](https://pycodestyle.pycqa.org/en/latest/intro.html#configuration) in my IDE to enable me to check my code meets PEP8 guidelines during development.
@@ -47,6 +52,7 @@ I have gone through each page of the site using the Chrome Developer Tools to en
   * [urls.py](documentation/testing/validation/python/seaside_sewing-urls-validation.png)
 * bag app
   * [apps.py](documentation/testing/validation/python/bag-apps-validation.png)
+  * [bag_tools.py](documentation/testing/validation/python/bag-bag_tools-validation.png)
   * [contexts.py](documentation/testing/validation/python/bag-contexts-validation.png)
   * [urls.py](documentation/testing/validation/python/bag-urls-validation.png)
   * [views.py](documentation/testing/validation/python/bag-views-validation.png)
