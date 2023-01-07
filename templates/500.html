@@ -1,0 +1,18 @@
+{% extends "base.html" %} 
+{% load static %}
+
+{% block extra_title %} - 500 Error{% endblock %}
+
+{% block content %}
+    <div class="row page-title">
+        <h3>500 Error</h3>
+    </div>
+
+    <div class="row">
+        <div class="col-10 offset-1 text-center">
+            <h4>Ahoy me hearties!</h4>
+            <p>We're sorry, but we seem to have hit some rough seas, with an internal server error and cannot complete your request right now!</p>
+            <p>Please try again later.</p>
+        </div>
+    </div>
+{% endblock %}
