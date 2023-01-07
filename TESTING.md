@@ -14,6 +14,7 @@ image of the site
   * [Python](#python)
   * [Lighthouse](#lighthouse)
   * [Wave](#wave)
+* [Automated Testing](#automated-testing)
 * [Manual Testing](#manual-testing)
   * [Testing User Stories](#testing-user-stories)
   * [Full Testing](#full-testing)
@@ -53,20 +54,24 @@ I have used Googles Lighthouse testing to test the performance, accessibility, b
 
 WAVE(Web Accessibility Evaluation Tool) allows developers to create content that is more accessible to users with disabilities. It does this by identifying accessibility and WGAC errors.
 
+## Automated Testing
+
+Automated testing for this project was carried out with python unit testing?
+
 ## Manual Testing
 
 ### Testing User Stories
 
-| User Story ID | As a/an | I want to be able to ... | So that I can... | How is this achieved?	| |
+| User Story ID | As a/an | I want to be able to ... | So that I can... | How is this achieved? | Evidence |
 | :--- | :--- | :--- | :---| :--- | :---: |
 | **VIEWING & NAVIGATION** |
-| 1 | Shopper | Easily navigate the site | Find products/information that I am require | | |
-| 2 | Shopper | View a category of products/filter products | Find specific items I am interested in without having to scroll through all products | | |
-| 3 | Shopper | View more detail on products | to make an informed decision of if the item suits my requirements | | |
-| 4 | Shopper | View items on clearance/sale easily | Save money  | | |
-| 5 | Shopper | View my running total of purchases throughout my visit | Make sure I don't overspend & am able to track whether I meet any thresholds for site offers (e.g. free delivery) | | |
-| 6 | Shopper | View the items I currently have selected for purchase | to enable me to check I still wish to purchase the items, or amend quantites if required | | |
-| 7 | Shopper | View reviews for products | make informed decisions about purchasing products | | |
+| 1 | Shopper | Easily navigate the site | Find products/information that I am require | A navbar is provided at the top of the page which allows users easy access to their account, shopping bag, search bar and the product categories.   | |
+| 2 | Shopper | View a category of products/filter products | Find specific items I am interested in without having to scroll through all products | When a user clicks on a category, they are then provided a dropdown with a breakdown of items within the chosen category. If a user choses the view all link, the page will display all items but the user will also be given the choice to refine the products shown via links to the sub-categories at the top of the page. | |
+| 3 | Shopper | View more detail on products | to make an informed decision of if the item suits my requirements | When the user selects a product, they will be taken to the product detail page which lists more information about the item, such as the item name, price and description. A tag will display showing what category the product belongs to, along with a stock tag that displays the stock level for the product. If a rating and colour are avaiable for the product, these will also be displayed in the tags section. A user may hover over the image and they will be shown a magnified view of the item. If they wish to view a larger image, they may click on the image and a larger version of the image will open in a new browser tab.  | |
+| 4 | Shopper | View items on clearance/sale easily | Save money  | There is a category choice for users called special offers which allows users to view deals or clearance items. | |
+| 5 | Shopper | View my running total of purchases throughout my visit | Make sure I don't overspend & am able to track whether I meet any thresholds for site offers (e.g. free delivery) | When a user adds a product to their shopping bag, a toast will display to let the user know their addition to their bag was successful, along with showing them the items currently in their bag with their value and price. The toast also displays their total. If a user hasn't reached the threshold for the free delivery offer, they will be notified of this within the toast, which will let them know how much more they need to spend to take advantage of this offer. The shopping bag icon on the navbar will also display their total throughout their visit to the site. | |
+| 6 | Shopper | View the items I currently have selected for purchase | to enable me to check I still wish to purchase the items, or amend quantites if required | Users are able to view all items selected for purchase from their bag. Their bag will list each item selected for purchase, along with the quantity, item price and subtotal for that item. At the bottom of their bag will be a section that lets them know the total for the items in their bag, the delivery charge (if applicable) and their grand total. | |
+| 7 | Shopper | View ratings for products | make informed decisions about purchasing products | If a rating is avaialble for a product, this will be displayed in the tags section on the product details page. | |
 | **REGISTRATION & USER ACCOUNTS** |
 | 8 | Shopper | Register for an account | Have an account with the site and view my profile | | |
 | 9 | Shopper | Receive an email to confirm my registration | Verify my account was created successfully | | |
