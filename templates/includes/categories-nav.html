@@ -1,8 +1,7 @@
 <div class="row categories-nav">
     <div class="col d-flex justify-content-lg-center">
         <nav class="navbar navbar-expand-lg">
-            
-            <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#categories-nav" aria-controls="categories-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#categories-nav" aria-controls="categories-nav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
             </button>
 
@@ -25,8 +24,7 @@
                             <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
                         </div>
                     </li>
-
-                    <!-- fabrics Menu -->
+                    <!-- Fabrics Menu -->
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link mr-5" id="fabric-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Fabrics
@@ -37,8 +35,7 @@
                             <a href="{% url 'products' %}?category=by_the_metre,pre_cuts" class="dropdown-item">View All Fabrics</a>
                         </div>
                     </li>
-
-                    <!-- tools Menu -->
+                    <!-- Tools Menu -->
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link mr-5" id="tools-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Tools
@@ -53,9 +50,7 @@
                             <a href="{% url 'products' %}?category=scissors,rotary_cutters,cutting_mats,needles.fabric_markers,pins" class="dropdown-item">All Tools</a>
                         </div>
                     </li>
-
-
-                    <!-- hab Menu -->
+                    <!-- Habedashery Menu -->
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link mr-5" id="habedashery-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Habedashery
@@ -69,8 +64,7 @@
                             <a href="{% url 'products' %}?category=threads,bias_binding,buttons,ribbons,zips" class="dropdown-item">All Habedashery</a>
                         </div>
                     </li>
-
-                    <!-- patterns Menu -->
+                    <!-- Patterns Menu -->
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link mr-5" id="patterns-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Patterns
@@ -81,7 +75,6 @@
                             <a href="{% url 'products' %}?category=pattern_books,individual_patterns" class="dropdown-item">All Patterns</a>
                         </div>
                     </li>
-
                     <!-- Special Offers Menu -->
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -94,7 +87,6 @@
                             <a href="{% url 'products' %}?category=new_arrivals,deals,clearance" class="dropdown-item">All Specials</a>
                         </div>
                     </li>
-
                 </ul>
             </div>
         </nav>
