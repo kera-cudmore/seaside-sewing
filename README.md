@@ -75,34 +75,34 @@ The sites primary audience will be people who have a love of sewing and quilting
 
 Below is a table of opportunities for the project, together with a score of their importance level and viability (rated low to high, 1-5). Products that score highly on importance and viability will be features that must be addressed first as part of the MVP. Features that are scored mid range are should have features, which will be added to the project once it has achieved MVP status. Low scored features, are could have features and if not attended to in this development version will be marked to be addressed in a future version.
 
-| Feature | Importance | Viability |  |
-| :--- | :---: | :---: | :---: |
-| User roles | 5 | 5 | MVP |
-| Sign up for an account | 4 | 5 | MVP |
-| Account Profile | 4 | 5 | MVP |
-| Password recovery | 5 | 5 | MVP |
-| Use social media to sign up/log in | 2 | 4 | |
-| Seach and filter through products | 5 | 5 | MVP |
-| Checkout system | 5 | 5 | MVP |
-| Guest Checkout | 3 | 4 | |
-| Payment Via Stripe | 5 | 5 | MVP |
-| Receive email confirmation for order | 5 | 5 | MVP |
-| Order History | 4 | 5 | |
-| Admin - add product | 5 | 5 | MVP |
-| Admin - edit/update product | 5 | 5 | MVP |
-| Admin - delete product | 5 | 5 | MVP |
-| Admin - Stock managment | 2 | 3 | |
-| Admin - Sales Reporting | 1 | 2 | |
-| Terms and Conditions | 3 | 5 | |
-| Privacy Policy | 3 | 5 | |
-| Delivery Terms | 3 | 5 | |
-| Social Media Links | 3 | 5 | |
-| Contact form | 3 | 3 | |
-| Newsletter | 2 | 3 | |
-| Wishlist | 3 | 3 | |
-| Product Reviews | 4 | 4 | |
-| Blog | 1 | 3 |  |
-| Discount Vouchers | 1 | 1 | |
+| Feature | Importance | Viability |  | Delivered |
+| :--- | :---: | :---: | :---: | :---: |
+| User roles | 5 | 5 | MVP | ✅ |
+| Sign up for an account | 4 | 5 | MVP | ✅ |
+| Account Profile | 4 | 5 | MVP | ✅ |
+| Password recovery | 5 | 5 | MVP | ✅ |
+| Use social media to sign up/log in | 2 | 4 | | |
+| Seach and filter through products | 5 | 5 | MVP | ✅ |
+| Checkout system | 5 | 5 | MVP | ✅ |
+| Guest Checkout | 3 | 4 | | ✅ |
+| Payment Via Stripe | 5 | 5 | MVP | ✅ |
+| Receive email confirmation for order | 5 | 5 | MVP | ✅ |
+| Order History | 4 | 5 | | ✅ |
+| Admin - add product | 5 | 5 | MVP | ✅ |
+| Admin - edit/update product | 5 | 5 | MVP | ✅ |
+| Admin - delete product | 5 | 5 | MVP | ✅ |
+| Admin - Stock managment | 2 | 3 | | |
+| Admin - Sales Reporting | 1 | 2 | | |
+| Terms and Conditions | 3 | 5 | | ✅ |
+| Privacy Policy | 3 | 5 | | ✅ |
+| Delivery Terms | 3 | 5 | | ✅ |
+| Social Media Links | 3 | 5 | |  |
+| Contact form | 3 | 3 | | |
+| Newsletter | 2 | 3 | | |
+| Wishlist | 3 | 3 | | |
+| Product Reviews | 3 | 4 | | |
+| Blog | 1 | 3 |  | |
+| Discount Vouchers | 1 | 1 | | |
 
 ### Structure Plane
 
