@@ -9,13 +9,13 @@
     <meta name="keywords" content="KEYWORDS">
 
     <!-- Social Media - Facebook, LinkedIn, Google -->
-    <meta property="og:type" content="article" />
-    <meta property="og:title" content="Seaside Sewing - Bag" />
-    <meta property="og:description" content="Seaside Sewing - Bag. Information on the terms & conditions for Seaside Sewing, an online ecommerce store selling all you need for your next sewing project from quilting and patchwork, to sewing your own clothes!" /> 
-    <meta name="image" property="og:image" content="URL TO IMAGE" /><!-- URL of image to be displayed when your site is linked to -->
-    <meta property="og:image:alt" content="Seaside Sewing ecommerce store shown on a variety of devices, from mobile to desktop" />
-    <meta property="og:url" content="https://seaside-sewing.herokuapp.com/bag/" />
-    <meta property="og:site_name" content="Seaside Sewing - Bag" />
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Seaside Sewing - Bag">
+    <meta property="og:description" content="Seaside Sewing - Bag. Information on the terms & conditions for Seaside Sewing, an online ecommerce store selling all you need for your next sewing project from quilting and patchwork, to sewing your own clothes!"> 
+    <meta name="image" property="og:image" content="URL TO IMAGE"><!-- URL of image to be displayed when your site is linked to -->
+    <meta property="og:image:alt" content="Seaside Sewing ecommerce store shown on a variety of devices, from mobile to desktop">
+    <meta property="og:url" content="https://seaside-sewing.herokuapp.com/bag/">
+    <meta property="og:site_name" content="Seaside Sewing - Bag">
 {% endblock %}
 
 {% block content %}
@@ -135,13 +135,13 @@
     {% include 'products/includes/quantity_input_script.html' %}
 
     <!-- Back to top button -->
-    <script type="text/javascript">
+    <script>
         $('.back-to-top').click(function(e) {
             window.scrollTo(0,0)
         })
     </script>
 
-    <script type="text/javascript">
+    <script>
         // Update quantity on click
         $('.update-item').click(function(e) {
             var form = $(this).prev('.update-form');
