@@ -35,7 +35,7 @@
             <h4>Browse our Products</h4>
         </div>
         {% for c in categories %}
-            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <div class="col-sm-6 col-md-4 col-lg-3">
                 <div class="card border">
                     <a href="{% url 'products' %}?category={{ c.name }}">
                         <h5 class="card-title cat-card-title text-center mt-5">{{ c.friendly_name }}</h5>
@@ -48,22 +48,22 @@
 
             <!-- set the columns depending on no of items -->
             {% if forloop.counter|divisibleby:1 %}
-                <div class="col-12 d-sm-none my-2">
+                <div class="col-10 offset-1 d-sm-none my-2">
                     <hr>
                 </div>
             {% endif %}
             {% if forloop.counter|divisibleby:2 %}
-                <div class="col-12 d-none d-sm-block d-md-block d-lg-none my-2">
+                <div class="col-10 offset-1 d-none d-sm-block d-md-block d-lg-none my-2">
+                    <hr>
+                </div>
+            {% endif %}
+            {% if forloop.counter|divisibleby:3 %}
+                <div class="col-10 offset-1 d-none d-none d-lg-block d-xl-none my-2">
                     <hr>
                 </div>
             {% endif %}
             {% if forloop.counter|divisibleby:4 %}
-                <div class="col-12 d-none d-none d-lg-block d-xl-none my-2">
-                    <hr>
-                </div>
-            {% endif %}
-            {% if forloop.counter|divisibleby:6 %}
-                <div class="col-12 d-none d-xl-block my-2">
+                <div class="col-10 offset-1 d-none d-xl-block my-2">
                     <hr>
                 </div>
             {% endif %}
