@@ -24,3 +24,13 @@ class TestContactForm(TestCase):
         self.assertIn('contact_message', form.errors.keys())
         self.assertEqual(
             form.errors['contact_message'][0], 'This field is required.')
+
+    def test_orderform_contact_phone_number_is_not_required(self):
+        form = ContactForm(
+            {
+                'contact_name': 'A Name',
+                'contact_email': 'email@email.com',
+                'contact_phone_number': '',
+                'contact_message': 'I am a message',
+            })
+        self.assertTrue(form.is_valid)
