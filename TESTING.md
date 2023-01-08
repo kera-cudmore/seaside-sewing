@@ -16,6 +16,7 @@ image of the site
   * [Lighthouse](#lighthouse)
   * [Wave](#wave)
 * [Automated Testing](#automated-testing)
+  * [Coverage](#coverage-testing)
 * [Manual Testing](#manual-testing)
   * [Testing User Stories](#testing-user-stories)
   * [Full Testing](#full-testing)
