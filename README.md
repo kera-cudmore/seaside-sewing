@@ -407,6 +407,8 @@ sqlite3 for development.
 
 [boto3](https://pypi.org/project/boto3/) - Allows connection to AWS S3 bucket
 
+[coverage](documentation/testing/coverage/checkout-forms.png) - Used to see where there are areas of missing tests
+
 ### Programs Used
 
 [Am I Responsive](https://ui.dev/amiresponsive) - To create the responsive images of the site on a variety of device sizes.
