@@ -1,0 +1,25 @@
+{% extends "base.html" %} 
+{% load static %}
+
+{% block extra_title %} - Success!{% endblock %}
+
+{% block content %}
+    <div class="row page-title">
+        <h3>Contact Us</h3>
+    </div>
+
+    <div class="row">
+        <div class="col-10 offset-1 text-center">
+            <h4>Thank you for sending us your enquiry!</h4>
+            <p>We plan to reply to messages within 2 business days.</p>
+
+            <a href="{% url 'products' %}?category=new_arrivals,deals,clearance" class="btn btn-outline-blue my-2">
+                <span class="icon mr-2">
+                    <i class="fa-solid fa-shop"></i>
+                </span>
+                <span>View our latest deals!</span>
+            </a>
+
+        </div>
+    </div>
+{% endblock %}
