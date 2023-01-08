@@ -24,7 +24,7 @@ image of the site
   * [Solved Bugs](#solved-bugs)
   * [Known Bugs](#known-bugs)
 
-Tsting was ongoing throughout the entire build. During development I made use of Googles Developer Tools to ensure everything was working as expected and to assist me with troubleshooting when things didn't work as they should.
+Testing was ongoing throughout the entire build. During development I made use of Googles Developer Tools to ensure everything was working as expected and to assist me with troubleshooting when things didn't work as they should.
 
 I have gone through each page of the site using the Chrome Developer Tools to ensure each page is responsive on a variety of different screen sizes and devices, as well as manually testing this using a variety of devices in person.
 
@@ -35,6 +35,24 @@ I have gone through each page of the site using the Chrome Developer Tools to en
 ### HTML
 
 [W3C](https://validator.w3.org/) was used to validate the HTML on all pages of the site. It was also used to validate the CSS. As the site is created with Django and utilises Django templating language within the HTML, I have checked the HTML by inspecting the page source and then running this through the validator.
+
+| Page | Result | Evidence |
+| :--- | :--- | :---: |
+| Home Page | Pass| [Home Page Validation](https://validator.w3.org/nu/?doc=https%3A%2F%2Fseaside-sewing.herokuapp.com%2F) |
+| Privacy Page | Pass | [Privacy Page Validation](https://validator.w3.org/nu/?doc=https%3A%2F%2Fseaside-sewing.herokuapp.com%2Fprivacy) |
+| Terms & Conditions Page |  | [Terms & Conditions Page Validation]() |
+| Delivery Policy Page | Pass | [Delivery Page Validation](https://validator.w3.org/nu/?doc=https%3A%2F%2Fseaside-sewing.herokuapp.com%2Fdelivery) |
+| Contact Form Page | Pass | [Contact Form Page Validation](https://validator.w3.org/nu/?doc=https%3A%2F%2Fseaside-sewing.herokuapp.com%2Fcontact%2F)|
+| Contact Form Success Page| Pass | [Contact Success Page Validation](documentation/testing/validation/html/contact-success-validation.png) |
+| Product Page | Pass |[Product Page Validation](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fseaside-sewing.herokuapp.com%2Fproducts%2F%3Fcategory%3Dby_the_metre) |
+| Product Detail Page | Pass | [Product Detail Page](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fseaside-sewing.herokuapp.com%2Fproducts%2F75%2F) |
+| Profile Page | Pass | [Profile Page Validation](documentation/testing/validation/html/profiles-validation.png) |
+| Bag Page | Pass | [Bag Page Validation](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fseaside-sewing.herokuapp.com%2Fbag%2F) |
+| Checkout Page | Pass | [Checkout Page Validation](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fseaside-sewing.herokuapp.com%2Fcheckout%2F) |
+| Checkout Success Page |  | |
+| 404 Error Page |  | |
+| Add Product Page |  | |
+| Edit Product Page | | |
 
 ### CSS
 
@@ -62,16 +80,20 @@ I have gone through each page of the site using the Chrome Developer Tools to en
 
 | File | Result | Evidence |
 | :--- | :--- | :---: |
+| custom_storages.py | Pass | [custom_storages.py validation](documentation/testing/validation/python/custom_storages-validation.png) |
+| **SEASIDE_SEWING** |
 | seaside_sewing/settings.py |  ||
 | seaside_sewing/urls.py | Pass | [urls.py validation](documentation/testing/validation/python/seaside_sewing-urls-validation.png) |
+| **BAG** |
 | bag/apps.py | Pass | [apps.py validation](documentation/testing/validation/python/bag-apps-validation.png) |
 | bag/contexts.py | Pass | [contexts.py validation](documentation/testing/validation/python/bag-contexts-validation.png) |
 | bag/urls.py | Pass | [urls.py validation](documentation/testing/validation/python/bag-urls-validation.png) |
 | bag/views.py | Pass | [views.py validation](documentation/testing/validation/python/bag-views-validation.png) |
 | bag/templatetags/bag_tools.py | Pass | [bag_tools.py validation](documentation/testing/validation/python/bag-bag_tools-validation.png)|
+| **CHECKOUT** |
 | checkout/admin.py | Pass | [admin.py validation](documentation/testing/validation/python/checkout-admin-validation.png) |
 | checkout/apps.py | Pass | [apps.py validation](documentation/testing/validation/python/checkout-apps-validation.png) |
-|checkout/forms.py | Pass | [forms.py validation](documentation/testing/validation/python/checkout-forms-validation.png) |
+| checkout/forms.py | Pass | [forms.py validation](documentation/testing/validation/python/checkout-forms-validation.png) |
 | checkout/models.py | Pass | [models.py validation](documentation/testing/validation/python/checkout-models-validation.png) |
 | checkout/signals.py | Pass | [signals.py validation](documentation/testing/validation/python/checkout-signals-validation.png) |
 | checkout/urls.py | Pass | [urls.py validation](documentation/testing/validation/python/checkout-urls-validation.png) |
@@ -79,9 +101,11 @@ I have gone through each page of the site using the Chrome Developer Tools to en
 | checkout/webhook_handler.py | Pass | [webhook_handler.py](documentation/testing/validation/python/checkout-webhook_handler-validation.png) |
 | checkout/webhooks.py | Pass| [webhooks.py](documentation/testing/validation/python/checkout-webhooks-validation.png) |
 | checkout/test_forms.py | Pass | [test-forms.py validation](documentation/testing/validation/python/checkout-test-forms-validation.png)|
+| **HOME** |
 | home/apps.py | Pass | [apps.py validation](documentation/testing/validation/python/home-apps-validation.png) |
 | home/urls.py | Pass | [urls.py validation](documentation/testing/validation/python/home-urls-validation.png)|
 | home/views.py | Pass | [views.py validation](documentation/testing/validation/python/home-views-validation.png) |
+| **PRODUCTS** |
 | products/admin.py | Pass | [admin.py validation](documentation/testing/validation/python/products-admin-validation.png) |
 | products/apps.py | Pass | [apps.py validation](documentation/testing/validation/python/products-apps-validation.png) |
 | products/forms.py | Pass | [forms.py validation](documentation/testing/validation/python/products-forms-validation.png) |
@@ -89,12 +113,13 @@ I have gone through each page of the site using the Chrome Developer Tools to en
 | products/urls.py | Pass | [urls.py validation](documentation/testing/validation/python/products-urls-validation.png) |
 | products/views.py | Pass | [views.py validation](documentation/testing/validation/python/products-views-validation.png) |
 | products/widgets.py | Pass | [widgets.py validation](documentation/testing/validation/python/products-widgets-validation.png) |
+| **PROFILES** |
 | profiles/apps.py | Pass | [apps.py validation](documentation/testing/validation/python/profiles-apps-validation.png) |
 | profiles/forms.py | Pass | [forms.py validation](documentation/testing/validation/python/profiles-forms-validation.png) |
 | profiles/models.py | Pass | [models.py validation](documentation/testing/validation/python/profiles-models-validation.png) |
 | profiles/urls.py | Pass | [urls.py validation](documentation/testing/validation/python/profiles-urls-validation.png) |
 | profiles/views.py | Pass | [views.py validation](documentation/testing/validation/python/profiles-views-validation.png) |
-| custom_storages.py | Pass | [custom_storages.py validation](documentation/testing/validation/python/custom_storages-validation.png) |
+| **CONTACT** |
 | contact/admin.py | Pass |[admin.py validation](documentation/testing/validation/python/contact-admin-validation.png) |
 | contact/apps.py | Pass | [apps.py validation](documentation/testing/validation/python/contact-apps-validation.png) |
 | contact/forms.py | Pass | [forms.py validation](documentation/testing/validation/python/contact-forms-validation.png) |
