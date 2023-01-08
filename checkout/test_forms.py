@@ -60,3 +60,18 @@ class TestOrderForm(TestCase):
         self.assertIn('town_or_city', form.errors.keys())
         self.assertEqual(
             form.errors['town_or_city'][0], 'This field is required.')
+
+    def test_orderform_country_is_required(self):
+        form = OrderForm(
+            {
+                'full_name': 'A Name',
+                'email': 'email@email.com',
+                'phone_number': '1234567890',
+                'street_address1': '123 street',
+                'town_or_city': 'anytown',
+                'country': '',
+            })
+        self.assertFalse(form.is_valid())
+        self.assertIn('country', form.errors.keys())
+        self.assertEqual(
+            form.errors['country'][0], 'This field is required.')
