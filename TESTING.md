@@ -95,6 +95,13 @@ I have gone through each page of the site using the Chrome Developer Tools to en
 | profiles/urls.py | Pass | [urls.py validation](documentation/testing/validation/python/profiles-urls-validation.png) |
 | profiles/views.py | Pass | [views.py validation](documentation/testing/validation/python/profiles-views-validation.png) |
 | custom_storages.py | Pass | [custom_storages.py validation](documentation/testing/validation/python/custom_storages-validation.png) |
+| contact/admin.py | Pass |[admin.py validation](documentation/testing/validation/python/contact-admin-validation.png) |
+| contact/apps.py | Pass | [apps.py validation](documentation/testing/validation/python/contact-apps-validation.png) |
+| contact/forms.py | Pass | [forms.py validation](documentation/testing/validation/python/contact-forms-validation.png) |
+| contact/models.py | Pass | [models.py validation](documentation/testing/validation/python/contact-models-validation.png) |
+| contact/test_forms.py | Pass | [test_forms.py validation](documentation/testing/validation/python/contact-test-forms-validation.png) |
+| contact/urls.py | Pass | [urls.py validation](documentation/testing/validation/python/contact-urls-validation.png) |
+| contact/views.py | Pass | [views.py validation](documentation/testing/validation/python/contact-views-validation.png) |
 
 ### Lighthouse
 
