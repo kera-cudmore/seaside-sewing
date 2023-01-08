@@ -97,7 +97,7 @@ Below is a table of opportunities for the project, together with a score of thei
 | Privacy Policy | 3 | 5 | | ✅ |
 | Delivery Terms | 3 | 5 | | ✅ |
 | Social Media Links | 3 | 5 | |  |
-| Contact form | 3 | 3 | | |
+| Contact form | 3 | 3 | | ✅ |
 | Newsletter | 2 | 3 | | |
 | Wishlist | 3 | 3 | | |
 | Product Reviews | 3 | 4 | | |
