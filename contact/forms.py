@@ -13,20 +13,20 @@ class ContactForm(forms.ModelForm):
         )
 
     def __init__(self, *args, **kwargs):
-            """
-            Add placeholders and classes, remove auto-generated
-            labels and set autofocus on first field
-            """
-            super().__init__(*args, **kwargs)
-            placeholders = {
-                'contact_name': 'Full Name',
-                'contact_email': 'Email Address',
-                'contact_phone_number': 'Phone Number',
-                'contact_message': 'Your Message',
-            }
+        """
+        Add placeholders and classes, remove auto-generated
+        labels and set autofocus on first field
+        """
+        super().__init__(*args, **kwargs)
+        placeholders = {
+            'contact_name': 'Full Name',
+            'contact_email': 'Email Address',
+            'contact_phone_number': 'Phone Number',
+            'contact_message': 'Your Message',
+        }
 
-            self.fields['contact_name'].widget.attrs['autofocus'] = True
+        self.fields['contact_name'].widget.attrs['autofocus'] = True
 
-            for field in self.fields:
-                self.fields[field].widget.attrs['placeholder'] = placeholder
-                self.fields[field].label = False
+        for field in self.fields:
+            self.fields[field].widget.attrs['placeholder'] = placeholder
+            self.fields[field].label = False
