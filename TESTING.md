@@ -113,7 +113,21 @@ WAVE(Web Accessibility Evaluation Tool) allows developers to create content that
 
 ## Automated Testing
 
-Automated testing for this project was carried out with python unit testing?
+Automated testing for this project was carried out with python unit testing. I would write a test, run the test and fix any issues raised before running the test again to confirm it passed.
+
+I also used [coverage](https://pypi.org/project/coverage/) to enable me to see where I was missing tests from to enable me to test my application more thoroughly.
+
+### Coverage Testing
+
+| Coverage for | Result | Evidence |
+| :---| :--- | :---: |
+| checkout forms.py | 100% | ![checkout forms.py coverage results](documentation/testing/coverage/checkout-forms.png) |
+| checkout models.py | % | |
+| checkout signals.py | % ||
+| checkout views.py | % ||
+| checkout webhook_handler.py | % ||
+| checkout webhooks.py | % ||
+| **CHECKOUT TOTAL** | **%**||
 
 ## Manual Testing
 
