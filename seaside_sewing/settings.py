@@ -28,7 +28,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY', ' ')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'DEVELOPMENT' in os.environ
+# DEBUG = 'DEVELOPMENT' in os.environ
+
+# THIS IS JUST TO SEE CSS ETC IN DEVELOPMENT - REMOVE THIS before sub
+DEBUG = True
 
 ALLOWED_HOSTS = ['seaside-sewing.herokuapp.com', 'localhost']
 
@@ -52,6 +55,7 @@ INSTALLED_APPS = [
     'checkout',
     'products',
     'profiles',
+    'contact',
 
     # Other
     'crispy_forms',
