@@ -1,6 +1,6 @@
 {% extends "admin/base.html" %}
 
-{% block title %}{% if subtitle %}{{ subtitle }} | {% endif %}{{ title }} | {{ site_title|default:_('Django site admin') }}{% endblock %}
+{% block title %}{% if subtitle %}{{ subtitle }} | {% endif %}{{ title }} | {{ site_title|default:_('Seaside Sewing Admin') }}{% endblock %}
 
 {% block branding %}
     <h1 id="site-name"><a href="{% url 'admin:index' %}">Seaside Sewing - Admin</a></h1>
