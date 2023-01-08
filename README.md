@@ -124,25 +124,24 @@ Below is a table of opportunities for the project, together with a score of thei
 | 10 | Shopper | Log in and out | Keep my account information secure |
 | 11 | Shopper | View a profile page | Set a default delivery address and view previous purchases |
 | 12 | Shopper | Reset my password | Recover my account |
-| 13 | Shopper | Review products | Leave a rating/review on products |
 | **SORTING & SEARCHING** |
-| 14 | Shopper | Sort the list of available products | Easily identify the best rated, best priced and categorically sort products |
-| 15 | Shopper | Sort a specific category of products | Find the best-priced or best-rated product in a specific category, or sort the products in that category by name |
-| 16 | Shopper | Sort multiple categories of products simutaneously | Find the best-priced or best-rated products across broad categories, such as fabric or habedashery |
-| 17 | Shopper | Search for a product by name or description | Find a specific product I'd like to purchase |
-| 18 | Shopper | Easily see what I've searched for and the number of results | Quickly decide whether the product I want is available |
+| 13 | Shopper | Sort the list of available products | Easily identify the best rated, best priced and categorically sort products |
+| 14 | Shopper | Sort a specific category of products | Find the best-priced or best-rated product in a specific category, or sort the products in that category by name |
+| 15 | Shopper | Sort multiple categories of products simutaneously | Find the best-priced or best-rated products across broad categories, such as fabric or habedashery |
+| 16 | Shopper | Search for a product by name or description | Find a specific product I'd like to purchase |
+| 17 | Shopper | Easily see what I've searched for and the number of results | Quickly decide whether the product I want is available |
 | **PURCHASING & CHECKOUT** |
-| 19 | Shopper | Easily select the quantity of a product when purchasing it | Ensure I don't accidentally select the wrong product quantity |
-| 20 | Shopper | View items in my bag to be purchased | Identify the total cost of my purchase and all items I will receive |
-| 21 | Shopper | Adjust the quantity of individual items in my bag | Easily make changes to my purchase before checkout |
-| 22 | Shopper | Easily eneter my payment information | Check out quickly and with no hassles |
-| 23 | Shopper | Feel my personal and payment information is safe and secure | Confidently provide the needed information to make a purchase |
-| 24 | Shopper | View an order confirmation after checkout | Verify that I haven't made any mistakes |
-| 25 | Shopper | Receive an email confirmation after checking out | Keep the confirmation of what I've purchased for my records |
+| 18 | Shopper | Easily select the quantity of a product when purchasing it | Ensure I don't accidentally select the wrong product quantity |
+| 19 | Shopper | View items in my bag to be purchased | Identify the total cost of my purchase and all items I will receive |
+| 20 | Shopper | Adjust the quantity of individual items in my bag | Easily make changes to my purchase before checkout |
+| 21 | Shopper | Easily eneter my payment information | Check out quickly and with no hassles |
+| 22 | Shopper | Feel my personal and payment information is safe and secure | Confidently provide the needed information to make a purchase |
+| 23 | Shopper | View an order confirmation after checkout | Verify that I haven't made any mistakes |
+| 24 | Shopper | Receive an email confirmation after checking out | Keep the confirmation of what I've purchased for my records |
 | **ADMIN & STORE MANAGEMENT** |
-| 26 | Store Owner | Add a product | Add new items to my store |
-| 27 | Store Owner | Edit/update a product | Change product prices, descriptions, images and other product criteria |
-| 28 | Store Owner | Delete a product | Remove items that are no longer for sale |
+| 25 | Store Owner | Add a product | Add new items to my store |
+| 26 | Store Owner | Edit/update a product | Change product prices, descriptions, images and other product criteria |
+| 27 | Store Owner | Delete a product | Remove items that are no longer for sale |
 
 #### **Database Schema**
 
