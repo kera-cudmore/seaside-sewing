@@ -1,9 +1,7 @@
 /*----- GOOGLE FONTS IMPORT -----*/
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Overpass:wght@200;300;400;900&display=swap');
 
-
 /*----- ROOT VARIABLES -----*/
-
 :root {
     /*----- Typography -----*/
     --header-text: 'Dancing Script', cursive;
@@ -26,9 +24,7 @@
     padding: 0;
     }
 
-
 /*----- Headings & Text -----*/
-
 h1, h3 {
     font-family: var(--header-text);
     text-align: center;
@@ -92,8 +88,8 @@ a {
 .text-danger {
     color: var(--red) !important;
 }
-/*----- Header -----*/
 
+/*----- Header -----*/
 .site-name {
     background-color: var(--dark-blue);
     display: flex;
@@ -125,7 +121,6 @@ a {
 }
 
 /*----- Footer -----*/
-
 .footer-container {
     background-color: var(--light-blue);
     padding-top: 3rem;
@@ -138,9 +133,7 @@ a {
     text-align: center;
 }
 
-
 /*----- Toasts -----*/
-
 .message-container {
     position: fixed;
     top: 72px;
@@ -207,9 +200,7 @@ a {
     overflow-y: auto;
 }
 
-
 /*----- Main Page -----*/
-
 .content-container {
     padding:5rem 3rem;
 }
@@ -224,9 +215,7 @@ hr {
     font-weight: 700;
 }
 
-
-/*----- Buttons -----*/
-
+/*----- Buttons & Inputs -----*/
 .btn-outline-blue {
     background: var(--white);
     color: var(--dark-blue);
@@ -331,7 +320,6 @@ input[name='q']::placeholder {
 }
 
 /*-----  CURSOR -----*/
-
 .back-to-top,
 .update-item,
 .remove-item {
@@ -339,7 +327,6 @@ input[name='q']::placeholder {
 }
 
 /*----- MAGNIFYING LENS -----*/
-
 /* source: https://thdoan.github.io/magnify/ */
 .magnify > .magnify-lens {
     width: 300px;
@@ -347,7 +334,6 @@ input[name='q']::placeholder {
 }
 
 /*----- ALLAUTH FORMS -----*/
-
 /* Allauth form formatting */
 .allauth-form-inner-content input {
     border-color: var(--black);
@@ -361,7 +347,6 @@ input[name='q']::placeholder {
 .allauth-form-inner-content input::placeholder {
     color: var(--grey);
 }
-
 
 .allauth-form-inner-content input[type='submit'] {
     /* btn */
@@ -392,9 +377,7 @@ input[name='q']::placeholder {
     border-color: var(--dark-blue);
 }
 
-
 /*----- MEDIA QUERIES -----*/
-
 /* Tablets */
 @media only screen and (min-width : 481px) {
     h1{
@@ -403,11 +386,9 @@ input[name='q']::placeholder {
     h2 {
         font-size: 1.5rem;
     }
-
     h3 {
         font-size: 4rem;
     }
-
     h4 {
         font-size: 2rem;
     }
@@ -418,7 +399,6 @@ input[name='q']::placeholder {
     h1 {
         font-size: 9rem;
     }
-
     h3 {
         font-size: 7rem;
     }
