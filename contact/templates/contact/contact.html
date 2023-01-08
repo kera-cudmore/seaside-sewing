@@ -26,9 +26,10 @@
             <div class="col-12 col-lg-6 offset-lg-3">
                 <p class="text-muted text-center">Please fill out the contact form below to get in touch with us.</p>
                 
-                <form action="">
+                <form action="{% url 'contact' %}" method="POST" id="contact-form" class="pt-5">
                     {% csrf_token %}
-                    {{ contact_form|crispy }}
+                    {{ form|crispy }}
+
 
                     <!-- SUBMIT & BACK BUTTONS -->
                     <div class="submit-button text-right mt-5 mb-2">
