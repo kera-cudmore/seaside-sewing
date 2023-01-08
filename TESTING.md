@@ -207,4 +207,4 @@ Additional testing was carried out by friends and family on a variety of devices
 
 | No | Bug | Evidence |
 |:--- | :--- | :---: |
-| | | |
+| 1 | The confirmation email is not rounding the values to 2 decimal places and the contact.email value is not displaying | ![Confirmation Email Bug](documentation/bugs/confirmation-email.png) |
