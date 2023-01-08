@@ -331,14 +331,21 @@ I created the following mockup to get an idea of what the sites header and foote
 
 Each page of the site shares the following:
 
-* Favicon
-
-  I used [Favicon.io](https://favicon.io/) to create the favicon for the site. As the images I tried to use to create the favicon came out very pixalated, I have used the initials of the site to create the favicon using the same font and colours from the site.
+* Favicon - I used [Favicon.io](https://favicon.io/) to create the favicon for the site. As the images I tried to use to create the favicon came out very pixalated, I have used the initials of the site to create the favicon using the same font and colours from the site.
 
   ![Seaside Sewing Favicon](documentation/favicon.png)
 
-* Navbar
-* Footer
+* Navbar - The navbar on the site is split into two sections, the first section contains the search bar, an account icon and the bag icon. The second section contains the sites products categories. The navbar is fully responsive, and utilises a hamburger menu toggle on smaller screens. The Categories links in the navbar move up when hovered over to give the user feedback that they are selecting that category. A dropdown menu will then show with further options. The account icon also contains a dropdown menu which displays different options depending on whether a user is logged in, and whether the user has a superuser account.
+
+  ![Large Navbar](documentation/testing/user-stories/us-1-a.png)
+
+  ![Small Navbar](documentation/testing/user-stories/us-1-b.png)
+
+* Footer - The footer is broken into 4 distinct sections - a section that contains information about the site, such as terms and conditions and policies. The second section contains contact information for the site, such as a link to the contact form, and social media links. The third section gives the user further information on the payment processor for the site, Stripe, along with the cards accepted. The final section is a disclaimer to let users know this site was created as an educational product and to remind users that no orders will be processed. The footer is fully responsive, and on small screens stacks the sections.
+
+  ![Site Footer Large](documentation/large-footer.png)
+
+  ![Site Footer Small](documentation/small-footer.png)
 
 site pages images
 
@@ -360,7 +367,7 @@ I have been mindful during coding to ensure that the website is as accessible fr
 * Using semantic HTML.
 * Using descriptive alt attributes on images on the site.
 * Providing information for screen readers where there are icons used and no text.
-* Ensuring that there is a sufficient colour contrast throughout the site. (see update in the colour theme section.)
+* Ensuring that there is a sufficient colour contrast throughout the site. (update on colours chosen explained in the colour scheme section.)
 
 ---
 
@@ -407,6 +414,8 @@ sqlite3 for development.
 [boto3](https://pypi.org/project/boto3/) - Allows connection to AWS S3 bucket
 
 [coverage](documentation/testing/coverage/checkout-forms.png) - Used to see where there are areas of missing tests
+
+[magnify.js](https://thdoan.github.io/magnify/) - Used to add the magnify lens to the product details product image
 
 ### Programs Used
 
