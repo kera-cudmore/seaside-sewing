@@ -1,6 +1,5 @@
 {% extends "base.html" %}
     {% load static %}
-    {% load bag_tools %}
     
     {% block extra_title %} - Contact Us{% endblock %}
 
@@ -27,6 +26,23 @@
             <div class="col-12 col-lg-6 offset-lg-3">
                 <p class="text-muted text-center">Please fill out the contact form below to get in touch with us.</p>
                 
+                <form action="">
+                    {% csrf_token %}
+                    {{ contact_form|crispy }}
+
+                    <!-- SUBMIT & BACK BUTTONS -->
+                    <div class="submit-button text-right mt-5 mb-2">
+                        <a href="{% url 'products' %}" class="btn btn-outline-red my-2">
+                            <span class="mr-2"><i class="fa-solid fa-chevron-left"></i></span>
+                            <span>Back to Shop</span>
+                        </a>
+                        <button class="btn btn-outline-blue my-2" id="submit-button">
+                            <span class="mr-2"><i class="fa-regular fa-paper-plane"></i></span>
+                            <span>Send Contact Form</span>
+                        </button>
+                    </div>
+                </form>
+
             </div>
         </div>
     {% endblock %}
