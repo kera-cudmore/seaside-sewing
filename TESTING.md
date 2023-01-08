@@ -49,10 +49,10 @@ I have gone through each page of the site using the Chrome Developer Tools to en
 | Profile Page | Pass | [Profile Page Validation](documentation/testing/validation/html/profiles-validation.png) |
 | Bag Page | Pass | [Bag Page Validation](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fseaside-sewing.herokuapp.com%2Fbag%2F) |
 | Checkout Page | Pass | [Checkout Page Validation](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fseaside-sewing.herokuapp.com%2Fcheckout%2F) |
-| Checkout Success Page |  | |
+| Checkout Success Page | Pass | [Checkout Success Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fseaside-sewing.herokuapp.com%2Fcheckout%2Fcheckout_success%2F411B10FD64CA410DA6A130331F2B74CA) |
 | 404 Error Page |  | |
-| Add Product Page |  | |
-| Edit Product Page | | |
+| Add Product Page | Pass | [Add Product Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fseaside-sewing.herokuapp.com%2Fproducts%2Fadd%2F) |
+| Edit Product Page | Pass | [Edit Product Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fseaside-sewing.herokuapp.com%2Fproducts%2Fedit%2F10%2F) |
 
 ### CSS
 
@@ -246,7 +246,6 @@ Additional testing was carried out by friends and family on a variety of devices
 | 11 | Product description was turning bold on addition of item to cart | Removed some unrequired strong tags from the success toast | ![Solved bug 11](documentation/bugs/solved-bug-11.gif) |
 | 12 | The confirmation email is not rounding the values to 2 decimal places and the contact.email value is not displaying | I solved this by adding `float:2` to the values in the confirmation email body file. | ![Confirmation Email Bug](documentation/bugs/confirmation-email.png) |
 | 13 | I was receiving an error in validation due to using `mailto:` with a subject that contained spaces. | I decided that it would probably be better practice to have a contact form on the site itself, and link to the contact page. |
-
 
 ### Known Bugs
 
