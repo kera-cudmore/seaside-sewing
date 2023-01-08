@@ -2,6 +2,8 @@
     DJANGO Admin styles
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Overpass:wght@200;300;400;900&display=swap');
+
 /* VARIABLE DEFINITIONS */
 html[data-theme="light"],
 :root {
@@ -46,28 +48,16 @@ html[data-theme="light"],
     --button-hover-bg: #609ab6;
     --default-button-bg: var(--secondary);
     --default-button-hover-bg: #205067;
-    --close-button-bg: #747474;
+    --close-button-bg: #456f34;
     --close-button-hover-bg: #333;
     --delete-button-bg: #A82114;
-    --delete-button-hover-bg: #a41515;
+    --delete-button-hover-bg: #A82114;
 
     --object-tools-fg: var(--button-fg);
     --object-tools-bg: var(--close-button-bg);
     --object-tools-hover-bg: var(--close-button-hover-bg);
 
-    --font-family-primary:
-        -apple-system,
-        BlinkMacSystemFont,
-        "Segoe UI",
-        system-ui,
-        Roboto,
-        "Helvetica Neue",
-        Arial,
-        sans-serif,
-        "Apple Color Emoji",
-        "Segoe UI Emoji",
-        "Segoe UI Symbol",
-        "Noto Color Emoji";
+    --font-family-primary: 'Overpass', sans-serif;
     --font-family-monospace:
         ui-monospace,
         Menlo,
@@ -241,7 +231,7 @@ pre.literal-block {
 }
 
 code strong {
-    color: #930;
+    color: #A82114;
 }
 
 hr {
@@ -738,11 +728,11 @@ div.breadcrumbs a:focus, div.breadcrumbs a:hover {
 }
 
 a.deletelink:link, a.deletelink:visited {
-    color: #CC3434; /* XXX Probably unused? */
+    color: #A82114; /* XXX Probably unused? */
 }
 
 a.deletelink:focus, a.deletelink:hover {
-    color: #993333; /* XXX Probably unused? */
+    color: #A82114; /* XXX Probably unused? */
     text-decoration: none;
 }
 
@@ -919,7 +909,7 @@ a.deletelink:focus, a.deletelink:hover {
     padding: 10px 40px;
     background: var(--header-bg);
     color: var(--header-color);
-    overflow: hidden;
+    overflow: hidden;    
 }
 
 #header a:link, #header a:visited, #logout-form button {
@@ -932,6 +922,7 @@ a.deletelink:focus, a.deletelink:hover {
 
 #branding {
     display: flex;
+    font-family: 'Dancing Script', cursive;
 }
 
 #branding h1 {
@@ -974,6 +965,7 @@ a.deletelink:focus, a.deletelink:hover {
     float: right;
     margin: 0 0 0 20px;
     text-align: right;
+    font-family: 'Overpass', sans-serif;
 }
 
 #user-tools, #logout-form button{
