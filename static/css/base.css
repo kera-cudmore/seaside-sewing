@@ -123,14 +123,6 @@ a {
 /*----- Footer -----*/
 .footer-container {
     background-color: var(--light-blue);
-    padding-top: 3rem;
-}
-
-.educational-purposes {
-    padding: 3rem 3rem 0 3rem;
-    display: flex;
-    justify-content: center;
-    text-align: center;
 }
 
 /*----- Toasts -----*/

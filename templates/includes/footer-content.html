@@ -1,28 +1,21 @@
-<div class="row footer-content text-center">
-    <div class="col-sm-4">
+<div class="row footer-content text-center d-flex justify-content-around">
+    <div class="col-sm-3 pb-5">
         <h4 class="pb-3">About</h4>
-
         <p><a href="{% url 'privacy' %}"><i class="fa-solid fa-shield"></i> Privacy Policy</a></p>
         <p><a href="{% url 'terms' %}"><i class="fa-solid fa-file"></i> Terms & Conditions</a></p>
         <p><a href="{% url 'delivery' %}"><i class="fa-solid fa-truck"></i> Delivery Policy</a></p>
     </div>
     
-    <div class="col-sm-4 pb-5">
+    <div class="col-sm-3 pb-5">
         <h4 class="pb-3">Contact</h4>
-        
         <a href = "{% url 'contact' %}">Contact Us Form</a>
-        
         <address class="mt-3">
             <p>123 Here St<br>
             There Town<br>
             Anywhere<br>
             P0ST C0D3</p>
         </address>
-
         <p>Tel: 12345</p>
-
-        
-        
         <a href="https://www.facebook.com/" target="_blank">
             <i class="fa-brands fa-square-facebook fa-2x" aria-hidden="true"></i>
             <span class="fa-sr-only">Link to Facebook. Opens in a new tab</span>
@@ -39,18 +32,12 @@
             <i class="fa-brands fa-square-pinterest fa-2x" aria-hidden="true"></i>
             <span class="fa-sr-only">Link to Facebook. Opens in a new tab</span>
         </a>
-
-
     </div>
     
-    <div class="col-sm-4 pb-5">
+    <div class="col-sm-3 pb-5">
         <h4 class="pb-3">Payments</h4>
-        
-
         <p>Payments facilitated by <br><i class="fa-brands fa-stripe fa-3x"><span class="fa-sr-only">Stripe - a Payment Processing Platform for the Internet</span></i></p>
-
         <p>Cards Accepted:</p>
-
         <i class="fa-brands fa-cc-visa fa-2x"><span class="fa-sr-only">Visa</span></i>
         <i class="fa-brands fa-cc-mastercard fa-2x"><span class="fa-sr-only">Mastercard</span></i>
         <i class="fa-brands fa-cc-amex fa-2x"><span class="fa-sr-only">Amex</span></i>
@@ -59,8 +46,8 @@
     </div>
 </div>
 
-<div class="row educational-purposes">
-    <div class="col-12">
-    <p>Seaside Sewing has been created by <a href="https://github.com/kera-cudmore" target="_blank">Kera Cudmore</a> as a portfolio project for the Code Institutes Level 5 Diploma in Web Application Development. As this site has been created for educational purposes, no orders received will be fulfilled.</p>
-</div>
+<div class="row educational-purposes text-center pb-5">
+    <div class="col-8 offset-2">
+    <p>Seaside Sewing has been created by <a href="https://github.com/kera-cudmore" target="_blank">Kera Cudmore</a> as a portfolio project for the Code Institutes Level 5 Diploma in Web Application Development.</p>
+    <p>As this site has been created for educational purposes, no orders received will be fulfilled.</p>
 </div>
