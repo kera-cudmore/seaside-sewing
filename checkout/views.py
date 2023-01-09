@@ -66,6 +66,8 @@ def checkout(request):
             for item_id, quantity in bag.items():
                 try:
                     product = Product.objects.get(id=item_id)
+                    product.stock = product.stock - quantity
+                    product.save()
                     if isinstance(quantity, int):
                         order_line_item = OrderLineItem(
                             order=order,
