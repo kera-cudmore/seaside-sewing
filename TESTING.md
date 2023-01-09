@@ -40,7 +40,7 @@ I have gone through each page of the site using the Chrome Developer Tools to en
 | :--- | :--- | :---: |
 | Home Page | Pass| [Home Page Validation](https://validator.w3.org/nu/?doc=https%3A%2F%2Fseaside-sewing.herokuapp.com%2F) |
 | Privacy Page | Pass | [Privacy Page Validation](https://validator.w3.org/nu/?doc=https%3A%2F%2Fseaside-sewing.herokuapp.com%2Fprivacy) |
-| Terms & Conditions Page |  | [Terms & Conditions Page Validation]() |
+| Terms & Conditions Page |  | [Terms & Conditions Page Validation] |
 | Delivery Policy Page | Pass | [Delivery Page Validation](https://validator.w3.org/nu/?doc=https%3A%2F%2Fseaside-sewing.herokuapp.com%2Fdelivery) |
 | Contact Form Page | Pass | [Contact Form Page Validation](https://validator.w3.org/nu/?doc=https%3A%2F%2Fseaside-sewing.herokuapp.com%2Fcontact%2F)|
 | Contact Form Success Page| Pass | [Contact Success Page Validation](documentation/testing/validation/html/contact-success-validation.png) |
@@ -246,6 +246,7 @@ Additional testing was carried out by friends and family on a variety of devices
 | 11 | Product description was turning bold on addition of item to cart | Removed some unrequired strong tags from the success toast | ![Solved bug 11](documentation/bugs/solved-bug-11.gif) |
 | 12 | The confirmation email is not rounding the values to 2 decimal places and the contact.email value is not displaying | I solved this by adding `float:2` to the values in the confirmation email body file. | ![Confirmation Email Bug](documentation/bugs/confirmation-email.png) |
 | 13 | I was receiving an error in validation due to using `mailto:` with a subject that contained spaces. | I decided that it would probably be better practice to have a contact form on the site itself, and link to the contact page. |
+| 14 | Getting side scroll on pages with a small white slice on the right | Using dev tools I could see that this was being caused by the footer having a margin added from the bootstrap column classes. I have solved this by adding the contents of the footer into a container. | ![Side Scroll Bug](documentation/bugs/solved-bug-14.png) |
 
 ### Known Bugs
 
