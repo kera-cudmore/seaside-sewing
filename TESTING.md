@@ -140,6 +140,23 @@ I have used Googles Lighthouse testing to test the performance, accessibility, b
 
 WAVE(Web Accessibility Evaluation Tool) allows developers to create content that is more accessible to users with disabilities. It does this by identifying accessibility and WGAC errors.
 
+| Page | Errors |
+| :--- | :--- |
+| Home Page | No errors|
+| Products Page | No errors |
+| Product Details Page | No errors |
+| Add Product Page | No errors |
+| Edit Product Page | No errors |
+| Bag Page | No errors |
+| Checkout Page | No errors |
+| Checkout Success Page | No errors |
+| Profile Page |No errors. It is showing 1 low contrast warning, however I am unable to find where it is as the badge for the contract warning is not actually displaying on the page |
+| Contact Us Page | No errors |
+| Privacy Policy Page| No errors |
+| Terms & Conditions Page | No errors |
+| Delivery Policy Page | No errrors |
+| 404 Error Page | No errors |
+
 ## Automated Testing
 
 Automated testing for this project was carried out with python unit testing. I would write a test, run the test and fix any issues raised before running the test again to confirm it passed.
