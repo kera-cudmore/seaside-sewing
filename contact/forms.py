@@ -17,6 +17,7 @@ class ContactForm(forms.ModelForm):
         Add placeholders,
         remove auto-generated labels
         set autofocus on first field
+        add aria labels to fields for accessibility
         """
         super().__init__(*args, **kwargs)
         placeholders = {

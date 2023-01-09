@@ -16,6 +16,9 @@ class ProductForm(forms.ModelForm):
         )
 
     def __init__(self, *args, **kwargs):
+        """
+        add aria labels to fields for accessibility
+        """
         super().__init__(*args, **kwargs)
         categories = Category.objects.all()
         friendly_names = [(c.id, c.get_friendly_name()) for c in categories]
