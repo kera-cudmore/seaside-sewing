@@ -31,7 +31,7 @@
 {% block content %}
     <div class="row">
         <!-- Product image -->
-        <div class="col-12 col md-6 col-lg-4 offset-lg-2">
+        <div class="col-12 col md-6 col-lg-4 offset-lg-2 text-center">
             <div class="image-container my-5">
                 {% if product.image %}
                     <a href="{{ product.image.url }}" target="_blank">
@@ -102,7 +102,13 @@
                     {% endif %}
                     <!-- Product Stock -->
                     <span class="small text-muted ml-3">
-                        <i class="fa-solid fa-boxes-stacked mr-2"></i>Stock: <span data-stock="{{ product.stock }}">{{ product.stock }}</span>
+                        <i class="fa-solid fa-boxes-stacked mr-2"></i>
+                            {% if product.stock == 0 %}
+                                <span class="text-danger">Out of Stock</span>
+                            {% else %}
+                                <span data-stock="{{ product.stock }}">{{ product.stock }}
+                            {% endif %}
+                        </span>
                     </span>
                     <!-- Product Rating -->
                     {% if product.rating %}
