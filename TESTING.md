@@ -40,7 +40,7 @@ I have gone through each page of the site using the Chrome Developer Tools to en
 | :--- | :--- | :---: |
 | Home Page | Pass| [Home Page Validation](https://validator.w3.org/nu/?doc=https%3A%2F%2Fseaside-sewing.herokuapp.com%2F) |
 | Privacy Page | Pass | [Privacy Page Validation](https://validator.w3.org/nu/?doc=https%3A%2F%2Fseaside-sewing.herokuapp.com%2Fprivacy) |
-| Terms & Conditions Page |  | [Terms & Conditions Page Validation](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fseaside-sewing.herokuapp.com%2Fterms) |
+| Terms & Conditions Page | Pass | [Terms & Conditions Page Validation](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fseaside-sewing.herokuapp.com%2Fterms) |
 | Delivery Policy Page | Pass | [Delivery Page Validation](https://validator.w3.org/nu/?doc=https%3A%2F%2Fseaside-sewing.herokuapp.com%2Fdelivery) |
 | Contact Form Page | Pass | [Contact Form Page Validation](https://validator.w3.org/nu/?doc=https%3A%2F%2Fseaside-sewing.herokuapp.com%2Fcontact%2F)|
 | Contact Form Success Page| Pass | [Contact Success Page Validation](documentation/testing/validation/html/contact-success-validation.png) |
@@ -134,7 +134,39 @@ I have used Googles Lighthouse testing to test the performance, accessibility, b
 
 #### Desktop Results
 
+| Page | Result |
+| :--- | :--- |
+| Home Page | ![Home Desktop Lighthouse Testing](documentation/testing/lighthouse/home-desk-lh-val.png) |
+| Products Page | ![Products Desktop Lighthouse Testing](documentation/testing/lighthouse/products-desk-lh-val.png) |
+| Product Details Page | ![Product Detail Desktop Lighthouse Testing](documentation/testing/lighthouse/product-detail-desk-lh-val.png) |
+| Add Product Page | ![Add Product Desktop Lighthouse Testing](documentation/testing/lighthouse/add-product-desk-lh-val.png) |
+| Edit Product Page | ![Edit Product Desktop Lighthouse Testing](documentation/testing/lighthouse/edit-product-desk-lh-val.png) |
+| Bag Page | ![Bag Desktop Lighthouse Testing](documentation/testing/lighthouse/bag-desk-lh-val.png) |
+| Checkout Page | ![Checkout Desktop Lighthouse Testing](documentation/testing/lighthouse/checkout-desk-lh-val.png) |
+| Checkout Success Page | ![Checkout Success Desktop Lighthouse Testing](documentation/testing/lighthouse/checkout-success-desk-lh-val.png) |
+| Profile Page | ![Profile Desktop Lighthouse Testing](documentation/testing/lighthouse/profile-desk-lh-val.png) |
+| Contact Us Page | ![Contact Us Desktop Lighthouse Testing](documentation/testing/lighthouse/contact-desk-lh-val.png) |
+| Privacy Policy Page| ![Privacy Desktop Lighthouse Testing](documentation/testing/lighthouse/privacy-desk-lh-val.png)  |
+| Terms & Conditions Page | ![Terms Desktop Lighthouse Testing](documentation/testing/lighthouse/terms-desk-lh-val.png) |
+| Delivery Policy Page | ![Delivery Desktop Lighthouse Testing](documentation/testing/lighthouse/delivery-desk-lg-val.png)  |
+
 #### Mobile Results
+
+| Page | Result |
+| :--- | :--- |
+| Home Page | ![Home Page Mobile Lighthouse Testing](documentation/testing/lighthouse/home-mob-lh-val.png) |
+| Products Page | ![Product Mobile Lighthouse Testing](documentation/testing/lighthouse/products-mob-lh-val.png) |
+| Product Details Page | ![Product Detail Mobile Lighthouse Testing](documentation/testing/lighthouse/product-detail-mob-lh-val.png) |
+| Add Product Page | ![Add Product Mobile Lighthouse Testing](documentation/testing/lighthouse/add-product-mob-lh-val.png) |
+| Edit Product Page | ![Edit Product Mobile Lighthouse Testing](documentation/testing/lighthouse/edit-product-mob-lh-val.png) |
+| Bag Page | ![Bag Mobile Lighthouse Testing](documentation/testing/lighthouse/bag-mob-lh-val.png) |
+| Checkout Page | ![Checkout Mobile Lighthouse Testing](documentation/testing/lighthouse/checkout-mob-lh-val.png) |
+| Checkout Success Page | ![Checkout Success Mobile Lighthouse Testing](documentation/testing/lighthouse/checkout-success-mob-lh-val.png) |
+| Profile Page | ![Profile Mobile Lighthouse Testing](documentation/testing/lighthouse/profile-mob-lh-val.png) |
+| Contact Us Page | ![Contact Us Mobile Lighthouse Testing](documentation/testing/lighthouse/contact-mob-lh-val.png) |
+| Privacy Policy Page| ![Privacy Mobile Lighthouse Testing](documentation/testing/lighthouse/privacy-mob-lh-val.png) |
+| Terms & Conditions Page | ![Terms Mobile Lighthouse Testing](documentation/testing/lighthouse/terms-mob-lh-val.png) |
+| Delivery Policy Page | ![Delivery Mobile Lighthouse Testing](documentation/testing/lighthouse/delivery-mob-lh-val.png) |
 
 ### Wave
 
