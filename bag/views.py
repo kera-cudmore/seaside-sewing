@@ -49,9 +49,14 @@ def adjust_bag(request, item_id):
     bag = request.session.get('bag', {})
 
     if quantity > 0:
-        bag[item_id] = quantity
-        messages.success(request, f'Updated {product.name} quantity to \
-            {bag[item_id]}')
+        if quantity > product.stock:
+            messages.error(request, f'Sorry, but we only have \
+                { product.stock } of { product.name } at the moment. \
+                    Please adjust the quantity and try again')
+        else:
+            bag[item_id] = quantity
+            messages.success(request, f'Updated {product.name} quantity to \
+                {bag[item_id]}')
     else:
         bag.pop(item_id)
         messages.success(request, f'Removed {product.name} from your bag')
