@@ -40,7 +40,7 @@ I have gone through each page of the site using the Chrome Developer Tools to en
 | :--- | :--- | :---: |
 | Home Page | Pass| [Home Page Validation](https://validator.w3.org/nu/?doc=https%3A%2F%2Fseaside-sewing.herokuapp.com%2F) |
 | Privacy Page | Pass | [Privacy Page Validation](https://validator.w3.org/nu/?doc=https%3A%2F%2Fseaside-sewing.herokuapp.com%2Fprivacy) |
-| Terms & Conditions Page |  | [Terms & Conditions Page Validation] |
+| Terms & Conditions Page |  | [Terms & Conditions Page Validation](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fseaside-sewing.herokuapp.com%2Fterms) |
 | Delivery Policy Page | Pass | [Delivery Page Validation](https://validator.w3.org/nu/?doc=https%3A%2F%2Fseaside-sewing.herokuapp.com%2Fdelivery) |
 | Contact Form Page | Pass | [Contact Form Page Validation](https://validator.w3.org/nu/?doc=https%3A%2F%2Fseaside-sewing.herokuapp.com%2Fcontact%2F)|
 | Contact Form Success Page| Pass | [Contact Success Page Validation](documentation/testing/validation/html/contact-success-validation.png) |
@@ -50,9 +50,9 @@ I have gone through each page of the site using the Chrome Developer Tools to en
 | Bag Page | Pass | [Bag Page Validation](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fseaside-sewing.herokuapp.com%2Fbag%2F) |
 | Checkout Page | Pass | [Checkout Page Validation](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fseaside-sewing.herokuapp.com%2Fcheckout%2F) |
 | Checkout Success Page | Pass | [Checkout Success Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fseaside-sewing.herokuapp.com%2Fcheckout%2Fcheckout_success%2F411B10FD64CA410DA6A130331F2B74CA) |
-| 404 Error Page |  | |
-| Add Product Page | Pass | [Add Product Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fseaside-sewing.herokuapp.com%2Fproducts%2Fadd%2F) |
-| Edit Product Page | Pass | [Edit Product Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fseaside-sewing.herokuapp.com%2Fproducts%2Fedit%2F10%2F) |
+| 404 Error Page | Pass | [404 Page Validation](documentation/testing/validation/html/404-page-validation.png) |
+| Add Product Page | Pass | [Add Product Page Validation](https://validator.w3.org/nu/?doc=https%3A%2F%2Fseaside-sewing.herokuapp.com%2Fproducts%2Fadd%2F) |
+| Edit Product Page | Pass | [Edit Product Page Validation](https://validator.w3.org/nu/?doc=https%3A%2F%2Fseaside-sewing.herokuapp.com%2Fproducts%2Fedit%2F10%2F) |
 
 ### CSS
 
