@@ -77,18 +77,39 @@
                         <div class="row">
                             <div class="col">
                                 <p class="lead text-left mb-1">£{{ product.price }}</p>
-                                {% if product.category %}
-                                    <p class="small mt-1 mb-2">
+                                <div class="my-2">
+                                    <!-- Product Category -->
+                                    {% if product.category %}
+                                    <span class="small">
                                         <a href="{% url 'products' %}?category={{ product.category.name }}" class="text-muted">
-                                            <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
+                                            <i class="fas fa-tag mr-2"></i>{{ product.category.friendly_name }}
                                         </a>
-                                    </p>
-                                {% endif %}
-                                {% if product.rating %}
-                                <p class="small mt-1 mb-2 text-muted">
-                                        <i class="fa-solid fa-star mr-1"></i>{{ product.rating }}
-                                </p>
-                                {% endif %}
+                                    </span>
+                                    {% endif %}    
+                                    <!-- Product Colour -->          
+                                    {% if product.colour %}
+                                        <span class="small text-muted ml-3">
+                                            <i class="fa-solid fa-droplet mr-2"></i>{{ product.colour }}
+                                        </span>
+                                    {% endif %}
+                                    </div>
+                                    <div class="my-2">
+                                    <!-- Product Stock -->
+                                    <span class="small text-muted">
+                                        <i class="fa-solid fa-boxes-stacked mr-2"></i>
+                                        {% if product.stock == 0 %}
+                                            <span class="text-danger">Out of Stock</span>
+                                        {% else %}
+                                            <span data-stock="{{ product.stock }}">{{ product.stock }</span>
+                                        {% endif %}
+                                    </span>
+                                    <!-- Product Rating -->
+                                    {% if product.rating %}
+                                        <span class="small text-muted ml-3">
+                                            <i class="fa-solid fa-star mr-2"></i>{{ product.rating }}
+                                        </span>
+                                    {% endif %}
+                                </div>
 
                                 <!-- Admin edit and delete buttons -->
                                 {% if request.user.is_superuser %}
