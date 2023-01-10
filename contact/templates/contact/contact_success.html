@@ -1,7 +1,21 @@
 {% extends "base.html" %} 
 {% load static %}
 
-{% block extra_title %} - Success!{% endblock %}
+{% block extra_title %} - Contact Us Success!{% endblock %}
+
+{% block extra_meta %}
+        <meta name="description" content="Seaside Sewing - Contact Us. Seaside Sewing, an online ecommerce store selling all you need for your next sewing project from quilting and patchwork, to sewing your own clothes!">
+        <meta name="keywords" content="Contact us, Seaside Sewing, sewing, ecommerce, online shop, shop, sewing products, needles, thread, fabric, material, sew, hobby, patchwork, quilting">
+    
+        <!-- Social media - Facebook, LinkedIn, Google -->
+        <meta property="og:type" content="article">
+        <meta property="og:title" content="Seaside Sewing - Contact Us Success!">
+        <meta property="og:description" content="Seaside Sewing - Contact Us. Seaside Sewing, an online ecommerce store selling all you need for your next sewing project from quilting and patchwork, to sewing your own clothes!">
+        <meta name="image" property="og:image" content="{% static 'images/responsive-site-image.png' %}">
+        <meta property="og:image:alt" content="Seaside Sewing ecommerce store shown on a variety of devices, from mobile to desktop">
+        <meta property="og:url" content="https://seaside-sewing.herokuapp.com/">
+        <meta property="og:site_name" content="Seaside Sewing - Contact Us Success!">
+{% endblock %}
 
 {% block content %}
     <div class="row page-title">
