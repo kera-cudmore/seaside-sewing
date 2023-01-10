@@ -12,7 +12,7 @@
     <meta property="og:type" content="article">
     <meta property="og:title" content="Seaside Sewing - Bag">
     <meta property="og:description" content="Seaside Sewing - Bag. Information on the terms & conditions for Seaside Sewing, an online ecommerce store selling all you need for your next sewing project from quilting and patchwork, to sewing your own clothes!"> 
-    <meta name="image" property="og:image" content="URL TO IMAGE"><!-- URL of image to be displayed when your site is linked to -->
+    <meta name="image" property="og:image" content="{% static 'images/responsive-site-image.png' %}">
     <meta property="og:image:alt" content="Seaside Sewing ecommerce store shown on a variety of devices, from mobile to desktop">
     <meta property="og:url" content="https://seaside-sewing.herokuapp.com/bag/">
     <meta property="og:site_name" content="Seaside Sewing - Bag">
@@ -62,6 +62,7 @@
                         </div>
                     {% endfor %}
 
+                    <!-- Back to top button -->
                     <div class="back-to-top">
                         <a class="back-to-top-btn btn btn-outline-blue">
                             <i class="fa-solid fa-chevron-up fa-lg"></i>
