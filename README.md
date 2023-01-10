@@ -512,7 +512,7 @@ The sign in page provides inputs for a user to enter their username/email togeth
 
 ![Login page](documentation/readme/page-screenshots/signin.png)
 
-#### Verify Email Page
+#### **Verify Email Page**
 
 When a user registers they will be sent an [email](documentation/readme/page-screenshots/email-verify-account.png) to verify their email address. If the user clicks on the link in the email they are taken to the verify email page where they can vertify their email and complete registration. They will then be automatically redirected to the login page where a toast will let them know that they have verified their account successfully.
 
@@ -524,11 +524,23 @@ When a user selects the sign out link from the account dropdown, they will be as
 
 ![Sign Out Page Screenshot](documentation/readme/page-screenshots/signout.png)
 
-#### Forgotten Password
+#### **Forgotten Password**
 
-If a user has forgotten their password they will be asked to enter their email, and Seaside Sewing will send them an [email] to reset the password.
+If a user has forgotten their password they will be asked to enter their email, and Seaside Sewing will send them an [email](documentation/readme/page-screenshots/password-reset-email.png) to reset the password.
 
-![Forgotten Password Page Screenshot]()
+![Forgotten Password Page Screenshot](documentation/readme/page-screenshots/password-reset.png)
+
+####  **Change password Page**
+
+Once a user clicks on the link sent to their email address they will be taken to the password reset page, here they can enter their new password twice (to prevent input errors)
+
+![Change Password Page Screenshot](documentation/readme/page-screenshots/change-password.png)
+
+#### **Password Changed Page**
+
+Once you have submitted your new password you will be shown a message to let you know your password has successfully been changed and will also see an alert toast to confirm your password change was successful.
+
+![Password Change Success Screenshot](documentation/readme/page-screenshots/change-password-done.png)
 
 ### Future Implementations
 
