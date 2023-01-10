@@ -146,7 +146,10 @@
                         <!-- submit button for form and keep shopping button -->
                         <div>
                             <input type="submit" value="Add to Bag" class="btn btn-outline-blue mt-2">
-                            <a href="{% url 'products' %}" class="btn btn-outline-red mt-2">Back</a>
+                            <a href="{% url 'products' %}" class="btn btn-outline-red mt-2">
+                                <span class="mr-2"><i class="fa-solid fa-chevron-left"></i></span>
+                                <span>Back to Shop</span>
+                            </a>
                         </div>
                         <!-- submits field called redirect_url - 
                             this allows us to redirect the user back to the previous page they were on -->
