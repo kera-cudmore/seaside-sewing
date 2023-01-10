@@ -82,7 +82,7 @@ I have gone through each page of the site using the Chrome Developer Tools to en
 | :--- | :--- | :---: |
 | custom_storages.py | Pass | [custom_storages.py validation](documentation/testing/validation/python/custom_storages-validation.png) |
 | **SEASIDE_SEWING** |
-| seaside_sewing/settings.py |  ||
+| seaside_sewing/settings.py | Pass | [settings.py validation](documentation/testing/validation/python/settings-validation.png) |
 | seaside_sewing/urls.py | Pass | [urls.py validation](documentation/testing/validation/python/seaside_sewing-urls-validation.png) |
 | **BAG** |
 | bag/apps.py | Pass | [apps.py validation](documentation/testing/validation/python/bag-apps-validation.png) |
