@@ -18,7 +18,7 @@ Your order will be delivered to:
 
 {{ order.phone_number }}.
 
-If you have any questions, feel free to contact us at {{ contact.email }}.
+If you have any questions, feel free to contact us at seaside.sewing.eshop@gmail.com.
 
 Thank you for your order, we hope you love it!
 
