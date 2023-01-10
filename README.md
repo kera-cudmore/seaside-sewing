@@ -146,11 +146,11 @@ Below is a table of opportunities for the project, together with a score of thei
 
 Due to the data being used for the project I have opted to use a relational database as this will best suit my requirements.
 
-![Database Schema](documentation/database-schema.png)
+![Database Schema](documentation/readme/database-schema.png)
 
 After my initial meeting with my mentor, it was advised that I adjust the database schema slightly to normalise it. This basically means not having data in two places - as the data can be called from the first table. I therefore adjusted my user table to include the users full name, phone number and address details and removed this from the user profile. I have done the same with the users information that was duplicated in the order table, as the information can be called from the user table when required. upon reflection, I didn't see the need for sizes for the products and so have removed this column from the products table.
 
-![Database Schema V2](documentation/database-schema-v2.png)
+![Database Schema V2](documentation/readme/database-schema-v2.png)
 
 I ran into an issue in that I had already made the initial app for the project and run the initial migrations, so therefore was unable to amend the user table, and on taking some advice from peers it was suggested best not to alter the user table. I have therefore gone ahead with the UserProfile table to hold the users information and this shares a one to one relationship with the User table. I have omitted the wish list and reviews tables due to not including them in the project at this stage. I have added the contact table which houses the contact forms sent to the shop.
 
@@ -284,7 +284,7 @@ I have based the colour theme for the site around the main image used at the top
 
 Text throughout the site will be either black or white, depending on the background colour.
 
-![Colour Scheme for Seaside Sewing](documentation/colour-theme.png)
+![Colour Scheme for Seaside Sewing](documentation/readme/colour-theme.png)
 
 UPDATE
 
@@ -292,21 +292,21 @@ Once I began working on the site, I realised that there wasn't enough of a contr
 
 As I did not appear to be using the medium blue anywhere in the site, I have removed this.
 
-![Updated Colour Scheme](documentation/updated-colour-theme.png)
+![Updated Colour Scheme](documentation/readme/updated-colour-theme.png)
 
 #### **Typography**
 
 All fonts were sourced from [Google Fonts](https://fonts.google.com/). I used [Font Joy](https://fontjoy.com/) to enable me to view the font choices together to make sure that they worked well together.
 
-![Fonts Chosen for the site](documentation/fonts.png)
+![Fonts Chosen for the site](documentation/readme/fonts.png)
 
 I have chosen to use Dancing Script, a handwriting font, for the site name as I feel that it gives a look of an ocean wave, with its ebb and flow. I am limiting the use of this font to the sites name as due to the font being a cursive, it is not very accessible.
 
-![dancing Script Font](documentation/dancingscript-font.png)
+![dancing Script Font](documentation/readme/dancingscript-font.png)
 
 I have chosen to use Overpass for all other text on the site. This font is sans-serif font, which is very accessible as a web font.
 
-![Overpass Font](documentation/overpass-font.png)
+![Overpass Font](documentation/readme/overpass-font.png)
 
 #### **Imagery**
 
@@ -330,7 +330,7 @@ Each page of the site shares the following:
 
 * Favicon - I used [Favicon.io](https://favicon.io/) to create the favicon for the site. As the images I tried to use to create the favicon came out very pixelated, I have used the initials of the site to create the favicon using the same font and colours from the site.
 
-  ![Seaside Sewing Favicon](documentation/favicon.png)
+  ![Seaside Sewing Favicon](documentation/readme/favicon.png)
 
 * Navbar - The navbar on the site is split into two sections, the first section contains the search bar, an account icon and the bag icon. The second section contains the sites products categories. The navbar is fully responsive, and utilises a hamburger menu toggle on smaller screens. The Categories links in the navbar move up when hovered over to give the user feedback that they are selecting that category. A dropdown menu will then show with further options. The account icon also contains a dropdown menu which displays different options depending on whether a user is logged in, and whether the user has a superuser account.
 
@@ -340,15 +340,21 @@ Each page of the site shares the following:
 
 * Footer - The footer is broken into 4 distinct sections - a section that contains information about the site, such as terms and conditions and policies. The second section contains contact information for the site, such as a link to the contact form, and social media links. The third section gives the user further information on the payment processor for the site, Stripe, along with the cards accepted. The final section is a disclaimer to let users know this site was created as an educational product and to remind users that no orders will be processed. The footer is fully responsive, and on small screens stacks the sections.
 
-  ![Site Footer Large](documentation/large-footer.png)
+  ![Site Footer Large](documentation/readme/large-footer.png)
 
-  ![Site Footer Small](documentation/small-footer.png)
+  ![Site Footer Small](documentation/readme/small-footer.png)
 
-#### Home Page
+#### **Sites header and footer images**
 
-The home page of the site features a welcoming message and underneath displays cards with each of the categories on. These cards when clicked will take a user directly to that categories product page.
+The current implementation of the site does not feature the header and footer image as envisaged in the mockup, due to issues I faced with trying to resize SVG files. This is something I would like to add in to the next implementation of the project, however some optimisation to the current performance scores will likely be needed first to prevent them dropping any lower.
 
-#### Products Page
+#### **Home Page**
+
+The home page of the site features a welcoming message and underneath displays cards with each of the categories on. These cards when clicked will take a user directly to that categories product page. currently all the cards feature a line illustration of a lighthouse, however in the next phase of the project I would like to update the categories model to include an image and be able to update each card with an image that represents that category which I think will increase users understanding of what is included in that category.
+
+![Home Page Screenshot](documentation/readme/page-screenshots/home.png)
+
+#### **Products Page**
 
 The Products page displays the products showing an image (if one is not available a default no image filler image is inserted), the products name, its price, its tags (if the product tag has a value it will be rendered on the page) - Category, colour, star rating and stock level. If the user is a superuser there will also be an update and delete link on the right of the product information for ease of editing and deleting products.
 
@@ -356,7 +362,9 @@ At the top left of the products page you will be able to see the number of items
 
 On the top right hand side of the page is a sort by dropdown. This enables the user to sort price and rating in ascending/descending order, and name and category in alphabetical order A-Z or Z-A.
 
-#### Product Details Page
+![Products Page Screenshot](documentation/readme/page-screenshots/products.png)
+
+#### **Product Details Page**
 
 The product detail page gives more details about the chosen item. An image of the product is displayed on the left of medium and large screens, and at the top of small screens. When the user hovers over the image they are shown a magnifying lens which allows them to look at the item in more detail (perfect for looking at intricate patterns of some of the fabrics!). This magnifying lens works on desktop and mobile.
 
@@ -366,13 +374,17 @@ A quantity selector comes next, with plus and minus buttons and a quantity input
 
 Users are shown two buttons underneath the quantity selector, one to add the product to the bag, and one to go back to the product page. If the user selects the add to bag button, they will be shown a success toast letting them know the product was added to the bag, and then they will be given a quick overview of the items in their bag together with their quantities, the total price excluding delivery, if they have not reached the free delivery threshold they will be given an amount they need to spend to get the free delivery and a button to go to the checkout.
 
-#### Bag Page
+![Product Details Page Screenshot](documentation/readme/page-screenshots/product-detail.png)
+
+#### **Bag Page**
 
 The bag page lists all items the user has added to their bag. It displays an image of the item, the product name  & sku, the price of the item and the quantity selected and the subtotal for that item. Users are able to adjust the quantity of the item in the bag here, as well as delete the item from their bag. Like the product detail page, the user won't be able to exceed the stock level for that item.
 
 At the bottom the user is shown their bag total, the delivery fee and then a grand total. If the user hasn't reached the free delivery threshold, a small piece of text will highlight to the user that they only need to spend the amount shown to get free delivery. Underneath the totals are a back to shop button and a secure checkout button. The back to shop button takes the user back to the products page and the secure checkout button takes the user to the checkout.
 
-#### Checkout Page
+![Bag Page Screenshot](documentation/readme/page-screenshots/bag.png)
+
+#### **Checkout Page**
 
 The checkout page is broken into two sections, a delivery information section and an order summary section.The delivery information section provides inputs for the user to enter their name, email and phone number, a delivery section contains inputs for the address and a dropdown to select their country. If the user is logged in and has filled out their profile, information from the profile will be pre-populated in this form, for a faster checkout experience. The user is also given a checkbox at the bottom of the delivery information which allows them to save the information they have input in their profile for future use.
 
@@ -384,19 +396,23 @@ Beneath the payment section are an adjust bag button which takes the user back t
 
 The order summary section contains an image, name, quantity and subtotal for each item in the bag, along with an order total, delivery fee and the grand total.
 
-#### Checkout Payment Overlay
+![Checkout Page Screenshot](documentation/readme/page-screenshots/checkout.png)
+
+#### **Checkout Payment Overlay**
 
 When a user clicks the complete order button, a checkout payment overlay is displayed which shows a pulsing spinner which gives the user feedback that their payment is being processed.
 
 If there is an error with the delivery information form the user will be taken back to the checkout page and they will be shown an error toast informing them there was a problem with their information and to try again.
 
-#### Checkout Success Page
+#### **Checkout Success Page**
 
 If the payment is successful the user will then be shown the checkout success page. This lists a summary of their order and lets the user know that an email confirmation has also been sent to the email address shown on the page.
 
 A button at the bottom of the page allows the user to go to the latest deals product page. Users are also show a success toast to let them know that their order has been placed successfully, giving them their order number and confirming an email will be sent to their email address.
 
-#### Profile Page
+![Checkout Payment Success Page Screenshot](documentation/readme/page-screenshots/checkout-successs.png)
+
+#### **Profile Page**
 
 The profile page is broken into two sections, one for the default delivery information and the second for the order history.
 
@@ -404,33 +420,71 @@ The default delivery information comprises of the name, address & phone number f
 
 The order history section contains all the previous orders created by the user. These list the first part of the order number, the date the order was made, the items purchased and the order total. If a user would like to look at an order in more detail they can click on the order number and they will be taken to the checkout success page that lists their order summary, together with an alert toast which informs the user they are looking at a previous order.
 
-#### Contact Page
+![Profile Page Screenshot](documentation/readme/page-screenshots/profile.png)
+
+#### **Contact Page**
 
 The contact page gives users an easy way to communicate with the shop, without leaving the site. The form has required fields of name, email and message and an optional field of phone number. Underneath the form the user is given 2 buttons, a back button and a submit form button. The back to shop button takes the user to the products page.
 
 Once a user has submitted the form, they will be shown the contact us thank you page which thanks the user for their query, and informs them they will receive a response within 2 business days. A button is then displayed which takes the user to the latest deals products page. A toast will also let the user know their form was submitted successfully and lets them know they will hear from the shop within 2 days.
 
-#### 404 Error Page
+![Contact Page Screenshot](documentation/readme/page-screenshots/contact-form.png)
 
-The 404 error page is shown if the page a user is trying to access cannot be found (for example the user enters an incorrect product id in the product url.) Users are asked to use the navigation menu to try again.
+#### **404 Error Page**
 
-#### Terms and Conditions Page
+The 404 error page is shown if the page a user is trying to access cannot be found (for example the user enters an incorrect product id in the product url.) Users are asked to use the navigation menu to try again. I have also made custom 400, 403 and 500 error pages which are very similar in layout to the 404 page, with a small change to reflect the error code.
+
+![404 Error Page Screenhot](documentation/readme/page-screenshots/404-error.png)
+
+#### **Terms and Conditions Page**
 
 The terms and conditions page lists a set of terms and conditions created on the rocket lawyer site for an e-commerce store. As this project is purely for educational purposes, no terms or conditions are legally binding as Seaside Sewing is not a real shop.
 
-#### Privacy Policy Page
+[Terms and Conditions Page Screenshot](documentation/readme/page-screenshots/terms.png)
+
+#### **Privacy Policy Page**
 
 The privacy policy page contains a privacy policy created for an e-commerce shop created on the rocket lawyer site. As this project is purely for educational purposes, the privacy policy is not legally binding as Seaside Sewing is not a real shop.
 
-#### Delivery Policy Page
+[Privacy Policy Screenshot](documentation/readme/page-screenshots/privacy.png)
+
+#### **Delivery Policy Page**
 
 The delivery policy sets out information for a delivery policy for the shop.
 
-#### Admin Page
+[Delivery Policy Page Screenshot](documentation/readme/page-screenshots/delivery.png)
+
+#### **Admin Page for managing the site**
 
 The admin page for Seaside Sewing is only accessible for superusers. I have updated the title information on the page along with the colour theme so that it fits with the front-end shop. The admin page is where superusers can create, edit and delete categories, create, edit and delete products. Create, update and delete orders as well as amend/delete line items in orders.
 
 Super users are also able to view the contact forms sent to the store via the contact forms section. This lists the information sent by the user together with the date send, and provides the admin with a checkbox to let them know whether a reply has been sent.
+
+![Admin Page Screenshot](documentation/readme/page-screenshots/admin.png)
+
+#### **Add Product Admin Only Page**
+
+Superusers are also able to add a product directly from the site via the product management link in the account icon dropdown menu. This will provide them with a form to complete for all the various information required to create a product. If a required field is not filled in, the superuser will be shown a tooltip asking them to fill in the required fields. The superuser is shown two buttons at the bottom of the form, one to cancel, which if selected returns the superuser to the products page and an add product button. Once a superuser creates a new item and clicks the add product button they will be shown a success toast letting them know that the product was successfully created, and they will be shown that products product detail page.
+
+If a regular user tries to view the add product page, defensive programming is in place so that they will be shown an error toast that informs them only administrators have the permissions to perform that activity.
+
+![Add Product Page Screenshot](documentation/readme/page-screenshots/add-product.png)
+
+#### **Edit Product Admin Only Page**
+
+Superusers are able to edit products directly from the site by clicking the edit button under an icon on the products page, or on the product detail page. This will open up the edit product page which will be pre-populated with the products current information. The superuser is given buttons to go back or to update the product. Upon update, they will be shown the product detail page for that product, and a success toast will show letting them know the product they updated was successful.
+
+If a regular user tries to view the edit product page, defensive programming is in place so that they will be shown an error toast that informs them only administrators have the permissions to perform the activity.
+
+![Edit Product Page Screenshot](documentation/readme/page-screenshots/edit-product.png)
+
+#### **Delete Product Admin Only Page View**
+
+If a superuser clicks the delete link, either on the product page or from the product detail page they will be shown a pop up modal asking them to confirm the deletion and informing them that this action cannot be undone. This provides an extra layer of security to prevent items being deleted accidentally.
+
+Regular users trying to manually access the url for product deletion will be shown an error toast informing them that only an administrator has the permissions to perform the task. Users that are not logged into an account will be redirected to the sign in page.
+
+![Delete Product Screenshot](documentation/readme/page-screenshots/delete-product.png)
 
 ### Future Implementations
 
@@ -539,7 +593,7 @@ sqlite3 for development.
 
 The project is deployed using Heroku. To deploy the project:
 
-#### Create the Live Database
+#### **Create the Live Database**
 
 We have been using the sqlite3 database in development, however this is only available for use in development so we will need to create a new external database which can be accessed by Heroku.
 
@@ -549,13 +603,13 @@ We have been using the sqlite3 database in development, however this is only ava
 4. Go to the dashboard and select the database just created.
 5. Copy the URL (you can click the clipboard icon to copy)
 
-#### Heroku app setup
+#### **Heroku app setup**
 
   1. From the [Heroku dashboard](https://dashboard.heroku.com/), click the new button in the top right corner and select create new app.
   2. Give your app a name (this must be unique), select the region that is closest to you and then click the create app button bottom left.
   3. Open the settings tab and create a new config var of `DATABASE_URL` and paste the database URL you copied from elephantSQL into the value (the value should not have quotation marks around it).
 
-#### Preparation for deployment in GitPod
+#### **Preparation for deployment in GitPod**
 
 1. Install dj_database_url and psycopg2 (they are both needed for connecting to the external database you've just set up):
 
@@ -652,7 +706,7 @@ We have been using the sqlite3 database in development, however this is only ava
 
 16. To enable automatic deploys on Heroku, go to the deploy tab and click the connect to GitHub button in the deployment method section. Search for the projects repository and then click connect. Click enable automatic deploys at the bottom of the page.
 
-#### Generate a SECRET KEY & Updating Debug
+#### **Generate a SECRET KEY & Updating Debug**
 
 1. Django automatically sets a secret key when you create your project, however we shouldn't use this default key in our deployed version, as it leaves our site vulnerable. We can use a random key generator to create a new SECRET_KEY which we can then add to our Heroku config vars which will then keep the key protected.
 2. [Django Secret Key Generator](https://miniwebtool.com/django-secret-key-generator/) is an example of a site we could use to create our secret key. Create a new key and copy the value.
@@ -671,7 +725,7 @@ We have been using the sqlite3 database in development, however this is only ava
 
 6. Save, add, commit and push these changes.
 
-#### Set up AWS hosting for static and media files
+#### **Set up AWS hosting for static and media files**
 
 ! NOTE: These instructions are for setting up AWS hosting as of 5/1/23 - these may change slightly in future versions of AWS.
 
@@ -700,7 +754,7 @@ We have been using the sqlite3 database in development, however this is only ava
 
 6. Now we need to edit the access control list (ACL) section. Click edit and enable list for everyone(public access) and accept the warning box.
 
-#### Creating AWS groups, policies and users
+#### **Creating AWS groups, policies and users**
 
 1. Click the services icon on the top right of the page and navigate to IAM - manage access to AWS services. On the left hand navigation menu click user groups and then click the create group button in the top right. This will create the group that our user will be placed in.
 2. Choose a name for your group - for example manage-seaside-sewing, and click the create policy button on the right. This will open a new page.
@@ -715,7 +769,7 @@ We have been using the sqlite3 database in development, however this is only ava
 11. Add the user to the group you just created and then click next:tags button, next:review button and then create user button.
 12. You will now need to download the CSV file as this contains the user access key and secret access key that we need to insert into the Heroku config vars. Make sure you download the CSV now as you won't be able to access it again.
 
-#### Connecting Django to our S3 bucket
+#### **Connecting Django to our S3 bucket**
 
 1. Install boto3 and django storages and freeze them to the requirements.txt file.
 
@@ -767,7 +821,7 @@ We have been using the sqlite3 database in development, however this is only ava
 8. Save, add, commit and push these changes to make a deployment to Heroku. In the build log you should be able to see that the static files were collected, and if we check our S3 bucket we can see the static folder which has all the static files in it.
 9. Navigate to S3 and open your bucket. We now want to create a new file to hold all the media files for our site. We can do this by clicking the create folder button on the top right and naming the folder media.
 
-#### Setting up Stripe
+#### **Setting up Stripe**
 
 1. We now need to add our Stripe keys to our config vars in Heroku to keep these out of our code and keep them private. Log into Stripe, click developers and then API keys.
 2. Create 2 new variables in Heroku's config vars - for the publishable key (STRIPE_PUBLIC_KEY) and the secret key (STRIPE_SECRET_KEY) and paste the values in from the Stripe page.
