@@ -641,6 +641,14 @@ sqlite3 for development.
 
 [Stripe](https://stripe.com/gb) has been used in the project to implement the payment system.
 
+Stripe for the website is currently in developer mode, which allows us to be able to process test payments to check the function of the site.
+
+| Type | Card No | Expiry | CVC | ZIP |
+| :--- | :--- |:--- | :--- | :--- |
+| Success| Visa | 4242 4242 4242 4242 | A date in the future | Any 3 digits | Any 5 digits |
+| Require authorisation | 4000 0027 6000 3184 | A date in the future | Any 3 digits | Any 5 digits |
+| Declined | 4000 0000 0000 0002 | A date in the future | Any 3 digits | Any 5 digits |
+
 ---
 
 ## Deployment & Local Development
