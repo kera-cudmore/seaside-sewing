@@ -54,7 +54,7 @@ This project was created as my fourth milestone project for my Level 5 Diploma i
 
 ---
 
-responsive site image here
+![Responsive Site Image of Seaside Sewing](static/images/responsive-site-image.png)
 
 ---
 
