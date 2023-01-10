@@ -4,7 +4,7 @@
 
 Seaside Sewing is a full stack e-commerce website built using Django, Python, HTML, CSS and JavaScript. The website utilises Stripe as the payment processor.
 
-This project was created as my fourth milestone project for my Level 5 Diploma in Web Application Development with the Code Insitute.
+This project was created as my fourth milestone project for my Level 5 Diploma in Web Application Development with the Code Institute.
 
 [Visit Seaside Sewing Here](https://seaside-sewing.herokuapp.com/)
 
@@ -64,9 +64,9 @@ responsive site image here
 
 #### **Project Goals**
 
-Seaside Sewing is a Business to Consumer (B2C) ecommerce site.
+Seaside Sewing is a Business to Consumer (B2C) e-commerce site.
 
-The sites primary audience will be people who have a love of sewing and quilting. It will cater to a range of sewists from beginners through to experts, by selling a range of items over different price points. Seaside Sewing aims to allow customers to purchase all their requirements for their projects on one website.
+The sites primary audience will be people who have a love of sewing and quilting. It will cater to a range of sewers from beginners through to experts, by selling a range of items over different price points. Seaside Sewing aims to allow customers to purchase all their requirements for their projects on one website.
 
 ### Scope Plane
 
@@ -81,7 +81,7 @@ Below is a table of opportunities for the project, together with a score of thei
 | Account Profile | 4 | 5 | MVP | ✅ |
 | Password recovery | 5 | 5 | MVP | ✅ |
 | Use social media to sign up/log in | 2 | 4 | | |
-| Seach and filter through products | 5 | 5 | MVP | ✅ |
+| Search and filter through products | 5 | 5 | MVP | ✅ |
 | Checkout system | 5 | 5 | MVP | ✅ |
 | Guest Checkout | 3 | 4 | | ✅ |
 | Payment Via Stripe | 5 | 5 | MVP | ✅ |
@@ -90,7 +90,7 @@ Below is a table of opportunities for the project, together with a score of thei
 | Admin - add product | 5 | 5 | MVP | ✅ |
 | Admin - edit/update product | 5 | 5 | MVP | ✅ |
 | Admin - delete product | 5 | 5 | MVP | ✅ |
-| Admin - Basic Stock managment | 2 | 3 | | ✅ |
+| Admin - Basic Stock management | 2 | 3 | | ✅ |
 | Admin - Sales Reporting | 1 | 2 | | |
 | Terms and Conditions | 3 | 5 | | ✅ |
 | Privacy Policy | 3 | 5 | | ✅ |
@@ -115,7 +115,7 @@ Below is a table of opportunities for the project, together with a score of thei
 | 3 | Shopper | View more detail on products | to make an informed decision of if the item suits my requirements |
 | 4 | Shopper | View items on clearance/sale easily | Save money  |
 | 5 | Shopper | View my running total of purchases throughout my visit | Make sure I don't overspend & am able to track whether I meet any thresholds for site offers (e.g. free delivery) |
-| 6 | Shopper | View the items I currently have selected for purchase | to enable me to check I still wish to purchase the items, or amend quantites if required |
+| 6 | Shopper | View the items I currently have selected for purchase | to enable me to check I still wish to purchase the items, or amend quantities if required |
 | 7 | Shopper | View ratings for products | make informed decisions about purchasing products |
 | **REGISTRATION & USER ACCOUNTS** |
 | 8 | Shopper | Register for an account | Have an account with the site and view my profile |
@@ -126,14 +126,14 @@ Below is a table of opportunities for the project, together with a score of thei
 | **SORTING & SEARCHING** |
 | 13 | Shopper | Sort the list of available products | Easily identify the best rated, best priced and categorically sort products |
 | 14 | Shopper | Sort a specific category of products | Find the best-priced or best-rated product in a specific category, or sort the products in that category by name |
-| 15 | Shopper | Sort multiple categories of products simutaneously | Find the best-priced or best-rated products across broad categories, such as fabric or habedashery |
+| 15 | Shopper | Sort multiple categories of products simultaneously | Find the best-priced or best-rated products across broad categories, such as fabric or haberdashery |
 | 16 | Shopper | Search for a product by name or description | Find a specific product I'd like to purchase |
 | 17 | Shopper | Easily see what I've searched for and the number of results | Quickly decide whether the product I want is available |
 | **PURCHASING & CHECKOUT** |
 | 18 | Shopper | Easily select the quantity of a product when purchasing it | Ensure I don't accidentally select the wrong product quantity |
 | 19 | Shopper | View items in my bag to be purchased | Identify the total cost of my purchase and all items I will receive |
 | 20 | Shopper | Adjust the quantity of individual items in my bag | Easily make changes to my purchase before checkout |
-| 21 | Shopper | Easily eneter my payment information | Check out quickly and with no hassles |
+| 21 | Shopper | Easily enter my payment information | Check out quickly and with no hassles |
 | 22 | Shopper | Feel my personal and payment information is safe and secure | Confidently provide the needed information to make a purchase |
 | 23 | Shopper | View an order confirmation after checkout | Verify that I haven't made any mistakes |
 | 24 | Shopper | Receive an email confirmation after checking out | Keep the confirmation of what I've purchased for my records |
@@ -152,7 +152,7 @@ After my initial meeting with my mentor, it was advised that I adjust the databa
 
 ![Database Schema V2](documentation/database-schema-v2.png)
 
-I ran into an issue in that I had already made the initial app for the project and run the initial migrations, so therefore was unable to ammend the user table, and on taking some advice from peers it was suggested best not to alter the user table. I have therefore gone ahead with the UserProfile table to hold the users information and this shares a one to one relationship with the User table. I have omitted the wishlist and reviews tables due to not including them in the project at this stage. I have added the contact table which houses the contact forms sent to the shop.
+I ran into an issue in that I had already made the initial app for the project and run the initial migrations, so therefore was unable to amend the user table, and on taking some advice from peers it was suggested best not to alter the user table. I have therefore gone ahead with the UserProfile table to hold the users information and this shares a one to one relationship with the User table. I have omitted the wish list and reviews tables due to not including them in the project at this stage. I have added the contact table which houses the contact forms sent to the shop.
 
 Database Schema V3 to go here
 
@@ -190,7 +190,7 @@ Wireframes for the project were created using [Balsamiq](https://balsamiq.com/)
 
   ![Profile Page Wireframe](documentation/wireframes/profile.png)
 
-* Bag Page (Empty Bag) - The bag page will display the following message to usesrs if there are no products in their bag.
+* Bag Page (Empty Bag) - The bag page will display the following message to users if there are no products in their bag.
 
   ![Empty Bag Page Wireframe](documentation/wireframes/bag-empty.png)
 
@@ -198,15 +198,15 @@ Wireframes for the project were created using [Balsamiq](https://balsamiq.com/)
 
   ![Bag Page Wireframe](documentation/wireframes/bag.png)
 
-* Wishlist (empty wishlist) - The wishlist page will display a message to the user to let them know there are no products currently in their wishlist and will give instructions on how to add a product to their wishlist. There will also be a button that redirects the user to the products page.
+* Wish list (empty wish list) - The wish list page will display a message to the user to let them know there are no products currently in their wish list and will give instructions on how to add a product to their wish list. There will also be a button that redirects the user to the products page.
 
-  ![Empty Wishlist Page Wireframe](documentation/wireframes/wishlist-empty.png)
+  ![Empty Wish list Page Wireframe](documentation/wireframes/wishlist-empty.png)
 
-* Wishlist Page - The wishlist page is very similar in layout to the bag page. It displays an image of the item, the title,selected size and sku for the product along with the product price. There is also has a button to remove the product from their wishlist. The user can add an item from their wishlist to their bag by clicking on the product which will take them to the product details page where they can select sizes and quantity.
+* Wish list Page - The wish list page is very similar in layout to the bag page. It displays an image of the item, the title,selected size and sku for the product along with the product price. There is also has a button to remove the product from their wish list. The user can add an item from their wish list to their bag by clicking on the product which will take them to the product details page where they can select sizes and quantity.
 
-  ![Wishlist Page Wireframe](documentation/wireframes/wishlist.png)
+  ![Wish list Page Wireframe](documentation/wireframes/wishlist.png)
 
-* Checkout Page - The checkout page requires the user to fill in their details, along with a delivery address. They are given the option via a checkbox to save the information they input to their profile. If the user has already filled in their information in their profile, the form will be prepopulated with this information.
+* Checkout Page - The checkout page requires the user to fill in their details, along with a delivery address. They are given the option via a checkbox to save the information they input to their profile. If the user has already filled in their information in their profile, the form will be pre-populated with this information.
 
   Underneath the users delivery information will be the payment input where the user will be required to enter their card information. If there are any errors with this input, an error message will be displayed under the input. Beneath this are the complete order buttons (which has a small message underneath it to let the user know the amount being charged to their card) and a button which redirects users back to their bag to amend their order.
 
@@ -234,17 +234,17 @@ Wireframes for the project were created using [Balsamiq](https://balsamiq.com/)
 
   There is also a text description of the product which gives further information to the user to enable them to decide if the product meets their needs.
 
-  Underneath the description is a quantity box for the user to select how many of the product they would like to purchase, along with an add to wishlist button.
+  Underneath the description is a quantity box for the user to select how many of the product they would like to purchase, along with an add to wish list button.
 
   The Add to bag button and back to products buttons are placed below.
 
   ![Product Detail Page Wireframe](documentation/wireframes/product-detail.png)
 
-* Product Detail (Admin View) - The admin view of the product detail page is idential to the product detail page, except for the addition of the edit and delete buttons to allow the admin to edit and delete a product directly from their details page.
+* Product Detail (Admin View) - The admin view of the product detail page is identical to the product detail page, except for the addition of the edit and delete buttons to allow the admin to edit and delete a product directly from their details page.
 
   ![Product Detail Page Admin View Wireframe](documentation/wireframes/product-detail-admin-view.png)
 
-* Edit Product - The Edit product page is only available to admin users. It displays a form with the products details prepopulated ready for the admin to edit. The admin may also delete the current image or choose a new image to upload and display.
+* Edit Product - The Edit product page is only available to admin users. It displays a form with the products details pre-populated ready for the admin to edit. The admin may also delete the current image or choose a new image to upload and display.
 
   ![Edit Product Page Wireframe](documentation/wireframes/edit-product.png)
 
@@ -272,8 +272,6 @@ Wireframes for the project were created using [Balsamiq](https://balsamiq.com/)
 
   ![Add Review Page Wireframe](documentation/wireframes/add-review.png)
 
-* Edit review - should I allow editing of reviews ?
-
 * Toasts - Toasts are used to display messages to the user depending on their actions on the site. They can let users know if an action has been successful, if there has been an error or for displaying a general message. This is also reflected in the colour at the top of the toast. Toasts will also be used to display to a user what they currently have in their bag when they add a new product. Toasts can be dismissed by clicking the X on the toast.
 
   ![Toasts Wireframe](documentation/wireframes/toasts.png)
@@ -290,7 +288,7 @@ Text throughout the site will be either black or white, depending on the backgro
 
 UPDATE
 
-Once I began working on the site, I realised that there wasn't enough of a contrast for the green text on a white background when runnning the site through the WAVE chrome extension. I have therefore used a slightly darker green to allow for a better contrast. There was a similar issue with the dark blue chosen for the site, the contrast was not passing for the sites header with white text, and so I have chosen a darker blue which does pass contrast tests with white text. I have also updated the grey colour used, as this was a colour used for other elements in bootstrap, so by changing to this allows a better cohesion in the site.
+Once I began working on the site, I realised that there wasn't enough of a contrast for the green text on a white background when running the site through the WAVE chrome extension. I have therefore used a slightly darker green to allow for a better contrast. There was a similar issue with the dark blue chosen for the site, the contrast was not passing for the sites header with white text, and so I have chosen a darker blue which does pass contrast tests with white text. I have also updated the grey colour used, as this was a colour used for other elements in bootstrap, so by changing to this allows a better cohesion in the site.
 
 As I did not appear to be using the medium blue anywhere in the site, I have removed this.
 
@@ -314,7 +312,7 @@ I have chosen to use Overpass for all other text on the site. This font is sans-
 
 Due to the name of the site, I have chosen to go with images of the seaside.
 
-The hero image for the site is of a lighthouse on an island surrounded by water. The footer is an image of sealife underwater on the ocean floor. I feel these images give the site a cohesive feel - as we start at the top of the site above the water, and then we travel down until we get to the bottom of the page to the footer, which is the ocean floor. I feel it gives the site a bit of a whimsical feel, which I wanted, as a lot of e-commerce sites can be very bland and all look the same.
+The hero image for the site is of a lighthouse on an island surrounded by water. The footer is an image of sea life underwater on the ocean floor. I feel these images give the site a cohesive feel - as we start at the top of the site above the water, and then we travel down until we get to the bottom of the page to the footer, which is the ocean floor. I feel it gives the site a bit of a whimsical feel, which I wanted, as a lot of e-commerce sites can be very bland and all look the same.
 
 #### **Base Mockup**
 
@@ -330,7 +328,7 @@ I created the following mockup to get an idea of what the sites header and foote
 
 Each page of the site shares the following:
 
-* Favicon - I used [Favicon.io](https://favicon.io/) to create the favicon for the site. As the images I tried to use to create the favicon came out very pixalated, I have used the initials of the site to create the favicon using the same font and colours from the site.
+* Favicon - I used [Favicon.io](https://favicon.io/) to create the favicon for the site. As the images I tried to use to create the favicon came out very pixelated, I have used the initials of the site to create the favicon using the same font and colours from the site.
 
   ![Seaside Sewing Favicon](documentation/favicon.png)
 
@@ -362,7 +360,7 @@ On the top right hand side of the page is a sort by dropdown. This enables the u
 
 The product detail page gives more details about the chosen item. An image of the product is displayed on the left of medium and large screens, and at the top of small screens. When the user hovers over the image they are shown a magnifying lens which allows them to look at the item in more detail (perfect for looking at intricate patterns of some of the fabrics!). This magnifying lens works on desktop and mobile.
 
-To the right on medium and large screens (underneath the image on small screeens) is the Product information. The title is displayed followed by the price, and if the user is a superuser, they will find a set of edit and delete buttons for the product for ease of admin. The description for the product follows and underneath that the tags (if they contain values) for category, colour, stock and rating. The Category Tag is a link that when clicked will take the user to the products page containing all items in that category.
+To the right on medium and large screens (underneath the image on small screens) is the Product information. The title is displayed followed by the price, and if the user is a superuser, they will find a set of edit and delete buttons for the product for ease of admin. The description for the product follows and underneath that the tags (if they contain values) for category, colour, stock and rating. The Category Tag is a link that when clicked will take the user to the products page containing all items in that category.
 
 A quantity selector comes next, with plus and minus buttons and a quantity input which allows the user to input their value. The minus quantity button is disabled when the value is 1, and is enabled above this. The plus button is enabled until it reaches the stock level, and then becomes disabled. The user may enter more than the stock level into the quantity input box, however they will be shown a tooltip on trying to add the item to their bag letting them know the value must be equal or less than the stock level as a number.
 
@@ -376,13 +374,13 @@ At the bottom the user is shown their bag total, the delivery fee and then a gra
 
 #### Checkout Page
 
-The checkout page is broken into two sections, a delivery information section and an order summary section.The delivery information section provides inputs for the user to enter their name, email and phone number, a delivery section contains inputs for the address and a dropdown to select their country. If the user is logged in and has filled out their profile, information from the profile will be prepopulated in this form, for a faster checkout experience. The user is also given a checkbox at the bottom of the delivery information which allows them to save the information they have input in their profile for future use.
+The checkout page is broken into two sections, a delivery information section and an order summary section.The delivery information section provides inputs for the user to enter their name, email and phone number, a delivery section contains inputs for the address and a dropdown to select their country. If the user is logged in and has filled out their profile, information from the profile will be pre-populated in this form, for a faster checkout experience. The user is also given a checkbox at the bottom of the delivery information which allows them to save the information they have input in their profile for future use.
 
 If a user is not signed during checkout, instead of the checkbox, they will be given the options to either create an account or login if they already have one. This is optional - as users can checkout as a guest, however this means that they will not be able to view their previous orders on the site.
 
 The last section is the payment information section. Payments are processed by Stripe and to facilitate payment, a user needs to input their card details into the payment box. If the details are invalid a warning will be displayed under the payment box giving the user feedback on what the error was.
 
-Beneath the payment section are an adjust bag button which takes the user back to their bag and a complete order button which processes their payment. Underneath the buttons the user is reminded that their card will be charged the grand total amound.
+Beneath the payment section are an adjust bag button which takes the user back to their bag and a complete order button which processes their payment. Underneath the buttons the user is reminded that their card will be charged the grand total amount.
 
 The order summary section contains an image, name, quantity and subtotal for each item in the bag, along with an order total, delivery fee and the grand total.
 
@@ -402,7 +400,7 @@ A button at the bottom of the page allows the user to go to the latest deals pro
 
 The profile page is broken into two sections, one for the default delivery information and the second for the order history.
 
-The default delivery information comprises of the name, address & phone number for the user. The user can update their profile by clicking the update information button and the page will reload with the new information prepopulated in the relevant fields together with a success toast that gives the user feedback that their information has been saved successfully. This saved information will then be used in the checkout to prepopulate the payment form to speed up the checkout process for registered users.
+The default delivery information comprises of the name, address & phone number for the user. The user can update their profile by clicking the update information button and the page will reload with the new information pre-populated in the relevant fields together with a success toast that gives the user feedback that their information has been saved successfully. This saved information will then be used in the checkout to pre-populate the payment form to speed up the checkout process for registered users.
 
 The order history section contains all the previous orders created by the user. These list the first part of the order number, the date the order was made, the items purchased and the order total. If a user would like to look at an order in more detail they can click on the order number and they will be taken to the checkout success page that lists their order summary, together with an alert toast which informs the user they are looking at a previous order.
 
@@ -414,15 +412,15 @@ Once a user has submitted the form, they will be shown the contact us thank you 
 
 #### 404 Error Page
 
-The 404 error page is shown if the page a user is trying to access cannot be found (for example the user enters an incorrect productid in the product url.) Users are asked to use the navigation menu to try again.
+The 404 error page is shown if the page a user is trying to access cannot be found (for example the user enters an incorrect product id in the product url.) Users are asked to use the navigation menu to try again.
 
 #### Terms and Conditions Page
 
-The terms and conditions page lists a set of terms and conditions created on the rocket lawyer site for an ecommerce store. As this project is purely for educational purposes, no terms or conditions are legally binding as Seaside Sewing is not a real shop.
+The terms and conditions page lists a set of terms and conditions created on the rocket lawyer site for an e-commerce store. As this project is purely for educational purposes, no terms or conditions are legally binding as Seaside Sewing is not a real shop.
 
 #### Privacy Policy Page
 
-The privacy policy page contains a privacy policy created for an ecommerce shop created on the rocket lawyer site. As this project is purely for educational purposes, the privacy policy is not legally binding as Seaside Sewing is not a real shop.
+The privacy policy page contains a privacy policy created for an e-commerce shop created on the rocket lawyer site. As this project is purely for educational purposes, the privacy policy is not legally binding as Seaside Sewing is not a real shop.
 
 #### Delivery Policy Page
 
@@ -443,8 +441,8 @@ In future implementations I would like to:
 * Implement Social login.
 * Create a fully functioning stock management system that updates the stock value upon insertion to the bag and returns the value to the stock if the bag session ends. This was currently out of scope for me currently as a student and for this project, however it is something I would really like to learn more about.
 * Add user reviews for products with a rating facility
-* Wishlist functionality for users to add and remove products from their wishlist and to send products to others perhaps through a social link on the product details page
-Create groups of users on the admin page, to enable sending out specific emails, such as birthday coupons or loyal customer coupons. This section could also be used to create different mailing groups for newletters depending on users preferences.
+* Wish list functionality for users to add and remove products from their wish list and to send products to others perhaps through a social link on the product details page
+Create groups of users on the admin page, to enable sending out specific emails, such as birthday coupons or loyal customer coupons. This section could also be used to create different mailing groups for newsletters depending on users preferences.
 
 ### Accessibility
 
@@ -543,10 +541,10 @@ The project is deployed using Heroku. To deploy the project:
 
 #### Create the Live Database
 
-We have been using the sqlite3 database in development, however this is only availble for use in development so we will need to create a new external database which can be accessed by Heroku.
+We have been using the sqlite3 database in development, however this is only available for use in development so we will need to create a new external database which can be accessed by Heroku.
 
 1. Go to the [ElephantSQL](https://www.elephantsql.com/) dashboard and click the create new instance button on the top right.
-2. Name the plan (your project name is a good choice), select tiny turle plan (this is the free plan) and choose the region that is closest to you then click the review button.
+2. Name the plan (your project name is a good choice), select tiny turtle plan (this is the free plan) and choose the region that is closest to you then click the review button.
 3. Check the details are all correct and then click create instance in the bottom right.
 4. Go to the dashboard and select the database just created.
 5. Copy the URL (you can click the clipboard icon to copy)
@@ -557,7 +555,7 @@ We have been using the sqlite3 database in development, however this is only ava
   2. Give your app a name (this must be unique), select the region that is closest to you and then click the create app button bottom left.
   3. Open the settings tab and create a new config var of `DATABASE_URL` and paste the database URL you copied from elephantSQL into the value (the value should not have quotation marks around it).
 
-#### Preparation for deployment in gitpod
+#### Preparation for deployment in GitPod
 
 1. Install dj_database_url and psycopg2 (they are both needed for connecting to the external database you've just set up):
 
@@ -575,7 +573,7 @@ We have been using the sqlite3 database in development, however this is only ava
 
 4. Find the section for DATABASES and comment out the code. Add the following code below the commented out database block, and use the URL copied from elephantSQL for the value:
 
-    (NOTE! don't delete the original section, as this is a temporary step whilst we connect the external database. Make sure you don't push this value to github - this value should not be saved to github, it will be added to the Heroku config vars in a later step, this is temporary to allow us to migrate our models to the external database)
+    (NOTE! don't delete the original section, as this is a temporary step whilst we connect the external database. Make sure you don't push this value to GitHub - this value should not be saved to GitHub, it will be added to the Heroku config vars in a later step, this is temporary to allow us to migrate our models to the external database)
 
     ```python
     DATABASES = {
@@ -637,7 +635,7 @@ We have been using the sqlite3 database in development, however this is only ava
     heroku config:set DISABLE_COLLECTSTATIC=1 --app heroku-app-name-here
     ```
 
-13. We will also need to add the Heroku app and localhost (which will allow gitpod to still work) to ALLOWED_HOSTS = [] in settings.py:
+13. We will also need to add the Heroku app and localhost (which will allow GitPod to still work) to ALLOWED_HOSTS = [] in settings.py:
 
     ```python
     ALLOWED_HOSTS = ['{heroku deployed site URL here}', 'localhost' ]
@@ -713,7 +711,7 @@ We have been using the sqlite3 database in development, however this is only ava
 7. Give the policy a name and description (e.g. seaside-sewing-policy | Access to S3 bucket for seaside sewing static files.) Click the create policy button.
 8. Now we need to atach the policy we just created. On the left hand navigation menu click user groups, select the group and go to the permissions tab. Click the add permissions button on the right and choose attach policies from the dropdown.
 9. Select the policy you just created and then click add permissions at the bottom.
-10. Now we'll create a user for the group by clicking on the user link in the left hand navigation menu, clicking the add users button on the top right and giving our user a username (e.g. seaside-sewing-staticfiles-user). Select programamtic access and then click the next: permissions button.
+10. Now we'll create a user for the group by clicking on the user link in the left hand navigation menu, clicking the add users button on the top right and giving our user a username (e.g. seaside-sewing-staticfiles-user). Select programmatic access and then click the next: permissions button.
 11. Add the user to the group you just created and then click next:tags button, next:review button and then create user button.
 12. You will now need to download the CSV file as this contains the user access key and secret access key that we need to insert into the Heroku config vars. Make sure you download the CSV now as you won't be able to access it again.
 
@@ -744,7 +742,7 @@ We have been using the sqlite3 database in development, however this is only ava
         AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
     ```
 
-4. In heroku we can now add these keys to our config vars:
+4. In Heroku we can now add these keys to our config vars:
 
     | KEY | VALUE |
     | :--- | :--- |
@@ -766,16 +764,16 @@ We have been using the sqlite3 database in development, however this is only ava
     MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
     ```
 
-8. Save, add, commit and push these changes to make a deployment to heroku. In the build log you should be able to see that the static files were collected, and if we check our S3 bucket we can see the static folder which has all the static files in it.
+8. Save, add, commit and push these changes to make a deployment to Heroku. In the build log you should be able to see that the static files were collected, and if we check our S3 bucket we can see the static folder which has all the static files in it.
 9. Navigate to S3 and open your bucket. We now want to create a new file to hold all the media files for our site. We can do this by clicking the create folder button on the top right and naming the folder media.
 
 #### Setting up Stripe
 
 1. We now need to add our Stripe keys to our config vars in Heroku to keep these out of our code and keep them private. Log into Stripe, click developers and then API keys.
 2. Create 2 new variables in Heroku's config vars - for the publishable key (STRIPE_PUBLIC_KEY) and the secret key (STRIPE_SECRET_KEY) and paste the values in from the Stripe page.
-3. Now we need to add the webhook endpoint for the deployed site. Navigate to the webhooks link in the left hand menu and click add endpoint button.
-4. Add the URL for our deployed sites webhook, give it a description and then click the add events button and select all events. Click Create endpoint.
-5. Now we can add the webhook signing secret to our Heroku config variables as STRIPE_WH_SECRET.
+3. Now we need to add the WebHook endpoint for the deployed site. Navigate to the WebHooks link in the left hand menu and click add endpoint button.
+4. Add the URL for our deployed sites WebHook, give it a description and then click the add events button and select all events. Click Create endpoint.
+5. Now we can add the WebHook signing secret to our Heroku config variables as STRIPE_WH_SECRET.
 6. In settings.py:
 
     ```python
@@ -853,5 +851,5 @@ I would like to acknowledge the following people who have helped me with complet
 
 * My family for their patience and support whilst working on my final project.
 * My Code Institute mentor [Adegbenga Adeye](https://github.com/deye9).
-* Nerd Alert for their constant support and encouragment while completing this project.
+* Nerd Alert for their constant support and encouragement while completing this project.
 * The Code Institute Tutors who assisted me with troubleshooting when I was stuck on a particularly difficult bug.
