@@ -17,3 +17,8 @@ class TestHomeViews(TestCase):
         response = self.client.get('/privacy')
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'home/privacy.html')
+
+    def test_get_terms_page(self):
+        response = self.client.get('/terms')
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'home/terms.html')
