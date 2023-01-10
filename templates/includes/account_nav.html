@@ -1,0 +1,62 @@
+<nav class="row navbar account-nav">
+    <div class="col-12 my-auto d-lg-flex py-1 py-lg-0">
+
+        <!-- Search bar -->
+        <div class="col-12 col-lg-6 offset-lg-3 my-auto py-1 py-lg-0">
+            <form method="GET" action="{% url 'products' %}">
+                <div class="input-group w-100">
+                    <input class="form-control border rounded-1" type="text" name="q" placeholder="Search our site" aria-label="search">
+                    <div class="input-group-append">
+                        <button class="form-control btn btn-outline-blue border rounded-1" type="submit" aria-label="submit search">
+                            <span><i class="fa-solid fa-magnifying-glass"></i>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="col-12 col-lg-3 my-auto py-1 py-lg-0">
+            <ul class="list-inline list-unstyled text-center right my-0">
+
+                <!-- Account -->
+                <li class="list-inline-item dropdown">
+                    <a href="#" class="nav-link" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div>
+                            <div><i class="fas fa-user fa-xl"></i></div>
+                            <p class="my-0">Account</p>
+                        </div>
+                    </a>
+                    <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                        {% if request.user.is_authenticated %}
+                            {% if request.user.is_superuser %}
+                                <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
+                            {% endif %}
+                                <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
+                                <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                            {% else %}
+                                <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+                                <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+                        {% endif %}
+                    </div>
+                </li>
+
+                <!-- Bag -->
+                <li class="list-inline-item">
+                    <a href="{% url 'view_bag' %}" class="nav-link">
+                        <div>
+                            <div><i class="fa-solid fa-basket-shopping fa-xl"></i></div>
+                            <p class="my-0">
+                                {% if total %}
+                                    £{{ grand_total|floatformat:2 }}
+                                {% else %}
+                                    £0.00
+                                {% endif %}
+                            </p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>    
