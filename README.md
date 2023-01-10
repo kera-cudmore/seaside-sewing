@@ -348,6 +348,20 @@ Each page of the site shares the following:
 
 The current implementation of the site does not feature the header and footer image as envisaged in the mockup, due to issues I faced with trying to resize SVG files. This is something I would like to add in to the next implementation of the project, however some optimisation to the current performance scores will likely be needed first to prevent them dropping any lower.
 
+#### **Defensive programming**
+
+Defensive programming has been used throughout the site to prevent users accessing pages when they don't have the relevent permissions. This has been accomplished by checking whether a user is a superuser for admin related tasks. If users try to access pages that they don't have the required permission level for, they will be shown an error toast which gives feedback to the user to let them know they don't have the required permissions as only an administrator can perform those tasks.
+
+#### **Stock management system**
+
+I have implemented a rudimentary stock management system within the site. Products have a stock value (this is set to 0 as default when a product is created) and I have used Django to inject these values onto my products and product details page in the tag section so a user is able to see how many of that item is currently in stock. I have used this stock value as the upper limit for the plus quantity buttons to prevent a user entering more of a product into their cart if there is not enough stock to meet the demand. On checkout, I update the stock values for each product to reduce them by the quantity purchased. An if/else statement checks to see if the stock value is 0, and if it is an out of stock text will display instead of a stock value. As the plus quantity button uses the stock value, this will also become disabled preventing the user adding the product to their cart. The user can manually input a quantity in the quantity input, however on clicking the add to bag button, they will be shown a tooltip letting them know that there is not enough stock to process their request.
+
+This is a very basic way of creating a stock management system, and has its flaws, as several users could potentially have the stock in their bags at the same time. Ideally the better way to acomplish this would be to utilise a separate stock table, and to update the stock value upon adding to the bag. This would update the stock value then shown to other users of the site and prevent several people purchasing the last of stock at the same time. The stock value would then have to be changed should a user close their browser tab with items in the bag (as this would close their session cookie which is where the bag is being stored) and not complete their purchase. This was a little too complex for me to delve into during this project due to the limited timeframe I had, however it is something I would like to learn more about as this would make my e-commerce store more polished and professional grade.
+
+#### **Feaures for next version**
+
+Due to time constraints, I have not had chance to implement these features in this version of the shop. I have taken the time to make sure that the core functionality of the site is complete and would like to add these features in the next version. This is the same for the social media log in section.
+
 #### **Home Page**
 
 The home page of the site features a welcoming message and underneath displays cards with each of the categories on. These cards when clicked will take a user directly to that categories product page. currently all the cards feature a line illustration of a lighthouse, however in the next phase of the project I would like to update the categories model to include an image and be able to update each card with an image that represents that category which I think will increase users understanding of what is included in that category.
@@ -486,6 +500,36 @@ Regular users trying to manually access the url for product deletion will be sho
 
 ![Delete Product Screenshot](documentation/readme/page-screenshots/delete-product.png)
 
+#### **Signup Page**
+
+The signup page asks the user to enter their email address twice (to prevent any input errors) select a username for their account, and then input their password twice (again to check for input errors). The user is also given two button choices - one to return to the home page and the other is to signup for an account. Once the user clicks the signup button, they will be shown
+
+![Signup Page Screenshot](documentation/readme/page-screenshots/signup.png)
+
+#### Sign in Page
+
+The sign in page provides inputs for a user to enter their username/email together with their password along with three buttons, a back button, a sign in button and a forgot password button. A message at the top of the page provides a link to users if they don't currently have an account which directs them to the register page. Due to time constraints I have been unable to add the social logins to this version of the site, and would look to add this in a future version.
+
+![Login page](documentation/readme/page-screenshots/signin.png)
+
+#### Verify Email Page
+
+When a user registers they will be sent an [email](documentation/readme/page-screenshots/email-verify-account.png) to verify their email address. If the user clicks on the link in the email they are taken to the verify email page where they can vertify their email and complete registration. They will then be automatically redirected to the login page where a toast will let them know that they have verified their account successfully.
+
+![Email Verification Page Screenshot](documentation/readme/page-screenshots/verify-email.png)
+
+#### **Sign out page**
+
+When a user selects the sign out link from the account dropdown, they will be asked to confirm that they wish to sign out of their account. The user can either select the cancel button which will redirect them to the home page, or they can confirm they wish to sign out by clicking the sign out button. The user will be redirected to the home page signed out of their account and shown a success toast letting them know they were successfully signed out.
+
+![Sign Out Page Screenshot](documentation/readme/page-screenshots/signout.png)
+
+#### Forgotten Password
+
+If a user has forgotten their password they will be asked to enter their email, and Seaside Sewing will send them an [email] to reset the password.
+
+![Forgotten Password Page Screenshot]()
+
 ### Future Implementations
 
 In future implementations I would like to:
@@ -583,7 +627,7 @@ sqlite3 for development.
 
 ### Stripe
 
-[Stripe](https://stripe.com/gb) has been used in the project to implement the payment system. 
+[Stripe](https://stripe.com/gb) has been used in the project to implement the payment system.
 
 ---
 
