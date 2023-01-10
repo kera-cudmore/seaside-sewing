@@ -22,7 +22,6 @@ This project was created as my fourth milestone project for my Level 5 Diploma i
   * [Structure Plane](#structure-plane)
     * [User Stories](#user-stories)
     * [Database Schema](#database-schema)
-    * [User Journey](#user-journey)
   * [Skeleton Plane](#skeleton-plane)
     * [Wireframes](#wireframes)
   * [Surface Plane](#surface-plane)
@@ -91,7 +90,7 @@ Below is a table of opportunities for the project, together with a score of thei
 | Admin - add product | 5 | 5 | MVP | ✅ |
 | Admin - edit/update product | 5 | 5 | MVP | ✅ |
 | Admin - delete product | 5 | 5 | MVP | ✅ |
-| Admin - Stock managment | 2 | 3 | | |
+| Admin - Basic Stock managment | 2 | 3 | | ✅ |
 | Admin - Sales Reporting | 1 | 2 | | |
 | Terms and Conditions | 3 | 5 | | ✅ |
 | Privacy Policy | 3 | 5 | | ✅ |
@@ -153,9 +152,9 @@ After my initial meeting with my mentor, it was advised that I adjust the databa
 
 ![Database Schema V2](documentation/database-schema-v2.png)
 
-#### **User Journey**
+I ran into an issue in that I had already made the initial app for the project and run the initial migrations, so therefore was unable to ammend the user table, and on taking some advice from peers it was suggested best not to alter the user table. I have therefore gone ahead with the UserProfile table to hold the users information and this shares a one to one relationship with the User table. I have omitted the wishlist and reviews tables due to not including them in the project at this stage. I have added the contact table which houses the contact forms sent to the shop.
 
-flow of site
+Database Schema V3 to go here
 
 ### Skeleton Plane
 
@@ -347,7 +346,93 @@ Each page of the site shares the following:
 
   ![Site Footer Small](documentation/small-footer.png)
 
-site pages images
+#### Home Page
+
+The home page of the site features a welcoming message and underneath displays cards with each of the categories on. These cards when clicked will take a user directly to that categories product page.
+
+#### Products Page
+
+The Products page displays the products showing an image (if one is not available a default no image filler image is inserted), the products name, its price, its tags (if the product tag has a value it will be rendered on the page) - Category, colour, star rating and stock level. If the user is a superuser there will also be an update and delete link on the right of the product information for ease of editing and deleting products.
+
+At the top left of the products page you will be able to see the number of items on the page, and if you are viewing a category, there will be a link to allow you to easily view all products. If you have performed a search, you will also be shown the search term used here.
+
+On the top right hand side of the page is a sort by dropdown. This enables the user to sort price and rating in ascending/descending order, and name and category in alphabetical order A-Z or Z-A.
+
+#### Product Details Page
+
+The product detail page gives more details about the chosen item. An image of the product is displayed on the left of medium and large screens, and at the top of small screens. When the user hovers over the image they are shown a magnifying lens which allows them to look at the item in more detail (perfect for looking at intricate patterns of some of the fabrics!). This magnifying lens works on desktop and mobile.
+
+To the right on medium and large screens (underneath the image on small screeens) is the Product information. The title is displayed followed by the price, and if the user is a superuser, they will find a set of edit and delete buttons for the product for ease of admin. The description for the product follows and underneath that the tags (if they contain values) for category, colour, stock and rating. The Category Tag is a link that when clicked will take the user to the products page containing all items in that category.
+
+A quantity selector comes next, with plus and minus buttons and a quantity input which allows the user to input their value. The minus quantity button is disabled when the value is 1, and is enabled above this. The plus button is enabled until it reaches the stock level, and then becomes disabled. The user may enter more than the stock level into the quantity input box, however they will be shown a tooltip on trying to add the item to their bag letting them know the value must be equal or less than the stock level as a number.
+
+Users are shown two buttons underneath the quantity selector, one to add the product to the bag, and one to go back to the product page. If the user selects the add to bag button, they will be shown a success toast letting them know the product was added to the bag, and then they will be given a quick overview of the items in their bag together with their quantities, the total price excluding delivery, if they have not reached the free delivery threshold they will be given an amount they need to spend to get the free delivery and a button to go to the checkout.
+
+#### Bag Page
+
+The bag page lists all items the user has added to their bag. It displays an image of the item, the product name  & sku, the price of the item and the quantity selected and the subtotal for that item. Users are able to adjust the quantity of the item in the bag here, as well as delete the item from their bag. Like the product detail page, the user won't be able to exceed the stock level for that item.
+
+At the bottom the user is shown their bag total, the delivery fee and then a grand total. If the user hasn't reached the free delivery threshold, a small piece of text will highlight to the user that they only need to spend the amount shown to get free delivery. Underneath the totals are a back to shop button and a secure checkout button. The back to shop button takes the user back to the products page and the secure checkout button takes the user to the checkout.
+
+#### Checkout Page
+
+The checkout page is broken into two sections, a delivery information section and an order summary section.The delivery information section provides inputs for the user to enter their name, email and phone number, a delivery section contains inputs for the address and a dropdown to select their country. If the user is logged in and has filled out their profile, information from the profile will be prepopulated in this form, for a faster checkout experience. The user is also given a checkbox at the bottom of the delivery information which allows them to save the information they have input in their profile for future use.
+
+If a user is not signed during checkout, instead of the checkbox, they will be given the options to either create an account or login if they already have one. This is optional - as users can checkout as a guest, however this means that they will not be able to view their previous orders on the site.
+
+The last section is the payment information section. Payments are processed by Stripe and to facilitate payment, a user needs to input their card details into the payment box. If the details are invalid a warning will be displayed under the payment box giving the user feedback on what the error was.
+
+Beneath the payment section are an adjust bag button which takes the user back to their bag and a complete order button which processes their payment. Underneath the buttons the user is reminded that their card will be charged the grand total amound.
+
+The order summary section contains an image, name, quantity and subtotal for each item in the bag, along with an order total, delivery fee and the grand total.
+
+#### Checkout Payment Overlay
+
+When a user clicks the complete order button, a checkout payment overlay is displayed which shows a pulsing spinner which gives the user feedback that their payment is being processed.
+
+If there is an error with the delivery information form the user will be taken back to the checkout page and they will be shown an error toast informing them there was a problem with their information and to try again.
+
+#### Checkout Success Page
+
+If the payment is successful the user will then be shown the checkout success page. This lists a summary of their order and lets the user know that an email confirmation has also been sent to the email address shown on the page.
+
+A button at the bottom of the page allows the user to go to the latest deals product page. Users are also show a success toast to let them know that their order has been placed successfully, giving them their order number and confirming an email will be sent to their email address.
+
+#### Profile Page
+
+The profile page is broken into two sections, one for the default delivery information and the second for the order history.
+
+The default delivery information comprises of the name, address & phone number for the user. The user can update their profile by clicking the update information button and the page will reload with the new information prepopulated in the relevant fields together with a success toast that gives the user feedback that their information has been saved successfully. This saved information will then be used in the checkout to prepopulate the payment form to speed up the checkout process for registered users.
+
+The order history section contains all the previous orders created by the user. These list the first part of the order number, the date the order was made, the items purchased and the order total. If a user would like to look at an order in more detail they can click on the order number and they will be taken to the checkout success page that lists their order summary, together with an alert toast which informs the user they are looking at a previous order.
+
+#### Contact Page
+
+The contact page gives users an easy way to communicate with the shop, without leaving the site. The form has required fields of name, email and message and an optional field of phone number. Underneath the form the user is given 2 buttons, a back button and a submit form button. The back to shop button takes the user to the products page.
+
+Once a user has submitted the form, they will be shown the contact us thank you page which thanks the user for their query, and informs them they will receive a response within 2 business days. A button is then displayed which takes the user to the latest deals products page. A toast will also let the user know their form was submitted successfully and lets them know they will hear from the shop within 2 days.
+
+#### 404 Error Page
+
+The 404 error page is shown if the page a user is trying to access cannot be found (for example the user enters an incorrect productid in the product url.) Users are asked to use the navigation menu to try again.
+
+#### Terms and Conditions Page
+
+The terms and conditions page lists a set of terms and conditions created on the rocket lawyer site for an ecommerce store. As this project is purely for educational purposes, no terms or conditions are legally binding as Seaside Sewing is not a real shop.
+
+#### Privacy Policy Page
+
+The privacy policy page contains a privacy policy created for an ecommerce shop created on the rocket lawyer site. As this project is purely for educational purposes, the privacy policy is not legally binding as Seaside Sewing is not a real shop.
+
+#### Delivery Policy Page
+
+The delivery policy sets out information for a delivery policy for the shop.
+
+#### Admin Page
+
+The admin page for Seaside Sewing is only accessible for superusers. I have updated the title information on the page along with the colour theme so that it fits with the front-end shop. The admin page is where superusers can create, edit and delete categories, create, edit and delete products. Create, update and delete orders as well as amend/delete line items in orders.
+
+Super users are also able to view the contact forms sent to the store via the contact forms section. This lists the information sent by the user together with the date send, and provides the admin with a checkbox to let them know whether a reply has been sent.
 
 ### Future Implementations
 
@@ -356,9 +441,10 @@ In future implementations I would like to:
 * Allow coupons to be accepted in the checkout.
 * Send newsletters to users.
 * Implement Social login.
-* Create a fully functioning stock management system.
-* Add user reviews
-* Wishlist functionality
+* Create a fully functioning stock management system that updates the stock value upon insertion to the bag and returns the value to the stock if the bag session ends. This was currently out of scope for me currently as a student and for this project, however it is something I would really like to learn more about.
+* Add user reviews for products with a rating facility
+* Wishlist functionality for users to add and remove products from their wishlist and to send products to others perhaps through a social link on the product details page
+Create groups of users on the admin page, to enable sending out specific emails, such as birthday coupons or loyal customer coupons. This section could also be used to create different mailing groups for newletters depending on users preferences.
 
 ### Accessibility
 
@@ -368,6 +454,8 @@ I have been mindful during coding to ensure that the website is as accessible fr
 * Using descriptive alt attributes on images on the site.
 * Providing information for screen readers where there are icons used and no text.
 * Ensuring that there is a sufficient colour contrast throughout the site. (update on colours chosen explained in the colour scheme section.)
+
+Accessibility was tested using Lighthouse and WAVE and further information can be found in the [TESTING.md](TESTING.md)
 
 ---
 
@@ -443,7 +531,7 @@ sqlite3 for development.
 
 ### Stripe
 
-[Stripe](https://stripe.com/gb) has been used in the project to implement the payment system.
+[Stripe](https://stripe.com/gb) has been used in the project to implement the payment system. 
 
 ---
 
@@ -766,3 +854,4 @@ I would like to acknowledge the following people who have helped me with complet
 * My family for their patience and support whilst working on my final project.
 * My Code Institute mentor [Adegbenga Adeye](https://github.com/deye9).
 * Nerd Alert for their constant support and encouragment while completing this project.
+* The Code Institute Tutors who assisted me with troubleshooting when I was stuck on a particularly difficult bug.
