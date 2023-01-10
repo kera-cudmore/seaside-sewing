@@ -367,9 +367,9 @@ Additional testing was carried out by friends and family on a variety of devices
 | 12 | The confirmation email is not rounding the values to 2 decimal places and the contact.email value is not displaying | I solved this by adding `float:2` to the values in the confirmation email body file. | ![Confirmation Email Bug](documentation/bugs/confirmation-email.png) |
 | 13 | I was receiving an error in validation due to using `mailto:` with a subject that contained spaces. | I decided that it would probably be better practice to have a contact form on the site itself, and link to the contact page. |
 | 14 | Getting side scroll on pages with a small white slice on the right | Using dev tools I could see that this was being caused by the footer having a margin added from the bootstrap column classes. I have solved this by adding the contents of the footer into a container. | ![Side Scroll Bug](documentation/bugs/solved-bug-14.png) |
+| 15 | The confirmation email for orders is not displaying the contact email variable | I have manually entered the email address in the confirmation_email_body.txt file to ensure that this renders on the email for the time being and need to look further into why the variable wasn't working. |
 
 ### Known Bugs
 
 | No | Bug | Evidence |
 |:--- | :--- | :---: |
-| 1 | The confirmation email for orders is not displaying the contact email variable | ![Email not showing](documentation/testing/user-stories/us-24.png) |
