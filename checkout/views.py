@@ -58,11 +58,15 @@ def checkout(request):
         }
         order_form = OrderForm(form_data)
 
+        # If form valid, grab data, pid & bag - Save order
         if order_form.is_valid():
             order = order_form.save(commit=False)
             pid = request.POST.get('client_secret').split('_secret')[0]
+            order.stripe_pid = pid
             order.original_bag = json.dumps(bag)
             order.save()
+
+            # for each item in bag create a new order line item in admin
             for item_id, quantity in bag.items():
                 try:
                     product = Product.objects.get(id=item_id)
@@ -75,6 +79,9 @@ def checkout(request):
                             quantity=quantity,
                         )
                         order_line_item.save()
+
+                # If product not found return error message, delete order
+                # & redirect to bag page
                 except Product.DoesNotExist:
                     messages.error(request, "One of the products in your \
                         bag wasn'tfound in our database. Please contact us\
@@ -86,10 +93,13 @@ def checkout(request):
             request.session['save_info'] = 'save-info' in request.POST
             return redirect(
                 reverse('checkout_success', args=[order.order_number]))
+
+        # Checkout form not valid
         else:
             messages.error(request, ('There was an error with your form. \
                 Please double check your information.'))
             return redirect(reverse('checkout'))
+
     else:
         bag = request.session.get('bag', {})
         if not bag:
