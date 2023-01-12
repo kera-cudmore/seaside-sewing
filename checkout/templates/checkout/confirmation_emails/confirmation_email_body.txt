@@ -5,9 +5,9 @@ This email is confirmation of your recent order made at Seaside Sewing. Your ord
 Order Number: {{ order.order_number }}
 Order Date: {{ order.date }}
 
-Order Total: £{{ order.order_total |float:2 }}
-Delivery: £{{ order.delivery_cost |float:2 }}
-Grand Total: £{{ order.grand_total |float:2 }}
+Order Total: £{{ order.order_total }}
+Delivery: £{{ order.delivery_cost }}
+Grand Total: £{{ order.grand_total }}
 
 Your order will be delivered to:
 
