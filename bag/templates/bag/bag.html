@@ -28,17 +28,7 @@
             {% if bag_items %}
                 <!-- displays on small screens -->
                 <div class="d-block d-md-none">
-                    <div class="row">
-                        <div class="col">
-                            {% include "bag/bag_total.html" %}
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            {% include "bag/checkout_buttons.html" %}
-                            <p class="text-muted mb-5">A summary of your bag contents is below</p>
-                        </div>
-                    </div>
+                    <p class="text-muted mb-5 text-center">A summary of your bag contents is below</p>
                     {% for item in bag_items %}
                         <div class="row">
                             <div class="col-12 col-sm-6 mb-2">
@@ -48,7 +38,7 @@
                                 {% include "bag/product_info.html" %}
                             </div>
                             <div class="col-12 col-sm-6 order-sm-last">
-                                <p class="my-0">Price Each: £{{ item.product.price }}</p>
+                                <p class="my-0">Price: £{{ item.product.price }}</p>
                                 <p><strong>Subtotal: </strong>£{{ item.product.price | calc_subtotal:item.quantity }}</p>
                             </div>
                             <div class="col-12 col-sm-6">
@@ -61,7 +51,16 @@
                             </div>
                         </div>
                     {% endfor %}
-
+                    <div class="row">
+                        <div class="col">
+                            {% include "bag/bag_total.html" %}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            {% include "bag/checkout_buttons.html" %}
+                        </div>
+                    </div>
                     <!-- Back to top button -->
                     <div class="back-to-top">
                         <a class="back-to-top-btn btn btn-outline-blue">
