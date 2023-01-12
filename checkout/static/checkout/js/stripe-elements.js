@@ -110,7 +110,6 @@ form.addEventListener('submit', function(ev) {
                 $('#loading-overlay').fadeToggle(100);
                 card.update({ 'disabled': false});
                 $('#submit-button').attr('disabled', false);
-                console.log(result.error.message);
             } else {
                 if (result.paymentIntent.status === 'succeeded') {
                     form.submit();
