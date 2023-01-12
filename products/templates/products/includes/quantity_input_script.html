@@ -10,11 +10,9 @@
     function handleEnableDisable(itemId) {
 
         let stock = $(`.increment-qty_${itemId}`).data('stock')
-        console.log(stock);
         var currentValue = parseInt($(`.id_qty_${itemId}`).val());
         var minusDisabled = currentValue < 2;
         var plusDisabled = currentValue >= stock;
-        console.log(stock, 'stock')
             $(`.decrement-qty_${itemId}`).prop('disabled', minusDisabled);
             $(`.increment-qty_${itemId}`).prop('disabled', plusDisabled);
     }
