@@ -66,7 +66,9 @@ This project was created as my fourth milestone project for my Level 5 Diploma i
 
 Seaside Sewing is a Business to Consumer (B2C) e-commerce site.
 
-The sites primary audience will be people who have a love of sewing and quilting. It will cater to a range of sewers from beginners through to experts, by selling a range of items over different price points. Seaside Sewing aims to allow customers to purchase all their requirements for their projects on one website.
+The sites primary audience will be people who have a love of sewing and quilting. It will cater to a range of sewers from beginners through to experts, by selling a range of items over different price points. Seaside Sewing aims to allow customers to purchase all their requirements for their projects on one website. As a sewist myself, I know that there is a large group of people who would utilise a site like this.
+
+In recent years, the advent of social platforms like YouTube and Pinterest have made it even easier for people to take up the hobby and, of course a BBC show called The Great British Sewing Bee has help a resugence of the hobby. [Research](https://www.theguardian.com/lifeandstyle/2017/jan/27/a-stitch-in-time-new-era-for-home-sewing) has shown that between 2014 and 2017, more than 1 million people took up sewing. The Craft & Hobby Trade Association estimates there now around 7 million people in the UK who sew their own clothes.
 
 ### Scope Plane
 
@@ -74,34 +76,37 @@ The sites primary audience will be people who have a love of sewing and quilting
 
 Below is a table of opportunities for the project, together with a score of their importance level and viability (rated low to high, 1-5). Products that score highly on importance and viability will be features that must be addressed first as part of the MVP. Features that are scored mid range are should have features, which will be added to the project once it has achieved MVP status. Low scored features, are could have features and if not attended to in this development version will be marked to be addressed in a future version.
 
-| Feature | Importance | Viability |  | Delivered |
-| :--- | :---: | :---: | :---: | :---: |
-| User roles | 5 | 5 | MVP | ✅ |
-| Sign up for an account | 4 | 5 | MVP | ✅ |
-| Account Profile | 4 | 5 | MVP | ✅ |
-| Password recovery | 5 | 5 | MVP | ✅ |
-| Use social media to sign up/log in | 2 | 4 | | |
-| Search and filter through products | 5 | 5 | MVP | ✅ |
-| Checkout system | 5 | 5 | MVP | ✅ |
-| Guest Checkout | 3 | 4 | | ✅ |
-| Payment Via Stripe | 5 | 5 | MVP | ✅ |
-| Receive email confirmation for order | 5 | 5 | MVP | ✅ |
-| Order History | 4 | 5 | | ✅ |
-| Admin - add product | 5 | 5 | MVP | ✅ |
-| Admin - edit/update product | 5 | 5 | MVP | ✅ |
-| Admin - delete product | 5 | 5 | MVP | ✅ |
-| Admin - Basic Stock management | 2 | 3 | | ✅ |
-| Admin - Sales Reporting | 1 | 2 | | |
-| Terms and Conditions | 3 | 5 | | ✅ |
-| Privacy Policy | 3 | 5 | | ✅ |
-| Delivery Terms | 3 | 5 | | ✅ |
-| Social Media Links | 3 | 5 | |  |
-| Contact form | 3 | 3 | | ✅ |
+User roles are included in this project as there are different features of the site dependant on what type of user you are. There are three categories of user for the site, guest users (those who do not have an account), Users (who have signed up and verified their account) and Admins (users who have superuser status and are able to perform additional tasks on the site reserved for shop owners, such as adding new products.) Admins are also able to use their accounts in the same way a user would, such as purchasing items.
+
+|User Type | Feature | Importance | Viability |  | Delivered |
+| :--- | :--- | :---: | :---: | :---: | :---: |
+| | User roles | 5 | 5 | MVP | ✅ |
+| Guest | Sign up for an account | 4 | 5 | MVP | ✅ |
+| User & Admin | Account Profile | 4 | 5 | MVP | ✅ |
+| User | Password recovery | 5 | 5 | MVP | ✅ |
+| Guest | Use social media to sign up/log in | 2 | 4 | | |
+| User & Admin | Search and filter through products | 5 | 5 | MVP | ✅ |
+| All | Checkout system | 5 | 5 | MVP | ✅ |
+| Guest | Checkout without needing an account | 3 | 4 | | ✅ |
+| | Payment Via Stripe | 5 | 5 | MVP | ✅ |
+| All | Receive email confirmation for order | 5 | 5 | MVP | ✅ |
+| User & Admin | Order History | 4 | 5 | | ✅ |
+| Admin | Add product | 5 | 5 | MVP | ✅ |
+| Admin | Edit/update product | 5 | 5 | MVP | ✅ |
+| Admin | Delete product | 5 | 5 | MVP | ✅ |
+| Admin | Basic Stock management | 2 | 3 | | ✅ |
+| Admin | Sales Reporting | 1 | 2 | | |
+| | Terms and Conditions | 3 | 5 | | ✅ |
+| | Privacy Policy | 3 | 5 | | ✅ |
+| | Delivery Terms | 3 | 5 | | ✅ |
+| | Social Media Links | 3 | 5 | | ✅ |
+| All | Contact form | 3 | 3 | | ✅ |
 | Newsletter | 2 | 3 | | |
-| Wishlist | 3 | 3 | | |
-| Product Reviews | 3 | 4 | | |
-| Blog | 1 | 3 |  | |
-| Discount Vouchers | 1 | 1 | | |
+| User | Wishlist | 3 | 3 | | |
+| User | Create Product Reviews | 3 | 3 | | |
+| User | Read Product Reviews | 3 | 3 | | |
+| | Blog | 1 | 3 |  | |
+| | Discount Vouchers | 1 | 1 | | |
 
 ### Structure Plane
 
