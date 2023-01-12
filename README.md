@@ -961,10 +961,7 @@ Content for the site was written by Kera Cudmore, save for product descriptions,
 
 ### Media
 
-* [Lighthouse Header Image](https://www.vecteezy.com/vector-art/8273454-lighthouse-in-on-the-island-in-the-middle-of-the-sea) - Designed by Graphics RF, sourced from Vecteezy
-* [Underwater Footer Image](https://www.vecteezy.com/vector-art/9102436-silhouette-of-coral-reef-with-fish-and-divers-on-blue-sea-background-underwater-vector-illustration) - Designed by duangdee123050146, sourced from Vecteezy
-
-* [Groves & Banks Ltd](https://www.grovesltd.co.uk/) - For allowing me permission to use any of the images of their products from their website.
+* [Groves & Banks Ltd](https://www.grovesltd.co.uk/) - For allowing me [permission](documentation/readme/groves-permission.png) to use any of the images of their products from their website.
 
 * [Noimage](https://www.canva.com/search/templates?q=lighthouse) - Created for free on Canva, utilising their design elements (Elegant minimalistic logo with lighthouse for seafood cafe) in the colour theme of my site.
 
