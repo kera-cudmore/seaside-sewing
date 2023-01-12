@@ -8,6 +8,9 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 import os
+if os.path.exists('env.py'):
+    import env  # noqa: F401
+
 import dj_database_url
 
 from pathlib import Path
@@ -19,9 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = os.environ.get('SECRET_KEY', ' ')
 
-# DEBUG = 'DEVELOPMENT' in os.environ
-# THIS IS JUST TO SEE CSS ETC IN DEVELOPMENT - REMOVE THIS before sub
-DEBUG = True
+DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = ['seaside-sewing.herokuapp.com', 'localhost']
 
@@ -215,7 +216,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Delivery
 
 FREE_DELIVERY_THRESHOLD = 50
-STANDARD_DELIVERY = Decimal(3.99)
+STANDARD_DELIVERY = Decimal('3.99')
 
 # Stripe Variables
 
