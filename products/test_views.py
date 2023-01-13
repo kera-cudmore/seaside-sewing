@@ -11,15 +11,22 @@ class TestProductViews(TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'products/products.html')
 
+    def test_get_add_product_page(self):
+        # Testing to see if we get a redirect status code
+        # caused if not logged in or not superuser
+        response = self.client.get('/products/add/')
+        self.assertEqual(response.status_code, 302)
+
     def test_get_add_product_page_admin(self):
+        # Set up a superuser
         password = 'mypassword'
         superuser = User.objects.create_superuser(
             'superuser',
             'myemail@test.com',
             password
         )
-        # You'll need to log in before you can send requests through the client
         self.client.login(username=superuser.username, password=password)
+
         response = self.client.get('/products/add/')
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed((response, 'products/add_product.html'))
