@@ -314,6 +314,12 @@ input[name='q']::placeholder {
     cursor: pointer;
 }
 
+/*----- Product Card Image ------*/
+.card-img {
+    height: 400px;
+    object-fit: contain;
+}
+
 /*----- MAGNIFYING LENS -----*/
 /* source: https://thdoan.github.io/magnify/ */
 .magnify > .magnify-lens {
