@@ -151,15 +151,21 @@ User roles are included in this project as there are different features of the s
 
 Due to the data being used for the project I have opted to use a relational database as this will best suit my requirements.
 
-![Database Schema](documentation/readme/database-schema.png)
+[Database Schema](documentation/readme/database-schema.png)
 
 After my initial meeting with my mentor, it was advised that I adjust the database schema slightly to normalise it. This basically means not having data in two places - as the data can be called from the first table. I therefore adjusted my user table to include the users full name, phone number and address details and removed this from the user profile. I have done the same with the users information that was duplicated in the order table, as the information can be called from the user table when required. upon reflection, I didn't see the need for sizes for the products and so have removed this column from the products table.
 
-![Database Schema V2](documentation/readme/database-schema-v2.png)
+[Database Schema V2](documentation/readme/database-schema-v2.png)
 
 I ran into an issue in that I had already made the initial app for the project and run the initial migrations, so therefore was unable to amend the user table, and on taking some advice from peers it was suggested best not to alter the user table. I have therefore gone ahead with the UserProfile table to hold the users information and this shares a one to one relationship with the User table. I have omitted the wish list and reviews tables due to not including them in the project at this stage. I have added the contact table which houses the contact forms sent to the shop.
 
-Database Schema V3 to go here
+Due to the limitations of the field selections on DrawSQL I have had to mark some fields on the diagram with a different field, however I have added a note to that value of what that field is in Django which can be viewed from [this link](https://drawsql.app/teams/student-622/diagrams/copy-of-seaside-sewing).
+
+These would be the email field, the positive small integer field, the image field and URL field.
+
+I have also used the snowflake icon to show fields that are a foreign key, along with adding a note.
+
+![Database Schema V3](documentation/readme/database-schema-v3.png)
 
 ### Skeleton Plane
 
