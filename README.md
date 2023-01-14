@@ -343,7 +343,7 @@ Each page of the site shares the following:
 
   ![Large Navbar](documentation/testing/user-stories/us-1-a.png)
 
-  ![Small Navbar](documentation/testing/user-stories/us-1-b.png)
+  ![Small Navbar](documentation/readme/small-navbar-toggle.gif)
 
 * Footer - The footer is broken into 4 distinct sections - a section that contains information about the site, such as terms and conditions and policies. The second section contains contact information for the site, such as a link to the contact form, and social media links. The third section gives the user further information on the payment processor for the site, Stripe, along with the cards accepted. The final section is a disclaimer to let users know this site was created as an educational product and to remind users that no orders will be processed. The footer is fully responsive, and on small screens stacks the sections.
 
