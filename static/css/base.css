@@ -12,8 +12,6 @@
     --black: #000000;
     --grey: #aab7c4;
     --light-blue: #95DDED;
-    /* --medium-blue: #38A3DC; */
-    /* --dark-blue: #2072B4; */
     --dark-blue: #175587;
     --green: #456f34;
     --red: #A82114;
@@ -154,14 +152,6 @@ a {
 }
 
 /* Convenience classes - colours copied from bootstrap */
-.arrow-primary {
-    border-bottom-color: #007bff !important;
-}
-
-.arrow-secondary {
-    border-bottom-color: #6c757d !important;
-}
-
 .arrow-success {
     border-bottom-color: #28a745 !important;
 }
@@ -178,14 +168,7 @@ a {
     border-bottom-color: #17a2b8 !important;
 }
 
-.arrow-light {
-    border-bottom-color: #f8f9fa !important;
-}
-
-.arrow-dark {
-    border-bottom-color: #343a40 !important;
-}
-
+/* sizes the bag section of toast */
 .bag-notification-wrapper {
     height: 100px;
     overflow-x: hidden;
@@ -208,6 +191,7 @@ hr {
 }
 
 /*----- Buttons & Inputs -----*/
+/* rotate used on the mobile nav toggler */
 .rotate {
     -moz-transition: all .5s linear;
     -webkit-transition: all .5s linear;
