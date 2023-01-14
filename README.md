@@ -451,7 +451,7 @@ The order history section contains all the previous orders created by the user. 
 
 #### **Contact Page**
 
-The contact page gives users an easy way to communicate with the shop, without leaving the site. The form has required fields of name, email and message and an optional field of phone number. Underneath the form the user is given 2 buttons, a back button and a submit form button. The back to shop button takes the user to the products page.
+The contact page gives users an easy way to communicate with the shop, without leaving the site. The form has required fields of name, email and message and an optional field of phone number. Underneath the form the user is given 2 buttons, a back button and a submit form button. The back to shop button takes the user to the products page. If a user is signed in to their account, the contact form will prepopulate the name, email and phone number fields from the users profile if they have been filled in. This prevents a user having to fill out a form that where we already hold the information, which speeds up the process for the user and is good practice. A user may of course change any of these details on the contact form before submitting it.
 
 Once a user has submitted the form, they will be shown the contact us thank you page which thanks the user for their query, and informs them they will receive a response within 2 business days. A button is then displayed which takes the user to the latest deals products page. A toast will also let the user know their form was submitted successfully and lets them know they will hear from the shop within 2 days.
 
