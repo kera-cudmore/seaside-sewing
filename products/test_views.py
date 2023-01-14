@@ -11,9 +11,7 @@ class TestProductViews(TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'products/products.html')
 
-    def test_get_add_product_page(self):
-        # Testing to see if we get a redirect status code
-        # caused if not logged in or not superuser
+    def test_get_add_product_page_user(self):
         response = self.client.get('/products/add/')
         self.assertEqual(response.status_code, 302)
 
