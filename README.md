@@ -337,7 +337,9 @@ Each page of the site shares the following:
 
   ![Seaside Sewing Favicon](documentation/readme/favicon.png)
 
-* Navbar - The navbar on the site is split into two sections, the first section contains the search bar, an account icon and the bag icon. The second section contains the sites products categories. The navbar is fully responsive, and utilises a hamburger menu toggle on smaller screens. The Categories links in the navbar move up when hovered over to give the user feedback that they are selecting that category. A dropdown menu will then show with further options. The account icon also contains a dropdown menu which displays different options depending on whether a user is logged in, and whether the user has a superuser account.
+* Navbar - The navbar on the site is split into two sections, the first section contains the search bar, an account icon and the bag icon. The second section contains the sites products categories. The navbar is fully responsive, and utilises a hamburger menu toggle on smaller screens. The hamburger toggler has been given a rotate transition of 90 degrees when clicked, which gives the user additional feedback when clicking the button.
+
+  The Categories links in the navbar have a transition that moves the category name up when hovered over to give the user feedback that they are selecting that category. A dropdown menu will then show with further options. The account icon also contains a dropdown menu which displays different options depending on whether a user is logged in, and whether the user has a superuser account.
 
   ![Large Navbar](documentation/testing/user-stories/us-1-a.png)
 
