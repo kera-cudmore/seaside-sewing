@@ -18,35 +18,35 @@
 {% endblock %}
 
 {% block content %}
-<div class="row page-title">
-    <h3>Product Management</h3>
-</div>
+    <div class="row page-title">
+        <h3>Product Management</h3>
+    </div>
 
-<div class="row">
-    <div class="col-12 col-md-6 offset-md-3">
-        <h4 class="text-center">Edit Product</h4>
-        <form method="POST" action="{% url 'edit_product' product.id %}" class="form mb-2" enctype="multipart/form-data">
-            {% csrf_token %}
-            {% for field in form %}
-                {% if field.name != 'image' %}
-                    {{ field | as_crispy_field }}
-                {% else %}
-                    {{ field }}
-                {% endif %}
-            {% endfor %}
-            <div class="text-right">
-                <a class="btn btn-outline-red my-2" href="{% url 'products' %}">
-                    <span class="mr-2"><i class="fa-solid fa-xmark"></i></span>    
-                    <span>Cancel</span>
-                </a>
-                <button class="btn btn-outline-blue ml-2" type="submit">
-                    <span class="mr-2"><i class="fa-regular fa-pen-to-square"></i></span>
-                    <span>Update Product</span>
-                </button>
-            </div>
-        </form>
-    </div>            
-</div>
+    <div class="row">
+        <div class="col-12 col-md-6 offset-md-3">
+            <h4 class="text-center">Edit Product</h4>
+            <form method="POST" action="{% url 'edit_product' product.id %}" class="form mb-2" enctype="multipart/form-data">
+                {% csrf_token %}
+                {% for field in form %}
+                    {% if field.name != 'image' %}
+                        {{ field | as_crispy_field }}
+                    {% else %}
+                        {{ field }}
+                    {% endif %}
+                {% endfor %}
+                <div class="text-right">
+                    <a class="btn btn-outline-red my-2" href="{% url 'products' %}">
+                        <span class="mr-2"><i class="fa-solid fa-xmark"></i></span>    
+                        <span>Cancel</span>
+                    </a>
+                    <button class="btn btn-outline-blue ml-2" type="submit">
+                        <span class="mr-2"><i class="fa-regular fa-pen-to-square"></i></span>
+                        <span>Update Product</span>
+                    </button>
+                </div>
+            </form>
+        </div>            
+    </div>
 {% endblock %}
 
 {% block postloadjs %}
