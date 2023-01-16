@@ -197,15 +197,14 @@ I also used [coverage](https://pypi.org/project/coverage/) to enable me to see w
 
 ### Coverage Testing
 
-| Coverage for | Result | Evidence |
-| :---| :--- | :---: |
-| checkout forms.py | 100% | ![checkout forms.py coverage results](documentation/testing/coverage/checkout-forms.png) |
-| checkout models.py | % | |
-| checkout signals.py | % ||
-| checkout views.py | % ||
-| checkout webhook_handler.py | % ||
-| checkout webhooks.py | % ||
-| **CHECKOUT TOTAL** | **%**||
+| Coverage for | Total | Evidence |
+| :---| :--- | :--- |
+| Bag | 52% | [Coverage Bag](documentation/testing/coverage/coverage-bag.png) |
+| Checkout | 53% | [Coverage Checkout](documentation/testing/coverage/coverage-checkout.png)|
+| Contact | 87% | [Coverage Contact](documentation/testing/coverage/coverage-contact.png) |
+| Home | 100% | [Coverage Home](documentation/testing/coverage/coverage-home.png) |
+| Products | 67% | [Coverage Products](documentation/testing/coverage/coverage-products.png) |
+| Profiles | 59%  | [Coverage Profiles](documentation/testing/coverage/coverage-profiles.png) |
 
 ## Manual Testing
 
