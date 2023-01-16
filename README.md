@@ -1,6 +1,6 @@
 # Seaside Sewing
 
-![Lighthouse illustration](static/svg/lighthouse.svg)
+![Seaside Sewing Banner](documentation/readme/banner.png)
 
 Seaside Sewing is a full stack e-commerce website built using Django, Python, HTML, CSS and JavaScript. The website utilises Stripe as the payment processor.
 
@@ -51,10 +51,6 @@ This project was created as my fourth milestone project for my Level 5 Diploma i
   * [Content](#content)
   * [Media](#media)
   * [Acknowledgments](#acknowledgments)
-
----
-
-![Responsive Site Image of Seaside Sewing](static/images/responsive-site-image.png)
 
 ---
 

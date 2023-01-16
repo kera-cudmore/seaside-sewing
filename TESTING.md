@@ -1,6 +1,6 @@
 # Seaside Sewing - Testing
 
-![Responsive Site Image of Seaside Sewing](static/images/responsive-site-image.png)
+![Seaside Sewing Banner](documentation/readme/banner.png)
 
 [Visit Seaside Sewing Here](https://seaside-sewing.herokuapp.com/)
 
