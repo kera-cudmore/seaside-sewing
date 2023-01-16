@@ -211,11 +211,11 @@ Wireframes for the project were created using [Balsamiq](https://balsamiq.com/)
 
 * Wish list (empty wish list) - The wish list page will display a message to the user to let them know there are no products currently in their wish list and will give instructions on how to add a product to their wish list. There will also be a button that redirects the user to the products page.
 
-  ![Empty Wish list Page Wireframe](documentation/wireframes/wishlist-empty.png)
+    [Empty Wish list Page Wireframe](documentation/wireframes/wishlist-empty.png)
 
 * Wish list Page - The wish list page is very similar in layout to the bag page. It displays an image of the item, the title, selected size and sku for the product along with the product price. There is also has a button to remove the product from their wish list. The user can add an item from their wish list to their bag by clicking on the product which will take them to the product details page where they can select sizes and quantity.
 
-  ![Wish list Page Wireframe](documentation/wireframes/wishlist.png)
+    [Wish list Page Wireframe](documentation/wireframes/wishlist.png)
 
 * Checkout Page - The checkout page requires the user to fill in their details, along with a delivery address. They are given the option via a checkbox to save the information they input to their profile. If the user has already filled in their information in their profile, the form will be pre-populated with this information.
 
@@ -281,7 +281,7 @@ Wireframes for the project were created using [Balsamiq](https://balsamiq.com/)
 
 * Add review - If a user wants to add a review for a product, they will be redirected to the add review page. This will display the name of the product along with an image they would like to review. They are then given an input field to create a title for their review and a text area for the actual review. Underneath this will be a rating for the product along with a cancel and submit review button.
 
-  ![Add Review Page Wireframe](documentation/wireframes/add-review.png)
+    [Add Review Page Wireframe](documentation/wireframes/add-review.png)
 
 * Toasts - Toasts are used to display messages to the user depending on their actions on the site. They can let users know if an action has been successful, if there has been an error or for displaying a general message. This is also reflected in the colour at the top of the toast. Toasts will also be used to display to a user what they currently have in their bag when they add a new product. Toasts can be dismissed by clicking the X on the toast.
 
