@@ -208,12 +208,12 @@ I also used [coverage](https://pypi.org/project/coverage/) to enable me to see w
 
 | Coverage for | Total | Evidence |
 | :---| :--- | :--- |
-| Bag | 52% | [Coverage Bag](documentation/testing/coverage/coverage-bag.png) |
+| Bag | 74% | [Coverage Bag](documentation/testing/coverage/coverage-bag.png) |
 | Checkout | 53% | [Coverage Checkout](documentation/testing/coverage/coverage-checkout.png)|
-| Contact | 87% | [Coverage Contact](documentation/testing/coverage/coverage-contact.png) |
+| Contact | 89% | [Coverage Contact](documentation/testing/coverage/coverage-contact.png) |
 | Home | 100% | [Coverage Home](documentation/testing/coverage/coverage-home.png) |
-| Products | 67% | [Coverage Products](documentation/testing/coverage/coverage-products.png) |
-| Profiles | 59%  | [Coverage Profiles](documentation/testing/coverage/coverage-profiles.png) |
+| Products | 69% | [Coverage Products](documentation/testing/coverage/coverage-products.png) |
+| Profiles | 65%  | [Coverage Profiles](documentation/testing/coverage/coverage-profiles.png) |
 
 ## Manual Testing
 
