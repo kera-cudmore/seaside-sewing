@@ -4,7 +4,7 @@ from django.urls import reverse
 
 class TestProfilesViews(TestCase):
 
-    def test_redirect_if_user_not_logged_in(self):
+    def test_404_error_if_no_profile(self):
         response = self.client.get('profile')
         self.assertEqual(response.status_code, 404)
 
