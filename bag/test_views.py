@@ -27,7 +27,7 @@ class TestBagViews(TestCase):
         bag = self.client.session['bag']
         self.assertEqual(bag[str(product.id)], 1)
 
-    def test_remove_from_bag(self):
+    def test_remove_product_from_bag(self):
         product = Product.objects.create(
             sku='12334',
             name='Test Product',
