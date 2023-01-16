@@ -1,7 +1,9 @@
-/*  Core logic/payment flow for this comes from here:
+/*  
+    Core logic/payment flow for this comes from here:
     https://stripe.com/docs/js
     https://stripe.com/docs/payments/accept-a-payment	
-    CSS from here:
+    
+    CSS from here: 
     https://stripe.com/docs/stripe-js 
 */
 
@@ -30,7 +32,6 @@ var style = {
 var card = elements.create('card', {style: style});
 card.mount('#card-element');
 
-
 // Handle realtime validation errors on the card element
 card.addEventListener('change', function (event) {
     var errorDiv = document.getElementById('card-errors');
@@ -46,7 +47,6 @@ card.addEventListener('change', function (event) {
         errorDiv.textContent = '';
     }
 });
-
 
 // Handle form submit
 var form = document.getElementById('payment-form');
