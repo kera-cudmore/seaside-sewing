@@ -26,7 +26,7 @@
     <div class="row">
         <div class="col">
             {% if bag_items %}
-                <!-- displays on small screens -->
+                <!-- bag displays vertically stacked on small screens -->
                 <div class="d-block d-md-none">
                     <p class="text-muted mb-5 text-center">A summary of your bag contents is below</p>
                     {% for item in bag_items %}
@@ -69,7 +69,7 @@
                     </div>
                 </div>
 
-                <!-- Displays on md screens up-->
+                <!-- Displays horizontally md screens + -->
                 <div class="table-responsive rounded d-none d-md-block">
                     <table class="table table-sm table-borderless">
                         <thead>
