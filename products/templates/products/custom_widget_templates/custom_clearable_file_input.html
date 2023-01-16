@@ -1,7 +1,6 @@
 {% if widget.is_initial %}
     <p>{{ widget.initial_text }}:</p>
     <a href="{{ widget.value.url }}">
-        <!-- Image Preview -->
         <img width="200" height="200" src="{{ widget.value.url }}" class="rounded shadow-sm">
     </a>
     {% if not widget.required %}
