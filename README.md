@@ -371,6 +371,10 @@ This is a very basic way of creating a stock management system, and has its flaw
 
 Due to time constraints, I have not had chance to implement the wishlist and review features in this version of the shop. I have taken the time to make sure that the core functionality of the site is complete and would like to add these features in the next version. This is the same for the social media log in section, and the header and footer images.
 
+I would also like to adjust the position of the mobile navbar toggler in the next version of the project, so that it sits to the right of the shopping bag, and have all of the icons on one line.
+
+I would like to be able to sort by colour and also by stock values.
+
 #### **Home Page**
 
 The home page of the site features a welcoming message and underneath displays cards with each of the categories on. These cards when clicked will take a user directly to that categories product page. currently all the cards feature a line illustration of a lighthouse, however in the next phase of the project I would like to update the categories model to include an image and be able to update each card with an image that represents that category which I think will increase users understanding of what is included in that category.
