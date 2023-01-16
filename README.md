@@ -68,7 +68,7 @@ Seaside Sewing is a Business to Consumer (B2C) e-commerce site.
 
 The sites primary audience will be people who have a love of sewing and quilting. It will cater to a range of sewers from beginners through to experts, by selling a range of items over different price points. Seaside Sewing aims to allow customers to purchase all their requirements for their projects on one website. As a sewist myself, I know that there is a large group of people who would utilise a site like this.
 
-In recent years, the advent of social platforms like YouTube and Pinterest have made it even easier for people to take up the hobby and, of course a BBC show called The Great British Sewing Bee has help a resugence of the hobby. [Research](https://www.theguardian.com/lifeandstyle/2017/jan/27/a-stitch-in-time-new-era-for-home-sewing) has shown that between 2014 and 2017, more than 1 million people took up sewing. The Craft & Hobby Trade Association estimates there now around 7 million people in the UK who sew their own clothes.
+In recent years, the advent of social platforms like YouTube and Pinterest have made it even easier for people to take up the hobby and, of course a BBC show called The Great British Sewing Bee has help a resurgence of the hobby. [Research](https://www.theguardian.com/lifeandstyle/2017/jan/27/a-stitch-in-time-new-era-for-home-sewing) has shown that between 2014 and 2017, more than 1 million people took up sewing. The Craft & Hobby Trade Association estimates there now around 7 million people in the UK who sew their own clothes.
 
 ### Scope Plane
 
@@ -213,7 +213,7 @@ Wireframes for the project were created using [Balsamiq](https://balsamiq.com/)
 
   ![Empty Wish list Page Wireframe](documentation/wireframes/wishlist-empty.png)
 
-* Wish list Page - The wish list page is very similar in layout to the bag page. It displays an image of the item, the title,selected size and sku for the product along with the product price. There is also has a button to remove the product from their wish list. The user can add an item from their wish list to their bag by clicking on the product which will take them to the product details page where they can select sizes and quantity.
+* Wish list Page - The wish list page is very similar in layout to the bag page. It displays an image of the item, the title, selected size and sku for the product along with the product price. There is also has a button to remove the product from their wish list. The user can add an item from their wish list to their bag by clicking on the product which will take them to the product details page where they can select sizes and quantity.
 
   ![Wish list Page Wireframe](documentation/wireframes/wishlist.png)
 
@@ -229,7 +229,7 @@ Wireframes for the project were created using [Balsamiq](https://balsamiq.com/)
 
   ![Payment Processing Overlay Wireframe](documentation/wireframes/payment-processing-overlay.png)
 
-* Checkout Success -
+* Checkout Success - The checkout success page will give the user their order details, showing the order number, the date and time of the order and the items purchased.
 
   ![Checkout Success Page Wireframe](documentation/wireframes/checkout-success.png)
 
@@ -363,17 +363,17 @@ The current implementation of the site does not feature the header and footer im
 
 #### **Defensive programming**
 
-Defensive programming has been used throughout the site to prevent users accessing pages when they don't have the relevent permissions. This has been accomplished by checking whether a user is a superuser for admin related tasks. If users try to access pages that they don't have the required permission level for, they will be shown an error toast which gives feedback to the user to let them know they don't have the required permissions as only an administrator can perform those tasks.
+Defensive programming has been used throughout the site to prevent users accessing pages when they don't have the relevant permissions. This has been accomplished by checking whether a user is a superuser for admin related tasks. If users try to access pages that they don't have the required permission level for, they will be shown an error toast which gives feedback to the user to let them know they don't have the required permissions as only an administrator can perform those tasks.
 
 #### **Stock management system**
 
 I have implemented a rudimentary stock management system within the site. Products have a stock value (this is set to 0 as default when a product is created) and I have used Django to inject these values onto my products and product details page in the tag section so a user is able to see how many of that item is currently in stock. I have used this stock value as the upper limit for the plus quantity buttons to prevent a user entering more of a product into their cart if there is not enough stock to meet the demand. On checkout, I update the stock values for each product to reduce them by the quantity purchased. An if/else statement checks to see if the stock value is 0, and if it is an out of stock text will display instead of a stock value. As the plus quantity button uses the stock value, this will also become disabled preventing the user adding the product to their cart. The user can manually input a quantity in the quantity input, however on clicking the add to bag button, they will be shown a tooltip letting them know that there is not enough stock to process their request.
 
-This is a very basic way of creating a stock management system, and has its flaws, as several users could potentially have the stock in their bags at the same time. Ideally the better way to acomplish this would be to utilise a separate stock table, and to update the stock value upon adding to the bag. This would update the stock value then shown to other users of the site and prevent several people purchasing the last of stock at the same time. The stock value would then have to be changed should a user close their browser tab with items in the bag (as this would close their session cookie which is where the bag is being stored) and not complete their purchase. This was a little too complex for me to delve into during this project due to the limited timeframe I had, however it is something I would like to learn more about as this would make my e-commerce store more polished and professional grade.
+This is a very basic way of creating a stock management system, and has its flaws, as several users could potentially have the stock in their bags at the same time. Ideally the better way to accomplish this would be to utilise a separate stock table, and to update the stock value upon adding to the bag. This would update the stock value then shown to other users of the site and prevent several people purchasing the last of stock at the same time. The stock value would then have to be changed should a user close their browser tab with items in the bag (as this would close their session cookie which is where the bag is being stored) and not complete their purchase. This was a little too complex for me to delve into during this project due to the limited timeframe I had, however it is something I would like to learn more about as this would make my e-commerce store more polished and professional grade.
 
-#### **Feaures for next version**
+#### **Features for next version**
 
-Due to time constraints, I have not had chance to implement these features in this version of the shop. I have taken the time to make sure that the core functionality of the site is complete and would like to add these features in the next version. This is the same for the social media log in section.
+Due to time constraints, I have not had chance to implement the wishlist and review features in this version of the shop. I have taken the time to make sure that the core functionality of the site is complete and would like to add these features in the next version. This is the same for the social media log in section.
 
 #### **Home Page**
 
@@ -437,7 +437,7 @@ If the payment is successful the user will then be shown the checkout success pa
 
 A button at the bottom of the page allows the user to go to the latest deals product page. Users are also show a success toast to let them know that their order has been placed successfully, giving them their order number and confirming an email will be sent to their email address.
 
-![Checkout Payment Success Page Screenshot](documentation/readme/page-screenshots/checkout-successs.png)
+![Checkout Payment Success Page Screenshot](documentation/readme/page-screenshots/checkout-success.png)
 
 #### **Profile Page**
 
@@ -451,7 +451,7 @@ The order history section contains all the previous orders created by the user. 
 
 #### **Contact Page**
 
-The contact page gives users an easy way to communicate with the shop, without leaving the site. The form has required fields of name, email and message and an optional field of phone number. Underneath the form the user is given 2 buttons, a back button and a submit form button. The back to shop button takes the user to the products page. If a user is signed in to their account, the contact form will prepopulate the name, email and phone number fields from the users profile if they have been filled in. This prevents a user having to fill out a form that where we already hold the information, which speeds up the process for the user and is good practice. A user may of course change any of these details on the contact form before submitting it.
+The contact page gives users an easy way to communicate with the shop, without leaving the site. The form has required fields of name, email and message and an optional field of phone number. Underneath the form the user is given 2 buttons, a back button and a submit form button. The back to shop button takes the user to the products page. If a user is signed in to their account, the contact form will pre-populate the name, email and phone number fields from the users profile if they have been filled in. This prevents a user having to fill out a form that where we already hold the information, which speeds up the process for the user and is good practice. A user may of course change any of these details on the contact form before submitting it.
 
 Once a user has submitted the form, they will be shown the contact us thank you page which thanks the user for their query, and informs them they will receive a response within 2 business days. A button is then displayed which takes the user to the latest deals products page. A toast will also let the user know their form was submitted successfully and lets them know they will hear from the shop within 2 days.
 
@@ -527,7 +527,7 @@ The sign in page provides inputs for a user to enter their username/email togeth
 
 #### **Verify Email Page**
 
-When a user registers they will be sent an [email](documentation/readme/page-screenshots/email-verify-account.png) to verify their email address. If the user clicks on the link in the email they are taken to the verify email page where they can vertify their email and complete registration. They will then be automatically redirected to the login page where a toast will let them know that they have verified their account successfully.
+When a user registers they will be sent an [email](documentation/readme/page-screenshots/email-verify-account.png) to verify their email address. If the user clicks on the link in the email they are taken to the verify email page where they can verify their email and complete registration. They will then be automatically redirected to the login page where a toast will let them know that they have verified their account successfully.
 
 ![Email Verification Page Screenshot](documentation/readme/page-screenshots/verify-email.png)
 
