@@ -56,7 +56,7 @@
         </div>
     </div>
 
-    <!-- Products Display Here-->
+    <!-- Products Cards -->
     <div class="row">
         {% for product in products %}
             <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
@@ -197,21 +197,16 @@
         $('#sort-selector').change(function() {
             var selector = $(this);
             var currentUrl = new URL(window.location);
-
             var selectedVal = selector.val();
             if(selectedVal != "reset"){
                 var sort = selectedVal.split("_")[0];
                 var direction = selectedVal.split("_")[1];
-
                 currentUrl.searchParams.set("sort", sort);
                 currentUrl.searchParams.set("direction", direction);
-
                 window.location.replace(currentUrl);
-
             } else {
                 currentUrl.searchParams.delete("sort");
                 currentUrl.searchParams.delete("direction");
-
                 window.location.replace(currentUrl);
             }
         })

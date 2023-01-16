@@ -50,6 +50,7 @@
             <div class="product-details-container">
                 <h4>{{ product.name }}</h4>
                 <p class="lead">£{{ product.price }}</p>
+                
                 <!-- admin edit/delete buttons -->
                 {% if request.user.is_superuser %}
                     <div>
@@ -58,6 +59,7 @@
                             Delete
                         </button>
                     </div>
+                        
                         <!-- Delete Product Modal-->
                         <div class="modal" tabindex="-1" role="dialog" id="deleteModal-{{ product.id }}">
                             <div class="modal-dialog" role="document">
@@ -83,9 +85,11 @@
                             </div>
                         </div>
                 {% endif %}
+                
                 <!-- Product Description -->
                 <p class="pt-3">{{ product.description}}</p>
                 <div class="my-2">
+                    
                     <!-- Product Category -->
                     {% if product.category %}
                     <span class="small">
@@ -94,12 +98,14 @@
                         </a>
                     </span>
                     {% endif %}    
+                    
                     <!-- Product Colour -->          
                     {% if product.colour %}
                         <span class="small text-muted ml-3">
                                 <i class="fa-solid fa-droplet mr-2"></i>{{ product.colour }}
                             </span>
                     {% endif %}
+                    
                     <!-- Product Stock -->
                     <span class="small text-muted ml-3">
                         <i class="fa-solid fa-boxes-stacked mr-2"></i>
@@ -110,6 +116,7 @@
                             {% endif %}
                         </span>
                     </span>
+                    
                     <!-- Product Rating -->
                     {% if product.rating %}
                         <span class="small text-muted ml-3">
@@ -117,6 +124,7 @@
                         </span>
                     {% endif %}
                 </div>
+                
                 <!-- Add to bag form -->
                 <form action="{% url 'add_to_bag' product.id %}" method="POST" class="form">
                     {% csrf_token %}
@@ -143,6 +151,7 @@
                                 </div>
                             </div>
                         </div>
+                        
                         <!-- submit button for form and keep shopping button -->
                         {% if product.stock == 0 %}
                         <a href="{% url 'products' %}" class="btn btn-outline-red mt-2">
