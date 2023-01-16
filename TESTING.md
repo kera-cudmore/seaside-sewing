@@ -204,6 +204,8 @@ Automated testing for this project was carried out with [Django TestCase](https:
 
 I also used [coverage](https://pypi.org/project/coverage/) to enable me to see where I was missing tests from to enable me to test my application more thoroughly.
 
+I have really enjoyed using unit tests for this project, and am looking forward to delving deeper into the topic to enable me to be able to test my applications more thoroughly.
+
 ### Coverage Testing
 
 | Coverage for | Total | Evidence |
