@@ -97,7 +97,7 @@ User roles are included in this project as there are different features of the s
 | | Delivery Terms | 3 | 5 | | ✅ |
 | | Social Media Links | 3 | 5 | | ✅ |
 | All | Contact form | 3 | 3 | | ✅ |
-| Newsletter | 2 | 3 | | |
+| | Newsletter | 2 | 3 | | |
 | User | Wishlist | 3 | 3 | | |
 | User | Create Product Reviews | 3 | 3 | | |
 | User | Read Product Reviews | 3 | 3 | | |
@@ -293,8 +293,6 @@ Text throughout the site will be either black or white, depending on the backgro
 
 ![Colour Scheme for Seaside Sewing](documentation/readme/colour-theme.png)
 
-UPDATE
-
 Once I began working on the site, I realised that there wasn't enough of a contrast for the green text on a white background when running the site through the WAVE chrome extension. I have therefore used a slightly darker green to allow for a better contrast. There was a similar issue with the dark blue chosen for the site, the contrast was not passing for the sites header with white text, and so I have chosen a darker blue which does pass contrast tests with white text. I have also updated the grey colour used, as this was a colour used for other elements in bootstrap, so by changing to this allows a better cohesion in the site.
 
 As I did not appear to be using the medium blue anywhere in the site, I have removed this.
@@ -320,6 +318,8 @@ I have chosen to use Overpass for all other text on the site. This font is sans-
 Due to the name of the site, I have chosen to go with images of the seaside.
 
 The hero image for the site is of a lighthouse on an island surrounded by water. The footer is an image of sea life underwater on the ocean floor. I feel these images give the site a cohesive feel - as we start at the top of the site above the water, and then we travel down until we get to the bottom of the page to the footer, which is the ocean floor. I feel it gives the site a bit of a whimsical feel, which I wanted, as a lot of e-commerce sites can be very bland and all look the same.
+
+Due to issues with resizing SVG's and current lighthouse scores for the site, I have opted to leave the header and footer images off this iteration of the project, but would like to add them in during the next development cycle.
 
 #### **Base Mockup**
 
@@ -369,7 +369,7 @@ This is a very basic way of creating a stock management system, and has its flaw
 
 #### **Features for next version**
 
-Due to time constraints, I have not had chance to implement the wishlist and review features in this version of the shop. I have taken the time to make sure that the core functionality of the site is complete and would like to add these features in the next version. This is the same for the social media log in section.
+Due to time constraints, I have not had chance to implement the wishlist and review features in this version of the shop. I have taken the time to make sure that the core functionality of the site is complete and would like to add these features in the next version. This is the same for the social media log in section, and the header and footer images.
 
 #### **Home Page**
 
