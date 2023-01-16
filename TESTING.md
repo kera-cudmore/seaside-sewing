@@ -90,6 +90,7 @@ I have gone through each page of the site using the Chrome Developer Tools to en
 | bag/urls.py | Pass | [urls.py validation](documentation/testing/validation/python/bag-urls-validation.png) |
 | bag/views.py | Pass | [views.py validation](documentation/testing/validation/python/bag-views-validation.png) |
 | bag/templatetags/bag_tools.py | Pass | [bag_tools.py validation](documentation/testing/validation/python/bag-bag_tools-validation.png)|
+| bag/test_views.py | Pass | [test_views.py validation](documentation/testing/validation/python/bag-test-views.png) |
 | **CHECKOUT** |
 | checkout/admin.py | Pass | [admin.py validation](documentation/testing/validation/python/checkout-admin-validation.png) |
 | checkout/apps.py | Pass | [apps.py validation](documentation/testing/validation/python/checkout-apps-validation.png) |
@@ -100,11 +101,13 @@ I have gone through each page of the site using the Chrome Developer Tools to en
 | checkout/views.py | Pass | [views.py](documentation/testing/validation/python/checkout-views-validation.png) |
 | checkout/webhook_handler.py | Pass | [webhook_handler.py](documentation/testing/validation/python/checkout-webhook_handler-validation.png) |
 | checkout/webhooks.py | Pass| [webhooks.py](documentation/testing/validation/python/checkout-webhooks-validation.png) |
-| checkout/test_forms.py | Pass | [test-forms.py validation](documentation/testing/validation/python/checkout-test-forms-validation.png)|
+| checkout/test_forms.py | Pass | [test_forms.py validation](documentation/testing/validation/python/checkout-test-forms-validation.png)|
+| checkout/test_views.py | Pass | [test_views.py validation](documentation/testing/validation/python/checkout-test-views.png) |
 | **HOME** |
 | home/apps.py | Pass | [apps.py validation](documentation/testing/validation/python/home-apps-validation.png) |
 | home/urls.py | Pass | [urls.py validation](documentation/testing/validation/python/home-urls-validation.png)|
 | home/views.py | Pass | [views.py validation](documentation/testing/validation/python/home-views-validation.png) |
+| home/test_views.py | Pass | [test_views.py validation](documentation/testing/validation/python/home-test-views.png) |
 | **PRODUCTS** |
 | products/admin.py | Pass | [admin.py validation](documentation/testing/validation/python/products-admin-validation.png) |
 | products/apps.py | Pass | [apps.py validation](documentation/testing/validation/python/products-apps-validation.png) |
@@ -113,20 +116,26 @@ I have gone through each page of the site using the Chrome Developer Tools to en
 | products/urls.py | Pass | [urls.py validation](documentation/testing/validation/python/products-urls-validation.png) |
 | products/views.py | Pass | [views.py validation](documentation/testing/validation/python/products-views-validation.png) |
 | products/widgets.py | Pass | [widgets.py validation](documentation/testing/validation/python/products-widgets-validation.png) |
+| products/test_models.py | Pass | [test_models.py validation](documentation/testing/validation/python/products-test-models.png) |
+| products/test_views.py | Pass | [test_views.py](documentation/testing/validation/python/products-test-views.png) |
 | **PROFILES** |
 | profiles/apps.py | Pass | [apps.py validation](documentation/testing/validation/python/profiles-apps-validation.png) |
 | profiles/forms.py | Pass | [forms.py validation](documentation/testing/validation/python/profiles-forms-validation.png) |
 | profiles/models.py | Pass | [models.py validation](documentation/testing/validation/python/profiles-models-validation.png) |
 | profiles/urls.py | Pass | [urls.py validation](documentation/testing/validation/python/profiles-urls-validation.png) |
 | profiles/views.py | Pass | [views.py validation](documentation/testing/validation/python/profiles-views-validation.png) |
+| profiles/test_views.py | Pass | [test_views.py validation](documentation/testing/validation/python/profiles-test-views.png) |
+| profiles/test_models.py | Pass | [test_models.py validation](documentation/testing/validation/python/profiles-test-models.png) |
 | **CONTACT** |
 | contact/admin.py | Pass |[admin.py validation](documentation/testing/validation/python/contact-admin-validation.png) |
 | contact/apps.py | Pass | [apps.py validation](documentation/testing/validation/python/contact-apps-validation.png) |
 | contact/forms.py | Pass | [forms.py validation](documentation/testing/validation/python/contact-forms-validation.png) |
 | contact/models.py | Pass | [models.py validation](documentation/testing/validation/python/contact-models-validation.png) |
-| contact/test_forms.py | Pass | [test_forms.py validation](documentation/testing/validation/python/contact-test-forms-validation.png) |
 | contact/urls.py | Pass | [urls.py validation](documentation/testing/validation/python/contact-urls-validation.png) |
 | contact/views.py | Pass | [views.py validation](documentation/testing/validation/python/contact-views-validation.png) |
+| contact/test_forms.py | Pass | [test_forms.py validation](documentation/testing/validation/python/contact-test-forms-validation.png) |
+| contact/test_models.py | Pass | [test_models.py validation](documentation/testing/validation/python/contact-test-models.png)|
+| contact/test_views.py | Pass | [test_views.py validation](documentation/testing/validation/python/contact-test-views.png) |
 
 ### Lighthouse
 
