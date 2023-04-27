@@ -28,7 +28,9 @@ ALLOWED_HOSTS = [
     'seaside-sewing.herokuapp.com',
     'web-production-09dc.up.railway.app/',
     'localhost', '127.0.0.1'
-]
+    ]
+
+CSRF_TRUSTED_ORIGINS = ['https://web-production-09dc.up.railway.app/']
 
 # Application definition
 INSTALLED_APPS = [
