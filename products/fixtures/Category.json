@@ -1,0 +1,146 @@
+[
+{
+    "model": "products.category",
+    "pk": 1,
+    "fields": {
+        "name": "individual_patterns",
+        "friendly_name": "Patterns"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 2,
+    "fields": {
+        "name": "pattern_books",
+        "friendly_name": "Pattern Books"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 3,
+    "fields": {
+        "name": "clearance",
+        "friendly_name": "Clearance"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 4,
+    "fields": {
+        "name": "deals",
+        "friendly_name": "Deals"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 5,
+    "fields": {
+        "name": "new_arrivals",
+        "friendly_name": "New Arrivals"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 6,
+    "fields": {
+        "name": "zips",
+        "friendly_name": "Zips"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 7,
+    "fields": {
+        "name": "ribbons",
+        "friendly_name": "Ribbons"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 8,
+    "fields": {
+        "name": "buttons",
+        "friendly_name": "Buttons"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 9,
+    "fields": {
+        "name": "bias_binding",
+        "friendly_name": "Bias Binding"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 10,
+    "fields": {
+        "name": "threads",
+        "friendly_name": "Threads"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 11,
+    "fields": {
+        "name": "pins",
+        "friendly_name": "Pins"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 12,
+    "fields": {
+        "name": "fabric_markers",
+        "friendly_name": "Fabric Markers"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 13,
+    "fields": {
+        "name": "needles",
+        "friendly_name": "Needles"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 14,
+    "fields": {
+        "name": "cutting_mats",
+        "friendly_name": "Cutting Mats"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 15,
+    "fields": {
+        "name": "rotary_cutters",
+        "friendly_name": "Rotary Cutters"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 16,
+    "fields": {
+        "name": "scissors",
+        "friendly_name": "Scissors"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 17,
+    "fields": {
+        "name": "pre_cuts",
+        "friendly_name": "Pre-Cuts"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 18,
+    "fields": {
+        "name": "by_the_metre",
+        "friendly_name": "By the Metre"
+    }
+}
+]

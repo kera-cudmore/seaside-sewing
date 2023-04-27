@@ -1,0 +1,2562 @@
+[
+{
+    "model": "products.product",
+    "pk": 1,
+    "fields": {
+        "category": 8,
+        "sku": "TD400050",
+        "name": "Tilda Friends 9mm Chambray Buttons - Warm Colours - Pack of 10",
+        "description": "Assorted selection of 10 cotton fabric covered metal buttons. Wash at 40 degrees. 8 pieces. Size: 9mm.",
+        "price": "5.25",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD400050.webp",
+        "image": "TD400050.webp",
+        "stock": 22,
+        "rating": 4,
+        "colour": "Pink"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 2,
+    "fields": {
+        "category": 8,
+        "sku": "TD400051",
+        "name": "Tilda Friends 9mm Chambray Buttons - Cool Colours - Pack of 10",
+        "description": "Assorted selection of 10 cotton fabric covered metal buttons. Wash at 40 degrees. 8 pieces. Size: 9mm.",
+        "price": "5.25",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD400051.webp",
+        "image": "TD400051.webp",
+        "stock": 25,
+        "rating": 4,
+        "colour": "Blue"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 3,
+    "fields": {
+        "category": 10,
+        "sku": "2T100C\\0305",
+        "name": "Grey Gutermann Natural Cotton Thread 100m",
+        "description": "Fine but strong with a silk-like lustre. For those who prefer to sew with natural fibres. Suitable for hand and machine sewing. Applications: lock and step seams, overlock and safety seams, underwear, buttonholes, sewing on buttons, ornamental stitches and decorative seams. Soft and supple. Tear and abrasion resistant. Elastic and extendible. Light-resistant and colour-fast. Recommended needle and size: Universal, size 60 - 80. 100% mercerised cotton.",
+        "price": "2.99",
+        "image_url": null,
+        "image": "2T100C_0305-ALT.webp",
+        "stock": 50,
+        "rating": 4,
+        "colour": "Grey"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 4,
+    "fields": {
+        "category": 10,
+        "sku": "2T100C\\0588",
+        "name": "Yellow Gutermann Natural Cotton Thread 100m",
+        "description": "Fine but strong with a silk-like lustre. For those who prefer to sew with natural fibres. Suitable for hand and machine sewing. Applications: lock and step seams, overlock and safety seams, underwear, buttonholes, sewing on buttons, ornamental stitches and decorative seams. Soft and supple. Tear and abrasion resistant. Elastic and extendible. Light-resistant and colour-fast. Recommended needle and size: Universal, size 60 - 80. 100% mercerized cotton.",
+        "price": "2.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/2T100C_0588.webp",
+        "image": "2T100C_0588.webp",
+        "stock": 15,
+        "rating": 4,
+        "colour": "Yellow"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 5,
+    "fields": {
+        "category": 10,
+        "sku": "2T100C\\2074",
+        "name": "Red Gutermann Natural Cotton Thread 100m",
+        "description": "Fine but strong with a silk-like lustre. For those who prefer to sew with natural fibres. Suitable for hand and machine sewing. Applications: lock and step seams, overlock and safety seams, underwear, buttonholes, sewing on buttons, ornamental stitches and decorative seams. Soft and supple. Tear and abrasion resistant. Elastic and extendible. Light-resistant and colour-fast. Recommended needle and size: Universal, size 60 - 80. 100% mercerised cotton.",
+        "price": "2.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/2T100C_2074-ALT.webp",
+        "image": "2T100C_2074-ALT.webp",
+        "stock": 15,
+        "rating": 4,
+        "colour": "Red"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 6,
+    "fields": {
+        "category": 10,
+        "sku": "2T100C\\4434",
+        "name": "Purple Gutermann Natural Cotton Thread 100m",
+        "description": "Fine but strong with a silk-like lustre. For those who prefer to sew with natural fibres. Suitable for hand and machine sewing. Applications: lock and step seams, overlock and safety seams, underwear, buttonholes, sewing on buttons, ornamental stitches and decorative seams. Soft and supple. Tear and abrasion resistant. Elastic and extendible. Light-resistant and colour-fast. Recommended needle and size: Universal, size 60 - 80. 100% mercerised cotton.",
+        "price": "2.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/2T100C_4434-ALT.webp",
+        "image": "2T100C_4434-ALT.webp",
+        "stock": 13,
+        "rating": 4,
+        "colour": "Purple"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 7,
+    "fields": {
+        "category": 10,
+        "sku": "2T100C\\5110",
+        "name": "Pink Gutermann Natural Cotton Thread 100m",
+        "description": "Fine but strong with a silk-like lustre. For those who prefer to sew with natural fibres. Suitable for hand and machine sewing. Applications: lock and step seams, overlock and safety seams, underwear, buttonholes, sewing on buttons, ornamental stitches and decorative seams. Soft and supple. Tear and abrasion resistant. Elastic and extendible. Light-resistant and colour-fast. Recommended needle and size: Universal, size 60 - 80. 100% mercerised cotton.",
+        "price": "2.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/2T100C_5110-ALT.webp",
+        "image": "2T100C_5110-ALT.webp",
+        "stock": 14,
+        "rating": 4,
+        "colour": "Pink"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 8,
+    "fields": {
+        "category": 10,
+        "sku": "2T100C\\5534",
+        "name": "Blue Gutermann Natural Cotton Thread 100m",
+        "description": "Fine but strong with a silk-like lustre. For those who prefer to sew with natural fibres. Suitable for hand and machine sewing. Applications: lock and step seams, overlock and safety seams, underwear, buttonholes, sewing on buttons, ornamental stitches and decorative seams. Soft and supple. Tear and abrasion resistant. Elastic and extendible. Light-resistant and colour-fast. Recommended needle and size: Universal, size 60 - 80. 100% mercerised cotton.",
+        "price": "2.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD400051.webp",
+        "image": "2T100C_5534-ALT.webp",
+        "stock": 119,
+        "rating": 4,
+        "colour": "Blue"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 9,
+    "fields": {
+        "category": 10,
+        "sku": "2T100C\\7850",
+        "name": "Green Gutermann Natural Cotton Thread 100m",
+        "description": "Fine but strong with a silk-like lustre. For those who prefer to sew with natural fibres. Suitable for hand and machine sewing. Applications: lock and step seams, overlock and safety seams, underwear, buttonholes, sewing on buttons, ornamental stitches and decorative seams. Soft and supple. Tear and abrasion resistant. Elastic and extendible. Light-resistant and colour-fast. Recommended needle and size: Universal, size 60 - 80. 100% mercerised cotton.",
+        "price": "2.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/2T100C_7850-ALT.webp",
+        "image": "2T100C_7850-ALT.webp",
+        "stock": 131,
+        "rating": 4,
+        "colour": "Green"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 10,
+    "fields": {
+        "category": 10,
+        "sku": "2T100C\\BLK",
+        "name": "Black Gutermann Natural Cotton Thread 100m",
+        "description": "Fine but strong with a silk-like lustre. For those who prefer to sew with natural fibres. Suitable for hand and machine sewing. Applications: lock and step seams, overlock and safety seams, underwear, buttonholes, sewing on buttons, ornamental stitches and decorative seams. Soft and supple. Tear and abrasion resistant. Elastic and extendible. Light-resistant and colour-fast. Recommended needle and size: Universal, size 60 - 80. 100% mercerised cotton.",
+        "price": "2.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/2T100C_BLK-ALT.webp",
+        "image": "2T100C_BLK-ALT.webp",
+        "stock": 147,
+        "rating": 4,
+        "colour": "Black"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 11,
+    "fields": {
+        "category": 10,
+        "sku": "2T100C\\WHT",
+        "name": "White Gutermann Natural Cotton Thread 100m",
+        "description": "Fine but strong with a silk-like lustre. For those who prefer to sew with natural fibres. Suitable for hand and machine sewing. Applications: lock and step seams, overlock and safety seams, underwear, buttonholes, sewing on buttons, ornamental stitches and decorative seams. Soft and supple. Tear and abrasion resistant. Elastic and extendible. Light-resistant and colour-fast. Recommended needle and size: Universal, size 60 - 80. 100% mercerised cotton.",
+        "price": "2.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/2T100C_WHT-ALT.webp",
+        "image": "2T100C_WHT-ALT.webp",
+        "stock": 99,
+        "rating": 4,
+        "colour": "White"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 12,
+    "fields": {
+        "category": 10,
+        "sku": "2T100C\\1576",
+        "name": "Orange Gutermann Natural Cotton Thread 100m",
+        "description": "Fine but strong with a silk-like lustre. For those who prefer to sew with natural fibres. Suitable for hand and machine sewing. Applications: lock and step seams, overlock and safety seams, underwear, buttonholes, sewing on buttons, ornamental stitches and decorative seams. Soft and supple. Tear and abrasion resistant. Elastic and extendible. Light-resistant and colour-fast. Recommended needle and size: Universal, size 60 - 80. 100% mercerised cotton.",
+        "price": "2.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/2T100C_1576-ALT.webp",
+        "image": "2T100C_1576-ALT.webp",
+        "stock": 15,
+        "rating": 4,
+        "colour": "Orange"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 13,
+    "fields": {
+        "category": 8,
+        "sku": "TD400052",
+        "name": "Tilda Friends 9mm Chambray Buttons - Neutral Colours - Pack of 10",
+        "description": "Assorted selection of 10 cotton fabric covered metal buttons. Wash at 40 degrees. 8 pieces. Size: 9mm.",
+        "price": "5.25",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD400052.webp",
+        "image": "TD400052.webp",
+        "stock": 15,
+        "rating": 3,
+        "colour": "Beige"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 14,
+    "fields": {
+        "category": 2,
+        "sku": "BS306710",
+        "name": "Sewing By Heart by Tone Finnanger",
+        "description": "Sewing By Heart is a heartfelt sewing book from the creator of Tilda, Tone Finnanger.\r\n\r\nIn this glorious celebration of her love of fabric, you'll find over 20 sewing, patchwork, appliqué and quilting projects that will bring colour and beauty to your home. \r\n\r\nProjects include stunning quilts, pretty pillows, sophisticated soft toys, and beautiful accessories such as pincushions, pumpkins, flowers, stockings and more - all designed with characteristic Tilda charm. \r\n\r\nFeaturing gorgeous photography, in-depth instructions and full-size templates, you'll soon be sewing by heart.",
+        "price": "12.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/BS306710.webp",
+        "image": "BS306710.webp",
+        "stock": 5,
+        "rating": 2,
+        "colour": null
+    }
+},
+{
+    "model": "products.product",
+    "pk": 15,
+    "fields": {
+        "category": 2,
+        "sku": "BS630331",
+        "name": "Tilda's Fairy Tale Wonderland Tone Finnanger",
+        "description": "A beautiful collection of seasonal quirky projects. Each chapter is themed on a classic children's story such as Pinocchio, Bambi, The Nutcracker and The Princess and The Pea. Projects include various doll designs, as well as gifts and decorations.",
+        "price": "10.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/BS630331.webp",
+        "image": "BS630331.webp",
+        "stock": 12,
+        "rating": 5,
+        "colour": null
+    }
+},
+{
+    "model": "products.product",
+    "pk": 16,
+    "fields": {
+        "category": 2,
+        "sku": "BS533666",
+        "name": "Crafting Tilda's Friends by Tone Finnanger",
+        "description": "A whimsical collection of 30 sewing and paper craft projects including garden angels, wreaths/garlands, pincushions; apply motifs to cushions, table mats, coasters, blankets and bags - as well as stencilling to create fun signs and picture frames.",
+        "price": "12.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/BS533666.webp",
+        "image": "BS533666.webp",
+        "stock": 14,
+        "rating": 4,
+        "colour": null
+    }
+},
+{
+    "model": "products.product",
+    "pk": 17,
+    "fields": {
+        "category": 16,
+        "sku": "9479",
+        "name": "Madeira Embroidery Stork Style Scissors Gold Plated 9cm",
+        "description": "Perfect for all types of needlework. Madeira Quality Embroidery Scissors in the attractive stork-design. Comfortable, easy to handle and perfect for all types of needlework. Highest precision cut to the very point of the blade. Gold plated, nickel-free coating is kind to skin.",
+        "price": "11.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/9479.webp",
+        "image": "9479.webp",
+        "stock": 34,
+        "rating": 5,
+        "colour": "Gold"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 18,
+    "fields": {
+        "category": 16,
+        "sku": "9475N",
+        "name": "Madeira Thread Snips",
+        "description": "Madeira Quality Thread Snips with comfort handle.",
+        "price": "4.40",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/9475N.webp",
+        "image": "9475N.webp",
+        "stock": 49,
+        "rating": 4,
+        "colour": "White"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 19,
+    "fields": {
+        "category": 16,
+        "sku": "9493",
+        "name": "Madeira Applique Scissors 15cm",
+        "description": "Precision scissors for applique, trimming and quilt work. The double curved handle and shaped ?bill? prevents fabric or applique damage whilst allowing a close, controlled cut. 6in/15.24cm",
+        "price": "22.00",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/9493-PK.webp",
+        "image": "9493-PK.webp",
+        "stock": 15,
+        "rating": 5,
+        "colour": "Silver"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 20,
+    "fields": {
+        "category": 16,
+        "sku": "9478",
+        "name": "Madeira Double Curved Embroidery Scissors Gold Plated 9cm",
+        "description": "Raised finger loops keep hands away from fabric and allow easy cutting where it is difficult to reach, even under the presser foot. Double curved scissors reach easily over any hand or machine hoop and cut threads closely and precisely without harming the fabric. Lightweight and easy to pick up. 9cm/3.5in.",
+        "price": "9.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/9478.webp",
+        "image": "9478.webp",
+        "stock": 30,
+        "rating": 3,
+        "colour": "Gold"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 21,
+    "fields": {
+        "category": 15,
+        "sku": "RTY-3\\G",
+        "name": "Olfa Rotary Cutter 60mm",
+        "description": "There's no reason to struggle cutting through multiple layers; it's hard on the material and hard on you. This Olfa rotary cutter is ideal for medium to heavy-duty projects. It can accommodate up to eight layers of material.",
+        "price": "16.50",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/RTY-3_G.webp",
+        "image": "RTY-3_G.webp",
+        "stock": 50,
+        "rating": 4,
+        "colour": "Yellow"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 22,
+    "fields": {
+        "category": 15,
+        "sku": "RTY-2\\NS",
+        "name": "Olfa Quick Change Rotary Cutter 45mm",
+        "description": "The 45mm Quick-Change Rotary Cutter a rolling razor blade used to cut materials into shapes, strips and pieces for craft projects. The Quick-Change Rotary Cutter has an easy blade change with just a single click. No more assembly with a washer and a nut. Just slide the locking mechanism and the blade immediately releases. The innovative spilt blade cover allows for switching hands effortlessly without reassembly and offers extra safety protection while cutting. Each side slides back and forth independently so the user can easily switch hands to cut. The blade is made of high quality tungsten carbide tool steel for unparalleled sharpness and superior edge retention. Designed for both right-and left-handed use.",
+        "price": "10.95",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/RTY-2_NS.webp",
+        "image": "RTY-2_NS.webp",
+        "stock": 40,
+        "rating": 4,
+        "colour": "Yellow"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 23,
+    "fields": {
+        "category": 15,
+        "sku": "RTY-1\\C",
+        "name": "Olfa Rotary Cutter 28mm",
+        "description": "Perfect for detailed and intricate cutting. Use with quilting and patchwork templates.",
+        "price": "10.95",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/RTY-1_C.webp",
+        "image": "RTY-1_C.webp",
+        "stock": 35,
+        "rating": 3,
+        "colour": "Yellow"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 24,
+    "fields": {
+        "category": 4,
+        "sku": "CHN-1",
+        "name": "Olfa Rotary Cutter Chenille-Textile",
+        "description": "For making your own chenille at home, the cutter has four \"feet\" serving as channel guides that create chenille in several styles of widths, from narrow to wide, for a variety of creations. Its premium-quality blade provides superior sharpness and durability.",
+        "price": "17.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/CHN-1.webp",
+        "image": "CHN-1.webp",
+        "stock": 34,
+        "rating": 2,
+        "colour": "Yellow"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 25,
+    "fields": {
+        "category": 15,
+        "sku": "CL7503",
+        "name": "Clover Rotary Cutter Soft Cushion 18mm",
+        "description": "Clover's Soft Touch Cushion Handle rotary cutter cuts fabric beautifully with just the right amount of blade exposed, whether held upright or at an angle. Can be used by both left and right handed people.",
+        "price": "9.59",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/CL7503.webp",
+        "image": "CL7503.webp",
+        "stock": 59,
+        "rating": 5,
+        "colour": "Green"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 26,
+    "fields": {
+        "category": 15,
+        "sku": "CL7501",
+        "name": "Clover Rotary Cutter Soft Cushion 28mm",
+        "description": "Clover's Soft Touch Cushion Handle rotary cutter cuts fabric beautifully with just the right amount of blade exposed, whether held upright or at an angle. Can be used by both left and right handed people.",
+        "price": "12.95",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/CL7501.webp",
+        "image": "CL7501.webp",
+        "stock": 43,
+        "rating": 4,
+        "colour": "Green"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 27,
+    "fields": {
+        "category": 15,
+        "sku": "CL7500",
+        "name": "Clover Rotary Cutter Soft Cushion 45mm",
+        "description": "Clover's Soft Touch Cushion Handle rotary cutter cuts fabric beautifully with just the right amount of blade exposed, whether held upright or at an angle. Can be used by both left and right handed people.",
+        "price": "13.95",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/CL7500.webp",
+        "image": "CL7500.webp",
+        "stock": 40,
+        "rating": 5,
+        "colour": "Green"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 28,
+    "fields": {
+        "category": 15,
+        "sku": "CL7502",
+        "name": "Clover Rotary Cutter Soft Cushion 60mm",
+        "description": "Clover's Soft Touch Cushion Handle rotary cutter cuts fabric beautifully with just the right amount of blade exposed, whether held upright or at an angle. Can be used by both left and right handed people.",
+        "price": "15.95",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/CL7502.webp",
+        "image": "CL7502.webp",
+        "stock": 60,
+        "rating": 4,
+        "colour": "Green"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 29,
+    "fields": {
+        "category": 14,
+        "sku": "RM-IC-S-RC\\PNK",
+        "name": "Pink Rotary Cutting Mat 60x45cm",
+        "description": "Olfa self-healing rotary mat in pink. It not only protects your cutting surfaces, it protects the edges of rotary blades. The mat's grid lines are designed for easy measuring and accurate cutting of straight lines and precise angles. Double sided, inch and centimetres.",
+        "price": "14.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/RM-IC-S-RC_PNK.webp",
+        "image": "RM-IC-S-RC_PNK.webp",
+        "stock": 37,
+        "rating": 4,
+        "colour": "Pink"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 30,
+    "fields": {
+        "category": 14,
+        "sku": "4092.HG",
+        "name": "Hemline Gold Cutting Mat Medium 45 x 30cm",
+        "description": "Double-sided cutting mat with metric measurements on one side and imperial measurements on the other. 3mm thick with self-healing properties. Matte non-slip surface. Easy-to-read measurements in gold print with 30, 45, 60 and 90 degree angle lines. Wipe clean only. Dimensions: 45 x 30cm.",
+        "price": "15.99",
+        "image_url": null,
+        "image": "4092_HG.webp",
+        "stock": 49,
+        "rating": 3,
+        "colour": "Black"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 31,
+    "fields": {
+        "category": 14,
+        "sku": "JERT1",
+        "name": "Cutting Mat: Rotating: 12 x 12inch",
+        "description": "No need to rotate the project - rotate the mat! This self-healing mat rotates so that you don't have to. It has a non-slip stationary bottom layer and an interlocking cutting mat that rotates 360 degrees. Use the mat to make squares, triangles, diamonds, circles or any shape which requires turning. The mat is marked with angles and imperial measurements. Also ideal for card making, painting and many other crafts.",
+        "price": "20.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/JERT1.webp",
+        "image": "JERT1.webp",
+        "stock": 77,
+        "rating": 5,
+        "colour": "Green"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 32,
+    "fields": {
+        "category": 14,
+        "sku": "RM-IC-C-RC\\AQA",
+        "name": "Olfa Aqua Cutting Mat 42.5 x 30cm",
+        "description": "Whether you're new to crafting or a pro, you'll appreciate this self-healing rotary mat. It not only protects your cutting surfaces, it protects the edges of rotary blades. The mat's grid lines are designed for easy measuring and accurate cutting of straight lines and precise angles. Double-sided, inch and centimetres.",
+        "price": "22.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/RM-IC-C-RC_AQA.webp",
+        "image": "RM-IC-C-RC_AQA.webp",
+        "stock": 55,
+        "rating": 3,
+        "colour": "Blue"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 33,
+    "fields": {
+        "category": 13,
+        "sku": "H236.HB",
+        "name": "Hemline Needle Threader Hummingbird",
+        "description": "For hand needles with blade to cut thread.",
+        "price": "4.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/H236_HB.webp",
+        "image": "H236_HB.webp",
+        "stock": 77,
+        "rating": null,
+        "colour": null
+    }
+},
+{
+    "model": "products.product",
+    "pk": 34,
+    "fields": {
+        "category": 13,
+        "sku": "CL238",
+        "name": "Clover Hand Sewing Tapestry Needles Gold Eye",
+        "description": "6 needle pack. Superior sewing needles go through fabric smoothly without straining or stress. Unique, pure gold plate elliptical eye is helpful for threading. Nickel plated tip for smooth sewing. Durable and bend resistant.",
+        "price": "1.90",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/CL238_24.webp",
+        "image": "CL238_24.webp",
+        "stock": 97,
+        "rating": 5,
+        "colour": "Gold"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 35,
+    "fields": {
+        "category": 13,
+        "sku": "CL2007",
+        "name": "Clover Hand Sewing Needles Sashico",
+        "description": "8 needles / pack. 4 different sizes. Superior sewing needles go through fabric smoothly without straining or stress. Unique, pure gold plate elliptical eye is helpful for threading. Nickel plated tip for smooth sewing. Durable and bend resistant.",
+        "price": "2.50",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/CL2007.webp",
+        "image": "CL2007.webp",
+        "stock": 77,
+        "rating": 4,
+        "colour": "Gold"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 36,
+    "fields": {
+        "category": 13,
+        "sku": "CL2012",
+        "name": "Clover Hand Sewing Needles Huck Embroidery",
+        "description": "3 needles per pack. Superior sewing needles go through fabric smoothly without straining or stress. Unique, pure gold plate elliptical eye is helpful for threading. Nickel plated tip for smooth sewing. Durable and bend resistant. The tip is rounded and curved so cloth can be easily scooped.",
+        "price": "2.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/CL2012.webp",
+        "image": "CL2012.webp",
+        "stock": 55,
+        "rating": 3,
+        "colour": "Gold"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 37,
+    "fields": {
+        "category": 12,
+        "sku": "H296",
+        "name": "Hemline Pen Fabric Marker Vanishing",
+        "description": "Clearly marks lines and designs for embroidery, quilting, and sewing. No need to remove marks - they will disappear in 48 hours. Excellent for use with fabrics not suitable for washing. If necessary, marks can be removed with a damp cloth, or by rinsing in cold water.",
+        "price": "2.50",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/H296.webp",
+        "image": "H296.webp",
+        "stock": 99,
+        "rating": 2,
+        "colour": null
+    }
+},
+{
+    "model": "products.product",
+    "pk": 38,
+    "fields": {
+        "category": 12,
+        "sku": "CL517",
+        "name": "Clover Fabric Marker Fine Pen White",
+        "description": "1 piece / pack. White marker for easy to see marking on dark coloured fabrics. Marks disappear upon ironing or spraying with water. As the ink dries on the fabric, white markings will become more visible.",
+        "price": "3.50",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/CL517.webp",
+        "image": "CL517.webp",
+        "stock": 89,
+        "rating": 5,
+        "colour": "White"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 39,
+    "fields": {
+        "category": 3,
+        "sku": "CL3143",
+        "name": "Clover Bamboo Marking Pins",
+        "description": "Use these bamboo marking pins to hold sections together when joining seams. The natural texture of the bamboo keeps the pin from sliding out. 10 long pins for thick knitted fabrics. Tip is shaped to prevent the needle from piercing through the yarn.",
+        "price": "6.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/CL3143.webp",
+        "image": "CL3143.webp",
+        "stock": 45,
+        "rating": 4,
+        "colour": null
+    }
+},
+{
+    "model": "products.product",
+    "pk": 40,
+    "fields": {
+        "category": 11,
+        "sku": "CL2509",
+        "name": "Clover Fine Quilting Pins",
+        "description": "100 pins / pack. 0.50 x 48mm. Pins smoothly pass through fabric, as the pin tips are thin and sharp. Long size pins are perfectly suited for quilting.",
+        "price": "7.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/CL2509.webp",
+        "image": "CL2509.webp",
+        "stock": 55,
+        "rating": 4,
+        "colour": null
+    }
+},
+{
+    "model": "products.product",
+    "pk": 41,
+    "fields": {
+        "category": 11,
+        "sku": "CL2501",
+        "name": "Clover Silk Pins",
+        "description": "Designed for use with light weight fabrics. 100 pins / pack. 0.5mm diameter, 35mm long.",
+        "price": "9.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/CL2501.webp",
+        "image": "CL2501.webp",
+        "stock": 67,
+        "rating": 5,
+        "colour": null
+    }
+},
+{
+    "model": "products.product",
+    "pk": 42,
+    "fields": {
+        "category": 17,
+        "sku": "TD300121",
+        "name": "Windy Days Fabric Roll 40 Pieces",
+        "description": "Pre-cut into handy 2.5 inch (6.35 cm) 40 strips, 2 of each design in the Windy Days collection. Wash at 60 degrees Centigrade. Maximum shrinkage of 3%. Can be tumble dried. Piece size: 6.35 x 110cm. Premium quality, high thread count fabric with OEKO-TEX®, Class 1 certification.",
+        "price": "58.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD300121.webp",
+        "image": "TD300121.webp",
+        "stock": 23,
+        "rating": 4,
+        "colour": null
+    }
+},
+{
+    "model": "products.product",
+    "pk": 43,
+    "fields": {
+        "category": 17,
+        "sku": "TD300112",
+        "name": "Cotton Beach Fabric Roll 40 Pieces",
+        "description": "Pre-cut into handy 2.5 inch (6.35 cm) 40 strips, 2 of each design in the Cotton Beach collection. Wash at 60 degrees Centigrade. Maximum shrinkage of 3%. Can be tumble dried. Piece size: 6.35 x 110cm. Premium quality, high thread count fabric with OEKO-TEX®, Class 1 certification",
+        "price": "58.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD300112.webp",
+        "image": "TD300112.webp",
+        "stock": 9,
+        "rating": 5,
+        "colour": null
+    }
+},
+{
+    "model": "products.product",
+    "pk": 44,
+    "fields": {
+        "category": 3,
+        "sku": "TD300147",
+        "name": "Hometown Fabric Roll 40 Pieces",
+        "description": "Pre-cut into handy 2.5 inch (6.35 cm) 40 strips, 2 of each design in the Hometown collection. 100% cotton. Piece size: (l/w) 6.35 x 110cm. Premium quality, high thread count fabric with OEKO-TEX® Standard 100 Class 1. Wash at 60 degrees Centigrade. Maximum shrinkage of 3%. Can be tumble dried.",
+        "price": "25.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD300147.webp",
+        "image": "TD300147.webp",
+        "stock": 7,
+        "rating": 5,
+        "colour": null
+    }
+},
+{
+    "model": "products.product",
+    "pk": 45,
+    "fields": {
+        "category": 17,
+        "sku": "TD300109",
+        "name": "Cotton Beach Fat Quarters Assorted Bundle of 20",
+        "description": "10m fabric bolt. 100% cotton. Premium quality, high thread count fabric with OEKO-TEX®, Class 1 certification. Wash at 60 degrees Centigrade. Maximum shrinkage of 3%. Can be tumble dried. Width: 110cm.",
+        "price": "29.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD300109.webp",
+        "image": "TD300109.webp",
+        "stock": 33,
+        "rating": 5,
+        "colour": null
+    }
+},
+{
+    "model": "products.product",
+    "pk": 46,
+    "fields": {
+        "category": 6,
+        "sku": "Y261\\503",
+        "name": "YKK Lemon Nylon Open End Zip 61cm",
+        "description": "Medium weight nylon coil zip, ideal for knitwear, baby wear, jackets, cardigans and sportswear that needs to open at the bottom. Size 61cm/24.01in.",
+        "price": "3.75",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/Y261_503.webp",
+        "image": "Y261_503.webp",
+        "stock": 34,
+        "rating": 3,
+        "colour": "Yellow"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 47,
+    "fields": {
+        "category": 6,
+        "sku": "Y261\\501",
+        "name": "YKK White Nylon Open End Zip 61cm",
+        "description": "Medium weight nylon coil zip, ideal for knitwear, baby wear, jackets, cardigans and sportswear that needs to open at the bottom. Size 61cm/24.01in.",
+        "price": "3.75",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/Y261_501.webp",
+        "image": "Y261_501.webp",
+        "stock": 45,
+        "rating": 4,
+        "colour": "White"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 48,
+    "fields": {
+        "category": 6,
+        "sku": "Y261\\580",
+        "name": "YKK Black Nylon Open End Zip 61cm",
+        "description": "Medium weight nylon coil zip, ideal for knitwear, baby wear, jackets, cardigans and sportswear that needs to open at the bottom. Size 61cm/24.01in.",
+        "price": "3.75",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/Y261_580.webp",
+        "image": "Y261_580.webp",
+        "stock": 78,
+        "rating": 4,
+        "colour": "Black"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 49,
+    "fields": {
+        "category": 6,
+        "sku": "Y261\\162",
+        "name": "YKK Dark Dusky Blue Nylon Open End Zip 61cm",
+        "description": "Medium weight nylon coil zip, ideal for knitwear, baby wear, jackets, cardigans and sportswear that needs to open at the bottom. Size 61cm/24.01in.",
+        "price": "3.75",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/Y261_162.webp",
+        "image": "Y261_162.webp",
+        "stock": 49,
+        "rating": 4,
+        "colour": "Blue"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 50,
+    "fields": {
+        "category": 6,
+        "sku": "Y261\\578",
+        "name": "YKK Dark Grey Nylon Open End Zip 61cm",
+        "description": "Medium weight nylon coil zip, ideal for knitwear, baby wear, jackets, cardigans and sportswear that needs to open at the bottom. Size 61cm/24.01in.",
+        "price": "3.75",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/Y261_578.webp",
+        "image": "Y261_578.webp",
+        "stock": 45,
+        "rating": 4,
+        "colour": "Grey"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 51,
+    "fields": {
+        "category": 6,
+        "sku": "Y261/516",
+        "name": "YKK Shocking Pink Nylon Open End Zip 61cm",
+        "description": "Medium weight nylon coil zip, ideal for knitwear, baby wear, jackets, cardigans and sportswear that needs to open at the bottom. Size 61cm/24.01in.",
+        "price": "3.75",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/Y261_516.webp",
+        "image": "Y261_516.webp",
+        "stock": 34,
+        "rating": 3,
+        "colour": "Pink"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 52,
+    "fields": {
+        "category": 6,
+        "sku": "Y261/244",
+        "name": "YKK Light Orchid Nylon Open End Zip 61cm",
+        "description": "Medium weight nylon coil zip, ideal for knitwear, baby wear, jackets, cardigans and sportswear that needs to open at the bottom. Size 61cm/24.01in.",
+        "price": "3.75",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/Y261_244.webp",
+        "image": "Y261_244.webp",
+        "stock": 46,
+        "rating": 4,
+        "colour": "Purple"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 53,
+    "fields": {
+        "category": 6,
+        "sku": "Y261/848",
+        "name": "YKK Gold Nylon Open End Zip 61cm",
+        "description": "Medium weight nylon coil zip, ideal for knitwear, baby wear, jackets, cardigans and sportswear that needs to open at the bottom. Size 61cm/24.01in.",
+        "price": "3.75",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/Y261_848.webp",
+        "image": "Y261_848.webp",
+        "stock": 34,
+        "rating": 2,
+        "colour": "Gold"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 54,
+    "fields": {
+        "category": 6,
+        "sku": "Y261/152",
+        "name": "YKK Emerald Nylon Open End Zip 61cm",
+        "description": "Medium weight nylon coil zip, ideal for knitwear, baby wear, jackets, cardigans and sportswear that needs to open at the bottom. Size 61cm/24.01in.",
+        "price": "3.75",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/Y261_152.webp",
+        "image": "Y261_152.webp",
+        "stock": 45,
+        "rating": 4,
+        "colour": "Green"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 55,
+    "fields": {
+        "category": 6,
+        "sku": "Y261/905",
+        "name": "YKK Turquoise Nylon Open End Zip 61cm",
+        "description": "Medium weight nylon coil zip, ideal for knitwear, baby wear, jackets, cardigans and sportswear that needs to open at the bottom. Size 61cm/24.01in.",
+        "price": "3.75",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/Y261_905.webp",
+        "image": "Y261_905.webp",
+        "stock": 23,
+        "rating": 3,
+        "colour": "Blue"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 56,
+    "fields": {
+        "category": 6,
+        "sku": "Y261/570",
+        "name": "YKK Brown Nylon Open End Zip 61cm",
+        "description": "Medium weight nylon coil zip, ideal for knitwear, baby wear, jackets, cardigans and sportswear that needs to open at the bottom. Size 61cm/24.01in.",
+        "price": "3.75",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/Y261_570.webp",
+        "image": "Y261_570.webp",
+        "stock": 45,
+        "rating": 3,
+        "colour": "Brown"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 57,
+    "fields": {
+        "category": 8,
+        "sku": "B801-00174A",
+        "name": "Milward 12mm Round Blue Buttons Pack of 5",
+        "description": "Milward round blue buttons pack of 5. 12mm 4 hole.",
+        "price": "2.50",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/B801-00174A-PK.webp",
+        "image": "B801-00174A-PK.webp",
+        "stock": 34,
+        "rating": 2,
+        "colour": "Blue"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 58,
+    "fields": {
+        "category": 8,
+        "sku": "B801-00933A",
+        "name": "Milward 12mm Round Red Buttons Pack of 5",
+        "description": "Milward round red buttons pack of 5. 12mm 4 hole.",
+        "price": "2.50",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/B801-00933A-PK.webp",
+        "image": "B801-00933A-PK.webp",
+        "stock": 23,
+        "rating": 2,
+        "colour": "Red"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 59,
+    "fields": {
+        "category": 9,
+        "sku": "PCB25\\325",
+        "name": "Aqua Bias Binding Polycotton 2.5m x 25mm",
+        "description": "25mm bias binding. This is a great product to sew onto raw edges to stop any fraying on the inside or hem of a garment.",
+        "price": "1.50",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/PCB25_325.webp",
+        "image": "PCB25_325.webp",
+        "stock": 44,
+        "rating": 5,
+        "colour": "Blue"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 60,
+    "fields": {
+        "category": 9,
+        "sku": "PCB25\\881",
+        "name": "Chocolate Bias Binding Polycotton 2.5m x 25mm",
+        "description": "25mm bias binding. This is a great product to sew onto raw edges to stop any fraying on the inside or hem of a garment.",
+        "price": "1.50",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/PCB25_881.webp",
+        "image": "PCB25_881.webp",
+        "stock": 44,
+        "rating": 3,
+        "colour": "Brown"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 61,
+    "fields": {
+        "category": 9,
+        "sku": "PCB25\\694",
+        "name": "Orange Bias Binding Polycotton 2.5m x 25mm",
+        "description": "25mm bias binding. This is a great product to sew onto raw edges to stop any fraying on the inside or hem of a garment.",
+        "price": "1.50",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/PCB25_694.webp",
+        "image": "PCB25_694.webp",
+        "stock": 44,
+        "rating": 4,
+        "colour": "Orange"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 62,
+    "fields": {
+        "category": 9,
+        "sku": "PCB25\\718",
+        "name": "Pink Bias Binding Polycotton 2.5m x 25mm",
+        "description": "25mm bias binding. This is a great product to sew onto raw edges to stop any fraying on the inside or hem of a garment.",
+        "price": "1.50",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/PCB25_718.webp",
+        "image": "PCB25_718.webp",
+        "stock": 44,
+        "rating": 2,
+        "colour": "Pink"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 63,
+    "fields": {
+        "category": 9,
+        "sku": "PCB25\\210",
+        "name": "Navy Bias Binding Polycotton 2.5m x 25mm",
+        "description": "25mm bias binding. This is a great product to sew onto raw edges to stop any fraying on the inside or hem of a garment.",
+        "price": "1.50",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/PCB25_210.webp",
+        "image": "PCB25_210.webp",
+        "stock": 44,
+        "rating": 5,
+        "colour": "Navy"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 64,
+    "fields": {
+        "category": 9,
+        "sku": "PCB25\\491",
+        "name": "Emerald Bias Binding Polycotton 2.5m x 25mm",
+        "description": "25mm bias binding. This is a great product to sew onto raw edges to stop any fraying on the inside or hem of a garment.",
+        "price": "1.50",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/PCB25_491.webp",
+        "image": "PCB25_491.webp",
+        "stock": 43,
+        "rating": 5,
+        "colour": "Green"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 65,
+    "fields": {
+        "category": 9,
+        "sku": "PCB25\\630",
+        "name": "Lemon Bias Binding Polycotton 2.5m x 25mm",
+        "description": "25mm bias binding. This is a great product to sew onto raw edges to stop any fraying on the inside or hem of a garment.",
+        "price": "1.50",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/PCB25_630.webp",
+        "image": "PCB25_630.webp",
+        "stock": 40,
+        "rating": 1,
+        "colour": "Yellow"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 66,
+    "fields": {
+        "category": 9,
+        "sku": "PCB25\\BLK",
+        "name": "Black Bias Binding Polycotton 2.5m x 25mm",
+        "description": "25mm bias binding. This is a great product to sew onto raw edges to stop any fraying on the inside or hem of a garment.",
+        "price": "1.50",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/PCB25_BLK.webp",
+        "image": "PCB25_BLK.webp",
+        "stock": 44,
+        "rating": 5,
+        "colour": "Black"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 67,
+    "fields": {
+        "category": 9,
+        "sku": "PCB25\\742",
+        "name": "TEST Scarlet Bias Binding Polycotton 2.5m x 25mm",
+        "description": "25mm bias binding. This is a great product to sew onto raw edges to stop any fraying on the inside or hem of a garment. TEST TEST.",
+        "price": "1.50",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/PCB25_742.webp",
+        "image": "PCB25_742.webp",
+        "stock": 40,
+        "rating": 5,
+        "colour": "Red"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 68,
+    "fields": {
+        "category": 9,
+        "sku": "PCB25\\183",
+        "name": "purple Bias Binding Polycotton 2.5m x 25mm",
+        "description": "25mm bias binding. This is a great product to sew onto raw edges to stop any fraying on the inside or hem of a garment.",
+        "price": "1.50",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/PCB25_183.webp",
+        "image": "PCB25_183.webp",
+        "stock": 44,
+        "rating": 3,
+        "colour": "Purple"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 69,
+    "fields": {
+        "category": 9,
+        "sku": "PCB25\\629",
+        "name": "Canary Bias Binding Polycotton 2.5m x 25mm",
+        "description": "25mm bias binding. This is a great product to sew onto raw edges to stop any fraying on the inside or hem of a garment.",
+        "price": "1.50",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/PCB25_629.webp",
+        "image": "PCB25_629.webp",
+        "stock": 44,
+        "rating": 5,
+        "colour": "Yellow"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 70,
+    "fields": {
+        "category": 9,
+        "sku": "PCB25\\725",
+        "name": "Red Bias Binding Polycotton 2.5m x 25mm",
+        "description": "25mm bias binding. This is a great product to sew onto raw edges to stop any fraying on the inside or hem of a garment.",
+        "price": "1.50",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/PCB25_725.webp",
+        "image": "PCB25_725.webp",
+        "stock": 44,
+        "rating": 2,
+        "colour": "Red"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 71,
+    "fields": {
+        "category": 9,
+        "sku": "PCB25\\007",
+        "name": "Pale Grey Bias Binding Polycotton 2.5m x 25mm",
+        "description": "25mm bias binding. This is a great product to sew onto raw edges to stop any fraying on the inside or hem of a garment.",
+        "price": "1.50",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/PCB25_007.webp",
+        "image": "PCB25_007.webp",
+        "stock": 44,
+        "rating": 4,
+        "colour": "Grey"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 72,
+    "fields": {
+        "category": 9,
+        "sku": "PCB25\\235",
+        "name": "Wedgewood Blue Bias Binding Polycotton 2.5m x 25mm",
+        "description": "25mm bias binding. This is a great product to sew onto raw edges to stop any fraying on the inside or hem of a garment.",
+        "price": "1.50",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/PCB25_235.webp",
+        "image": "PCB25_235.webp",
+        "stock": 44,
+        "rating": 3,
+        "colour": "Blue"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 73,
+    "fields": {
+        "category": 18,
+        "sku": "TD120001",
+        "name": "Tilda Solids Dove White 100% Cotton fabric",
+        "description": "Tilda Dove White 100% cotton. Wash at 40 degrees Centigrade. Shrinkage 6-7%. Width: 110cm. Priced per metre",
+        "price": "8.99",
+        "image_url": null,
+        "image": "TD120001.webp",
+        "stock": 50,
+        "rating": 5,
+        "colour": "Off-White"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 74,
+    "fields": {
+        "category": 18,
+        "sku": "TD120002",
+        "name": "Tilda Solids Warm Sand 100 Cotton Fabric",
+        "description": "Tilda solids warm sand 100% cotton. Wash at 40 degrees Centigrade. Shrinkage 6-7%. Width: 110cm. Priced per metre",
+        "price": "8.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD120002.webp",
+        "image": "TD120002.webp",
+        "stock": 50,
+        "rating": 3,
+        "colour": "Brown"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 75,
+    "fields": {
+        "category": 18,
+        "sku": "TD120003",
+        "name": "Tilda Solids Soft Teal 100% Cotton Fabric",
+        "description": "Tilda solids soft teal 100% cotton. Wash at 40 degrees Centigrade. Shrinkage 6-7%. Width: 110cm. Priced per metre",
+        "price": "8.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD120003.webp",
+        "image": "TD120003.webp",
+        "stock": 43,
+        "rating": 5,
+        "colour": "Teal"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 76,
+    "fields": {
+        "category": 18,
+        "sku": "TD120004",
+        "name": "Tilda Solids Toffee 100% Cotton Fabric",
+        "description": "Tilda solids toffee 100% cotton. Wash at 40 degrees Centigrade. Shrinkage 6-7%. Width: 110cm. Priced per metre",
+        "price": "8.99",
+        "image_url": null,
+        "image": "TD120004.webp",
+        "stock": 34,
+        "rating": 4,
+        "colour": "Brown"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 77,
+    "fields": {
+        "category": 18,
+        "sku": "TD120005",
+        "name": "Tilda Solids Brown 100% Cotton Fabric",
+        "description": "Tilda solid brown 100% cotton. Wash at 40 degrees Centigrade. Shrinkage 6-7%. Width: 110cm. Priced per metre",
+        "price": "8.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD120005.webp",
+        "image": "TD120005.webp",
+        "stock": 50,
+        "rating": 5,
+        "colour": "Brown"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 78,
+    "fields": {
+        "category": 18,
+        "sku": "TD120006",
+        "name": "Tilda Solids Burgundy 100% Cotton Fabric",
+        "description": "Tilda solids burgundy 100% cotton. Wash at 40 degrees Centigrade. Shrinkage 6-7%. Width: 110cm. Priced per metre",
+        "price": "8.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD120006.webp",
+        "image": "TD120006.webp",
+        "stock": 43,
+        "rating": 5,
+        "colour": "Burgundy"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 79,
+    "fields": {
+        "category": 18,
+        "sku": "TD120007",
+        "name": "Tilda Solids Cappuccino 100% Cotton Fabric",
+        "description": "Tilda solids cappuccino 100% cotton. Wash at 40 degrees Centigrade. Shrinkage 6-7%. Width: 110cm. Priced per metre",
+        "price": "8.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD120007.webp",
+        "image": "TD120007.webp",
+        "stock": 144,
+        "rating": 4,
+        "colour": "Brown"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 80,
+    "fields": {
+        "category": 18,
+        "sku": "TD120008",
+        "name": "Tilda Solids Blue Sage 100% Cotton Fabric",
+        "description": "Tilda solids blue sage 100% cotton. Wash at 40 degrees Centigrade. Shrinkage 6-7%. Width: 110cm. Priced per metre",
+        "price": "8.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD120008.webp",
+        "image": "TD120008.webp",
+        "stock": 44,
+        "rating": 5,
+        "colour": "Green"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 81,
+    "fields": {
+        "category": 18,
+        "sku": "TD120009",
+        "name": "Tilda Solids Dusty Rose 100% Cotton Fabric",
+        "description": "Tilda solids dusty rose 100% cotton. Wash at 40 degrees Centigrade. Shrinkage 6-7%. Width: 110cm. Priced per metre",
+        "price": "8.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD120009.webp",
+        "image": "TD120009.webp",
+        "stock": 44,
+        "rating": 4,
+        "colour": "Pink"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 82,
+    "fields": {
+        "category": 18,
+        "sku": "TD120010",
+        "name": "Tilda Solids Lavender Pink",
+        "description": "Tilda solids lavender pink 100% cotton. Wash at 40 degrees Centigrade. Shrinkage 6-7%. Width: 110cm. Priced per metre",
+        "price": "8.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD120010.webp",
+        "image": "TD120010.webp",
+        "stock": 44,
+        "rating": 4,
+        "colour": "Pink"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 83,
+    "fields": {
+        "category": 18,
+        "sku": "TD120011",
+        "name": "Tilda Solids Lilac Mist 100% Cotton Fabric",
+        "description": "Tilda solids lilac mist 100% cotton. Wash at 40 degrees Centigrade. Shrinkage 6-7%. Width: 110cm. Priced per metre",
+        "price": "8.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD120011.webp",
+        "image": "TD120011.webp",
+        "stock": 55,
+        "rating": 4,
+        "colour": "Purple"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 84,
+    "fields": {
+        "category": 18,
+        "sku": "TD120012",
+        "name": "Tilda Solids Thistle 100% Cotton Fabric",
+        "description": "Tilda solids thistle 100% cotton. Wash at 40 degrees Centigrade. Shrinkage 6-7%. Width: 110cm. Priced per metre",
+        "price": "8.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD120012.webp",
+        "image": "TD120012.webp",
+        "stock": 55,
+        "rating": 4,
+        "colour": "Purple"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 85,
+    "fields": {
+        "category": 18,
+        "sku": "TD120013",
+        "name": "Tilda Solids Lupine 100% Cotton Fabric",
+        "description": "Tilda solids lupine 100% cotton. Wash at 40 degrees Centigrade. Shrinkage 6-7%. Width: 110cm. Priced per metre",
+        "price": "8.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD120013.webp",
+        "image": "TD120013.webp",
+        "stock": 44,
+        "rating": 5,
+        "colour": "Purple"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 86,
+    "fields": {
+        "category": 18,
+        "sku": "TD120014",
+        "name": "Tilda Solids Red 100% Cotton Fabric",
+        "description": "Tilda solids red 100% cotton. Wash at 40 degrees Centigrade. Shrinkage 6-7%. Width: 110cm. Priced per metre",
+        "price": "8.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD120014.webp",
+        "image": "TD120014.webp",
+        "stock": 44,
+        "rating": 4,
+        "colour": "Red"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 87,
+    "fields": {
+        "category": 18,
+        "sku": "TD120015",
+        "name": "Tilda Solids Cerise 100% Cotton Fabric",
+        "description": "Tilda solids cerise 100% cotton. Wash at 40 degrees Centigrade. Shrinkage 6-7%. Width: 110cm. Priced per metre",
+        "price": "8.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD120015.webp",
+        "image": "TD120015.webp",
+        "stock": 44,
+        "rating": 4,
+        "colour": "Pink"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 88,
+    "fields": {
+        "category": 18,
+        "sku": "TD120016",
+        "name": "Tilda Solids Coral 100% Cotton Fabric",
+        "description": "Tilda solids coral 100% cotton. Wash at 40 degrees Centigrade. Shrinkage 6-7%. Width: 110cm. Priced per metre",
+        "price": "8.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD120016.webp",
+        "image": "TD120016.webp",
+        "stock": 44,
+        "rating": 4,
+        "colour": "Pink"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 89,
+    "fields": {
+        "category": 18,
+        "sku": "TD120017",
+        "name": "Tilda Solids Rust 100% Cotton Fabric",
+        "description": "Tilda solids rust 100% cotton. Wash at 40 degrees Centigrade. Shrinkage 6-7%. Width: 110cm. Priced per metre",
+        "price": "8.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD120017.webp",
+        "image": "TD120017.webp",
+        "stock": 44,
+        "rating": 4,
+        "colour": "Orange"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 90,
+    "fields": {
+        "category": 18,
+        "sku": "TD120018",
+        "name": "Tilda Solids Ginger 100% Cotton Fabric",
+        "description": "Tilda solids ginger 100% cotton. Wash at 40 degrees Centigrade. Shrinkage 6-7%. Width: 110cm. Priced per metre",
+        "price": "8.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD120018.webp",
+        "image": "TD120018.webp",
+        "stock": 44,
+        "rating": 4,
+        "colour": "Orange"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 91,
+    "fields": {
+        "category": 18,
+        "sku": "TD120019",
+        "name": "Tilda Solids Cantaloupe 100% Cotton Fabric",
+        "description": "Tilda solids canteloupe 100% cotton. Wash at 40 degrees Centigrade. Shrinkage 6-7%. Width: 110cm. Priced per metre",
+        "price": "8.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD120019.webp",
+        "image": "TD120019.webp",
+        "stock": 44,
+        "rating": 3,
+        "colour": "Orange"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 92,
+    "fields": {
+        "category": 18,
+        "sku": "TD120020",
+        "name": "Tilda Solids Green 100% Cotton Fabric",
+        "description": "Tilda solids green 100% cotton. Wash at 40 degrees Centigrade. Shrinkage 6-7%. Width: 110cm. Priced per metre",
+        "price": "8.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD120020.webp",
+        "image": "TD120020.webp",
+        "stock": 44,
+        "rating": 4,
+        "colour": "Green"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 93,
+    "fields": {
+        "category": 18,
+        "sku": "TD120021",
+        "name": "Tilda Solids Red 100% Cotton Fabric",
+        "description": "Tilda solids red 100% cotton. Wash at 40 degrees Centigrade. Shrinkage 6-7%. Width: 110cm. Priced per metre",
+        "price": "8.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD120021.webp",
+        "image": "TD120021.webp",
+        "stock": 43,
+        "rating": 5,
+        "colour": "Red"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 94,
+    "fields": {
+        "category": 18,
+        "sku": "TD120022",
+        "name": "Tilda Solids Pale Yellow 100% Cotton Fabric",
+        "description": "Tilda solids pale yellow 100% cotton. Wash at 40 degrees Centigrade. Shrinkage 6-7%. Width: 110cm. Priced per metre",
+        "price": "8.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD120022.webp",
+        "image": "TD120022.webp",
+        "stock": 44,
+        "rating": 5,
+        "colour": "Yellow"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 95,
+    "fields": {
+        "category": 18,
+        "sku": "TD120023",
+        "name": "Tilda Solids Sky Teal 100% Cotton Fabric",
+        "description": "Tilda solids sky teal 100% cotton. Wash at 40 degrees Centigrade. Shrinkage 6-7%. Width: 110cm. Priced per metre",
+        "price": "8.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD120023.webp",
+        "image": "TD120023.webp",
+        "stock": 55,
+        "rating": 4,
+        "colour": "Teal"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 96,
+    "fields": {
+        "category": 18,
+        "sku": "TD120024",
+        "name": "Tilda Solids Cornflower Blue 100% Cotton Fabric",
+        "description": "Tilda solids cornflower blue 100% cotton. Wash at 40 degrees Centigrade. Shrinkage 6-7%. Width: 110cm. Priced per metre",
+        "price": "8.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD120024.webp",
+        "image": "TD120024.webp",
+        "stock": 44,
+        "rating": 4,
+        "colour": "Blue"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 97,
+    "fields": {
+        "category": 18,
+        "sku": "TD120025",
+        "name": "Tilda Solids Fern Green 100% Cotton Fabric",
+        "description": "Tilda solids fern green 100% cotton. Wash at 40 degrees Centigrade. Shrinkage 6-7%. Width: 110cm. Priced per metre",
+        "price": "8.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD120025.webp",
+        "image": "TD120025.webp",
+        "stock": 44,
+        "rating": 4,
+        "colour": "Green"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 98,
+    "fields": {
+        "category": 18,
+        "sku": "TD120026",
+        "name": "Tilda Solids Pink 100% Cotton Fabric",
+        "description": "Tilda solids pink 100% cotton. Wash at 40 degrees Centigrade. Shrinkage 6-7%. Width: 110cm. Priced per metre",
+        "price": "8.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD120026.webp",
+        "image": "TD120026.webp",
+        "stock": 44,
+        "rating": 4,
+        "colour": "Pink"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 99,
+    "fields": {
+        "category": 18,
+        "sku": "TD120027",
+        "name": "Tilda Solids Salmon 100% Cotton Fabric",
+        "description": "Tilda solids salmon 100% cotton. Wash at 40 degrees Centigrade. Shrinkage 6-7%. Width: 110cm. Priced per metre",
+        "price": "8.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD120027.webp",
+        "image": "TD120027.webp",
+        "stock": 44,
+        "rating": 3,
+        "colour": "Pink"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 100,
+    "fields": {
+        "category": 18,
+        "sku": "TD120028",
+        "name": "Tilda Solids Lime Green 100% Cotton Fabric",
+        "description": "Tilda solids lime green 100% cotton. Wash at 40 degrees Centigrade. Shrinkage 6-7%. Width: 110cm. Priced per metre",
+        "price": "8.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD120028.webp",
+        "image": "TD120028.webp",
+        "stock": 44,
+        "rating": 3,
+        "colour": "Green"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 101,
+    "fields": {
+        "category": 18,
+        "sku": "TD120029",
+        "name": "Tilda Solids Night Blue 100% Cotton Fabric",
+        "description": "Tilda solids night blue 100% cotton. Wash at 40 degrees Centigrade. Shrinkage 6-7%. Width: 110cm. Priced per metre",
+        "price": "8.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD120029.webp",
+        "image": "TD120029.webp",
+        "stock": 44,
+        "rating": 5,
+        "colour": "Blue"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 102,
+    "fields": {
+        "category": 18,
+        "sku": "TD120030",
+        "name": "Tilda Solids Lilac 100% Cotton Fabric",
+        "description": "Tilda solids lilac 100% cotton. Wash at 40 degrees Centigrade. Shrinkage 6-7%. Width: 110cm. Priced per metre",
+        "price": "8.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD120030.webp",
+        "image": "TD120030.webp",
+        "stock": 44,
+        "rating": 5,
+        "colour": "Purple"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 103,
+    "fields": {
+        "category": 18,
+        "sku": "TD120031",
+        "name": "Tilda Solids Grey Cloud 100% Cotton Fabric",
+        "description": "Tilda solids grey cloud 100% cotton. Wash at 40 degrees Centigrade. Shrinkage 6-7%. Width: 110cm. Priced per metre",
+        "price": "8.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD120031.webp",
+        "image": "TD120031.webp",
+        "stock": 44,
+        "rating": 5,
+        "colour": "Grey"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 104,
+    "fields": {
+        "category": 18,
+        "sku": "TD120032",
+        "name": "Tilda Solids Rain Grey 100% Cotton Fabric",
+        "description": "Tilda solids rain grey 100% cotton. Wash at 40 degrees Centigrade. Shrinkage 6-7%. Width: 110cm. Priced per metre",
+        "price": "8.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD120032.webp",
+        "image": "TD120032.webp",
+        "stock": 44,
+        "rating": 4,
+        "colour": "Grey"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 105,
+    "fields": {
+        "category": 18,
+        "sku": "TD120033",
+        "name": "Tilda Solids Dark Granite 100% Cotton Fabric",
+        "description": "Tilda solids dark granite 100% cotton. Wash at 40 degrees Centigrade. Shrinkage 6-7%. Width: 110cm. Priced per metre",
+        "price": "8.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD120033.webp",
+        "image": "TD120033.webp",
+        "stock": 44,
+        "rating": 4,
+        "colour": "Grey"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 106,
+    "fields": {
+        "category": 18,
+        "sku": "TD120034",
+        "name": "Tilda Solids Rosewood 100% Cotton Fabric",
+        "description": "Tilda solids rosewood 100% cotton. Wash at 40 degrees Centigrade. Shrinkage 6-7%. Width: 110cm. Priced per metre",
+        "price": "8.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD120034.webp",
+        "image": "TD120034.webp",
+        "stock": 44,
+        "rating": 5,
+        "colour": "Pink"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 107,
+    "fields": {
+        "category": 18,
+        "sku": "TD120035",
+        "name": "Tilda Solids Terracotta 100% Cotton Fabric",
+        "description": "Tilda solids terracotta 100% cotton. Wash at 40 degrees Centigrade. Shrinkage 6-7%. Width: 110cm. Priced per metre",
+        "price": "8.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD120035.webp",
+        "image": "TD120035.webp",
+        "stock": 44,
+        "rating": 4,
+        "colour": "Pink"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 108,
+    "fields": {
+        "category": 18,
+        "sku": "TD120036",
+        "name": "Tilda Solids Aubergine 100% Cotton Fabric",
+        "description": "Tilda solids aubergine 100% cotton. Wash at 40 degrees Centigrade. Shrinkage 6-7%. Width: 110cm. Priced per metre",
+        "price": "8.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD120036.webp",
+        "image": "TD120036.webp",
+        "stock": 44,
+        "rating": 5,
+        "colour": "Purple"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 109,
+    "fields": {
+        "category": 18,
+        "sku": "TD120037",
+        "name": "Tilda Solids Petrol 100% Cotton Fabric",
+        "description": "Tilda solids petrol 100% cotton. Wash at 40 degrees Centigrade. Shrinkage 6-7%. Width: 110cm. Priced per metre",
+        "price": "8.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD120037.webp",
+        "image": "TD120037.webp",
+        "stock": 44,
+        "rating": 4,
+        "colour": "Blue"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 110,
+    "fields": {
+        "category": 18,
+        "sku": "TD120038",
+        "name": "Tilda Solids Moss 100% Cotton Fabric",
+        "description": "Tilda solids moss 100% cotton. Wash at 40 degrees Centigrade. Shrinkage 6-7%. Width: 110cm. Priced per metre",
+        "price": "8.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD120038.webp",
+        "image": "TD120038.webp",
+        "stock": 44,
+        "rating": 3,
+        "colour": "Green"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 111,
+    "fields": {
+        "category": 18,
+        "sku": "TD120039",
+        "name": "Tilda Solids Dijon 100% Cotton Fabric",
+        "description": "Tilda solids dijon 100% cotton. Wash at 40 degrees Centigrade. Shrinkage 6-7%. Width: 110cm. Priced per metre",
+        "price": "8.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD120039.webp",
+        "image": "TD120039.webp",
+        "stock": 44,
+        "rating": 2,
+        "colour": "Yellow"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 112,
+    "fields": {
+        "category": 18,
+        "sku": "TD120040",
+        "name": "Tilda Solids Mustard 100% Cotton Fabric",
+        "description": "Tilda solids mustard 100% cotton. Wash at 40 degrees Centigrade. Shrinkage 6-7%. Width: 110cm. Priced per metre",
+        "price": "8.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD120040.webp",
+        "image": "TD120040.webp",
+        "stock": 44,
+        "rating": 4,
+        "colour": "Yellow"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 113,
+    "fields": {
+        "category": 18,
+        "sku": "TD120041",
+        "name": "Tilda Solids Pine 100% Cotton Fabric",
+        "description": "Tilda solids pine 100% cotton. Wash at 40 degrees Centigrade. Shrinkage 6-7%. Width: 110cm. Priced per metre",
+        "price": "8.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD120041.webp",
+        "image": "TD120041.webp",
+        "stock": 44,
+        "rating": 5,
+        "colour": "Green"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 114,
+    "fields": {
+        "category": 18,
+        "sku": "TD120042",
+        "name": "Tilda Solids Aqua 100% Cotton Fabric",
+        "description": "Tilda solids aqua 100% cotton. Wash at 40 degrees Centigrade. Shrinkage 6-7%. Width: 110cm. Priced per metre",
+        "price": "8.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD120042.webp",
+        "image": "TD120042.webp",
+        "stock": 44,
+        "rating": 5,
+        "colour": "Blue"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 115,
+    "fields": {
+        "category": 18,
+        "sku": "TD120043",
+        "name": "Tilda Solids Teal 100% Cotton Fabric",
+        "description": "Tilda solids teal 100% cotton. Wash at 40 degrees Centigrade. Shrinkage 6-7%. Width: 110cm. Priced per metre",
+        "price": "8.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD120043.webp",
+        "image": "TD120043.webp",
+        "stock": 44,
+        "rating": 5,
+        "colour": "Blue"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 116,
+    "fields": {
+        "category": 18,
+        "sku": "TD120044",
+        "name": "Tilda Solids Blue 100% Cotton Fabric",
+        "description": "Tilda solids blue 100% cotton. Wash at 40 degrees Centigrade. Shrinkage 6-7%. Width: 110cm. Priced per metre",
+        "price": "8.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD120044.webp",
+        "image": "TD120044.webp",
+        "stock": 44,
+        "rating": 5,
+        "colour": "Blue"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 117,
+    "fields": {
+        "category": 18,
+        "sku": "TD120045",
+        "name": "Tilda Solids Peacock 100% Cotton Fabric",
+        "description": "Tilda solids peacock 100% cotton. Wash at 40 degrees Centigrade. Shrinkage 6-7%. Width: 110cm. Priced per metre",
+        "price": "8.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD120045.webp",
+        "image": "TD120045.webp",
+        "stock": 44,
+        "rating": 5,
+        "colour": "Blue"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 118,
+    "fields": {
+        "category": 18,
+        "sku": "TD120046",
+        "name": "Tilda Solids Grape 100% Cotton Fabric",
+        "description": "Tilda solids grape 100% cotton. Wash at 40 degrees Centigrade. Shrinkage 6-7%. Width: 110cm. Priced per metre",
+        "price": "8.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD120046.webp",
+        "image": "TD120046.webp",
+        "stock": 44,
+        "rating": 5,
+        "colour": "Purple"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 119,
+    "fields": {
+        "category": 18,
+        "sku": "TD120047",
+        "name": "Tilda Solids Charcoal 100% Cotton Fabric",
+        "description": "Tilda solids charcoal 100% cotton. Wash at 40 degrees Centigrade. Shrinkage 6-7%. Width: 110cm. Priced per metre",
+        "price": "8.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD120047.webp",
+        "image": "TD120047.webp",
+        "stock": 44,
+        "rating": 5,
+        "colour": "Black"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 120,
+    "fields": {
+        "category": 18,
+        "sku": "TD120048",
+        "name": "Tilda Solids Plum 100% Cotton Fabric",
+        "description": "Tilda solids plum 100% cotton. Wash at 40 degrees Centigrade. Shrinkage 6-7%. Width: 110cm. Priced per metre",
+        "price": "8.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD120048.webp",
+        "image": "TD120048.webp",
+        "stock": 44,
+        "rating": 5,
+        "colour": "Purple"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 121,
+    "fields": {
+        "category": 18,
+        "sku": "TD120049",
+        "name": "Tilda Solids White 100% Cotton Fabric",
+        "description": "Tilda solids white 100% cotton. Wash at 40 degrees Centigrade. Shrinkage 6-7%. Width: 110cm. Priced per metre",
+        "price": "8.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD120049.webp",
+        "image": "TD120049.webp",
+        "stock": 44,
+        "rating": 5,
+        "colour": "White"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 122,
+    "fields": {
+        "category": 18,
+        "sku": "TD120050",
+        "name": "Tilda Solids Black 100% Cotton Fabric",
+        "description": "Tilda solids black 100% cotton. Wash at 40 degrees Centigrade. Shrinkage 6-7%. Width: 110cm. Priced per metre",
+        "price": "8.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD120050.webp",
+        "image": "TD120050.webp",
+        "stock": 44,
+        "rating": 5,
+        "colour": "Black"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 123,
+    "fields": {
+        "category": 18,
+        "sku": "TD130001",
+        "name": "Tilda Teal Medium Dots 100% Cotton Fabric",
+        "description": "Tilda teal medium dots 100% cotton. Premium quality, high thread count fabric with OEKO-TEX®, Class 1 certification. Wash at 60 degrees Centigrade. Shrinkage 3-4%. Width: 110cm.",
+        "price": "9.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD130001.webp",
+        "image": "TD130001.webp",
+        "stock": 44,
+        "rating": 3,
+        "colour": "Blue"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 124,
+    "fields": {
+        "category": 18,
+        "sku": "TD130002",
+        "name": "Tilda Blue Medium Dots 100% Cotton Fabric",
+        "description": "Tilda blue medium dots 100% cotton. Premium quality, high thread count fabric with OEKO-TEX®, Class 1 certification. Wash at 60 degrees Centigrade. Shrinkage 3-4%. Width: 110cm.",
+        "price": "9.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD130002.webp",
+        "image": "TD130002.webp",
+        "stock": 44,
+        "rating": 3,
+        "colour": "Blue"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 125,
+    "fields": {
+        "category": 18,
+        "sku": "TD130003",
+        "name": "Tilda Pink Medium Dots 100% Cotton Fabric",
+        "description": "Tilda pink medium dots 100% cotton. Premium quality, high thread count fabric with OEKO-TEX®, Class 1 certification. Wash at 60 degrees Centigrade. Shrinkage 3-4%. Width: 110cm.",
+        "price": "9.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD130003.webp",
+        "image": "TD130003.webp",
+        "stock": 44,
+        "rating": 3,
+        "colour": "Pink"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 126,
+    "fields": {
+        "category": 18,
+        "sku": "TD130007",
+        "name": "Tilda Ginger Medium Dots 100% Cotton Fabric",
+        "description": "Tilda ginger medium dots 100% cotton. Premium quality, high thread count fabric with OEKO-TEX®, Class 1 certification. Wash at 60 degrees Centigrade. Shrinkage 3-4%. Width: 110cm.",
+        "price": "9.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD130007.webp",
+        "image": "TD130007.webp",
+        "stock": 44,
+        "rating": 3,
+        "colour": "Orange"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 127,
+    "fields": {
+        "category": 18,
+        "sku": "TD130008",
+        "name": "Tilda Light Grey Medium Dots 100% Cotton Fabric",
+        "description": "Tilda light grey medium dots 100% cotton. Premium quality, high thread count fabric with OEKO-TEX®, Class 1 certification. Wash at 60 degrees Centigrade. Shrinkage 3-4%. Width: 110cm.",
+        "price": "9.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD130008.webp",
+        "image": "TD130008.webp",
+        "stock": 44,
+        "rating": 3,
+        "colour": "Grey"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 128,
+    "fields": {
+        "category": 18,
+        "sku": "TD130009",
+        "name": "Tilda Lilac Medium Dots 100% Cotton Fabric",
+        "description": "Tilda lilac medium dots 100% cotton. Premium quality, high thread count fabric with OEKO-TEX®, Class 1 certification. Wash at 60 degrees Centigrade. Shrinkage 3-4%. Width: 110cm.",
+        "price": "9.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD130009.webp",
+        "image": "TD130009.webp",
+        "stock": 44,
+        "rating": 3,
+        "colour": "Purple"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 129,
+    "fields": {
+        "category": 18,
+        "sku": "TD130010",
+        "name": "Tilda Maroon Medium Dots 100% Cotton Fabric",
+        "description": "Tilda maroon medium dots 100% cotton. Premium quality, high thread count fabric with OEKO-TEX®, Class 1 certification. Wash at 60 degrees Centigrade. Shrinkage 3-4%. Width: 110cm.",
+        "price": "9.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD130010.webp",
+        "image": "TD130010.webp",
+        "stock": 44,
+        "rating": 2,
+        "colour": "Pink"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 130,
+    "fields": {
+        "category": 18,
+        "sku": "TD130011",
+        "name": "Tilda Green Medium Dots 100% Cotton Fabric",
+        "description": "Tilda green medium dots 100% cotton. Premium quality, high thread count fabric with OEKO-TEX®, Class 1 certification. Wash at 60 degrees Centigrade. Shrinkage 3-4%. Width: 110cm.",
+        "price": "9.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD130011.webp",
+        "image": "TD130011.webp",
+        "stock": 44,
+        "rating": 3,
+        "colour": "Green"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 131,
+    "fields": {
+        "category": 18,
+        "sku": "TD130012",
+        "name": "Tilda Grey Medium Dots 100% Cotton Fabric",
+        "description": "Tilda grey medium dots 100% cotton. Premium quality, high thread count fabric with OEKO-TEX®, Class 1 certification. Wash at 60 degrees Centigrade. Shrinkage 3-4%. Width: 110cm.",
+        "price": "9.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD130012.webp",
+        "image": "TD130012.webp",
+        "stock": 44,
+        "rating": 2,
+        "colour": "Grey"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 132,
+    "fields": {
+        "category": 18,
+        "sku": "TD130013",
+        "name": "Tilda Denim Blue Medium Dots 100% Cotton Fabric",
+        "description": "Tilda denim blue medium dots 100% cotton. Premium quality, high thread count fabric with OEKO-TEX®, Class 1 certification. Wash at 60 degrees Centigrade. Shrinkage 3-4%. Width: 110cm.",
+        "price": "9.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD130013.webp",
+        "image": "TD130013.webp",
+        "stock": 44,
+        "rating": 4,
+        "colour": "Blue"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 133,
+    "fields": {
+        "category": 18,
+        "sku": "TD130026",
+        "name": "Tilda Night Blue Medium Dots 100% Cotton Fabric",
+        "description": "Tilda night blue medium dots 100% cotton. Premium quality, high thread count fabric with OEKO-TEX®, Class 1 certification. Wash at 60 degrees Centigrade. Shrinkage 3-4%. Width: 110cm.",
+        "price": "9.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD130026.webp",
+        "image": "TD130026.webp",
+        "stock": 44,
+        "rating": 4,
+        "colour": "Blue"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 134,
+    "fields": {
+        "category": 18,
+        "sku": "TD130027",
+        "name": "Tilda Red Medium Dots 100% Cotton Fabric",
+        "description": "Tilda red medium dots 100% cotton. Premium quality, high thread count fabric with OEKO-TEX®, Class 1 certification. Wash at 60 degrees Centigrade. Shrinkage 3-4%. Width: 110cm.",
+        "price": "9.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD130027.webp",
+        "image": "TD130027.webp",
+        "stock": 43,
+        "rating": 3,
+        "colour": "Red"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 135,
+    "fields": {
+        "category": 18,
+        "sku": "TD130028",
+        "name": "Tilda Salmon Medium Dots 100% Cotton Fabric",
+        "description": "Tilda salmon medium dots 100% cotton. Premium quality, high thread count fabric with OEKO-TEX®, Class 1 certification. Wash at 60 degrees Centigrade. Shrinkage 3-4%. Width: 110cm.",
+        "price": "9.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD130028.webp",
+        "image": "TD130028.webp",
+        "stock": 44,
+        "rating": 4,
+        "colour": "Pink"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 136,
+    "fields": {
+        "category": 18,
+        "sku": "TD130029",
+        "name": "Tilda Flaxen Yellow Medium Dots 100% Cotton Fabric",
+        "description": "Tilda flaxen yellow medium dots 100% cotton. Premium quality, high thread count fabric with OEKO-TEX®, Class 1 certification. Wash at 60 degrees Centigrade. Shrinkage 3-4%. Width: 110cm.",
+        "price": "9.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD130029.webp",
+        "image": "TD130029.webp",
+        "stock": 44,
+        "rating": 2,
+        "colour": "Yellow"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 137,
+    "fields": {
+        "category": 18,
+        "sku": "TD130030",
+        "name": "Tilda Dark Teal Medium Dots 100% Cotton Fabric",
+        "description": "Tilda dark teal medium dots 100% cotton. Premium quality, high thread count fabric with OEKO-TEX®, Class 1 certification. Wash at 60 degrees Centigrade. Shrinkage 3-4%. Width: 110cm.",
+        "price": "9.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD130030.webp",
+        "image": "TD130030.webp",
+        "stock": 44,
+        "rating": 3,
+        "colour": "Blue"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 138,
+    "fields": {
+        "category": 18,
+        "sku": "TD150001",
+        "name": "Tilda Pink and Grey Luna Backing Fabric 100% Cotton Fabric",
+        "description": "Tilda Pink and Grey Luna Backing Fabric. Width 107in (272cm). 100% cotton. Premium quality, high thread count fabric with OEKO-TEX®, Class 1 certification. Wash at 60 degrees Centigrade. Shrinkage 3-5%.",
+        "price": "15.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD150001.webp",
+        "image": "TD150001.webp",
+        "stock": 30,
+        "rating": 3,
+        "colour": null
+    }
+},
+{
+    "model": "products.product",
+    "pk": 139,
+    "fields": {
+        "category": 18,
+        "sku": "TD150002",
+        "name": "Tilda Blue Luna Backing Fabric 100% Cotton Fabric",
+        "description": "Tilda blue Luna Backing Fabric. Width 107in (272cm). 100% cotton. Premium quality, high thread count fabric with OEKO-TEX®, Class 1 certification. Wash at 60 degrees Centigrade. Shrinkage 3-5%.",
+        "price": "15.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD150002.webp",
+        "image": "TD150002.webp",
+        "stock": 30,
+        "rating": 4,
+        "colour": "Blue"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 140,
+    "fields": {
+        "category": 18,
+        "sku": "TD150003",
+        "name": "Tilda Green and Sage Luna Backing Fabric 100% Cotton Fabric",
+        "description": "Tilda Green and Sage Luna Backing Fabric. Width 107in (272cm). 100% cotton. Premium quality, high thread count fabric with OEKO-TEX®, Class 1 certification. Wash at 60 degrees Centigrade. Shrinkage 3-5%.",
+        "price": "15.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD150003.webp",
+        "image": "TD150003.webp",
+        "stock": 30,
+        "rating": 3,
+        "colour": "Green"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 141,
+    "fields": {
+        "category": 18,
+        "sku": "TD130081",
+        "name": "Tilda Rose Meadow Basics 100% Cotton Fabric",
+        "description": "Tilda Rose Meadow Basics. 100% cotton. Wash at 60 degrees Centigrade. Maximum shrinkage of 3%. Can be tumble dried. Width: 110cm. Price per metre",
+        "price": "10.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD130081.webp",
+        "image": "TD130081.webp",
+        "stock": 44,
+        "rating": 3,
+        "colour": "Pink"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 142,
+    "fields": {
+        "category": 18,
+        "sku": "TD130082",
+        "name": "Tilda Pink Meadow Basics 100% Cotton Fabric",
+        "description": "Tilda Pink Meadow Basics. 100% cotton. Wash at 60 degrees Centigrade. Maximum shrinkage of 3%. Can be tumble dried. Width: 110cm. Price per metre",
+        "price": "10.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD130082.webp",
+        "image": "TD130082.webp",
+        "stock": 44,
+        "rating": 4,
+        "colour": "Pink"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 143,
+    "fields": {
+        "category": 18,
+        "sku": "TD130083",
+        "name": "Tilda Honey Meadow Basics 100% Cotton Fabric",
+        "description": "Tilda Honey Meadow Basics. 100% cotton. Wash at 60 degrees Centigrade. Maximum shrinkage of 3%. Can be tumble dried. Width: 110cm. Price per metre",
+        "price": "10.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD130083.webp",
+        "image": "TD130083.webp",
+        "stock": 44,
+        "rating": 3,
+        "colour": "Yellow"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 144,
+    "fields": {
+        "category": 18,
+        "sku": "TD130084",
+        "name": "Tilda Yellow Meadow Basics 100% Cotton Fabric",
+        "description": "Tilda yellow Meadow Basics. 100% cotton. Wash at 60 degrees Centigrade. Maximum shrinkage of 3%. Can be tumble dried. Width: 110cm. Price per metre",
+        "price": "10.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD130084.webp",
+        "image": "TD130084.webp",
+        "stock": 44,
+        "rating": 2,
+        "colour": "Yellow"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 145,
+    "fields": {
+        "category": 18,
+        "sku": "TD130085",
+        "name": "Tilda Grey Meadow Basics 100% Cotton Fabric",
+        "description": "Tilda Grey Meadow Basics. 100% cotton. Wash at 60 degrees Centigrade. Maximum shrinkage of 3%. Can be tumble dried. Width: 110cm. Price per metre",
+        "price": "10.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD130085.webp",
+        "image": "TD130085.webp",
+        "stock": 44,
+        "rating": 1,
+        "colour": "Grey"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 146,
+    "fields": {
+        "category": 18,
+        "sku": "TD130086",
+        "name": "Tilda Teal Meadow Basics 100% Cotton Fabric",
+        "description": "Tilda teal Meadow Basics. 100% cotton. Wash at 60 degrees Centigrade. Maximum shrinkage of 3%. Can be tumble dried. Width: 110cm. Price per metre",
+        "price": "10.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD130086.webp",
+        "image": "TD130086.webp",
+        "stock": 44,
+        "rating": 4,
+        "colour": "Blue"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 147,
+    "fields": {
+        "category": 18,
+        "sku": "TD130087",
+        "name": "Tilda Peach Meadow Basics 100% Cotton Fabric",
+        "description": "Tilda Peach Meadow Basics. 100% cotton. Wash at 60 degrees Centigrade. Maximum shrinkage of 3%. Can be tumble dried. Width: 110cm. Price per metre",
+        "price": "10.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD130087.webp",
+        "image": "TD130087.webp",
+        "stock": 44,
+        "rating": 4,
+        "colour": "Pink"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 148,
+    "fields": {
+        "category": 18,
+        "sku": "TD130088",
+        "name": "Tilda Slate Meadow Basics 100% Cotton Fabric",
+        "description": "Tilda slate Meadow Basics. 100% cotton. Wash at 60 degrees Centigrade. Maximum shrinkage of 3%. Can be tumble dried. Width: 110cm. Price per metre",
+        "price": "10.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD130088.webp",
+        "image": "TD130088.webp",
+        "stock": 44,
+        "rating": 5,
+        "colour": "Grey"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 149,
+    "fields": {
+        "category": 18,
+        "sku": "TD130089",
+        "name": "Tilda Blue Meadow Basics 100% Cotton Fabric",
+        "description": "Tilda blue Meadow Basics. 100% cotton. Wash at 60 degrees Centigrade. Maximum shrinkage of 3%. Can be tumble dried. Width: 110cm. Price per metre",
+        "price": "10.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD130089.webp",
+        "image": "TD130089.webp",
+        "stock": 44,
+        "rating": 5,
+        "colour": "Blue"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 150,
+    "fields": {
+        "category": 18,
+        "sku": "TD130090",
+        "name": "Tilda Lilac Meadow Basics 100% Cotton Fabric",
+        "description": "Tilda lilac Meadow Basics. 100% cotton. Wash at 60 degrees Centigrade. Maximum shrinkage of 3%. Can be tumble dried. Width: 110cm. Price per metre",
+        "price": "10.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD130090.webp",
+        "image": "TD130090.webp",
+        "stock": 44,
+        "rating": 4,
+        "colour": "Purple"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 151,
+    "fields": {
+        "category": 18,
+        "sku": "TD130091",
+        "name": "Tilda Green Meadow Basics 100% Cotton Fabric",
+        "description": "Tilda green Meadow Basics. 100% cotton. Wash at 60 degrees Centigrade. Maximum shrinkage of 3%. Can be tumble dried. Width: 110cm. Price per metre",
+        "price": "10.99",
+        "image_url": null,
+        "image": "TD130091.webp",
+        "stock": 44,
+        "rating": 5,
+        "colour": "Green"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 152,
+    "fields": {
+        "category": 18,
+        "sku": "TD130092",
+        "name": "Tilda Pine Meadow Basics 100% Cotton Fabric",
+        "description": "Tilda pine Meadow Basics. 100% cotton. Wash at 60 degrees Centigrade. Maximum shrinkage of 3%. Can be tumble dried. Width: 110cm. Price per metre",
+        "price": "10.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD130092.webp",
+        "image": "TD130092.webp",
+        "stock": 44,
+        "rating": 4,
+        "colour": "Green"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 153,
+    "fields": {
+        "category": 3,
+        "sku": "PN-0164621",
+        "name": "Vervaco Couture Outfit Making Set Combi Red Blue",
+        "description": "Kit includes: 1 outfit to sew (made from a stretchy polyester fabric that does not fray, plus the pattern in paper so you can make the outfit again with other fabrics. Fits any 29cm fashion doll. Difficulty level 1 - suitable for ages 7+.",
+        "price": "9.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/PN-0164621.webp",
+        "image": "PN-0164621.webp",
+        "stock": 15,
+        "rating": 3,
+        "colour": null
+    }
+},
+{
+    "model": "products.product",
+    "pk": 154,
+    "fields": {
+        "category": 3,
+        "sku": "PN-0164622",
+        "name": "Vervaco Couture Outfit Making Set Dolly Butterfly",
+        "description": "Kit includes: 1 outfit to sew (made from a stretchy polyester fabric that does not fray, plus the pattern in paper so you can make the outfit again with other fabrics. Fits any 29cm fashion doll. Difficulty level 1 - suitable for ages 7+.",
+        "price": "9.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/PN-0164622.webp",
+        "image": "PN-0164622.webp",
+        "stock": 7,
+        "rating": 2,
+        "colour": null
+    }
+},
+{
+    "model": "products.product",
+    "pk": 155,
+    "fields": {
+        "category": 3,
+        "sku": "PN-0164644",
+        "name": "Vervaco Couture Outfit Making Set Lizzy Pop Art",
+        "description": "Kit includes: 1 outfit to sew (made from a stretchy polyester fabric that does not fray, plus the pattern in paper so you can make the outfit again with other fabrics. Fits any 29cm fashion doll. Difficulty level 2 - suitable for ages 8+.",
+        "price": "9.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/PN-0164644.webp",
+        "image": "PN-0164644.webp",
+        "stock": 12,
+        "rating": 2,
+        "colour": null
+    }
+},
+{
+    "model": "products.product",
+    "pk": 156,
+    "fields": {
+        "category": 5,
+        "sku": "TD300035",
+        "name": "Tilda Classic Basics Fat Quarters Pack of 6",
+        "description": "Bundle of 6 cotton fat quarter pieces. 100% cotton. Premium quality, high thread count fabric with OEKO-TEX®, Class 1 certification. Wash at 60 degrees Centigrade. Shrinkage of 3-4%. Fat quarter size: 55 x 50cm.",
+        "price": "12.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TD300035.webp",
+        "image": "TD300035.webp",
+        "stock": 49,
+        "rating": 4,
+        "colour": "Blue"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 157,
+    "fields": {
+        "category": 1,
+        "sku": "0022389\\0001",
+        "name": "Mez Duet Neon Jeans Upcycling Cushion",
+        "description": "A fun way to upcycle an old pair of jeans into a new cushion!",
+        "price": "0.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/0022389_0001.webp",
+        "image": "0022389_0001.webp",
+        "stock": 98,
+        "rating": 2,
+        "colour": null
+    }
+},
+{
+    "model": "products.product",
+    "pk": 158,
+    "fields": {
+        "category": 7,
+        "sku": "TRS03\\470",
+        "name": "Trimits Purple Satin Ribbon 50m x 3mm",
+        "description": "Trimits purple satin ribbon made of 100% Polyester. Washable at 40 degrees centigrade.",
+        "price": "1.75",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/TRS03_470.webp",
+        "image": "TRS03_470.webp",
+        "stock": 50,
+        "rating": 4,
+        "colour": "Purple"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 159,
+    "fields": {
+        "category": 17,
+        "sku": "GTC143",
+        "name": "Trimits Fat Quarter Tartan Fabric Bundle 4 pieces",
+        "description": "This pack of tartan fat quarters is perfect for making Christmas decorations, trimming stockings and making gifts. The 4 designs coordinate together however, can also be used separately as required. 80% polyester, 20% cotton, washable at 30 degrees. Item size: (w/h) 54 x 45cm.",
+        "price": "12.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/GTC143.webp",
+        "image": "GTC143.webp",
+        "stock": 0,
+        "rating": 3,
+        "colour": "Red"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 160,
+    "fields": {
+        "category": 17,
+        "sku": "GTC155",
+        "name": "Trimits Monochrome Fat Quarters Fabric Bundle 5 Pieces",
+        "description": "Pack of 5 cotton fat quarters in a mix of monochrome colours. Can be used together or mixed with other packs in a variety of quilting projects. Great for making face masks. Item size: (w/h) 54 x 45cm. Compositiion: cotton. Wash at 40 degrees.",
+        "price": "10.99",
+        "image_url": "https://seaside-sewing.s3.amazonaws.com/media/GTC155.webp",
+        "image": "GTC155.webp",
+        "stock": 100,
+        "rating": 3,
+        "colour": null
+    }
+}
+]
