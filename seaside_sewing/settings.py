@@ -24,7 +24,11 @@ SECRET_KEY = os.environ.get('SECRET_KEY', ' ')
 
 DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['seaside-sewing.herokuapp.com', 'https://web-production-09dc.up.railway.app/', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = [
+    'seaside-sewing.herokuapp.com',
+    'web-production-09dc.up.railway.app/',
+    'localhost', '127.0.0.1'
+]
 
 # Application definition
 INSTALLED_APPS = [
