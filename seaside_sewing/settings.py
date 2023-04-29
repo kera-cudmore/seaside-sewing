@@ -26,12 +26,12 @@ DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = [
     'seaside-sewing.herokuapp.com',
-    'https://web-production-e39f.up.railway.app',
+    'web-production-e39f.up.railway.app',
     'localhost',
     '127.0.0.1'
     ]
 
-CSRF_TRUSTED_ORIGINS = ['https://web-production-e39f.up.railway.app']
+CSRF_TRUSTED_ORIGINS = ['web-production-e39f.up.railway.app']
 
 # Application definition
 INSTALLED_APPS = [
