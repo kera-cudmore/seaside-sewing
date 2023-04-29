@@ -23,5 +23,9 @@
    "files.autoSave": "off",
    "workbench.colorTheme": "Nebula Oni (Hourglass)",
    "terminal.integrated.gpuAcceleration": "canvas",
-   "editor.defaultFormatter": "HookyQR.beautify"
+   "editor.defaultFormatter": "HookyQR.beautify",
+   "[json]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+   },
+   "liveServer.settings.port": 5502
 }

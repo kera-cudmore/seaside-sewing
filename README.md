@@ -6,7 +6,7 @@ Seaside Sewing is a full stack e-commerce website built using Django, Python, HT
 
 This project was created as my fourth milestone project for my Level 5 Diploma in Web Application Development with the Code Institute.
 
-[Visit Seaside Sewing Here](https://seaside-sewing.herokuapp.com/)
+[Visit Seaside Sewing Here](https://web-production-e39f.up.railway.app/)
 
 ![GitHub contributors](https://img.shields.io/github/contributors/kera-cudmore/seaside-sewing) ![GitHub last commit](https://img.shields.io/github/last-commit/kera-cudmore/seaside-sewing) ![GitHub language count](https://img.shields.io/github/languages/count/kera-cudmore/seaside-sewing) ![GitHub top language](https://img.shields.io/github/languages/top/kera-cudmore/seaside-sewing)
 
@@ -42,6 +42,7 @@ This project was created as my fourth milestone project for my Level 5 Diploma i
   * [Stripe](#stripe)
 * [Deployment & Local Development](#deployment--local-development)
   * [Deployment](#deployment)
+  * [### Migrating to Railway.app for deployment](#migrating-to-railwayapp-for-deployment)
   * [Local Development](#local-development)
     * [How to Fork](#how-to-fork)
     * [How to Clone](#how-to-clone)
@@ -912,6 +913,16 @@ We have been using the sqlite3 database in development, however this is only ava
     STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
     STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
     ```
+
+### Migrating to Railway.app for deployment
+
+*Update: 29th April 2023* Since completing my diploma and due to Heroku removing their free tier in November 2022, I have migrated the deployment of this site to use railway.app. You can find instructions on how to migrate your app from Heroku to Railway in my [article here](https://www.codu.co/articles/migrating-your-heroku-app-to-railway-vf9p3kid).
+
+Note that you will also need to create a runtime.txt in your environment which contains the version of python you are using. You can find this out by typing `python --version` in the terminal, and entering the result into the runtime.txt folder like so:
+
+```
+Python -3.10.5
+```
 
 ### Local Development
 
