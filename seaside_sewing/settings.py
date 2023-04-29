@@ -8,26 +8,27 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 import os
-if os.path.exists('env.py'):
-    import env  # noqa: F401
-
+import environ
 import dj_database_url
-
 from pathlib import Path
 import decimal
 from decimal import Decimal
 
+env = environ.Env()
+environ.Env.read_env()
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = os.environ.get('SECRET_KEY', ' ')
+SECRET_KEY = env('SECRET_KEY', ' ')
 
-DEBUG = 'DEVELOPMENT' in os.environ
+DEVELOPMENT = env('DEVELOPMENT', False)
 
 ALLOWED_HOSTS = [
-    'seaside-sewing.herokuapp.com',
     'web-production-09dc.up.railway.app/',
-    'localhost', '127.0.0.1'
+    'seaside-sewing.herokuapp.com',
+    'localhost',
+    '127.0.0.1'
     ]
 
 CSRF_TRUSTED_ORIGINS = ['https://web-production-09dc.up.railway.app/']
@@ -127,7 +128,7 @@ WSGI_APPLICATION = 'seaside_sewing.wsgi.application'
 
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
-        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+        'default': dj_database_url.parse(env('DATABASE_URL'))
     }
 else:
     DATABASES = {
@@ -200,8 +201,8 @@ if 'USE_AWS' in os.environ:
     # Bucket Config
     AWS_STORAGE_BUCKET_NAME = 'seaside-sewing'
     AWS_S3_REGION_NAME = 'eu-west-2'
-    AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
-    AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+    AWS_ACCESS_KEY_ID = env('AWS_ACCESS_KEY_ID')
+    AWS_SECRET_ACCESS_KEY = env('AWS_SECRET_ACCESS_KEY')
     AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
 
     # Static and Media Files
@@ -240,6 +241,6 @@ else:
     EMAIL_USE_TLS = True
     EMAIL_PORT = 587
     EMAIL_HOST = 'smtp.gmail.com'
-    EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
-    EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASS')
-    DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
+    EMAIL_HOST_USER = env('EMAIL_HOST_USER')
+    EMAIL_HOST_PASSWORD = env('EMAIL_HOST_PASS')
+    DEFAULT_FROM_EMAIL = env('EMAIL_HOST_USER')
