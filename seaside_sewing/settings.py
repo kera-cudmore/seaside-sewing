@@ -8,30 +8,33 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 import os
-import environ
 import dj_database_url
 from pathlib import Path
 import decimal
 from decimal import Decimal
 
-env = environ.Env()
-environ.Env.read_env()
+import environ
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+env = environ.Env()
+environ.Env.read_env()
+
 SECRET_KEY = env('SECRET_KEY', ' ')
 
-DEVELOPMENT = env('DEVELOPMENT', False)
+DEVELOPMENT = env('DEVELOPMENT') if 'DEVELOPMENT' in os.environ else False
+
+DEBUG = DEVELOPMENT
 
 ALLOWED_HOSTS = [
     'web-production-09dc.up.railway.app/',
     'seaside-sewing.herokuapp.com',
     'localhost',
     '127.0.0.1'
-    ]
+]
 
-CSRF_TRUSTED_ORIGINS = ['https://web-production-09dc.up.railway.app/']
+# CSRF_TRUSTED_ORIGINS = ['https://web-production-09dc.up.railway.app/']
 
 # Application definition
 INSTALLED_APPS = [
