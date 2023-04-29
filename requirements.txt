@@ -12,6 +12,7 @@ Django==3.2.18
 django-allauth==0.41.0
 django-countries==7.2.1
 django-crispy-forms==1.14.0
+django-environ==0.10.0
 django-storages==1.13.2
 filelock==3.7.1
 Flask==2.1.2
@@ -27,6 +28,7 @@ Pillow==9.3.0
 pipenv==2022.6.7
 platformdirs==2.5.2
 psycopg2-binary==2.9.6
+pycodestyle==2.10.0
 PyJWT==2.6.0
 python-dateutil==2.8.2
 python3-openid==3.2.0
