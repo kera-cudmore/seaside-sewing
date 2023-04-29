@@ -12,7 +12,6 @@ Django==3.2.18
 django-allauth==0.41.0
 django-countries==7.2.1
 django-crispy-forms==1.14.0
-django-environ==0.10.0
 django-storages==1.13.2
 filelock==3.7.1
 Flask==2.1.2

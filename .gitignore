@@ -8,5 +8,3 @@ node_modules/
 .github/
 cloudinary_python.txt
 .venv/
-copy_env.py
-.env
