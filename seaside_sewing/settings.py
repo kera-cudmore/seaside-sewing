@@ -25,13 +25,14 @@ SECRET_KEY = os.environ.get('SECRET_KEY', ' ')
 DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = [
-    'seaside-sewing.herokuapp.com',
+    'seasidesewing.keracudmore.dev',
+    # 'seaside-sewing.herokuapp.com',
     'web-production-e39f.up.railway.app',
     'localhost',
     '127.0.0.1'
     ]
 
-CSRF_TRUSTED_ORIGINS = ['web-production-e39f.up.railway.app']
+CSRF_TRUSTED_ORIGINS = ['web-production-e39f.up.railway.app', 'seasidesewing.keracudmore.dev']
 
 # Application definition
 INSTALLED_APPS = [
