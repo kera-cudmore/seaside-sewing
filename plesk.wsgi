@@ -1,12 +1,20 @@
-#!/usr/bin/env python
-import os
-import sys
+import sys, os
 
-# Add a custom path. Must replace domain.com !!! 
-sys.path.append("/var/www/vhosts/seasidesewing.keracudmore.dev/httpdocs/");
+app_name = 'seaside_sewing'
+env_name = 'seasidesewing-venv'
 
-# Set the DJANGO_SETTINGS_MODULE environment variable.
-os.environ['DJANGO_SETTINGS_MODULE'] = 'seaside_sewing.settings'
+cwd = os.getcwd()
+sys.path.append(cwd)
+sys.path.append(cwd + '/' + app_name)
 
-import django.core.handlers.wsgi
-application = django.core.handlers.wsgi.WSGIHandler()
+INTERP = cwd + '/' + env_name + '/bin/python'
+if sys.executable != INTERP: os.execl(INTERP, INTERP, *sys.argv)
+
+sys.path.insert(0, cwd + '/' + env_name + '/bin')
+sys.path.insert(0, cwd + '/' + env_name + '/lib/python2.7/site-packages/django')
+sys.path.insert(0, cwd + '/' + env_name + '/lib/python2.7/site-packages')
+
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", app_name + ".settings")
+
+from django.core.wsgi import get_wsgi_application
+application = get_wsgi_application()
