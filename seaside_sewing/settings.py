@@ -25,7 +25,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', ' ')
 DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = [
-    'https://seaside-sewing-5d9a182dabe3.herokuapp.com/',
+    'https://seaside-sewing-5d9a182dabe3.herokuapp.com',
     # 'seasidesewing.keracudmore.dev',
     '82.165.7.161',  # Server
     'localhost',
@@ -33,7 +33,7 @@ ALLOWED_HOSTS = [
 ]
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://seaside-sewing-5d9a182dabe3.herokuapp.com/',
+    'https://seaside-sewing-5d9a182dabe3.herokuapp.com',
     # 'seasidesewing.keracudmore.dev',
     '82.165.7.161'  # server
 ]
