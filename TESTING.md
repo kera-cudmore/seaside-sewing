@@ -2,27 +2,9 @@
 
 ![Seaside Sewing Banner](documentation/readme/banner.png)
 
-[Visit Seaside Sewing Here](https://web-production-e39f.up.railway.app/)
+[Visit Seaside Sewing Here](https://seaside-sewing-5d9a182dabe3.herokuapp.com/)
 
 ---
-
-## Contents
-
-* [Validation Testing](#validation-testing)
-  * [HTML](#html)
-  * [CSS](#css)
-  * [JavaScript](#javascript)
-  * [Python](#python)
-  * [Lighthouse](#lighthouse)
-  * [Wave](#wave)
-* [Automated Testing](#automated-testing)
-  * [Coverage](#coverage-testing)
-* [Manual Testing](#manual-testing)
-  * [Testing User Stories](#testing-user-stories)
-  * [Full Testing](#full-testing)
-* [Bugs](#bugs)
-  * [Solved Bugs](#solved-bugs)
-  * [Known Bugs](#known-bugs)
 
 Testing was ongoing throughout the entire build. During development I made use of Googles Developer Tools to ensure everything was working as expected and to assist me with troubleshooting when things didn't work as they should.
 
