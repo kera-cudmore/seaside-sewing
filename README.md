@@ -6,52 +6,9 @@ Seaside Sewing is a full stack e-commerce website built using Django, Python, HT
 
 This project was created as my fourth milestone project for my Level 5 Diploma in Web Application Development with the Code Institute.
 
-[Visit Seaside Sewing Here](https://web-production-e39f.up.railway.app/)
+[Visit Seaside Sewing Here](https://seaside-sewing-5d9a182dabe3.herokuapp.com/)
 
-![GitHub contributors](https://img.shields.io/github/contributors/kera-cudmore/seaside-sewing) ![GitHub last commit](https://img.shields.io/github/last-commit/kera-cudmore/seaside-sewing) ![GitHub language count](https://img.shields.io/github/languages/count/kera-cudmore/seaside-sewing) ![GitHub top language](https://img.shields.io/github/languages/top/kera-cudmore/seaside-sewing)
-
----
-
-## Contents
-
-* [User Experience](#user-experience)
-  * [Strategy Plane](#strategy-plane)
-    * [Project Goals](#project-goals)
-  * [Scope Plane](#scope-plane)
-    * [Feature Planning](#feature-planning)
-  * [Structure Plane](#structure-plane)
-    * [User Stories](#user-stories)
-    * [Database Schema](#database-schema)
-  * [Skeleton Plane](#skeleton-plane)
-    * [Wireframes](#wireframes)
-  * [Surface Plane](#surface-plane)
-    * [Colour Scheme](#colour-scheme)
-    * [Typography](#typography)
-    * [Imagery](#imagery)
-    * [Base Mockup](#base-mockup)
-* [Features](#features)
-  * [General Features of The Site](#general-features-of-of-the-site)
-  * [Future Implementations](#future-implementations)
-  * [Accessibility](#accessibility)
-* [Technologies Used](#technologies-used)
-  * [Languages Used](#languages-used)
-  * [Database Used](#database-used)
-  * [Frameworks Used](#frameworks-used)
-  * [Libraries & Packages Used](#libraries--packages-used)
-  * [Programs Used](#programs-used)
-  * [Stripe](#stripe)
-* [Deployment & Local Development](#deployment--local-development)
-  * [Deployment](#deployment)
-  * [### Migrating to Railway.app for deployment](#migrating-to-railwayapp-for-deployment)
-  * [Local Development](#local-development)
-    * [How to Fork](#how-to-fork)
-    * [How to Clone](#how-to-clone)
-* [Testing](#testing)
-* [Credits](#credits)
-  * [Code Used](#code-used)
-  * [Content](#content)
-  * [Media](#media)
-  * [Acknowledgments](#acknowledgments)
+![GitHub last commit](https://img.shields.io/github/last-commit/kera-cudmore/seaside-sewing) ![GitHub language count](https://img.shields.io/github/languages/count/kera-cudmore/seaside-sewing) ![GitHub top language](https://img.shields.io/github/languages/top/kera-cudmore/seaside-sewing)
 
 ---
 
@@ -591,11 +548,13 @@ HTML, CSS, JavaScript, Python
 
 sqlite3 for development.
 
-[ElephantSQL](https://www.elephantsql.com/) for deployment.
+~~[ElephantSQL](https://www.elephantsql.com/) for deployment.~~ ElephantSQL announced EOL for its service in February 2024.
+
+[Neon](https://neon.tech) for deployed site.
 
 ### Frameworks Used
 
-[Django](https://www.djangoproject.com/) - Version 3.2.16 - A high-level Python web framework that encourages rapid development and clean, pragmatic design.
+[Django](https://www.djangoproject.com/) - Version ~~3.2.16~~ 3.2.25- A high-level Python web framework that encourages rapid development and clean, pragmatic design.
 
 [Bootstrap](https://getbootstrap.com/docs/4.6/getting-started/introduction/) - Version 4.6.2 - A framework for building responsive, mobile-first sites.
 
@@ -914,7 +873,11 @@ We have been using the sqlite3 database in development, however this is only ava
     STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
     ```
 
-### Migrating to Railway.app for deployment
+### Migrating to Railway.app for deployment - Deprecated
+
+*Update August 2023*
+
+Railway.app have removed their free tier for hosting. I have moved back to hosting on Heroku for the time being.
 
 *Update: 29th April 2023* Since completing my diploma and due to Heroku removing their free tier in November 2022, I have migrated the deployment of this site to use railway.app. You can find instructions on how to migrate your app from Heroku to Railway in my [article here](https://www.codu.co/articles/migrating-your-heroku-app-to-railway-vf9p3kid).
 
