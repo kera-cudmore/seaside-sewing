@@ -2,7 +2,7 @@
 
 ![Seaside Sewing Banner](documentation/readme/banner.png)
 
-[Visit Seaside Sewing Here](https://seaside-sewing-5d9a182dabe3.herokuapp.com/)
+[Visit Seaside Sewing Here](https://seasidesewing.keracudmore.dev/)
 
 ---
 
