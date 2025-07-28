@@ -215,7 +215,6 @@ if USE_AWS:
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Delivery
-
 FREE_DELIVERY_THRESHOLD = 50
 STANDARD_DELIVERY = Decimal('3.99')
 
