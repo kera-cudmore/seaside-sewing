@@ -8,29 +8,26 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 import os
-if os.path.exists('env.py'):
-    import env  # noqa: F401
+# if os.path.exists('env.py'):
+#     import env  # noqa: F401
 
 import dj_database_url
 
 from pathlib import Path
 import decimal
 from decimal import Decimal
+from decouple import config # Import config from decouple
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = os.environ.get('SECRET_KEY', ' ')
+SECRET_KEY = config('SECRET_KEY') # Mandatory variable, will raise error if not found
 
-DEBUG = 'DEVELOPMENT' in os.environ
+DEBUG = config('DEBUG', default=False, cast=bool) # Reads from .env or ENV, defaults to False
 
-ALLOWED_HOSTS = [
-    'www.seaside-sewing.keracudmore.dev'
-    'seasidesewing.keracudmore.dev',
-    '82.165.7.161',  # Server
-    'localhost',
-    '127.0.0.1'
-]
+ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=lambda v: [s.strip() for s in v.split(',')]).split(',') if config('ALLOWED_HOSTS', default='') else []
+# Simplified for single host if that's all you need, or list
+# ALLOWED_HOSTS = config('ALLOWED_HOSTS').split(',')
 
 CSRF_TRUSTED_ORIGINS = [
     'seasidesewing.keracudmore.dev',
@@ -127,20 +124,12 @@ LOGIN_REDIRECT_URL = '/'
 
 WSGI_APPLICATION = 'seaside_sewing.wsgi.application'
 
-# Database
-# https://docs.djangoproject.com/en/3.2/ref/settings/#databases
-
-if 'DATABASE_URL' in os.environ:
-    DATABASES = {
-        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
-    }
-else:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': BASE_DIR / 'db.sqlite3',
-        }
-    }
+# Database Settings
+DATABASE_URL = config('DATABASE_URL')
+DATABASES = {
+    'default': dj_database_url.parse(DATABASE_URL)
+}
+DATABASES['default']['CONN_MAX_AGE'] = 600
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
@@ -195,19 +184,20 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-if 'USE_AWS' in os.environ:
+# AWS S3 Configuration
+USE_AWS = config('USE_AWS', default=False, cast=bool)
+
+if USE_AWS:
+    AWS_STORAGE_BUCKET_NAME = config('AWS_STORAGE_BUCKET_NAME')
+    AWS_S3_REGION_NAME = config('AWS_S3_REGION_NAME')
+    AWS_ACCESS_KEY_ID = config('AWS_ACCESS_KEY_ID')
+    AWS_SECRET_ACCESS_KEY = config('AWS_SECRET_ACCESS_KEY')
+    AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
     # Cache Control - tells browser ok to cache for a long time
     AWS_S3_OBJECT_PARAMETERS = {
         'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
         'CacheControl': 'max-age=94608000',
     }
-
-    # Bucket Config
-    AWS_STORAGE_BUCKET_NAME = 'seaside-sewing'
-    AWS_S3_REGION_NAME = 'eu-west-2'
-    AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
-    AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
-    AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
 
     # Static and Media Files
     STATICFILES_STORAGE = 'custom_storages.StaticStorage'
@@ -229,22 +219,15 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 FREE_DELIVERY_THRESHOLD = 50
 STANDARD_DELIVERY = Decimal('3.99')
 
-# Stripe Variables
+# Stripe
+STRIPE_PUBLIC_KEY = config('STRIPE_PUBLIC_KEY')
+STRIPE_SECRET_KEY = config('STRIPE_SECRET_KEY')
+STRIPE_WH_SECRET = config('STRIPE_WH_SECRET')
 
-STRIPE_CURRENCY = 'gbp'
-STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
-STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
-STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
-
-# SENDING EMAILS
-if 'DEVELOPMENT' in os.environ:
-    EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-    DEFAULT_FROM_EMAIL = 'seaside.sewing.eshop@gmail.com'
-else:
-    EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-    EMAIL_USE_TLS = True
-    EMAIL_PORT = 587
-    EMAIL_HOST = 'smtp.gmail.com'
-    EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
-    EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASS')
-    DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
+# Email settings
+EMAIL_HOST = config('EMAIL_HOST')
+EMAIL_PORT = config('EMAIL_PORT', cast=int)
+EMAIL_USE_TLS = config('EMAIL_USE_TLS', default=True, cast=bool)
+EMAIL_HOST_USER = config('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
+DEFAULT_FROM_EMAIL = config('DEFAULT_FROM_EMAIL')
