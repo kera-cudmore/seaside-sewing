@@ -21,13 +21,16 @@ from decouple import config # Import config from decouple
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = config('SECRET_KEY') # Mandatory variable, will raise error if not found
+# Mandatory variable, will raise error if not found
+SECRET_KEY = config('SECRET_KEY')
+# Reads from .env or ENV, defaults to False
+DEBUG = config('DEBUG', default=False, cast=bool)
 
-DEBUG = config('DEBUG', default=False, cast=bool) # Reads from .env or ENV, defaults to False
-
-ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=lambda v: [s.strip() for s in v.split(',')]).split(',') if config('ALLOWED_HOSTS', default='') else []
-# Simplified for single host if that's all you need, or list
-# ALLOWED_HOSTS = config('ALLOWED_HOSTS').split(',')
+ALLOWED_HOSTS = config(
+    'ALLOWED_HOSTS',
+    default='',  # Provide an empty string as default
+    cast=lambda v: [s.strip() for s in v.split(',')] if v else []  # Cast function handles splitting and stripping, and returns empty list if input is empty
+)
 
 CSRF_TRUSTED_ORIGINS = [
     'seasidesewing.keracudmore.dev',
