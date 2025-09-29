@@ -25,14 +25,26 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 DEBUG = 'DEVELOPMENT' in os.environ
 
+if not DEBUG:
+    # Enforce HTTPS/SSL
+    SECURE_SSL_REDIRECT = True
+    SESSION_COOKIE_SECURE = True
+    CSRF_COOKIE_SECURE = True
+    # HSTS is a complex topic, but generally good for production
+    SECURE_HSTS_SECONDS = 31536000 # 1 year
+    SECURE_HSTS_INCLUDE_SUBDOMAINS = True
+    SECURE_HSTS_PRELOAD = True
+    
 ALLOWED_HOSTS = [
     '127.0.0.1',
     'localhost',
-    # ADD DOMAIN HERE & SERVER IF NEEDED FOR DEPLOYMENT TO PRODUCTION
+    'seasidesewing.keracudmore.dev',
+    'www.seasidesewing.keracudmore.dev',
 ]
 
 CSRF_TRUSTED_ORIGINS = [
-    # ADD DOMAIN HERE & SERVER IF NEEDED FOR DEPLOYMENT TO PRODUCTION
+    'https://seasidesewing.keracudmore.dev',
+    'https://www.seasidesewing.keracudmore.dev',
 ]
 
 # Application definition
