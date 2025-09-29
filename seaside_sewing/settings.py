@@ -34,7 +34,7 @@ if not DEBUG:
     SECURE_HSTS_SECONDS = 31536000 # 1 year
     SECURE_HSTS_INCLUDE_SUBDOMAINS = True
     SECURE_HSTS_PRELOAD = True
-    
+
 ALLOWED_HOSTS = [
     '127.0.0.1',
     'localhost',
@@ -200,6 +200,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
+STATICROOT = (os.path.join(BASE_DIR, 'static'),)
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
 # Media files
