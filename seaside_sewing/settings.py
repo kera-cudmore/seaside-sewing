@@ -36,13 +36,10 @@ if not DEBUG:
     SECURE_HSTS_INCLUDE_SUBDOMAINS = True
     SECURE_HSTS_PRELOAD = True
 
-ALLOWED_HOSTS = [
-    '127.0.0.1',
-    'localhost',
-    'seasidesewing.keracudmore.dev',
-    'www.seasidesewing.keracudmore.dev',
-    '81.0.246.63',
-]
+HOSTS = os.environ.get('ALLOWED_HOSTS', '')
+
+if HOSTS:
+    ALLOWED_HOSTS = HOSTS.split(',')
 
 CSRF_TRUSTED_ORIGINS = [
     'https://seasidesewing.keracudmore.dev',

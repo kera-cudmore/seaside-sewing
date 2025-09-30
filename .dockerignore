@@ -1,0 +1,15 @@
+# Ignore directories
+.git
+.venv
+venv
+env
+__pycache__
+*.pyc
+
+# Ignore environment files
+.env*
+.DS_Store
+
+# Ignore static/media collected files (Docker should not contain these)
+staticfiles_collected
+mediafiles
