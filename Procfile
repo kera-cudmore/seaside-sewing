@@ -1,1 +1,2 @@
-web: gunicorn seaside_sewing.wsgi --bind 0.0.0.0:8000
+# Test command (temporary)
+/usr/bin/env python -c 'import time; time.sleep(3600)'

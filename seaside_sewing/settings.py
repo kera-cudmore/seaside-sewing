@@ -8,6 +8,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 import os
+
 if os.path.exists('env.py'):
     import env  # noqa: F401
 
@@ -31,7 +32,7 @@ if not DEBUG:
     SESSION_COOKIE_SECURE = True
     CSRF_COOKIE_SECURE = True
     # HSTS is a complex topic, but generally good for production
-    SECURE_HSTS_SECONDS = 31536000 # 1 year
+    SECURE_HSTS_SECONDS = 31536000  # 1 year
     SECURE_HSTS_INCLUDE_SUBDOMAINS = True
     SECURE_HSTS_PRELOAD = True
 
@@ -40,13 +41,13 @@ ALLOWED_HOSTS = [
     'localhost',
     'seasidesewing.keracudmore.dev',
     'www.seasidesewing.keracudmore.dev',
-    '81.0.246.63'
+    '81.0.246.63',
 ]
 
 CSRF_TRUSTED_ORIGINS = [
     'https://seasidesewing.keracudmore.dev',
     'https://www.seasidesewing.keracudmore.dev',
-    '81.0.246.63'
+    '81.0.246.63',
 ]
 
 # Application definition
