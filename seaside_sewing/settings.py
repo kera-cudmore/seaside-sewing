@@ -44,7 +44,6 @@ if HOSTS:
 CSRF_TRUSTED_ORIGINS = [
     'https://seasidesewing.keracudmore.dev',
     'https://www.seasidesewing.keracudmore.dev',
-    '81.0.246.63',
 ]
 
 # Application definition
@@ -200,7 +199,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = BASE_DIR / 'staticfiles_collected'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_collected')
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
 # Media files
