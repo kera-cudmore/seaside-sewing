@@ -1,1 +1,1 @@
-web: gunicorn seaside_sewing.wsgi --log-file -
+web: gunicorn seaside_sewing.wsgi --bind 0.0.0.0:8000
