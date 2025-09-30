@@ -40,11 +40,13 @@ ALLOWED_HOSTS = [
     'localhost',
     'seasidesewing.keracudmore.dev',
     'www.seasidesewing.keracudmore.dev',
+    '81.0.246.63'
 ]
 
 CSRF_TRUSTED_ORIGINS = [
     'https://seasidesewing.keracudmore.dev',
     'https://www.seasidesewing.keracudmore.dev',
+    '81.0.246.63'
 ]
 
 # Application definition
